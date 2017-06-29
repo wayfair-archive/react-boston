@@ -56,6 +56,7 @@ const Home = () =>
     <Header
       items={[
         { name: 'Speakers', href: '#speakers' },
+        { name: 'Tickets', href: '#tickets' },
         { name: 'Schedule', href: '#schedule' },
         { name: 'Venue', href: '#venue' }
       ]}

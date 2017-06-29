@@ -218,7 +218,7 @@ h4.Heading {
       justify-content: flex-end; } }
   .Navigation-item {
     display: block;
-    padding: 1em;
+    padding: 0.6em;
     color: #fff;
     transition: color .15s ease-out; }
     .Navigation-item:hover, .Navigation-item:focus {
