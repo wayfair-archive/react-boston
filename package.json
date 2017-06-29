@@ -31,5 +31,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://reactboston.com"
+  "homepage": "http://www.reactboston.com"
 }
