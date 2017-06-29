@@ -31,5 +31,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://wayfair.github.io/react-boston"
+  "homepage": "http://reactboston.com"
 }
