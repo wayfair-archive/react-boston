@@ -1,0 +1,43 @@
+html {
+  font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: $base-font;
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// basic layout stuffs
+.PageBlock {
+  padding: 3rem 0;
+  & + & {
+    border-top: 1px solid $color--lightest;
+  }
+  a:not(.Button) {
+	  color: $color--primary;
+    &:focus,
+    &:hover {
+      outline: 0;
+      color: darken($color--primary, 10%);
+      text-decoration: underline;
+    }
+  }
+}
+
+.Container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media (min-width: 768px) {
+    max-width: 1280px;
+  }
+}

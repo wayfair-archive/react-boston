@@ -1,0 +1,37 @@
+.Heading {
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: .025em;
+  color: $color--darkest;
+  &--centered {
+    text-align: center;
+  }
+}
+
+h2.Heading {
+  font-size: 2.5rem;
+  margin-bottom: 1em;
+  padding-bottom: .5em;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 125px;
+    background: $color--primary;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+h3.Heading {
+  font-size: 2rem;
+  margin-bottom: .5em;
+}
+
+h4.Heading {
+  font-size: 1.5rem;
+}
+
