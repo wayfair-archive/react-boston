@@ -171,7 +171,7 @@ const Home = () =>
             </ul>
           </Box>
           <Box width={[1, 1 / 3]}>
-            <img style={{maxWidth: '100%', height: 'auto'}}src={copley} />
+            <img alt="Boston" style={{maxWidth: '100%', height: 'auto'}}src={copley} />
           </Box>
         </Flex>
       </div>
