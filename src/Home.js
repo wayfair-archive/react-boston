@@ -5,7 +5,7 @@ import { mapStyles } from './utils';
 
 import boston from './images/hero.jpg';
 import copley from './images/copley.jpg';
-
+import ReactGA from 'react-ga';
 import Header from './components/Header';
 import { Logo } from './Logo';
 import Button from './components/Button';
@@ -32,6 +32,11 @@ const scrollToElement = e => {
     duration: 1000,
     offset: -55,
     smooth: 'easeInOutQuint'
+  });
+  ReactGA.event({
+    category: 'PageScroll',
+    action: 'scrollToElement',
+    label: href
   });
 };
 
