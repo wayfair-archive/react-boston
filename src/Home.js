@@ -12,11 +12,35 @@ import Button from './components/Button';
 import Speaker from './components/Speaker';
 import Heading from './components/Heading';
 import Footer from './components/Footer';
-
+import aickin from './images/sasha_aickin.jpg';
+import ilegbodu from './images/ben_ilegbodu.jpg';
+import qabazard from './images/natalie_qabazard.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
 
-const speakerList = [];
+const speakerList = [
+  {
+     name: 'Sasha Aickin',
+     imageSrc: aickin,
+     company: 'Ex-CTO @ Redfin',
+     twitter: 'https://twitter.com/xander76',
+     github: 'https://github.com/aickin'
+   },
+   {
+     name: 'Ben Ilegbodu',
+     imageSrc: ilegbodu,
+     company: 'Eventbrite',
+     twitter: 'https://twitter.com/benmvp',
+     github: 'https://github.com/benmvp'
+   },
+   {
+     name: 'Natalie Qabazard',
+     imageSrc: qabazard,
+     company: 'Zillow Group',
+     twitter: 'https://twitter.com/natqab',
+     github: 'https://github.com/natqab'
+   }
+];
 
 const PageBlock = props =>
   <section {...props} className="PageBlock">
@@ -104,7 +128,7 @@ const Home = () =>
       <div className="Container">
         <Heading title="Speakers" centered />
         <div className="CFP">
-          <p>Initial speakers will be announced soon, but there's still time to submit your own talk! The call for speakers is open until <strong>July 31, 2017</strong>.</p>
+          <p>There's still time to submit your talk! Call for speakers is open until <strong style={{ fontWeight: 900, textDecoration: 'underline'}}>July 31, 2017</strong>.</p>
           <Button href={"https://goo.gl/forms/e25LNsS3KXPAwO3r2"} alternate openInNewWindow >Submit A Proposal!</Button>
         </div>
         <div className="SpeakerGrid">
