@@ -22,7 +22,7 @@ const speakerList = [
   {
      name: 'Sasha Aickin',
      imageSrc: aickin,
-     company: 'Ex-CTO @ Redfin',
+     company: 'Former CTO of Redfin',
      twitter: 'https://twitter.com/xander76',
      github: 'https://github.com/aickin'
    },
