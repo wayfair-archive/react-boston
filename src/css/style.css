@@ -88,6 +88,10 @@ img {
     .Container {
       max-width: 1280px; } }
 
+.full-width-button-wrapper .Button {
+  width: 100%;
+  line-height: 1.5; }
+
 .Button {
   display: inline-block;
   line-height: 1;

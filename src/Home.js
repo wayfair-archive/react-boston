@@ -15,31 +15,47 @@ import Footer from './components/Footer';
 import aickin from './images/sasha_aickin.jpg';
 import ilegbodu from './images/ben_ilegbodu.jpg';
 import qabazard from './images/natalie_qabazard.jpg';
+import zhu from './images/henry_zhu.jpg';
+import pandya from './images/dhaivat_pandya.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
 
 const speakerList = [
   {
-     name: 'Sasha Aickin',
-     imageSrc: aickin,
-     company: 'Former CTO of Redfin',
-     twitter: 'https://twitter.com/xander76',
-     github: 'https://github.com/aickin'
-   },
-   {
-     name: 'Ben Ilegbodu',
-     imageSrc: ilegbodu,
-     company: 'Eventbrite',
-     twitter: 'https://twitter.com/benmvp',
-     github: 'https://github.com/benmvp'
-   },
-   {
-     name: 'Natalie Qabazard',
-     imageSrc: qabazard,
-     company: 'Zillow Group',
-     twitter: 'https://twitter.com/natqab',
-     github: 'https://github.com/natqab'
-   }
+    name: 'Sasha Aickin',
+    imageSrc: aickin,
+    company: 'Former CTO of Redfin',
+    twitter: 'https://twitter.com/xander76',
+    github: 'https://github.com/aickin'
+  },
+  {
+    name: 'Ben Ilegbodu',
+    imageSrc: ilegbodu,
+    company: 'Eventbrite',
+    twitter: 'https://twitter.com/benmvp',
+    github: 'https://github.com/benmvp'
+  },
+  {
+    name: 'Natalie Qabazard',
+    imageSrc: qabazard,
+    company: 'Zillow Group',
+    twitter: 'https://twitter.com/natqab',
+    github: 'https://github.com/natqab'
+  },
+  {
+    name: 'Henry Zhu',
+    imageSrc: zhu,
+    company: 'Behance/Adobe',
+    twitter: 'https://twitter.com/left_pad',
+    github: 'https://github.com/hzoo'
+  },
+  {
+    name: 'Dhaivat Pandya',
+    imageSrc: pandya,
+    company: 'Apollo/Meteor',
+    twitter: 'https://twitter.com/dhaivatsays',
+    github: 'https://github.com/Poincare'
+  }
 ];
 
 const PageBlock = props =>
@@ -75,7 +91,7 @@ const VenueMap = withScriptjs(
         scrollwheel: false
       }}
     >
-      <Marker defaultPosition={{ lat: 42.3472369, lng: -71.077868 }}/>
+      <Marker defaultPosition={{ lat: 42.3472369, lng: -71.077868 }} />
     </GoogleMap>
   )
 );
@@ -104,21 +120,35 @@ const Home = () =>
         <Button onClick={scrollToElement} href="#tickets">
           Get Tickets
         </Button>
-        <Button href={"https://goo.gl/forms/e25LNsS3KXPAwO3r2"} alternate openInNewWindow >Call for Speakers</Button>
-        <h3 className="Hero-subtitle">
-          Call for Speakers open until July 31, 2017
-        </h3>
+        <Button href={'https://goo.gl/forms/e25LNsS3KXPAwO3r2'} alternate openInNewWindow>
+          Call for Speakers
+        </Button>
+        <h3 className="Hero-subtitle">Call for Speakers open until July 31, 2017</h3>
       </div>
     </div>
 
     <section className="PageBlock">
       <div className="Container">
         <Flex wrap>
-          <Box width={[1, 3/3]} pr={20}>
+          <Box width={[1, 3 / 3]} pr={20}>
             <Heading title="Two-Day Conference on React.js" level={3} />
             <p style={{ marginBottom: '1em' }}>
-              React Boston is a two-day, single-track conference on React.js hosted in Boston's Back Bay neighborhood and organized in collaboration with <a href="http://engineering.wayfair.com/">Wayfair Engineering</a> and the <a href="https://meetup.com/ReactJS-Boston/">ReactJS Boston Meetup</a>.  We're excited to welcome developers of all backgrounds, skill sets, experience levels to join us for a weekend of high-quality content and great conversations with others in the developer community.
-             </p>
+              React Boston is a two-day, single-track conference on React.js hosted in Boston's Back
+              Bay neighborhood and organized in collaboration with{' '}
+              <a target="_blank" rel="noopener noreferrer" href="http://engineering.wayfair.com/">
+                Wayfair Engineering
+              </a>{' '}
+              and the{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://meetup.com/ReactJS-Boston/"
+              >
+                ReactJS Boston Meetup
+              </a>. We're excited to welcome developers of all backgrounds, skill sets, experience
+              levels to join us for a weekend of high-quality content and great conversations with
+              others in the developer community.
+            </p>
           </Box>
         </Flex>
       </div>
@@ -128,13 +158,18 @@ const Home = () =>
       <div className="Container">
         <Heading title="Speakers" centered />
         <div className="CFP">
-          <p>There's still time to submit your talk! Call for speakers is open until <strong style={{ fontWeight: 900, textDecoration: 'underline'}}>July 31, 2017</strong>.</p>
-          <Button href={"https://goo.gl/forms/e25LNsS3KXPAwO3r2"} alternate openInNewWindow >Submit A Proposal!</Button>
+          <p>
+            There's still time to submit your talk! Call for Speakers is open until{' '}
+            <strong style={{ fontWeight: 900, textDecoration: 'underline' }}>July 31, 2017</strong>.
+          </p>
+          <Button href={'https://goo.gl/forms/e25LNsS3KXPAwO3r2'} alternate openInNewWindow>
+            Submit A Proposal!
+          </Button>
         </div>
         <div className="SpeakerGrid">
           <Flex wrap>
             {speakerList.map((speaker, i) =>
-              <Box width={[1, 1 / 3]} px={[10]} key={i}>
+              <Box width={[1, 1 / 5]} px={[10]} key={i}>
                 <Speaker {...speaker} />
               </Box>
             )}
@@ -164,48 +199,161 @@ const Home = () =>
     <PageScrollSection id="schedule">
       <div className="Container">
         <Heading title="Schedule" centered />
-        <p style={{textAlign: 'center' }}>Coming Soon...</p>
+        <p style={{ textAlign: 'center' }}>Coming Soon...</p>
       </div>
     </PageScrollSection>
 
-
-
     <PageScrollSection id="venue">
-        <Heading title="Venue" centered />
-                <VenueMap
-      googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAaZTLgIndskuG_6fcKl2TE7ElvFINbVrQ"
-      loadingElement={<div />}
-      containerElement={<div style={{ height: `500px`, width: `100%` }} />}
-      mapElement={<div style={{ height: `100%` }} />}
-    />
-                <div style={{ paddingTop: '2em'}} className="Container">
+      <Heading title="Venue" centered />
+      <VenueMap
+        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAaZTLgIndskuG_6fcKl2TE7ElvFINbVrQ"
+        loadingElement={<div />}
+        containerElement={<div style={{ height: `500px`, width: `100%` }} />}
+        mapElement={<div style={{ height: `100%` }} />}
+      />
+      <div style={{ paddingTop: '2em' }} className="Container">
         <Flex wrap>
           <Box width={[1, 2 / 3]} pr={20}>
             <p style={{ marginBottom: '2em', fontSize: '1.1em', fontWeight: 'bold' }}>
-              The conference will be hosted at <a href="https://www.wayfair.com/about/">Wayfair</a>'s headquarters, <a href="https://goo.gl/maps/qPNfQbpMpDw">4 Copley Place</a>, in Boston's beautiful Back Bay neighborhood, walking distance from Copley Square, the Charles River, and the Boston Public Gardens.
+              The conference will be hosted at{' '}
+              <a target="_blank" rel="noopener noreferrer" href="https://www.wayfair.com/about/">
+                Wayfair
+              </a>'s headquarters,{' '}
+              <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/qPNfQbpMpDw">
+                4 Copley Place
+              </a>, in Boston's beautiful Back Bay neighborhood, walking distance from Copley
+              Square, the Charles River, and the Boston Public Gardens.
             </p>
             <Heading title="Travel" level={3} />
-            <p style={{ marginBottom: '1em' }}>The venue is easily accessible by local public transportation via the Orange Line to Back Bay or the Green Line to Copley Station.  There are also several MBTA bus routes that stop at nearby St. James Avenue at Dartmouth Street or Back Bay Station.</p>
-            <p style={{ marginBottom: '1em' }}>If you are driving, the venue is accessible by several major highways.  There are also local <a href="http://en.parkopedia.com/parking/locations/126_dartmouth_street_boston_ma_united_states_drt2ysukqwm/?country=us&arriving=201709230800&leaving=201709231900">parking options available</a>.</p>
-            <p style={{ marginBottom: '1em' }}>If you are arriving from outside the Boston area, there are both air and rail options.  You can fly into Logan International Airport (BOS), a 30 minute drive or shuttle ride from the venue. If traveling by rail you can take Amtrak directly into Back Bay Station.</p>
+            <p style={{ marginBottom: '1em' }}>
+              The venue is easily accessible by local public transportation via the Orange Line to
+              Back Bay or the Green Line to Copley Station. There are also several MBTA bus routes
+              that stop at nearby St. James Avenue at Dartmouth Street or Back Bay Station.
+            </p>
+            <p style={{ marginBottom: '1em' }}>
+              If you are driving, the venue is accessible by several major highways. There are also
+              local{' '}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://en.parkopedia.com/parking/locations/126_dartmouth_street_boston_ma_united_states_drt2ysukqwm/?country=us&arriving=201709230800&leaving=201709231900"
+              >
+                parking options available
+              </a>.
+            </p>
+            <p style={{ marginBottom: '1em' }}>
+              If you are arriving from outside the Boston area, there are both air and rail options.
+              You can fly into Logan International Airport (BOS), a 30 minute drive or shuttle ride
+              from the venue. If traveling by rail you can take Amtrak directly into Back Bay
+              Station.
+            </p>
             <Heading title="Accommodations" level={3} />
-            <p style={{ marginBottom: '1em' }}>There are no official conference accommodations, but there are several hotels nearby, including:</p>
-            <ul style={{ listStyle: 'square', marginLeft: '2.5em', marginBotton: '3em', paddingBottom: '1em' }}>
-              <li><a href="http://www.copleysquarehotel.com/">Copley Square Hotel</a></li>
-              <li><a href="http://www.westincopleyplaceboston.com/">Westin Copley Place</a></li>
-              <li><a href="http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/">Boston Marriott Copley Place</a></li>
-              <li><a href="http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/">Courtyard Boston Copley Square</a></li>
-              <li><a href="http://www.fairmont.com/copley-plaza-boston/">Fairmont Copley Plaza</a></li>
-              <li><a href="http://www.sheratonbostonhotel.com/">Sheraton Boston</a></li>
-              <li><a href="http://www.colonnadehotel.com/">Colonnade Hotel</a></li>
+            <p style={{ marginBottom: '1em' }}>
+              There are no official conference accommodations, but there are several hotels nearby,
+              including:
+            </p>
+            <ul
+              style={{
+                listStyle: 'square',
+                marginLeft: '2.5em',
+                marginBotton: '3em',
+                paddingBottom: '1em'
+              }}
+            >
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://www.copleysquarehotel.com/"
+                >
+                  Copley Square Hotel
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://www.westincopleyplaceboston.com/"
+                >
+                  Westin Copley Place
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/"
+                >
+                  Boston Marriott Copley Place
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/"
+                >
+                  Courtyard Boston Copley Square
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://www.fairmont.com/copley-plaza-boston/"
+                >
+                  Fairmont Copley Plaza
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="http://www.sheratonbostonhotel.com/"
+                >
+                  Sheraton Boston
+                </a>
+              </li>
+              <li>
+                <a target="_blank" rel="noopener noreferrer" href="http://www.colonnadehotel.com/">
+                  Colonnade Hotel
+                </a>
+              </li>
             </ul>
           </Box>
           <Box width={[1, 1 / 3]}>
-            <img alt="Boston" style={{maxWidth: '100%', height: 'auto'}}src={copley} />
+            <img alt="Boston" style={{ maxWidth: '100%', height: 'auto' }} src={copley} />
           </Box>
         </Flex>
       </div>
-        </PageScrollSection>
+    </PageScrollSection>
+    <PageScrollSection id="code_of_conduct">
+      <div className="Container">
+        <Heading title="Code of Conduct" centered />
+        <p style={{ marginBottom: '1em' }}>
+          {' '}React Boston is dedicated to providing a harassment-free conference experience for
+          everyone, regardless of gender, gender identity and expression, age, sexual orientation,
+          disability, physical appearance, body size, race, ethnicity, religion (or lack thereof),
+          or technology choices. We do not tolerate harassment of conference participants in any
+          form. Sexual language and imagery is not appropriate for any conference venue, including
+          talks, workshops, parties, Twitter and other online media. Conference participants
+          violating these rules may be sanctioned or expelled from the conference without a refund
+          at the discretion of the conference organisers.
+        </p>
+        <p style={{ marginBottom: '1em' }}>
+          Participants will be provided with contact information to reach conference staff who will
+          be happy help participants contact hotel/venue security or local law enforcement, provide
+          escorts, or otherwise assist those experiencing harassment to feel safe for the duration
+          of the conference.
+        </p>
+        <p style={{ marginBottom: '1em' }}>
+          <strong style={{ fontWeight: 900 }}>Full Version</strong>:{' '}
+          <a target="_blank" rel="noopener noreferrer" href="http://confcodeofconduct.com/">
+            Code of Conduct
+          </a>
+        </p>
+      </div>
+    </PageScrollSection>
 
     <Footer />
   </div>;
