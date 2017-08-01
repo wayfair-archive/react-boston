@@ -120,10 +120,6 @@ const Home = () =>
         <Button onClick={scrollToElement} href="#tickets">
           Get Tickets
         </Button>
-        <Button href={'https://goo.gl/forms/e25LNsS3KXPAwO3r2'} alternate openInNewWindow>
-          Call for Speakers
-        </Button>
-        <h3 className="Hero-subtitle">Call for Speakers open until July 31, 2017</h3>
       </div>
     </div>
 
@@ -159,12 +155,8 @@ const Home = () =>
         <Heading title="Speakers" centered />
         <div className="CFP">
           <p>
-            There's still time to submit your talk! Call for Speakers is open until{' '}
-            <strong style={{ fontWeight: 900, textDecoration: 'underline' }}>July 31, 2017</strong>.
+            The full speaker list will be announced soon!
           </p>
-          <Button href={'https://goo.gl/forms/e25LNsS3KXPAwO3r2'} alternate openInNewWindow>
-            Submit A Proposal!
-          </Button>
         </div>
         <div className="SpeakerGrid">
           <Flex wrap>
