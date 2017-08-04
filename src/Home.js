@@ -117,9 +117,14 @@ const Home = () =>
         <h3 className="Hero-subtitle">
           September 23-24, 2017 | Boston, MA<br />New England's first two-day React.js conference.
         </h3>
+
         <Button onClick={scrollToElement} href="#tickets">
           Get Tickets
         </Button>
+        <Button href={'https://goo.gl/forms/zxBeQPtL8hOxJEAP2'} alternate openInNewWindow>
+          Lightning Talks CFP
+        </Button>
+        <h3 className="Hero-subtitle">Lightning Talks CFP open until August 21, 2017</h3>
       </div>
     </div>
 
@@ -155,8 +160,12 @@ const Home = () =>
         <Heading title="Speakers" centered />
         <div className="CFP">
           <p>
-            The full speaker list will be announced soon!
+            The full speaker list will be announced soon, but there's still time to submit a proposal for a
+            lightning talk: CFP closes August 21, 2017!
           </p>
+          <Button href={'https://goo.gl/forms/zxBeQPtL8hOxJEAP2'} alternate openInNewWindow>
+            Submit a Lightning Talk!
+          </Button>
         </div>
         <div className="SpeakerGrid">
           <Flex wrap>
