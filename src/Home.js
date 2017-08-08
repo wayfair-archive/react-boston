@@ -17,6 +17,7 @@ import ilegbodu from './images/ben_ilegbodu.jpg';
 import qabazard from './images/natalie_qabazard.jpg';
 import zhu from './images/henry_zhu.jpg';
 import pandya from './images/dhaivat_pandya.jpg';
+import rizzitano from './images/ari_rizzitano.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
 
@@ -48,6 +49,13 @@ const speakerList = [
     company: 'Behance/Adobe',
     twitter: 'https://twitter.com/left_pad',
     github: 'https://github.com/hzoo'
+  },
+  {
+    name: 'Ari Rizzitano',
+    imageSrc: rizzitano,
+    company: 'edX',
+    twitter: 'https://twitter.com/arizzitano',
+    github: 'https://github.com/arizzitano'
   },
   {
     name: 'Dhaivat Pandya',
@@ -170,7 +178,7 @@ const Home = () =>
         <div className="SpeakerGrid">
           <Flex wrap>
             {speakerList.map((speaker, i) =>
-              <Box width={[1, 1 / 5]} px={[10]} key={i}>
+              <Box width={[1, 1 / 3]} px={[10]} key={i}>
                 <Speaker {...speaker} />
               </Box>
             )}
