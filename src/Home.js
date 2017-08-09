@@ -18,6 +18,8 @@ import qabazard from './images/natalie_qabazard.jpg';
 import zhu from './images/henry_zhu.jpg';
 import pandya from './images/dhaivat_pandya.jpg';
 import rizzitano from './images/ari_rizzitano.jpg';
+import mcloughlin from './images/brendan_mcloughlin.jpg';
+import holland from './images/christina_holland.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
 
@@ -63,6 +65,20 @@ const speakerList = [
     company: 'Apollo/Meteor',
     twitter: 'https://twitter.com/dhaivatsays',
     github: 'https://github.com/Poincare'
+  },
+  {
+    name: 'Brendan McLoughlin',
+    imageSrc: mcloughlin,
+    company: 'Bocoup',
+    twitter: 'https://twitter.com/BezoMaxo',
+    github: 'https://github.com/bmac'
+  },
+  {
+    name: 'Christina Holland',
+    imageSrc: holland,
+    company: 'Pepperdata',
+    twitter: 'https://twitter.com/americanwombat',
+    github: 'https://github.com/hsubox76'
   }
 ];
 
@@ -178,7 +194,7 @@ const Home = () =>
         <div className="SpeakerGrid">
           <Flex wrap>
             {speakerList.map((speaker, i) =>
-              <Box width={[1, 1 / 3]} px={[10]} key={i}>
+              <Box width={[1, 1 / 4]} px={[10]} key={i}>
                 <Speaker {...speaker} />
               </Box>
             )}
@@ -366,5 +382,4 @@ const Home = () =>
 
     <Footer />
   </div>;
-
 export { Home };
