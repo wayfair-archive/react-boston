@@ -20,6 +20,7 @@ import pandya from './images/dhaivat_pandya.jpg';
 import rizzitano from './images/ari_rizzitano.jpg';
 import mcloughlin from './images/brendan_mcloughlin.jpg';
 import holland from './images/christina_holland.jpg';
+import cutts from './images/marcel_cutts.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
 
@@ -65,6 +66,13 @@ const speakerList = [
     company: 'Apollo/Meteor',
     twitter: 'https://twitter.com/dhaivatsays',
     github: 'https://github.com/Poincare'
+  },
+  {
+    name: 'Marcel Cutts',
+    imageSrc: cutts,
+    company: 'Asgard',
+    twitter: 'https://twitter.com/marcelcutts',
+    github: 'https://github.com/marcelcutts'
   },
   {
     name: 'Brendan McLoughlin',
@@ -194,7 +202,7 @@ const Home = () =>
         <div className="SpeakerGrid">
           <Flex wrap>
             {speakerList.map((speaker, i) =>
-              <Box width={[1, 1 / 4]} px={[10]} key={i}>
+              <Box width={[1, 1 / 3]} px={[10]} key={i}>
                 <Speaker {...speaker} />
               </Box>
             )}
