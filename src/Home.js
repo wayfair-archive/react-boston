@@ -21,6 +21,9 @@ import rizzitano from './images/ari_rizzitano.jpg';
 import mcloughlin from './images/brendan_mcloughlin.jpg';
 import holland from './images/christina_holland.jpg';
 import cutts from './images/marcel_cutts.jpg';
+import wheeler from './images/ken_wheeler.jpg';
+import pak from './images/theo_pak.jpg';
+import sasidharan from './images/divya_sasidharan.jpg'
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
 
@@ -68,6 +71,13 @@ const speakerList = [
     github: 'https://github.com/Poincare'
   },
   {
+    name: 'Divya Sasidharan',
+    imageSrc: sasidharan,
+    company: 'NU Knight Lab',
+    twitter: 'https://twitter.com/shortdiv',
+    github: 'https://github.com/shortdiv'
+  },
+  {
     name: 'Marcel Cutts',
     imageSrc: cutts,
     company: 'Asgard',
@@ -80,6 +90,20 @@ const speakerList = [
     company: 'Bocoup',
     twitter: 'https://twitter.com/BezoMaxo',
     github: 'https://github.com/bmac'
+  },
+  {
+    name: 'Ken Wheeler',
+    imageSrc: wheeler,
+    company: 'Formidable',
+    twitter: 'https://twitter.com/ken_wheeler',
+    github: 'http://github.com/kenwheeler'
+  },
+  {
+    name: 'Theo Pak',
+    imageSrc: pak,
+    company: 'HubSpot',
+    twitter: 'https://twitter.com/theopak',
+    github: 'https://github.com/theopak'
   },
   {
     name: 'Christina Holland',
@@ -202,7 +226,7 @@ const Home = () =>
         <div className="SpeakerGrid">
           <Flex wrap>
             {speakerList.map((speaker, i) =>
-              <Box width={[1, 1 / 3]} px={[10]} key={i}>
+              <Box width={[1, 1 / 4]} px={[10]} key={i}>
                 <Speaker {...speaker} />
               </Box>
             )}
