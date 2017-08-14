@@ -23,6 +23,10 @@ import holland from './images/christina_holland.jpg';
 import cutts from './images/marcel_cutts.jpg';
 import wheeler from './images/ken_wheeler.jpg';
 import pak from './images/theo_pak.jpg';
+import novick from './images/vladimir_novick.jpg';
+import hough from './images/brian_hough.jpg';
+import erikson from './images/mark_erikson.jpg';
+import jacobson from './images/kenton_jacobson.jpg';
 import sasidharan from './images/divya_sasidharan.jpg'
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
@@ -71,11 +75,18 @@ const speakerList = [
     github: 'https://github.com/Poincare'
   },
   {
-    name: 'Divya Sasidharan',
-    imageSrc: sasidharan,
-    company: 'NU Knight Lab',
-    twitter: 'https://twitter.com/shortdiv',
-    github: 'https://github.com/shortdiv'
+    name: 'Kenton Jacobson',
+    imageSrc: jacobson,
+    company: 'Vogue, Glamour, GQ',
+    twitter: 'https://twitter.com/kentonjacobsen',
+    github: 'https://github.com/brokentone'
+  },
+  {
+    name: 'Vladimir Novick',
+    imageSrc: novick,
+    company: 'CodeValue',
+    twitter: 'https://twitter.com/VladimirNovick',
+    github: 'https://github.com/vnovick'
   },
   {
     name: 'Marcel Cutts',
@@ -83,6 +94,13 @@ const speakerList = [
     company: 'Asgard',
     twitter: 'https://twitter.com/marcelcutts',
     github: 'https://github.com/marcelcutts'
+  },
+  {
+    name: 'Divya Sasidharan',
+    imageSrc: sasidharan,
+    company: 'NU Knight Lab',
+    twitter: 'https://twitter.com/shortdiv',
+    github: 'https://github.com/shortdiv'
   },
   {
     name: 'Brendan McLoughlin',
@@ -106,11 +124,25 @@ const speakerList = [
     github: 'https://github.com/theopak'
   },
   {
+    name: 'Mark Erikson',
+    imageSrc: erikson,
+    company: 'Northrop Grumman',
+    twitter: 'https://twitter.com/acemarke',
+    github: 'https://github.com/markerikson'
+  },
+  {
     name: 'Christina Holland',
     imageSrc: holland,
     company: 'Pepperdata',
     twitter: 'https://twitter.com/americanwombat',
     github: 'https://github.com/hsubox76'
+  },
+  {
+    name: 'Brian Hough',
+    imageSrc: hough,
+    company: 'New Relic',
+    twitter: 'https://twitter.com/b_hough',
+    github: 'https://github.com/bhough'
   }
 ];
 
