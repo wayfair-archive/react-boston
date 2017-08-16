@@ -27,7 +27,9 @@ import novick from './images/vladimir_novick.jpg';
 import hough from './images/brian_hough.jpg';
 import erikson from './images/mark_erikson.jpg';
 import jacobson from './images/kenton_jacobson.jpg';
-import sasidharan from './images/divya_sasidharan.jpg'
+import sasidharan from './images/divya_sasidharan.jpg';
+import sgo from './images/sgo.png';
+import latinosintech from './images/latin@s_in_tech.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
 
@@ -184,6 +186,80 @@ const VenueMap = withScriptjs(
   )
 );
 
+const day1_talks = [
+  { time: '8:00 - 9:00', title: 'Registration and Breakfast', speaker: '' },
+  { time: '9:00 - 10:00', title: 'TBA', speaker: 'Ben Ilegbodu' },
+  { time: '10:00 - 10:30', title: 'GraphQL: The Mental Model', speaker: 'Dhaivat Pandya' },
+  { time: '10:30 - 11:00', title: 'Coffee Break', speaker: '' },
+  {
+    time: '11:00 - 12:00',
+    title: 'You Might Need Redux (And Its Ecosystem)',
+    speaker: 'Mark Erikson'
+  },
+  {
+    time: '12:00 - 12:30',
+    title: 'React + Charts, With and Without Libraries',
+    speaker: 'Christina Holland'
+  },
+  { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
+  {
+    time: '2:00 - 2:30',
+    title: 'Outside In TDD with React and Redux',
+    speaker: 'Brendan McLoughlin'
+  },
+  { time: '2:30 - 3:00', title: 'Get That CSS Out Of Your JavaScript!', speaker: 'Brian Hough' },
+  { time: '3:00 - 4:00', title: '⚡ Lightning Talks', speaker: '' },
+  { time: '4:00 - 4:30', title: 'Coffee Break', speaker: '' },
+  { time: '5:00 - 5:30', title: 'TBA', speaker: 'Henry Zhu' },
+  {
+    time: '5:00 - 5:30',
+    title: 'Skeleton states save the day (and look good doing it)',
+    speaker: 'Theo Pak'
+  },
+  { time: '5:30 - 6:00', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' }
+];
+const day2_talks = [
+  { time: '8:00 - 9:00', title: 'Breakfast', speaker: '' },
+  { time: '9:00 - 10:00', title: 'TBA', speaker: 'Sasha Aickin' },
+  { time: '10:00 - 10:30', title: 'Building Accessible Components', speaker: 'Ari Rizzitano' },
+  { time: '10:30 - 11:00', title: 'Coffee Break', speaker: '' },
+  { time: '11:00 - 12:00', title: 'A Pragmatist\'s Guide to ReasonML', speaker: 'Marcel Cutts' },
+  { time: '12:00 - 12:30', title: 'Contex 101', speaker: 'Ken Wheeler' },
+  { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
+  { time: '2:00 - 2:30', title: 'TBA', speaker: 'Natalie Qabazard' },
+  {
+    time: '2:30 - 3:00',
+    title: 'Your data is a moving target: Content migration',
+    speaker: 'Kenton Jacobsen'
+  },
+  { time: '3:00 - 3:30', title: 'TBA', speaker: '' },
+  { time: '3:30 - 4:00', title: 'Piloting a Drone with React - IoT', speaker: 'Vladimir Novick' }
+];
+
+const ScheduleRow = ({ time, children }) =>
+  <Flex pl={'20%'} pr={'20%'}>
+    <Box width={[1, 1 / 3]}>
+      <Box pb={20} pt={20}>
+      <h4 style={{fontSize: '1.2em'}}>{time}</h4>
+      </Box>
+    </Box>
+    <Box width={[1, 2 / 3]}>
+      <Box pb={20} pt={20}>
+        {children}
+      </Box>
+    </Box>
+  </Flex>;
+
+const Talk = ({ time, title, speaker }) =>
+  <ScheduleRow time={time}>
+    <h2 style={{fontSize: '1.6em'}}>
+      {title}
+    </h2>
+    <h3 style={{fontSize: '1.0em'}}>
+      {speaker}
+    </h3>
+  </ScheduleRow>;
+
 const Home = () =>
   <div>
     <Header
@@ -248,8 +324,8 @@ const Home = () =>
         <Heading title="Speakers" centered />
         <div className="CFP">
           <p>
-            The full speaker list will be announced soon, but there's still time to submit a proposal for a
-            lightning talk: CFP closes August 21, 2017!
+            The full speaker list will be announced soon, but there's still time to submit a
+            proposal for a lightning talk: CFP closes August 21, 2017!
           </p>
           <Button href={'https://goo.gl/forms/zxBeQPtL8hOxJEAP2'} alternate openInNewWindow>
             Submit a Lightning Talk!
@@ -288,7 +364,17 @@ const Home = () =>
     <PageScrollSection id="schedule">
       <div className="Container">
         <Heading title="Schedule" centered />
-        <p style={{ textAlign: 'center' }}>Coming Soon...</p>
+        <Heading level={3} title="Saturday, September 23rd" centered />
+        {day1_talks.map(data => <Talk {...data} />)}
+        <br />
+        <Heading level={3} title="Sunday, September 24th" centered />
+        {day2_talks.map(data => <Talk {...data} />)}
+        <Flex pl={'20%'} pr={'20%'} wrap>
+    <Box pb={20} pt={20}>
+      <p style={{fontSize: ".7em"}}>Schedule is tentative, and subject to change.</p>
+    </Box>
+  </Flex>
+        
       </div>
     </PageScrollSection>
 
@@ -412,6 +498,59 @@ const Home = () =>
           </Box>
           <Box width={[1, 1 / 3]}>
             <img alt="Boston" style={{ maxWidth: '100%', height: 'auto' }} src={copley} />
+          </Box>
+        </Flex>
+      </div>
+    </PageScrollSection>
+    <PageScrollSection id="diversity">
+      <div className="Container">
+        <Heading title="Diversity" centered />
+        <Flex wrap>
+          <Box width={[1, 3 / 5]} pr={20}>
+            <p style={{ marginBottom: '1em' }}>
+              React Boston believes that diversity is an important part of creating a welcoming,
+              inclusive, and innovative tech community. For React Boston 2017, we've allocated a set
+              of diversity tickets to be offered at no cost to members of underrepresented groups in
+              tech.
+            </p>
+            <p style={{ marginBottom: '1em' }}>
+              We're excited to be working with the{' '}
+              <a rel="noopener noreferrer" href="http://foundation.travis-ci.org/">
+                Travis Foundation
+              </a>{' '}
+              to offer several of these through their diversitytickets.org program.{' '}
+              <strong style={{ textDecoration: 'underline' }}>
+                Applications for diversity tickets are due by August 25, 2017
+              </strong>.{' '}
+              <a rel="noopener noreferrer" href="https://diversitytickets.org/events/106">
+                Apply here
+              </a>.
+            </p>
+            <p style={{ marginBottom: '1em' }}>
+              Additional diversity tickets are also being distributed through our partnerships with
+              local organizations and events, including:{' '}
+              <a rel="noopener noreferrer" href="https://www.shegeeksout.com/">
+                She Geeks Out
+              </a>,{' '}
+              <a rel="noopener noreferrer" href="https://www.meetup.com/Latinos-in-Tech-Boston/">
+                Latin@s in Tech Boston
+              </a>, and Women in Tech.
+            </p>
+          </Box>
+          <Box width={[1, 2 / 5]} pl={20}>
+            <div style={{ textAlign: 'center' }}>
+              <div style={{ marginBottom: '2em' }}>
+                <Button href={'https://diversitytickets.org/events/106'} openInNewWindow>
+                  Apply for a Diversity Ticket
+                </Button>
+              </div>
+              <a rel="noopener noreferrer" href="https://www.shegeeksout.com/">
+                <img style={{ width: '65%', margin: '0 auto 1em auto' }} src={sgo} />
+              </a>
+              <a rel="noopener noreferrer" href="https://www.meetup.com/Latinos-in-Tech-Boston/">
+                <img style={{ width: '65%', margin: '0 auto' }} src={latinosintech} />
+              </a>
+            </div>
           </Box>
         </Flex>
       </div>
