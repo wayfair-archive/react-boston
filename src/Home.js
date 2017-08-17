@@ -216,7 +216,8 @@ const day1_talks = [
     title: 'Skeleton states save the day (and look good doing it)',
     speaker: 'Theo Pak'
   },
-  { time: '5:30 - 6:00', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' }
+  { time: '5:30 - 6:00', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' },
+  { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Venue TBA' },
 ];
 const day2_talks = [
   { time: '8:00 - 9:00', title: 'Breakfast', speaker: '' },
