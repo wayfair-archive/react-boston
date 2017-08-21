@@ -225,7 +225,7 @@ const day2_talks = [
   { time: '10:00 - 10:30', title: 'Building Accessible Components', speaker: 'Ari Rizzitano' },
   { time: '10:30 - 11:00', title: 'Coffee Break', speaker: '' },
   { time: '11:00 - 12:00', title: 'A Pragmatist\'s Guide to ReasonML', speaker: 'Marcel Cutts' },
-  { time: '12:00 - 12:30', title: 'Contex 101', speaker: 'Ken Wheeler' },
+  { time: '12:00 - 12:30', title: 'Context 101', speaker: 'Ken Wheeler' },
   { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
   { time: '2:00 - 2:30', title: 'TBA', speaker: 'Natalie Qabazard' },
   {
