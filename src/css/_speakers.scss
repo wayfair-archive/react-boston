@@ -1,6 +1,7 @@
 .Speaker {
   width: 100%;
-  margin-bottom: 2em;
+  max-width: 350px;
+  margin: 0 auto 2em;
 
   &-photo {
     display: block;

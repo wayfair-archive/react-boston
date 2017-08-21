@@ -238,16 +238,12 @@ const day2_talks = [
 ];
 
 const ScheduleRow = ({ time, children }) =>
-  <Flex pl={'20%'} pr={'20%'}>
-    <Box width={[1, 1 / 3]}>
-      <Box pb={20} pt={20}>
-      <h4 style={{fontSize: '1.2em'}}>{time}</h4>
-      </Box>
+  <Flex justify="center" wrap className="ScheduleRow">
+    <Box width={[1, 1 / 3]} className="ScheduleRow-time">
+      <span style={{fontSize: '1.2em'}}>{time}</span>
     </Box>
-    <Box width={[1, 2 / 3]}>
-      <Box pb={20} pt={20}>
-        {children}
-      </Box>
+    <Box width={[1, 2 / 3]} className="ScheduleRow-details">
+      {children}
     </Box>
   </Flex>;
 
@@ -363,19 +359,15 @@ const Home = () =>
     </PageScrollSection>
 
     <PageScrollSection id="schedule">
-      <div className="Container">
+      <div className="Schedule">
         <Heading title="Schedule" centered />
-        <Heading level={3} title="Saturday, September 23rd" centered />
+        <Heading level={3} title="Day 1: Saturday, September 23rd" centered />
         {day1_talks.map(data => <Talk {...data} />)}
-        <br />
-        <Heading level={3} title="Sunday, September 24th" centered />
+      </div>
+      <div className="Schedule">
+        <Heading level={3} title="Day 2: Sunday, September 24th" centered />
         {day2_talks.map(data => <Talk {...data} />)}
-        <Flex pl={'20%'} pr={'20%'} wrap>
-    <Box pb={20} pt={20}>
-      <p style={{fontSize: ".7em"}}>Schedule is tentative, and subject to change.</p>
-    </Box>
-  </Flex>
-        
+        <p style={{fontSize: ".7em", marginTop: 20, paddingLeft: 20}}>Schedule is tentative, and subject to change.</p>
       </div>
     </PageScrollSection>
 
@@ -507,7 +499,7 @@ const Home = () =>
       <div className="Container">
         <Heading title="Diversity" centered />
         <Flex wrap>
-          <Box width={[1, 3 / 5]} pr={20}>
+          <Box width={[1, 1 / 2, 3 / 5]} pr={20}>
             <p style={{ marginBottom: '1em' }}>
               React Boston believes that diversity is an important part of creating a welcoming,
               inclusive, and innovative tech community. For React Boston 2017, we've allocated a set
@@ -538,7 +530,7 @@ const Home = () =>
               </a>, and Women in Tech.
             </p>
           </Box>
-          <Box width={[1, 2 / 5]} pl={20}>
+          <Box width={[1, 1 / 2, 2 / 5]} pl={20}>
             <div style={{ textAlign: 'center' }}>
               <div style={{ marginBottom: '2em' }}>
                 <Button href={'https://diversitytickets.org/events/106'} openInNewWindow>
