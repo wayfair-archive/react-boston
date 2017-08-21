@@ -188,7 +188,7 @@ const VenueMap = withScriptjs(
 
 const day1_talks = [
   { time: '8:00 - 9:00', title: 'Registration and Breakfast', speaker: '' },
-  { time: '9:00 - 10:00', title: 'TBA', speaker: 'Ben Ilegbodu' },
+  { time: '9:00 - 10:00', title: 'TBA', speaker: 'Sasha Aickin' },
   { time: '10:00 - 10:30', title: 'GraphQL: The Mental Model', speaker: 'Dhaivat Pandya' },
   { time: '10:30 - 11:00', title: 'Coffee Break', speaker: '' },
   {
@@ -221,7 +221,7 @@ const day1_talks = [
 ];
 const day2_talks = [
   { time: '8:00 - 9:00', title: 'Breakfast', speaker: '' },
-  { time: '9:00 - 10:00', title: 'TBA', speaker: 'Sasha Aickin' },
+  { time: '9:00 - 10:00', title: 'TBA', speaker: 'Ben Ilegbodu' },
   { time: '10:00 - 10:30', title: 'Building Accessible Components', speaker: 'Ari Rizzitano' },
   { time: '10:30 - 11:00', title: 'Coffee Break', speaker: '' },
   { time: '11:00 - 12:00', title: 'A Pragmatist\'s Guide to ReasonML', speaker: 'Marcel Cutts' },
