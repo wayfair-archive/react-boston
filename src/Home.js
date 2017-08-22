@@ -202,11 +202,7 @@ const day1_talks = [
     speaker: 'Christina Holland'
   },
   { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
-  {
-    time: '2:00 - 2:30',
-    title: 'Outside In TDD with React and Redux',
-    speaker: 'Brendan McLoughlin'
-  },
+  { time: '2:00 - 2:30', title: 'TBA', speaker: 'Natalie Qabazard' },
   { time: '2:30 - 3:00', title: 'Get That CSS Out Of Your JavaScript!', speaker: 'Brian Hough' },
   { time: '3:00 - 4:00', title: '⚡ Lightning Talks', speaker: '' },
   { time: '4:00 - 4:30', title: 'Coffee Break', speaker: '' },
@@ -227,7 +223,11 @@ const day2_talks = [
   { time: '11:00 - 12:00', title: 'A Pragmatist\'s Guide to ReasonML', speaker: 'Marcel Cutts' },
   { time: '12:00 - 12:30', title: 'Context 101', speaker: 'Ken Wheeler' },
   { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
-  { time: '2:00 - 2:30', title: 'TBA', speaker: 'Natalie Qabazard' },
+  {
+    time: '2:00 - 2:30',
+    title: 'Outside In TDD with React and Redux',
+    speaker: 'Brendan McLoughlin'
+  },
   {
     time: '2:30 - 3:00',
     title: 'Your data is a moving target: Content migration',
