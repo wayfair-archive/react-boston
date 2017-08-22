@@ -202,7 +202,7 @@ const day1_talks = [
     speaker: 'Christina Holland'
   },
   { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
-  { time: '2:00 - 2:30', title: 'TBA', speaker: 'Natalie Qabazard' },
+  { time: '2:00 - 2:30', title: 'Serverless Server-Side Rendering', speaker: 'Natalie Qabazard' },
   { time: '2:30 - 3:00', title: 'Get That CSS Out Of Your JavaScript!', speaker: 'Brian Hough' },
   { time: '3:00 - 4:00', title: '⚡ Lightning Talks', speaker: '' },
   { time: '4:00 - 4:30', title: 'Coffee Break', speaker: '' },
