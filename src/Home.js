@@ -206,7 +206,7 @@ const day1_talks = [
   { time: '2:30 - 3:00', title: 'Get That CSS Out Of Your JavaScript!', speaker: 'Brian Hough' },
   { time: '3:00 - 4:00', title: '⚡ Lightning Talks', speaker: '' },
   { time: '4:00 - 4:30', title: 'Coffee Break', speaker: '' },
-  { time: '5:00 - 5:30', title: 'TBA', speaker: 'Henry Zhu' },
+  { time: '4:30 - 5:00', title: 'TBA', speaker: 'Henry Zhu' },
   {
     time: '5:00 - 5:30',
     title: 'Skeleton states save the day (and look good doing it)',
