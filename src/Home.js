@@ -500,7 +500,7 @@ const Home = () =>
               </a>{' '}
               to offer several of these through their diversitytickets.org program.{' '}
               <strong style={{ textDecoration: 'underline' }}>
-                Applications for diversity tickets are due by August 25, 2017
+                Applications for diversity tickets are due by August 28, 2017
               </strong>.{' '}
               <a rel="noopener noreferrer" href="https://diversitytickets.org/events/106">
                 Apply here
