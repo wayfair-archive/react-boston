@@ -335,7 +335,7 @@ const Home = () =>
           src="//eventbrite.com/tickets-external?eid=35695465097&ref=etckt"
           title="Get Tickets"
           frameBorder="0"
-          height="550"
+          height="600"
           width="100%"
           marginHeight="5"
           marginWidth="5"
