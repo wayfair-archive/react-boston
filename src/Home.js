@@ -28,6 +28,14 @@ import hough from './images/brian_hough.jpg';
 import erikson from './images/mark_erikson.jpg';
 import jacobson from './images/kenton_jacobson.jpg';
 import sasidharan from './images/divya_sasidharan.jpg';
+import briggs from './images/ben_briggs.jpg';
+import clark from './images/jason_clark.jpg';
+import kwon from './images/kaylie_alexa_kwon.jpg';
+import litchfield from './images/carly_litchfield.jpg';
+import bershadskiy from './images/stan_bershadskiy.jpg';
+import marek from './images/thomas_marek.jpg';
+import riemer from './images/vincent_riemer.jpg';
+import degennaro from './images/matt_degennaro.jpg';
 import sgo from './images/sgo.png';
 import latinosintech from './images/latin@s_in_tech.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
@@ -145,6 +153,52 @@ const speakerList = [
     company: 'New Relic',
     twitter: 'https://twitter.com/b_hough',
     github: 'https://github.com/bhough'
+  },
+  {
+    name: 'Thomas Marek',
+    imageSrc: marek,
+    company: 'Rangle.io',
+    twitter: 'https://twitter.com/_ttmarek',
+    github: 'https://github.com/ttmarek'
+  },
+  {
+    name: 'Kaylie Alexa Kwon',
+    imageSrc: kwon,
+    company: 'Eventbrite',
+    github: 'https://github.com/kaylieEB'
+  },
+  {
+    name: 'Matt DeGennaro',
+    imageSrc: degennaro,
+    company: 'Wayfair',
+    github: 'https://github.com/MattDeeg'
+  },
+  {
+    name: 'Ben Briggs',
+    imageSrc: briggs,
+    company: 'HubSpot',
+    twitter: 'https://twitter.com/benbriggs',
+    github: 'https://github.com/benbriggs'
+  },
+  {
+    name: 'Carly Litchfield',
+    imageSrc: litchfield,
+    company: 'Zocdoc',
+    github: 'https://github.com/cjlitch'
+  },
+  {
+    name: 'Jason Clark',
+    imageSrc: clark,
+    company: 'Cengage',
+    twitter: 'https://twitter.com/riceboyler',
+    github: 'https://github.com/riceboyler'
+  },
+  {
+    name: 'Stan Bershadskiy',
+    imageSrc: bershadskiy,
+    company: 'Modus Create',
+    twitter: 'https://twitter.com/stan229',
+    github: 'https://github.com/stan229'
   }
 ];
 
@@ -201,46 +255,58 @@ const day1_talks = [
     title: 'React + Charts, With and Without Libraries',
     speaker: 'Christina Holland'
   },
-  { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
-  { time: '2:00 - 2:30', title: 'Serverless Server-Side Rendering', speaker: 'Natalie Qabazard' },
-  { time: '2:30 - 3:00', title: 'Get That CSS Out Of Your JavaScript!', speaker: 'Brian Hough' },
-  { time: '3:00 - 4:00', title: '⚡ Lightning Talks', speaker: '' },
-  { time: '4:00 - 4:30', title: 'Coffee Break', speaker: '' },
-  { time: '4:30 - 5:00', title: 'TBA', speaker: 'Henry Zhu' },
+  { time: '12:30 - 1:45', title: 'Lunch', speaker: '' },
+  { time: '1:45 - 2:15', title: 'Serverless Server-Side Rendering', speaker: 'Natalie Qabazard' },
+  { time: '2:15 - 2:45', title: 'Get That CSS Out Of Your JavaScript!', speaker: 'Brian Hough' },
+  {
+    time: '2:45 - 3:30',
+    title: 'Lightning Talks ⚡',
+    speaker: ['Vincent Riemer', 'Stan Bershadskiy', 'Carly Litchfield', 'Kaylie Alexa Kwon']
+  },
+  { time: '3:30 - 4:00', title: 'Coffee Break', speaker: '' },
+  { time: '4:00 - 4:30', title: 'TBA', speaker: 'Henry Zhu' },
+  { time: '4:30 - 5:00', title: 'TBA', speaker: '' },
   {
     time: '5:00 - 5:30',
     title: 'Skeleton states save the day (and look good doing it)',
     speaker: 'Theo Pak'
   },
   { time: '5:30 - 6:00', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' },
-  { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Venue TBA' },
+  { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Venue TBA' }
 ];
 const day2_talks = [
   { time: '8:00 - 9:00', title: 'Breakfast', speaker: '' },
   { time: '9:00 - 10:00', title: 'TBA', speaker: 'Ben Ilegbodu' },
   { time: '10:00 - 10:30', title: 'Building Accessible Components', speaker: 'Ari Rizzitano' },
   { time: '10:30 - 11:00', title: 'Coffee Break', speaker: '' },
-  { time: '11:00 - 12:00', title: 'A Pragmatist\'s Guide to ReasonML', speaker: 'Marcel Cutts' },
+  { time: '11:00 - 12:00', title: "A Pragmatist's Guide to ReasonML", speaker: 'Marcel Cutts' },
   { time: '12:00 - 12:30', title: 'Context 101', speaker: 'Ken Wheeler' },
-  { time: '12:30 - 2:00', title: 'Lunch', speaker: '' },
+  { time: '12:30 - 1:45', title: 'Lunch', speaker: '' },
   {
-    time: '2:00 - 2:30',
+    time: '1:45 - 2:30',
+    title: 'Lightning Talks ⚡',
+    speaker: ['Jason Clark', 'Ben Briggs', 'Matt DeGennaro', 'Thomas Marek']
+  },
+  {
+    time: '2:30 - 3:00',
     title: 'Outside In TDD with React and Redux',
     speaker: 'Brendan McLoughlin'
   },
   {
-    time: '2:30 - 3:00',
+    time: '3:00 - 3:30',
     title: 'Your data is a moving target: Content migration',
     speaker: 'Kenton Jacobsen'
   },
-  { time: '3:00 - 3:30', title: 'TBA', speaker: '' },
-  { time: '3:30 - 4:00', title: 'Piloting a Drone with React - IoT', speaker: 'Vladimir Novick' }
+  { time: '3:30 - 4:00', title: 'Piloting a Drone with React - IoT', speaker: 'Vladimir Novick' },
+  { time: '4:00 - 4:15', title: 'Closing Remarks', speaker: '' }
 ];
 
 const ScheduleRow = ({ time, children }) =>
   <Flex justify="center" wrap className="ScheduleRow">
     <Box width={[1, 1 / 3]} className="ScheduleRow-time">
-      <span style={{fontSize: '1.2em'}}>{time}</span>
+      <span style={{ fontSize: '1.2em' }}>
+        {time}
+      </span>
     </Box>
     <Box width={[1, 2 / 3]} className="ScheduleRow-details">
       {children}
@@ -249,11 +315,17 @@ const ScheduleRow = ({ time, children }) =>
 
 const Talk = ({ time, title, speaker }) =>
   <ScheduleRow time={time}>
-    <h2 style={{fontSize: '1.6em'}}>
+    <h2 style={{ fontSize: '1.6em' }}>
       {title}
     </h2>
-    <h3 style={{fontSize: '1.0em'}}>
-      {speaker}
+    <h3 style={{ fontSize: '1.0em' }}>
+      {typeof speaker === 'string' ? speaker : null}
+      {Array.isArray(speaker) &&
+        speaker.map((speaker, i) =>
+          <div style={{ marginBottom: '.15em', marginTop: '.15em' }} key={i}>
+            {speaker}
+          </div>
+        )}
     </h3>
   </ScheduleRow>;
 
@@ -335,7 +407,7 @@ const Home = () =>
           src="//eventbrite.com/tickets-external?eid=35695465097&ref=etckt"
           title="Get Tickets"
           frameBorder="0"
-          height="600"
+          height="650"
           width="100%"
           marginHeight="5"
           marginWidth="5"
@@ -348,13 +420,15 @@ const Home = () =>
     <PageScrollSection id="schedule">
       <div className="Schedule">
         <Heading title="Schedule" centered />
-        <Heading level={3} title="Day 1: Saturday, September 23rd" centered />
+        <Heading level={3} title="Day 1: Saturday, September 23" centered />
         {day1_talks.map(data => <Talk {...data} />)}
       </div>
       <div className="Schedule">
-        <Heading level={3} title="Day 2: Sunday, September 24th" centered />
+        <Heading level={3} title="Day 2: Sunday, September 24" centered />
         {day2_talks.map(data => <Talk {...data} />)}
-        <p style={{fontSize: ".7em", marginTop: 20, paddingLeft: 20}}>Schedule is tentative, and subject to change.</p>
+        <p style={{ fontSize: '.7em', marginTop: 20, paddingLeft: 20 }}>
+          Schedule is tentative, and subject to change.
+        </p>
       </div>
     </PageScrollSection>
 
@@ -498,13 +572,8 @@ const Home = () =>
               <a rel="noopener noreferrer" href="http://foundation.travis-ci.org/">
                 Travis Foundation
               </a>{' '}
-              to offer several of these through their diversitytickets.org program.{' '}
-              <strong style={{ textDecoration: 'underline' }}>
-                Applications for diversity tickets are due by August 28, 2017
-              </strong>.{' '}
-              <a rel="noopener noreferrer" href="https://diversitytickets.org/events/106">
-                Apply here
-              </a>.
+              to offer several of these through their diversitytickets.org program. Applications for
+              diversity tickets are now closed.
             </p>
             <p style={{ marginBottom: '1em' }}>
               Additional diversity tickets are also being distributed through our partnerships with
@@ -519,11 +588,6 @@ const Home = () =>
           </Box>
           <Box width={[1, 1 / 2, 2 / 5]} pl={20}>
             <div style={{ textAlign: 'center' }}>
-              <div style={{ marginBottom: '2em' }}>
-                <Button href={'https://diversitytickets.org/events/106'} openInNewWindow>
-                  Apply for a Diversity Ticket
-                </Button>
-              </div>
               <a rel="noopener noreferrer" href="https://www.shegeeksout.com/">
                 <img style={{ width: '65%', margin: '0 auto 1em auto' }} src={sgo} />
               </a>
