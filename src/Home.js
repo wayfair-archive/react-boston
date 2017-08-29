@@ -199,6 +199,13 @@ const speakerList = [
     company: 'Modus Create',
     twitter: 'https://twitter.com/stan229',
     github: 'https://github.com/stan229'
+  },
+  {
+    name: 'Vincent Riemer',
+    imageSrc: riemer,
+    company: 'Symantec',
+    twitter: 'https://twitter.com/vincentriemer',
+    github: 'https://github.com/vincentriemer'
   }
 ];
 
