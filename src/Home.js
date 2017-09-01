@@ -361,10 +361,6 @@ const Home = () =>
         <Button onClick={scrollToElement} href="#tickets">
           Get Tickets
         </Button>
-
-        <h3 className="Hero-subtitle">
-          $299 Ticket Sales End Friday 9/1
-        </h3>
       </div>
     </div>
 
