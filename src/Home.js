@@ -358,9 +358,9 @@ const Home = () =>
           September 23-24, 2017 | Boston, MA<br />New England's first two-day React.js conference.
         </h3>
 
-        <Button onClick={scrollToElement} href="#tickets">
-          Get Tickets
-        </Button>
+        <h3 className="Hero-subtitle">
+          Tickets are now sold out.
+        </h3>
       </div>
     </div>
 
