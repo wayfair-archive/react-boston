@@ -272,13 +272,13 @@ const day1_talks = [
   },
   { time: '3:30 - 4:00', title: 'Coffee Break', speaker: '' },
   { time: '4:00 - 4:30', title: 'TBA', speaker: 'Henry Zhu' },
-  { time: '4:30 - 5:00', title: 'TBA', speaker: '' },
+  { time: '4:30 - 5:15', title: 'TBA', speaker: '' },
   {
-    time: '5:00 - 5:30',
+    time: '5:15 - 5:45',
     title: 'Skeleton states save the day (and look good doing it)',
     speaker: 'Theo Pak'
   },
-  { time: '5:30 - 6:00', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' },
+  { time: '5:45 - 6:15', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' },
   { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Venue TBA' }
 ];
 const day2_talks = [
