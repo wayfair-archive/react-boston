@@ -2,7 +2,6 @@ import React from 'react';
 import { Flex, Box } from 'grid-styled';
 import { scroller, Helpers } from 'react-scroll';
 import { mapStyles } from './utils';
-
 import boston from './images/hero.jpg';
 import copley from './images/copley.jpg';
 import ReactGA from 'react-ga';
