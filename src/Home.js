@@ -36,6 +36,7 @@ import bershadskiy from './images/stan_bershadskiy.jpg';
 import marek from './images/thomas_marek.jpg';
 import riemer from './images/vincent_riemer.jpg';
 import degennaro from './images/matt_degennaro.jpg';
+import robertzhu from './images/robert_zhu.jpg';
 import sgo from './images/sgo.png';
 import latinosintech from './images/latin@s_in_tech.jpg';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
@@ -71,18 +72,25 @@ const speakerList = [
     github: 'https://github.com/hzoo'
   },
   {
-    name: 'Ari Rizzitano',
-    imageSrc: rizzitano,
-    company: 'edX',
-    twitter: 'https://twitter.com/arizzitano',
-    github: 'https://github.com/arizzitano'
-  },
-  {
     name: 'Dhaivat Pandya',
     imageSrc: pandya,
     company: 'Apollo/Meteor',
     twitter: 'https://twitter.com/dhaivatsays',
     github: 'https://github.com/Poincare'
+  },
+  {
+    name: 'Robert Zhu',
+    imageSrc: robertzhu,
+    company: 'Facebook',
+    twitter: 'https://twitter.com/rbzhu',
+    github: 'https://github.com/robzhu'
+  },
+  {
+    name: 'Ari Rizzitano',
+    imageSrc: rizzitano,
+    company: 'edX',
+    twitter: 'https://twitter.com/arizzitano',
+    github: 'https://github.com/arizzitano'
   },
   {
     name: 'Kenton Jacobson',
@@ -271,15 +279,15 @@ const day1_talks = [
     speaker: ['Vincent Riemer', 'Stan Bershadskiy', 'Carly Litchfield', 'Kaylie Alexa Kwon']
   },
   { time: '3:30 - 4:00', title: 'Coffee Break', speaker: '' },
-  { time: '4:00 - 4:30', title: 'TBA', speaker: 'Henry Zhu' },
-  { time: '4:30 - 5:15', title: 'TBA', speaker: '' },
+  { time: '4:00 - 4:30', title: 'Maintainer, Heal Thyself', speaker: 'Henry Zhu' },
+  { time: '4:30 - 5:15', title: 'GraphQL Subscriptions: Full Stack', speaker: 'Robert Zhu' },
   {
     time: '5:15 - 5:45',
     title: 'Skeleton states save the day (and look good doing it)',
     speaker: 'Theo Pak'
   },
   { time: '5:45 - 6:15', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' },
-  { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Venue TBA' }
+  { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Lir' }
 ];
 const day2_talks = [
   { time: '8:00 - 9:00', title: 'Breakfast', speaker: '' },
@@ -397,7 +405,7 @@ const Home = () =>
         <div className="SpeakerGrid">
           <Flex wrap>
             {speakerList.map((speaker, i) =>
-              <Box width={[1, 1 / 4]} px={[10]} key={i}>
+              <Box width={[1, 1 / 5]} px={[10]} key={i}>
                 <Speaker {...speaker} />
               </Box>
             )}
