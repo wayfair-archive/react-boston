@@ -672,7 +672,6 @@ const Home = () =>
         </Flex>
       </div>
     </PageScrollSection>
-
     <Footer />
   </div>;
 export { Home };
