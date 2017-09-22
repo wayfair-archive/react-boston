@@ -7,6 +7,8 @@ import copley from './images/copley.jpg';
 import ReactGA from 'react-ga';
 import Header from './components/Header';
 import { Logo } from './Logo';
+import wayfair from './images/wayfair.png';
+import pluralsight from './images/pluralsight.png';
 import Button from './components/Button';
 import Speaker from './components/Speaker';
 import Heading from './components/Heading';
@@ -638,6 +640,36 @@ const Home = () =>
             Code of Conduct
           </a>
         </p>
+      </div>
+    </PageScrollSection>
+
+    <PageScrollSection id="sponsors">
+      <div className="Container">
+        <Heading title="Sponsors" centered />
+        <h3 className="Hero-subtitle" style={{color: 'black', textAlign: 'center'}}>
+          React Boston 2017 is sponsored and hosted by:
+        </h3>
+        <Flex justify='center'>
+          <Box p={20} >
+          <a target="_blank" rel="noopener noreferrer" href="http://engineering.wayfair.com/"><img alt="Wayfair" src={wayfair} /></a>
+          </Box>
+        </Flex>
+        <Flex justify='center'>
+          <Box p={20} >
+            <p style={{textAlign: 'center', marginBottom: '1em'}}>We’re the creative builders solving complex business problems through the newest and most innovative software in e-commerce.</p>
+            <p style={{textAlign: 'center'}}><a target="_blank" rel="noopener noreferrer" href="http://engineering.wayfair.com/">engineering.wayfair.com</a></p>
+            <p style={{textAlign: 'center'}}><a target="_blank" rel="noopener noreferrer" href="https://www.wayfaircareers.com/engineering/">wayfaircareers.com/engineering</a></p>
+          </Box>
+        </Flex>
+        <div className="border">&nbsp;</div> 
+        <h3 className="Hero-subtitle" style={{color: 'black', textAlign: 'center'}}>
+          The React Boston 2017 party is sponsored by:
+        </h3>
+        <Flex justify='center'>
+          <Box p={20} >
+          <a target="_blank" rel="noopener noreferrer" href="https://www.pluralsight.com/"><img alt="Pluralsight" src={pluralsight} /></a>
+          </Box>
+        </Flex>
       </div>
     </PageScrollSection>
 

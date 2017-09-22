@@ -88,6 +88,22 @@ img {
     .Container {
       max-width: 1280px; } }
 
+.border:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 125px;
+  background: #f15959;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.border {
+  position: relative; }
+
 .full-width-button-wrapper .Button {
   width: 100%;
   line-height: 1.5; }
