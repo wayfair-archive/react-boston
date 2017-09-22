@@ -288,7 +288,7 @@ const day1_talks = [
     speaker: 'Theo Pak'
   },
   { time: '5:45 - 6:15', title: 'Supercharging Your Maps with React', speaker: 'Divya Sasidharan' },
-  { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Lir' }
+  { time: '6:30pm - 9pm', title: 'React Boston Party', speaker: 'Sponsored by Pluralsight' }
 ];
 const day2_talks = [
   { time: '8:00 - 9:00', title: 'Breakfast', speaker: '' },
