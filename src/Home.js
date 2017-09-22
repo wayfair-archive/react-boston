@@ -674,4 +674,5 @@ const Home = () =>
     </PageScrollSection>
     <Footer />
   </div>;
+
 export { Home };
