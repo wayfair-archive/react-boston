@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import boston from '../images/hero.jpg';
+import boston from '../images/hero2017.jpg';
 import Logo from '../components/Logo';
 
 const HeroWrapper = styled.div`
@@ -72,12 +72,11 @@ const Hero = props => (
       <HeroLogo>
         <Logo />
       </HeroLogo>
-      <HeroTitle>React Boston</HeroTitle>
+      <HeroTitle>React Boston 2017</HeroTitle>
       <HeroSubtitle>
         September 23-24, 2017 | Boston, MA<br />New England's first two-day
         React.js conference.
       </HeroSubtitle>
-      <HeroSubtitle>Tickets are now sold out.</HeroSubtitle>
     </HeroContent>
   </HeroWrapper>
 );
