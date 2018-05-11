@@ -32,7 +32,7 @@ const Header = styled.header`
   left: 0;
   right: 0;
   z-index: 3;
-  font-size: 1.25rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 0 10px;
@@ -42,7 +42,7 @@ const Header = styled.header`
       transform: translateY(-100%);
       position: fixed;
       background: ${color.white};
-      font-size: 1rem;
+      font-size: 1.6rem;
       border-bottom: 1px solid ${color.dark};
       animation: ${stickIt} 0.3s cubic-bezier(0.86, 0, 0.07, 1);
       animation-fill-mode: both;

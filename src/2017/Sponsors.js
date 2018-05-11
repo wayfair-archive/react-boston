@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, PageBlock } from '../components/Layout';
+import { Container, PageBlock } from './components/Layout';
 import { Flex } from 'grid-styled';
-import Heading from '../components/Heading';
-import Link from '../components/Link';
+import Heading from './components/Heading';
+import Link from './components/Link';
 
 import wayfair from '../images/wayfair.png';
 import pluralsight from '../images/pluralsight.png';

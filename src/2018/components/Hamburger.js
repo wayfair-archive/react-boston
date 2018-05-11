@@ -5,22 +5,15 @@ import styled from 'styled-components';
 const BUTTON_SIZE = 50;
 
 const Wrap = styled.div`
-  position: absolute;
-  right: 20px;
-  top: ${({ isSticking }) => (isSticking ? '50%' : '15px')};
-  margin-top: ${({ isSticking }) => (isSticking ? '-20px' : null)};
+  position: ${({ isActive }) => (isActive ? 'fixed' : 'absolute')};
+  left: ${({ isActive }) => (isActive ? '250px' : '20px')};
+  top: 20px;
   z-index: 99;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  color: ${({ theme, isActive, isSticking }) =>
-    isActive && isSticking
-      ? theme.color.dark
-      : isActive ? theme.color.white : 'transparent'};
+  transition: all 0.4s ease-in-out;
+  color: ${({ theme, isActive }) =>
+    isActive ? theme.color.primary : 'transparent'};
   transform: ${({ isActive }) => (isActive ? 'rotate(45deg)' : null)};
-
-  @media (min-width: 768px) {
-    display: none;
-  }
 
   &::before {
     content: '';
@@ -29,8 +22,8 @@ const Wrap = styled.div`
     width: ${BUTTON_SIZE}px;
     height: ${BUTTON_SIZE}px;
     border: 3px solid;
-    top: calc(50% - ${BUTTON_SIZE}px/2);
-    left: calc(50% - ${BUTTON_SIZE}px/2);
+    top: calc(50% - ${BUTTON_SIZE}px / 2);
+    left: calc(50% - ${BUTTON_SIZE}px / 2);
     border-radius: 50%;
   }
 `;
@@ -38,8 +31,8 @@ const Wrap = styled.div`
 const Bar = styled.span`
   width: ${BUTTON_SIZE / 2}px;
   height: 3px;
-  background-color: ${({ isSticking, theme }) =>
-    isSticking ? theme.color.dark : theme.color.white};
+  background-color: ${({ isActive, theme }) =>
+    isActive ? theme.color.primary : theme.color.white};
   display: block;
   margin: 8px auto;
   transition: 0.15s ease-out;
@@ -59,11 +52,11 @@ const Bar = styled.span`
   `};
 `;
 
-const Hamburger = ({ isActive, isSticking, onClick }) => (
-  <Wrap isActive={isActive} isSticking={isSticking} onClick={onClick}>
-    <Bar isSticking={isSticking} isActive={isActive} />
-    <Bar isSticking={isSticking} isActive={isActive} />
-    <Bar isSticking={isSticking} isActive={isActive} />
+const Hamburger = ({ isActive, onClick }) => (
+  <Wrap isActive={isActive} onClick={onClick}>
+    <Bar isActive={isActive} />
+    <Bar isActive={isActive} />
+    <Bar isActive={isActive} />
   </Wrap>
 );
 

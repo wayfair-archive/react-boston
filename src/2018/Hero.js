@@ -1,85 +1,128 @@
 import React from 'react';
+import Button from './components/Button';
 import styled from 'styled-components';
-import boston from '../images/hero2018.jpg';
-import Logo from '../components/Logo';
+import background from './images/hero-bg.jpg';
+import Logo from './components/Logo';
+import Link from './components/Link';
+import { Card, CardSection } from './components/Card';
 
 const HeroWrapper = styled.div`
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url('${background}');
+  background-color: #053671;
+  background-blend-mode: multiply;
+  background-size: cover;
+  min-height: 640px;
   text-align: center;
   position: relative;
   padding: 80px 15px 50px;
-  overflow: hidden;
-  background: #706a6e;
-  &::before {
-    content: '';
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-`;
-
-const HeroImage = styled.div`
-  background-image: url('${boston}');
-  background-size: cover;
-  background-position-y: 30%;
-  z-index: 1;
-  filter: blur(4px);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-`;
-
-const HeroLogo = styled.div`
-  max-width: 150px;
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    max-width: 250px;
-  }
-`;
-
-const HeroContent = styled.div`
-  position: relative;
-  z-index: 2;
-`;
-
-const HeroTitle = styled.h1`
-  font-size: 4rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  line-height: 1.1;
-  color: ${p => p.theme.color.white};
 `;
 
 const HeroSubtitle = styled.h2`
-  color: ${p => p.theme.color.white};
-  font-size: 1.5rem;
+  color: ${({ theme }) => theme.color.white};
+  font-size: 2.4rem;
   margin: 1em 0;
+  text-transform: uppercase;
+`;
+
+const HeroCTA = styled.div`
+  display: flex;
+  background: ${({ theme }) => theme.color.white};
+  text-align: center;
+  align-items: center;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+`;
+
+const Dates = styled.p`
+  flex: 1 0 auto;
+  padding: 1em;
+`;
+
+const HeroTitle = styled.h1`
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  transform: translateZ(0);
+`;
+
+const HeroIntro = styled.div`
+  /* background: ${({ theme }) => theme.color.white}; */
+  position: relative;
+  margin: -100px auto 50px;
+  width: ${({ theme }) => theme.containerWidth};
+  max-width: 90%;
+  /* box-shadow: ${({ theme }) => theme.boxShadow}; */
+  z-index: 3;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    background: radial-gradient(red 15%, transparent 16%) 1px 1px,
+      radial-gradient(rgba(255, 255, 255, 0) 15%, transparent 20%) 8px 9px;
+    background-size: 16px 16px;
+    z-index: -1;
+  }
+  &::before {
+    content: '';
+    top: 40%;
+    right: 30%;
+  }
+
+  &::after {
+    content: '';
+    top: -18%;
+    left: 30%;
+  }
+`;
+
+const LogoWrap = styled.div`
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+`;
+
+const IntroText = styled.p`
+  padding: 4rem;
 `;
 
 const Hero = () => (
-  <HeroWrapper id="hero">
-    <HeroImage />
-    <HeroContent>
-      <HeroLogo>
+  <React.Fragment>
+    <HeroWrapper id="hero">
+      <LogoWrap>
         <Logo />
-      </HeroLogo>
-      <HeroTitle>React Boston 2018</HeroTitle>
-      <HeroSubtitle>
-        September 29-30, 2018 | Boston, MA<br />New England's React.js
-        conference.
-      </HeroSubtitle>
+      </LogoWrap>
+      <HeroTitle>React Boston</HeroTitle>
+      <HeroSubtitle>New England's Annual React.js conference</HeroSubtitle>
+      <HeroCTA>
+        <Dates>September 23-24, 2018</Dates>
+      </HeroCTA>
       <HeroSubtitle>Tickets sales and CFP coming soon!</HeroSubtitle>
-    </HeroContent>
-  </HeroWrapper>
+    </HeroWrapper>
+    <HeroIntro>
+      <Card>
+        <IntroText>
+          React Boston is a two-day, single-track conference on React hosted in
+          Boston's Back Bay neighborhood and organized in collaboration with{' '}
+          <Link openInNewWindow href="https://tech.wayfair.com/">
+            Wayfair Tech
+          </Link>{' '}
+          and the community{' '}
+          <Link openInNewWindow href="https://meetup.com/ReactJS-Boston/">
+            ReactJS Boston Meetup
+          </Link>. We're excited to welcome developers of all backgrounds, skill
+          sets, experience levels to join us for a weekend of high-quality
+          content and great conversations with others in the developer
+          community.
+        </IntroText>
+      </Card>
+    </HeroIntro>
+  </React.Fragment>
 );
 
 export default Hero;

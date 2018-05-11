@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import { Container, PageBlock } from '../components/Layout';
-import Heading from '../components/Heading';
-import Link from '../components/Link';
+import { Container, PageBlock } from './components/Layout';
+import Heading from './components/Heading';
+import Link from './components/Link';
 
 import sgo from '../images/sgo.png';
 import latinosintech from '../images/latin@s_in_tech.jpg';

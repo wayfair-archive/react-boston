@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import boston from '../images/hero2017.jpg';
-import Logo from '../components/Logo';
+import boston from './images/hero2017.jpg';
+import Logo from './components/Logo';
 
 const HeroWrapper = styled.div`
   min-height: 400px;
@@ -52,7 +52,7 @@ const HeroContent = styled.div`
 `;
 
 const HeroTitle = styled.h1`
-  font-size: 4rem;
+  font-size: 6rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   line-height: 1.1;
@@ -61,7 +61,7 @@ const HeroTitle = styled.h1`
 
 const HeroSubtitle = styled.h2`
   color: ${p => p.theme.color.white};
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 1em 0;
 `;
 

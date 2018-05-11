@@ -1,0 +1,27 @@
+import aickin from '../../2017/images/sasha_aickin.jpg';
+import ilegbodu from '../../2017/images/ben_ilegbodu.jpg';
+import qabazard from '../../2017/images/natalie_qabazard.jpg';
+import zhu from '../../2017/images/henry_zhu.jpg';
+import pandya from '../../2017/images/dhaivat_pandya.jpg';
+import rizzitano from '../../2017/images/ari_rizzitano.jpg';
+import mcloughlin from '../../2017/images/brendan_mcloughlin.jpg';
+import holland from '../../2017/images/christina_holland.jpg';
+import cutts from '../../2017/images/marcel_cutts.jpg';
+import wheeler from '../../2017/images/ken_wheeler.jpg';
+import pak from '../../2017/images/theo_pak.jpg';
+import novick from '../../2017/images/vladimir_novick.jpg';
+import hough from '../../2017/images/brian_hough.jpg';
+import erikson from '../../2017/images/mark_erikson.jpg';
+import jacobson from '../../2017/images/kenton_jacobson.jpg';
+import sasidharan from '../../2017/images/divya_sasidharan.jpg';
+import briggs from '../../2017/images/ben_briggs.jpg';
+import clark from '../../2017/images/jason_clark.jpg';
+import kwon from '../../2017/images/kaylie_alexa_kwon.jpg';
+import litchfield from '../../2017/images/carly_litchfield.jpg';
+import bershadskiy from '../../2017/images/stan_bershadskiy.jpg';
+import marek from '../../2017/images/thomas_marek.jpg';
+import riemer from '../../2017/images/vincent_riemer.jpg';
+import degennaro from '../../2017/images/matt_degennaro.jpg';
+import robertzhu from '../../2017/images/robert_zhu.jpg';
+
+export const speakers = [];

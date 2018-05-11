@@ -1,11 +1,11 @@
 import React from 'react';
 import { Flex, Box } from 'grid-styled';
-import { Container, PageBlock } from '../components/Layout';
-import Heading from '../components/Heading';
-import Link from '../components/Link';
+import { Container, PageBlock } from './components/Layout';
+import Heading from './components/Heading';
+import Link from './components/Link';
 import styled from 'styled-components';
-import copley from '../images/copley.jpg';
-import { mapStyles } from '../map-styles';
+import copley from './images/copley.jpg';
+import { mapStyles } from './map-styles';
 import {
   withGoogleMap,
   GoogleMap,
@@ -17,7 +17,7 @@ const P = styled.p`
   margin-bottom: 1em;
 `;
 const VenueIntro = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 1.5em;
 `;

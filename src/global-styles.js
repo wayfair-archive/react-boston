@@ -25,9 +25,17 @@ const globalCSS = () => injectGlobal`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
   body {
-    line-height: 1.4;
-    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.6rem;
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
   ol, ul {
     list-style: none;
@@ -46,13 +54,6 @@ const globalCSS = () => injectGlobal`
   }
   a {
     text-decoration: none;
-  }
-  html {
-    box-sizing: border-box;
-    font-size: 16px;
-    @media (min-width: 768px) {
-      font-size: 18px;
-    }
   }
   *, *:before, *:after {
     box-sizing: inherit;
