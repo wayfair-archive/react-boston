@@ -77,29 +77,7 @@ const Venue = ({ id }) => (
       </Card>
     </CardWrap>
     <Container>
-      <Location>
-        <svg
-          style={{ marginRight: 10 }}
-          width="17"
-          height="24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M14.512 2.462A8.494 8.494 0 0 0 8.5 0C6.23 0 4.096.874 2.49 2.462c-2.972 2.937-3.341 8.464-.8 11.813L8.5 24l6.8-9.711c2.551-3.363 2.182-8.89-.79-11.827zm-5.933 8.934c-1.71 0-3.103-1.377-3.103-3.068 0-1.692 1.393-3.068 3.103-3.068 1.71 0 3.103 1.376 3.103 3.068 0 1.691-1.392 3.068-3.103 3.068z"
-            fill="#F15959"
-            fill-rule="nonzero"
-          />
-        </svg>
-        Wayfair Headquarters:{' '}
-        <Link
-          openInNewWindow
-          style={{ marginLeft: 5 }}
-          href="https://www.google.com/maps/place/Wayfair/@42.3471219,-71.0805457,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37a0dece25e71:0xe22c2dea6968659e!8m2!3d42.347118!4d-71.078357"
-        >
-          4 Copley Place, Boston MA 02116
-        </Link>
-      </Location>
-      <SubTitle>The T</SubTitle>
+      <SubTitle>Public Transportation</SubTitle>
       <P>
         The venue is easily accessible by local public transportation via the
         Orange Line to Back Bay or the Green Line to Copley Station. There are

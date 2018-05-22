@@ -37,6 +37,7 @@ const HeroCTA = styled.div`
 const Dates = styled.p`
   flex: 1 0 auto;
   padding: 1em;
+  font-size: 2.2rem;
 `;
 
 const HeroTitle = styled.h1`

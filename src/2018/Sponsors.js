@@ -55,7 +55,6 @@ const Sponsors = ({ id }) => (
           wayfaircareers.com/engineering
         </Link>
       </LinkGroup>
-      <P>The 2018 React Boston Party is sponsored by....</P>
     </Container>
   </Section>
 );

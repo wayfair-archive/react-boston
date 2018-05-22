@@ -57,15 +57,13 @@ const Footer = props => (
         <Dates>September 23-24, 2018</Dates>
       </FooterCTA>
       <P>
-        For more tourist attractions and restaraunt<br /> recommendations, visit
-        TripAdvisor’s{' '}
-        <FooterLink
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.tripadvisor.com/Travel_Guide-g60745-Boston_Massachusetts.html"
-        >
-          Boston Travel Guide
-        </FooterLink>.
+        <FooterLink target="_blank" rel="noopener noreferrer" href="/">
+          2018
+        </FooterLink>{' '}
+        |{' '}
+        <FooterLink target="_blank" rel="noopener noreferrer" href="/2017">
+          2017
+        </FooterLink>
       </P>
       <FooterLinks>
         <FooterLink
