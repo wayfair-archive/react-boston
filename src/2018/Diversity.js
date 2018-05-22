@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from './components/Link';
 import Section, { Container } from './components/Layout';
 
 const P = styled.p`
@@ -23,7 +24,9 @@ const Diverity = ({ id }) => (
         We are committed to ensuring that React Boston is accessible for all
         attendees. For questions about accessibility or to request an
         accommodation, please reach out to{' '}
-        <a href="mailto:reactboston2018@gmail.com">reactboston2018@gmail.com</a>{' '}
+        <Link href="mailto:reactboston2018@gmail.com">
+          reactboston2018@gmail.com
+        </Link>{' '}
         prior to the conference.
       </P>
     </Container>

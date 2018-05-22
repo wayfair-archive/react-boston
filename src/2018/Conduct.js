@@ -30,10 +30,12 @@ const Conduct = ({ id }) => (
         conference.
       </P>
       <P>
-        Organisers will enforce this code throughout the event, and can be
+        Organizers will enforce this code throughout the event, and can be
         reached at{' '}
-        <a href="mailto:reactboston2018@gmail.com">reactboston2018@gmail.com</a>,
-        or through the conference Slack channel provided to participants.
+        <Link href="mailto:reactboston2018@gmail.com">
+          reactboston2018@gmail.com
+        </Link>, or through the conference Slack channel provided to
+        participants.
       </P>
       <P>
         <strong>Full Version: </strong>
