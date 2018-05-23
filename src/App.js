@@ -10,7 +10,10 @@ const Home = () => (
   <Router>
     <div>
       <Route path="/(|2018|)/" component={twentyEighteen} />
-      <Route path="/2017" component={twentySeventeen} />
+      <Route
+        path={process.env.PUBLIC_URL + '/2017'}
+        component={twentySeventeen}
+      />
     </div>
   </Router>
 );
