@@ -19,7 +19,7 @@ const FooterWrap = styled.footer`
   padding: 40px 10px 40px;
 `;
 
-const FooterLink = styled.span`
+const FooterLink = styled.a`
   text-decoration: underline;
   color: ${({ theme }) => theme.color.white};
   transition: color 0.15s ease-out;
