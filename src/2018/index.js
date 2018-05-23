@@ -33,7 +33,7 @@ export default () => (
         items={[
           { name: 'Speakers', href: '#speakers' },
           { name: 'Venue & Travel', href: '#venue-travel' },
-          { name: 'Diversity & Inclusion', href: '#diversity' },
+          { name: 'Diversity', href: '#diversity' },
           { name: 'Code of Conduct', href: '#conduct' },
           { name: 'Sponsors', href: '#sponsors' }
         ]}
