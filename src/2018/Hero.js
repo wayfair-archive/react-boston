@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import background from './images/hero-bg.jpg';
 import Logo from './components/Logo';
+import Button from './components/Button';
 import Link from './components/Link';
 import { Card } from './components/Card';
 
@@ -102,7 +103,15 @@ const Hero = () => (
       <HeroCTA>
         <Dates>September 29-30, 2018</Dates>
       </HeroCTA>
-      <HeroSubtitle>Tickets sales and CFP coming soon!</HeroSubtitle>
+      <HeroCTA>
+        <Button
+          openInNewWindow={true}
+          href="https://goo.gl/forms/tJJBwTCur7KkqjPq2"
+        >
+          Call for Speakers
+        </Button>
+      </HeroCTA>
+      <HeroSubtitle>Tickets sales coming soon!</HeroSubtitle>
     </HeroWrapper>
     <HeroIntro>
       <Card>

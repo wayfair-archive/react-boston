@@ -12,7 +12,7 @@ const base = css`
   text-align: center;
   text-transform: uppercase;
   outline: 0;
-  font-size: 1.125rem;
+  font-size: 2.4rem;
   white-space: nowrap;
   user-select: none;
   padding: 1em 1.5em;
