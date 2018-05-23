@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, PageBlock } from '../components/Layout';
-import Heading from '../components/Heading';
-import Link from '../components/Link';
+import { Container, PageBlock } from './components/Layout';
+import Heading from './components/Heading';
+import Link from './components/Link';
 
 const P = styled.p`
   margin-bottom: 1em;

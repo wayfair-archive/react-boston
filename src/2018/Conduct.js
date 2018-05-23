@@ -1,17 +1,15 @@
 import React from 'react';
+import Link from './components/Link';
+import Section, { Container } from './components/Layout';
 import styled from 'styled-components';
-import { Container, PageBlock } from '../components/Layout';
-import Heading from '../components/Heading';
-import Link from '../components/Link';
 
 const P = styled.p`
   margin-bottom: 1em;
 `;
 
-const Conduct = () => (
-  <PageBlock>
+const Conduct = ({ id }) => (
+  <Section title="Code of Conduct" id={id}>
     <Container>
-      <Heading title="Code of Conduct" centered />
       <P>
         React Boston is dedicated to providing a harassment-free conference
         experience for everyone, regardless of gender, gender identity and
@@ -32,13 +30,21 @@ const Conduct = () => (
         conference.
       </P>
       <P>
+        Organizers will enforce this code throughout the event, and can be
+        reached at{' '}
+        <Link href="mailto:reactboston2018@gmail.com">
+          reactboston2018@gmail.com
+        </Link>, or through the conference Slack channel provided to
+        participants.
+      </P>
+      <P>
         <strong>Full Version: </strong>
         <Link openInNewWindow href="http://confcodeofconduct.com/">
           Code of Conduct
         </Link>
       </P>
     </Container>
-  </PageBlock>
+  </Section>
 );
 
 export default Conduct;

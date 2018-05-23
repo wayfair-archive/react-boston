@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { PageBlock } from '../components/Layout';
+import { PageBlock } from './components/Layout';
 import { Flex, Box } from 'grid-styled';
-import Heading from '../components/Heading';
+import Heading from './components/Heading';
 
 const Time = styled(Box)`
   position: relative;
-  font-size: 1.2em;
+  font-size: 2em;
   line-height: 1;
   color: ${p => p.theme.color.dark};
   margin-bottom: 0.5em;
@@ -63,7 +63,7 @@ const TalkWrap = styled(Flex)`
 `;
 
 const Hour = styled.span`
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 `;
 
 const Details = styled(Box)`
@@ -78,11 +78,11 @@ const Details = styled(Box)`
 `;
 
 const TalkTitle = styled.h2`
-  font-size: 1.6rem;
+  font-size: 2.6rem;
 `;
 
 const Speaker = styled(Box)`
-  font-size: 1rem;
+  font-size: 2rem;
 `;
 
 const Talk = ({ time, title, speaker }) => (

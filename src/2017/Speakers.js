@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Container, PageBlock } from '../components/Layout';
-import Heading from '../components/Heading';
+import { Container, PageBlock } from './components/Layout';
+import Heading from './components/Heading';
 import TwitterIcon from 'react-icons/lib/fa/twitter';
 import GithubIcon from 'react-icons/lib/fa/github';
 
@@ -21,7 +21,7 @@ const SpeakerPhoto = styled.img`
 `;
 
 const SpeakerName = styled.h3`
-  font-size: 1.5rem;
+  font-size: 2.4rem;
 `;
 
 const SpeakerCompany = styled.p`
@@ -29,7 +29,7 @@ const SpeakerCompany = styled.p`
 `;
 
 const Social = styled.div`
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   margin-top: auto;
 `;
 
