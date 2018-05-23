@@ -5,7 +5,7 @@ import Link from './components/Link';
 import HoverCard from './components/HoverCard';
 import styled from 'styled-components';
 import { hotels } from './api/hotels';
-import office5 from './images/wayfair-office.jpg';
+import office from './images/venue.jpg';
 
 const P = styled.p`
   margin-bottom: 1em;
@@ -53,7 +53,7 @@ const Venue = ({ id }) => (
     </Container>
     <CardWrap>
       <Card>
-        <img src={office5} alt="Wayfair Office" />
+        <img src={office} alt="Wayfair Office" />
         <CardSection isLarge>
           <CardTitle isLarge>Wayfair</CardTitle>
           React Boston 2018 will be hosted at{' '}

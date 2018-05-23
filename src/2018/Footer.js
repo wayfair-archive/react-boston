@@ -57,15 +57,6 @@ const Footer = props => (
       <FooterCTA>
         <Dates>September 29-30, 2018</Dates>
       </FooterCTA>
-      <P>
-        <Link rel="noopener noreferrer" to="/">
-          <FooterLink>2018</FooterLink>
-        </Link>{' '}
-        |{' '}
-        <Link rel="noopener noreferrer" to="/2017">
-          <FooterLink>2017</FooterLink>
-        </Link>
-      </P>
       <FooterLinks>
         <FooterLink
           target="_blank"
