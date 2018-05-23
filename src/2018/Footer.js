@@ -2,6 +2,7 @@ import React from 'react';
 import background from './images/hero-bg.jpg';
 import { Container } from './components/Layout';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const P = styled.p`
   margin-bottom: 1em;
@@ -18,7 +19,7 @@ const FooterWrap = styled.footer`
   padding: 40px 10px 40px;
 `;
 
-const FooterLink = styled.a`
+const FooterLink = styled.span`
   text-decoration: underline;
   color: ${({ theme }) => theme.color.white};
   transition: color 0.15s ease-out;
@@ -57,13 +58,13 @@ const Footer = props => (
         <Dates>September 29-30, 2018</Dates>
       </FooterCTA>
       <P>
-        <FooterLink target="_blank" rel="noopener noreferrer" href="/">
-          2018
-        </FooterLink>{' '}
+        <Link rel="noopener noreferrer" to="/">
+          <FooterLink>2018</FooterLink>
+        </Link>{' '}
         |{' '}
-        <FooterLink target="_blank" rel="noopener noreferrer" href="/2017">
-          2017
-        </FooterLink>
+        <Link rel="noopener noreferrer" to="/2017">
+          <FooterLink>2017</FooterLink>
+        </Link>
       </P>
       <FooterLinks>
         <FooterLink
