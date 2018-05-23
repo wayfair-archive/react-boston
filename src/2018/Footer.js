@@ -11,7 +11,7 @@ const P = styled.p`
 
 const FooterWrap = styled.footer`
   background-image: url('${background}');
-  background-color: #053671;
+  background-color: rgba(5, 54, 113, .9);
   background-blend-mode: multiply;
   background-size: cover;
   background-position-y: 30%;

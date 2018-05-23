@@ -8,7 +8,7 @@ import { Card } from './components/Card';
 
 const HeroWrapper = styled.div`
   background-image: url('${background}');
-  background-color: #053671;
+  background-color: rgba(5, 54, 113, .9);
   background-blend-mode: multiply;
   background-size: cover;
   min-height: 640px;
