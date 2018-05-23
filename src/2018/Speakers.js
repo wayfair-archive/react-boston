@@ -8,10 +8,6 @@ import GithubIcon from 'react-icons/lib/fa/github';
 
 import { speakers } from './api/speakers';
 
-const P = styled.p`
-  margin-bottom: 1em;
-`;
-
 const Speakers = styled.ul`
   list-style: none;
   display: grid;
@@ -48,10 +44,6 @@ const Company = styled.p`
   text-transform: uppercase;
   color: ${({ theme }) => theme.color.light};
 `;
-
-const first4 = speakers.slice(0, 4);
-const fiveToNine = speakers.slice(4, 8);
-const tenToFourteen = speakers.slice(9, 13);
 
 const Speaker = ({ url, name, src, company, twitter, github }) => (
   <li>
@@ -91,7 +83,7 @@ const Venue = ({ id }) => (
       </Speakers>
     ) : (
       <Container>
-        <div>Speakers coming soon!</div>
+        <div>CFP coming soon!</div>
       </Container>
     )}
   </SectionWrap>

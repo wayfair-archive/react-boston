@@ -1,10 +1,9 @@
 import React from 'react';
-import Button from './components/Button';
 import styled from 'styled-components';
 import background from './images/hero-bg.jpg';
 import Logo from './components/Logo';
 import Link from './components/Link';
-import { Card, CardSection } from './components/Card';
+import { Card } from './components/Card';
 
 const HeroWrapper = styled.div`
   background-image: url('${background}');
@@ -37,7 +36,7 @@ const HeroCTA = styled.div`
 const Dates = styled.p`
   flex: 1 0 auto;
   padding: 1em;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 `;
 
 const HeroTitle = styled.h1`

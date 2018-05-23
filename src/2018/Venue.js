@@ -5,10 +5,6 @@ import Link from './components/Link';
 import HoverCard from './components/HoverCard';
 import styled from 'styled-components';
 import { hotels } from './api/hotels';
-import office1 from './images/wayfair-office-1.jpg';
-import office2 from './images/wayfair-office-2.jpg';
-import office3 from './images/wayfair-office-3.jpg';
-import office4 from './images/wayfair-office-4.jpg';
 import office5 from './images/wayfair-office-5.jpg';
 
 const P = styled.p`
@@ -50,11 +46,6 @@ const CardWrap = styled.div`
   margin: 0 auto 2em;
 `;
 
-const Location = styled.p`
-  margin-bottom: 1em;
-  display: flex;
-`;
-
 const Venue = ({ id }) => (
   <SectionWrap id={id}>
     <Container>
@@ -62,7 +53,7 @@ const Venue = ({ id }) => (
     </Container>
     <CardWrap>
       <Card>
-        <img src={office5} />
+        <img src={office5} alt="Wayfair Office" />
         <CardSection isLarge>
           <CardTitle isLarge>Wayfair</CardTitle>
           React Boston 2018 will be hosted at{' '}
