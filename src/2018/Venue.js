@@ -5,7 +5,7 @@ import Link from './components/Link';
 import HoverCard from './components/HoverCard';
 import styled from 'styled-components';
 import { hotels } from './api/hotels';
-import office5 from './images/wayfair-office-5.jpg';
+import office5 from './images/wayfair-office.jpg';
 
 const P = styled.p`
   margin-bottom: 1em;
