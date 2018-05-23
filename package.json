@@ -31,7 +31,7 @@
     "precommit": "lint-staged",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p start-js",
-    "build": "npm run react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
