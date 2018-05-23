@@ -125,7 +125,7 @@ const Hero = () => (
           <Link openInNewWindow href="https://meetup.com/ReactJS-Boston/">
             ReactJS Boston Meetup
           </Link>. We're excited to welcome developers of all backgrounds, skill
-          sets, experience levels to join us for a weekend of high-quality
+          sets, and experience levels to join us for a weekend of high-quality
           content and great conversations with others in the developer
           community.
         </IntroText>
