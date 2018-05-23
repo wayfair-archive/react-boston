@@ -20,6 +20,7 @@ const Home = () => (
 );
 
 ReactGA.initialize('UA-101990309-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 globalCSS();
 

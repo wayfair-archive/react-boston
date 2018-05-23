@@ -11,7 +11,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme2018 } from '../theme';
 import { scroller } from 'react-scroll';
 import ReactGA from 'react-ga';
-ReactGA.pageview(window.location.pathname + window.location.search);
+
 const scrollToElement = e => {
   const href = e.target.hash.split('#')[1];
   e.preventDefault();
