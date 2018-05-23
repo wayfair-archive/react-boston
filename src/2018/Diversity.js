@@ -8,7 +8,7 @@ const P = styled.p`
 `;
 
 const Diverity = ({ id }) => (
-  <Section title="Diversity and Inclusion" id={id}>
+  <Section title="Diversity" id={id}>
     <Container>
       <P>
         React Boston believes that diversity is an important part of creating a

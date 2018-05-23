@@ -54,7 +54,7 @@ const Footer = props => (
   <FooterWrap>
     <Container>
       <FooterCTA>
-        <Dates>September 23-24, 2018</Dates>
+        <Dates>September 29-30, 2018</Dates>
       </FooterCTA>
       <P>
         <FooterLink target="_blank" rel="noopener noreferrer" href="/">

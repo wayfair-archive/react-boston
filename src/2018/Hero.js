@@ -13,7 +13,7 @@ const HeroWrapper = styled.div`
   min-height: 640px;
   text-align: center;
   position: relative;
-  padding: 80px 15px 50px;
+  padding: 80px 15px 150px;
 `;
 
 const HeroSubtitle = styled.h2`
@@ -52,7 +52,7 @@ const HeroTitle = styled.h1`
 const HeroIntro = styled.div`
   /* background: ${({ theme }) => theme.color.white}; */
   position: relative;
-  margin: -100px auto 50px;
+  margin: -100px auto 150px;
   width: ${({ theme }) => theme.containerWidth};
   max-width: 90%;
   /* box-shadow: ${({ theme }) => theme.boxShadow}; */
@@ -100,7 +100,7 @@ const Hero = () => (
       <HeroTitle>React Boston</HeroTitle>
       <HeroSubtitle>New England's Annual React.js conference</HeroSubtitle>
       <HeroCTA>
-        <Dates>September 23-24, 2018</Dates>
+        <Dates>September 29-30, 2018</Dates>
       </HeroCTA>
       <HeroSubtitle>Tickets sales and CFP coming soon!</HeroSubtitle>
     </HeroWrapper>

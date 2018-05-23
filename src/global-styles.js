@@ -37,6 +37,10 @@ const globalCSS = () => injectGlobal`
       font-size: 1.8rem;
     }
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
   ol, ul {
     list-style: none;
   }

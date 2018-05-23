@@ -10,7 +10,7 @@ const Wrap = styled.div`
   top: 20px;
   z-index: 99;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: ${({ theme, isActive }) =>
     isActive ? theme.color.primary : 'transparent'};
   transform: ${({ isActive }) => (isActive ? 'rotate(45deg)' : null)};
