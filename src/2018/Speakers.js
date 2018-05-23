@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardSection, CardTitle } from './components/Card';
+import Link from './components/Link';
 import { Container, SectionTitle, SectionWrap } from './components/Layout';
 import HoverCard from './components/HoverCard';
 import styled from 'styled-components';
@@ -83,7 +84,16 @@ const Venue = ({ id }) => (
       </Speakers>
     ) : (
       <Container>
-        <div>CFP coming soon!</div>
+        <div>
+          Our{' '}
+          <Link
+            openInNewWindow={true}
+            href="https://goo.gl/forms/tJJBwTCur7KkqjPq2"
+          >
+            call for speakers
+          </Link>{' '}
+          is open until Saturday, June 30th, 2018.
+        </div>
       </Container>
     )}
   </SectionWrap>
