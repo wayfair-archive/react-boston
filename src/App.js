@@ -19,7 +19,9 @@ const Home = () => (
   </Router>
 );
 
-ReactGA.initialize('UA-101990309-1');
+ReactGA.initialize('UA-101990309-1', {
+  gaOptions: { anonymizeIp: true }
+});
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 globalCSS();
