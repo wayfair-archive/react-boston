@@ -103,8 +103,18 @@ const Hero = () => (
       <HeroCTA>
         <Dates>September 29-30, 2018</Dates>
       </HeroCTA>
-      <HeroCTA>
+      <HeroCTA />
+      <HeroCTA style={{ 'margin-top': '1em' }}>
         <Button
+          openInNewWindow={true}
+          href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
+        >
+          Buy Tickets
+        </Button>
+      </HeroCTA>
+      <HeroCTA style={{ 'margin-top': '1em' }}>
+        <Button
+          alternate={true}
           openInNewWindow={true}
           href="https://goo.gl/forms/tJJBwTCur7KkqjPq2"
         >
