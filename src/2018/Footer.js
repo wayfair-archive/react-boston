@@ -2,12 +2,6 @@ import React from 'react';
 import background from './images/hero-bg.jpg';
 import { Container } from './components/Layout';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-
-const P = styled.p`
-  margin-bottom: 1em;
-  color: ${({ theme }) => theme.color.white};
-`;
 
 const FooterWrap = styled.footer`
   background-image: url('${background}');

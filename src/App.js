@@ -5,7 +5,7 @@ import twentySeventeen from './2017';
 import createHistory from 'history/createBrowserHistory';
 import ReactGA from 'react-ga';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 
 const Home = () => (
   <Router history={createHistory({ basename: process.env.PUBLIC_URL })}>
@@ -19,9 +19,8 @@ const Home = () => (
   </Router>
 );
 
-ReactGA.initialize('UA-101990309-1', {
-  gaOptions: { anonymizeIp: true }
-});
+ReactGA.initialize('UA-101990309-1');
+ReactGA.set({ anonymizeIp: true });
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 globalCSS();
