@@ -121,7 +121,7 @@ const Hero = () => (
           Call for Speakers
         </Button>
       </HeroCTA>
-      <HeroSubtitle>Tickets sales start May 30th!</HeroSubtitle>
+      <HeroSubtitle>Ticket sales start May 30th!</HeroSubtitle>
     </HeroWrapper>
     <HeroIntro>
       <Card>
