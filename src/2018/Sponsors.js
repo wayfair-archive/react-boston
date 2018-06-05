@@ -56,6 +56,15 @@ const Sponsors = ({ id }) => (
         </Link>
       </LinkGroup>
     </Container>
+    <hr style={{ marginTop: '1em', marginBottom: '1em' }} />
+    <Container>
+      <P>
+        For information about sponsorship opportunities, please reach out to{' '}
+        <Link href="mailto:reactboston2018@gmail.com">
+          reactboston2018@gmail.com
+        </Link>.
+      </P>
+    </Container>
   </Section>
 );
 

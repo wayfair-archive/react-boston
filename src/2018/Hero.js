@@ -121,7 +121,15 @@ const Hero = () => (
           Call for Speakers
         </Button>
       </HeroCTA>
-      <HeroSubtitle>Ticket sales start May 30th!</HeroSubtitle>
+      <HeroSubtitle>
+        <Link
+          style={{ color: 'white' }}
+          openInNewWindow={true}
+          href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
+        >
+          Tickets are now on sale!
+        </Link>
+      </HeroSubtitle>
     </HeroWrapper>
     <HeroIntro>
       <Card>

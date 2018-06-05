@@ -21,6 +21,21 @@ const Diverity = ({ id }) => (
         part of an underrepresented group in tech.
       </P>
       <P>
+        We're excited to be working with the{' '}
+        <Link openInNewWindow={true} href="http://foundation.travis-ci.org/">
+          Travis Foundation
+        </Link>{' '}
+        to offer several of these through their diversitytickets.org program.
+        Applications for diversity tickets are open until Saturday, June 30th,
+        2018:{' '}
+        <Link
+          openInNewWindow={true}
+          href="https://diversitytickets.org/events/180"
+        >
+          Apply Now!
+        </Link>
+      </P>
+      <P>
         We are committed to ensuring that React Boston is accessible for all
         attendees. For questions about accessibility or to request an
         accommodation, please reach out to{' '}
