@@ -14,14 +14,14 @@ const Speakers = styled.ul`
   display: grid;
   grid-gap: 15px;
   margin-bottom: 1em;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-column: 1 / -1;
-  padding: 0 30px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column: -1 / 1;
   position: relative;
   z-index: 2;
-  &:nth-of-type(odd) {
-    margin-left: 50px;
-  }
+  ${({ theme }) =>
+    theme.media.md`
+      padding: 0 30px;
+    `};
 `;
 
 const SocialLink = styled.a`
@@ -48,13 +48,7 @@ const Company = styled.p`
 
 const Speaker = ({ url, name, src, company, twitter, github }) => (
   <li>
-    <HoverCard
-      src={src}
-      href={url}
-      isCentered
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <HoverCard src={src} isCentered>
       <CardSection>
         <CardTitle>{name}</CardTitle>
         <Company>{company}</Company>

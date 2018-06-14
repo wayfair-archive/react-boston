@@ -29,6 +29,7 @@ export const theme2018 = {
     primary: '#f15959',
     primaryAccent: '#ed2a2a',
     secondary: '#4baee2',
+    secondaryAccent: '#3f97c5',
     darkest: '#333',
     dark: '#666',
     light: '#9b9b9b',

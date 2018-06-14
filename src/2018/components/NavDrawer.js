@@ -42,6 +42,21 @@ class NavDrawer extends Component {
     isOpen: false
   };
 
+  componentDidMount() {
+    document.addEventListener('keydown', this.handleKeyDown, false);
+  }
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown, false);
+  }
+
+  closeNav = () => this.setState({ isOpen: false });
+
+  handleKeyDown = e => {
+    if (e.keyCode === 27) {
+      this.closeNav();
+    }
+  };
+
   handleToggleClick = () => {
     this.setState(prevState => ({
       isOpen: !prevState.isOpen
@@ -49,7 +64,7 @@ class NavDrawer extends Component {
   };
 
   handleClick = e => {
-    this.setState({ isOpen: false });
+    this.closeNav();
     this.props.onLinkClick(e);
   };
 

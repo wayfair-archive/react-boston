@@ -33,13 +33,13 @@ export const SectionWrap = styled.section`
   ${({ theme }) =>
     theme.media.md`
       display: grid;
-      grid-template-columns: 1fr 585px 1fr;
+      grid-template-columns: 1fr 675px 1fr;
       &::after {
         content: '';
         display: block;
         height: 60%;
         max-height: 590px;
-        width: 205px;
+        width: 180px;
         position: absolute;
         bottom: -10%;
         right: 0;

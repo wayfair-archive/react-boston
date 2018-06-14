@@ -4,6 +4,7 @@ import background from './images/hero-bg.jpg';
 import Logo from './components/Logo';
 import Button from './components/Button';
 import Link from './components/Link';
+import Arrow from 'react-icons/lib/md/arrow-forward';
 import { Card } from './components/Card';
 
 const HeroWrapper = styled.div`
@@ -24,18 +25,23 @@ const HeroSubtitle = styled.h2`
   text-transform: uppercase;
 `;
 
-const HeroCTA = styled.div`
-  display: flex;
-  background: ${({ theme }) => theme.color.white};
-  text-align: center;
-  align-items: center;
-  width: 500px;
+const HeroCTAWrap = styled.div`
+  width: 565px;
   max-width: 100%;
   margin: 0 auto;
 `;
 
+const HeroCTA = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-gap: 15px;
+  text-align: center;
+  align-items: stretch;
+  margin-bottom: 15px;
+`;
+
 const Dates = styled.p`
-  flex: 1 0 auto;
+  background: ${({ theme }) => theme.color.white};
   padding: 1em;
   font-size: 2.4rem;
 `;
@@ -51,12 +57,10 @@ const HeroTitle = styled.h1`
 `;
 
 const HeroIntro = styled.div`
-  /* background: ${({ theme }) => theme.color.white}; */
   position: relative;
   margin: -100px auto 150px;
   width: ${({ theme }) => theme.containerWidth};
   max-width: 90%;
-  /* box-shadow: ${({ theme }) => theme.boxShadow}; */
   z-index: 3;
   &::before,
   &::after {
@@ -100,31 +104,31 @@ const Hero = () => (
       </LogoWrap>
       <HeroTitle>React Boston</HeroTitle>
       <HeroSubtitle>New England's Annual React.js conference</HeroSubtitle>
-      <HeroCTA>
-        <Dates>September 29-30, 2018</Dates>
-      </HeroCTA>
-      <HeroCTA />
-      <HeroCTA style={{ marginTop: '1em' }}>
+      <HeroCTAWrap>
+        <HeroCTA>
+          <Dates>September 29-30, 2018</Dates>
+          <Button
+            openInNewWindow
+            href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
+          >
+            Buy Tickets{' '}
+            <span style={{ marginLeft: 10 }}>
+              <Arrow />
+            </span>
+          </Button>
+        </HeroCTA>
         <Button
-          openInNewWindow={true}
-          href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
-        >
-          Buy Tickets
-        </Button>
-      </HeroCTA>
-      <HeroCTA style={{ marginTop: '1em' }}>
-        <Button
-          alternate={true}
-          openInNewWindow={true}
+          alternate
+          openInNewWindow
           href="https://goo.gl/forms/tJJBwTCur7KkqjPq2"
         >
           Call for Speakers
         </Button>
-      </HeroCTA>
+      </HeroCTAWrap>
       <HeroSubtitle>
         <Link
           style={{ color: 'white' }}
-          openInNewWindow={true}
+          openInNewWindow
           href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
         >
           Tickets are now on sale!

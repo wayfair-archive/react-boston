@@ -4,9 +4,9 @@ import styled, { css } from 'styled-components';
 
 const base = css`
   background: ${({ alternate, theme }) =>
-    alternate ? theme.color.white : theme.color.primary};
+    alternate ? theme.color.secondary : theme.color.primary};
   color: ${({ alternate, theme }) =>
-    alternate ? theme.color.primary : theme.color.white};
+    alternate ? theme.color.white : theme.color.white};
   line-height: 1;
   position: relative;
   text-align: center;
@@ -19,13 +19,14 @@ const base = css`
   border: 2px solid transparent;
   border-radius: 0;
   transition: 0.25s ease-out;
-  width: 100%;
-  display: block;
   vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover,
   &:focus {
     background: ${({ alternate, theme }) =>
-      alternate ? theme.color.white : theme.color.primaryAccent};
+      alternate ? theme.color.secondaryAccent : theme.color.primaryAccent};
   }
 `;
 
