@@ -13,8 +13,9 @@ const Speakers = styled.ul`
   list-style: none;
   display: grid;
   grid-gap: 15px;
-  margin-bottom: 1em;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-bottom: 2em;
+  margin-top: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-column: -1 / 1;
   position: relative;
   z-index: 2;
@@ -72,13 +73,17 @@ const Venue = ({ id }) => (
     <Container>
       <SectionTitle>Speakers</SectionTitle>
     </Container>
-    {speakers.length > 1 ? (
+    <Container>
+      <div>Full speaker list will be announced in July!</div>
+    </Container>
+    <Container>
       <Speakers>
         {speakers.map(speaker => <Speaker key={speaker.name} {...speaker} />)}
       </Speakers>
-    ) : (
-      <Container>
-        <div>
+    </Container>
+    <Container>
+      <div>
+        <strong>
           Our{' '}
           <Link
             openInNewWindow={true}
@@ -87,9 +92,9 @@ const Venue = ({ id }) => (
             call for speakers
           </Link>{' '}
           is open until Saturday, June 30th, 2018.
-        </div>
-      </Container>
-    )}
+        </strong>
+      </div>
+    </Container>
   </SectionWrap>
 );
 
