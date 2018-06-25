@@ -15,13 +15,13 @@ const Speakers = styled.ul`
   grid-gap: 15px;
   margin-bottom: 2em;
   margin-top: 2em;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   grid-column: -1 / 1;
   position: relative;
   z-index: 2;
   ${({ theme }) =>
     theme.media.md`
-      padding: 0 30px;
+      padding: 0 0;
     `};
 `;
 
@@ -52,7 +52,7 @@ const Speaker = ({ url, name, src, company, twitter, github }) => (
     <HoverCard src={src} isCentered>
       <CardSection>
         <CardTitle>{name}</CardTitle>
-        <Company>{company}</Company>
+        <Company>{company || '\u00A0'}</Company>
         {twitter && (
           <SocialLink href={twitter}>
             <TwitterIcon />

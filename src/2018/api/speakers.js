@@ -1,5 +1,6 @@
 import wheeler from '../images/ken_wheeler.jpg';
 import vieira from '../images/sara_vieira.jpg';
+import djirdeh from '../images/houssein_djirdeh.jpg';
 
 export const speakers = [
   {
@@ -15,5 +16,12 @@ export const speakers = [
     company: 'Formidable',
     twitter: 'https://twitter.com/ken_wheeler',
     github: 'http://github.com/kenwheeler'
+  },
+  {
+    name: 'Houssein Djirdeh',
+    src: djirdeh,
+    company: '',
+    twitter: 'https://twitter.com/hdjirdeh',
+    github: 'https://github.com/housseindjirdeh'
   }
 ];
