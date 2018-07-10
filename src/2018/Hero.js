@@ -117,13 +117,6 @@ const Hero = () => (
             </span>
           </Button>
         </HeroCTA>
-        <Button
-          alternate
-          openInNewWindow
-          href="https://goo.gl/forms/tJJBwTCur7KkqjPq2"
-        >
-          Call for Speakers
-        </Button>
       </HeroCTAWrap>
       <HeroSubtitle>
         <Link

@@ -81,20 +81,6 @@ const Venue = ({ id }) => (
         {speakers.map(speaker => <Speaker key={speaker.name} {...speaker} />)}
       </Speakers>
     </Container>
-    <Container>
-      <div>
-        <strong>
-          Our{' '}
-          <Link
-            openInNewWindow={true}
-            href="https://goo.gl/forms/tJJBwTCur7KkqjPq2"
-          >
-            call for speakers
-          </Link>{' '}
-          is open until Saturday, June 30th, 2018.
-        </strong>
-      </div>
-    </Container>
   </SectionWrap>
 );
 
