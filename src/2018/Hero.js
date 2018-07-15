@@ -117,6 +117,13 @@ const Hero = () => (
             </span>
           </Button>
         </HeroCTA>
+        <Button
+          alternate
+          openInNewWindow
+          href="https://goo.gl/forms/nzy67Gy3g7ItUeaQ2"
+        >
+          Lightning Talks CFP ⚡
+        </Button>
       </HeroCTAWrap>
       <HeroSubtitle>
         <Link

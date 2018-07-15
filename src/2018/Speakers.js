@@ -81,6 +81,20 @@ const Venue = ({ id }) => (
         {speakers.map(speaker => <Speaker key={speaker.name} {...speaker} />)}
       </Speakers>
     </Container>
+    <Container>
+      <div>
+        <strong>
+          Our{' '}
+          <Link
+            openInNewWindow={true}
+            href="https://goo.gl/forms/nzy67Gy3g7ItUeaQ2"
+          >
+            Lightning Talks CFP
+          </Link>{' '}
+          ⚡ is open until Monday, August 6th, 2018.
+        </strong>
+      </div>
+    </Container>
   </SectionWrap>
 );
 
