@@ -9,6 +9,8 @@ import hamil from '../images/matt_hamil.jpg';
 import ward from '../images/francois_ward.jpg';
 import luker from '../images/jen_luker.jpg';
 import riemer from '../images/vincent_riemer.jpg';
+import faga from '../images/mark_faga.jpg';
+import bauer from '../images/hillary_bauer.jpg';
 
 export const speakers = [
   {
@@ -75,17 +77,30 @@ export const speakers = [
     github: 'https://github.com/tejasq'
   },
   {
-    name: 'Florian Rival',
-    src: rival,
-    company: 'Facebook',
-    twitter: 'https://twitter.com/Florianrival',
-    github: 'https://github.com/4ian'
-  },
-  {
     name: 'Francois Ward',
     src: ward,
     company: 'HubSpot',
     twitter: 'https://twitter.com/Florianrival',
     github: 'https://github.com/Phoenixmatrix'
+  },
+  {
+    name: 'Mark Faga',
+    src: faga,
+    company: 'ezCater',
+    twitter: 'https://twitter.com/markjfaga',
+    github: 'http://github.com/mjfaga'
+  },
+  {
+    name: 'Hillary Bauer',
+    src: bauer,
+    company: 'ezCater',
+    github: 'https://github.com/bauer-hillary-c'
+  },
+  {
+    name: 'Florian Rival',
+    src: rival,
+    company: 'Facebook',
+    twitter: 'https://twitter.com/Florianrival',
+    github: 'https://github.com/4ian'
   }
 ];
