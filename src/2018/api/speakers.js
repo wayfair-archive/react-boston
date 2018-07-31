@@ -11,6 +11,11 @@ import luker from '../images/jen_luker.jpg';
 import riemer from '../images/vincent_riemer.jpg';
 import faga from '../images/mark_faga.jpg';
 import bauer from '../images/hillary_bauer.jpg';
+import novick from '../images/vladimir_novick.jpg';
+import comeau from '../images/comeau.jpeg';
+import toomey from '../images/chris_toomey.jpg';
+import cherny from '../images/boris_cherny.jpeg';
+import kulkarni from '../images/kulkarni.jpeg';
 
 export const speakers = [
   {
@@ -47,6 +52,13 @@ export const speakers = [
     company: 'MLS',
     twitter: 'https://twitter.com/samanthabretous',
     github: 'https://github.com/samanthabretous'
+  },
+  {
+    name: 'Joshua Comeau',
+    src: comeau,
+    company: 'Khan Academy',
+    twitter: 'https://twitter.com/joshwcomeau',
+    github: 'https://github.com/joshwcomeau'
   },
   {
     name: 'Matt Hamil',
@@ -102,5 +114,33 @@ export const speakers = [
     company: 'Facebook',
     twitter: 'https://twitter.com/Florianrival',
     github: 'https://github.com/4ian'
+  },
+  {
+    name: 'Vladimir Novick',
+    src: novick,
+    company: '',
+    twitter: 'https://twitter.com/VladimirNovick',
+    github: 'https://github.com/vnovick'
+  },
+  {
+    name: 'Ankita Kulkarni',
+    src: kulkarni,
+    company: 'Rangle.io',
+    twitter: 'https://twitter.com/kulkarniankita9',
+    github: 'https://github.com/kulkarniankita'
+  },
+  {
+    name: 'Chris Toomey',
+    src: toomey,
+    company: 'thoughtbot',
+    twitter: 'https://twitter.com/christoomey',
+    github: 'https://github.com/christoomey'
+  },
+  {
+    name: 'Boris Cherny',
+    src: cherny,
+    company: 'Facebook',
+    twitter: 'https://twitter.com/bcherny',
+    github: 'https://github.com/bcherny'
   }
 ];

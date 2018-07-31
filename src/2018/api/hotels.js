@@ -1,12 +1,12 @@
 import westin from '../images/westin-copley-place.jpg';
 import marriott from '../images/marriott-copley.jpg';
-import copleySquare from '../images/copley-square-hotel.jpg';
+import sheraton from '../images/sheraton.jpg';
 
 export const hotels = [
   {
-    name: 'Copley Square Hotel',
-    url: 'http://www.copleysquarehotel.com/',
-    src: copleySquare
+    name: 'Sheraton Boston Hotel',
+    url: 'http://www.sheratonbostonhotel.com/',
+    src: sheraton
   },
   {
     name: 'Westin Copley Place',

@@ -74,7 +74,9 @@ const Venue = ({ id }) => (
       <SectionTitle>Speakers</SectionTitle>
     </Container>
     <Container>
-      <div>Full speaker list will be announced in July!</div>
+      <div>
+        Additional Lightning Talk ⚡ speakers will will be announced in August!
+      </div>
     </Container>
     <Container>
       <Speakers>
