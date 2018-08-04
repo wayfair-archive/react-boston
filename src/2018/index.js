@@ -5,6 +5,7 @@ import Diversity from './Diversity';
 import Conduct from './Conduct';
 import Sponsors from './Sponsors';
 import Speakers from './Speakers';
+import Schedule from './Schedule';
 import NavDrawer from './components/NavDrawer';
 import Footer from './Footer';
 import { ThemeProvider } from 'styled-components';
@@ -32,6 +33,7 @@ export default () => (
       <NavDrawer
         items={[
           { name: 'Speakers', href: '#speakers' },
+          { name: 'Schedule', href: '#schedule' },
           { name: 'Venue & Travel', href: '#venue-travel' },
           { name: 'Diversity', href: '#diversity' },
           { name: 'Code of Conduct', href: '#conduct' },
@@ -41,6 +43,7 @@ export default () => (
       />
       <Hero />
       <Speakers id="speakers" />
+      <Schedule id="schedule" />
       <Venue id="venue-travel" />
       <Diversity id="diversity" />
       <Conduct id="conduct" />
