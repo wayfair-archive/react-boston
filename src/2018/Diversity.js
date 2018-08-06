@@ -25,8 +25,18 @@ const Diverity = ({ id }) => (
         <Link openInNewWindow={true} href="http://foundation.travis-ci.org/">
           Travis Foundation
         </Link>{' '}
-        to offer free tickets through their diversitytickets.org program.
-        Applications for these diversity tickets are now closed.
+        to{' '}
+        <Link
+          openInNewWindow={true}
+          href="https://diversitytickets.org/events/180"
+        >
+          offer free tickets
+        </Link>{' '}
+        through their{' '}
+        <Link openInNewWindow={true} href="https://diversitytickets.org/">
+          diversitytickets.org
+        </Link>{' '}
+        program. Applications for these diversity tickets are now closed.
       </P>
       <P>
         We are committed to ensuring that React Boston is accessible for all
