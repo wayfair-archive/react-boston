@@ -8,11 +8,12 @@ const base = css`
   color: ${({ alternate, theme }) =>
     alternate ? theme.color.white : theme.color.white};
   line-height: 1;
+  cursor: pointer;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   outline: 0;
-  font-size: 2.4rem;
+  font-size: ${({ small }) => (small ? '1.5rem' : '2.4rem')};
   white-space: nowrap;
   user-select: none;
   padding: 1em 1.5em;
@@ -23,6 +24,9 @@ const base = css`
   display: flex;
   align-items: center;
   justify-content: center;
+  &:disabled {
+    cursor: default;
+  }
   &:hover,
   &:focus {
     background: ${({ alternate, theme }) =>
@@ -46,7 +50,9 @@ const Button = ({
   alternate,
   children,
   onClick,
-  type
+  type,
+  small,
+  disabled
 }) => {
   // If there is an href, use <a>. Otherwise, <button>
   const RenderedElement = href ? StyledLink : StyledButton;
@@ -60,7 +66,8 @@ const Button = ({
       };
     } else {
       return {
-        type
+        type,
+        disabled
       };
     }
   };
@@ -70,6 +77,7 @@ const Button = ({
       onClick={onClick}
       {...getProps(href)}
       alternate={alternate}
+      small={small}
     >
       {children}
     </RenderedElement>
