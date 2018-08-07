@@ -117,13 +117,6 @@ const Hero = () => (
             </span>
           </Button>
         </HeroCTA>
-        <Button
-          alternate
-          openInNewWindow
-          href="https://goo.gl/forms/nzy67Gy3g7ItUeaQ2"
-        >
-          Lightning Talks CFP ⚡
-        </Button>
       </HeroCTAWrap>
       <HeroSubtitle>
         <Link
@@ -131,7 +124,7 @@ const Hero = () => (
           openInNewWindow
           href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
         >
-          Tickets are now on sale!
+          Standard Price Ticket Sales End Friday 8/10!
         </Link>
       </HeroSubtitle>
     </HeroWrapper>
