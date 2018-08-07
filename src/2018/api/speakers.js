@@ -35,7 +35,7 @@ export const speakers = [
   {
     name: 'Houssein Djirdeh',
     src: djirdeh,
-    company: '',
+    company: 'Google',
     twitter: 'https://twitter.com/hdjirdeh',
     github: 'https://github.com/housseindjirdeh'
   },

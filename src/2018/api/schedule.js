@@ -49,7 +49,7 @@ export const schedule = [
   {
     time: '12:15 - 1:30',
     day: 1,
-    title: 'Lunch',
+    title: 'Lunch 🥪',
     isSavable: false
   },
   {
@@ -110,7 +110,7 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '8:30 - 9:30',
     day: 2,
-    title: 'Breakfast',
+    title: 'Breakfast 🥐',
     isSavable: false
   },
   {
@@ -143,14 +143,14 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '11:45 - 12:15',
     day: 2,
-    title: 'TBA',
+    title: 'Progressive React',
     speaker: 'Houssein Djirdeh',
     isSavable: false
   },
   {
     time: '12:15 - 1:30',
     day: 2,
-    title: 'Lunch',
+    title: 'Lunch 🥪',
     isSavable: false
   },
   {
