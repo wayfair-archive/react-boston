@@ -22,7 +22,7 @@ export const schedule = [
     time: '10:00 - 10:30',
     day: 1,
     title:
-      'React & GraphQl - Bringing Simplicity and Correctness to Client Side Development',
+      'React & GraphQL - Bringing Simplicity and Correctness to Client Side Development',
     speaker: 'Chris Toomey',
     description: `One of React’s stronger attributes is the component model which allows us to combine behavior and presentation of functional units as opposed to along the arbitrary technology focused separation previously used, but unfortunately had less to say about data needs. With GraphQL we can have an ideal final slide to allow our components to fully encapsulate all of their requirements while keeping things modular and reusable. In this talk we’ll cover both the theory and practice of client development with React and GraphQL, along the way highlighting the areas where we can even more strongly leverage its power and flexibility.`
   },
@@ -56,7 +56,7 @@ export const schedule = [
     time: '1:30 - 2:00',
     day: 1,
     title:
-      'Beyond web-apps: React, Javascript and WebAssembly to port legacy native apps',
+      'Beyond Web-Apps: React, Javascript and WebAssembly to Port Legacy Native Apps',
     speaker: 'Florian Rival',
     description: `Can we create or port an existing native desktop application to a complete "React powered" web-app matching (or even exceeding) the quality of the legacy desktop app? Sounds like a good challenge! 🤔And this is what I decided to do with my game making software. 
 This talk will explain all the problems I had and solutions that I used to port my native app written in C++, to a full React + WebAssembly app - while still keeping all existing features! Spoiler alert: At the end, it works.`
@@ -83,7 +83,7 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '4:00 - 4:30',
     day: 1,
-    title: 'Custom CSS is the path to inconsistent UI',
+    title: 'Custom CSS is the Path to Inconsistent UI',
     speaker: 'Artem Sapegin',
     description: `Custom CSS is the simplest way to make the UI inconsistent, especially if we’re talking about spacing between UI elements, font sizes or colors. When developers have too much freedom in defining the UI, they will do things differently. The issue could be solved by avoiding any custom CSS on the app level and having a set of primitive components that allow developers to glue UI together in a consistent way.`
   },
@@ -97,7 +97,7 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '5:00 - 5:30',
     day: 1,
-    title: 'Building AR apps with React Native',
+    title: 'Building AR Apps with React Native',
     speaker: 'Vladimir Novick',
     description: `With the release of ARKit and ARCore by Apple and Google we see various Augmented reality apps created for iOS and Android. In this talk we will see how we can build AR apps with React Native, ARKit and ARCore. `
   },
@@ -157,7 +157,7 @@ This talk will explain all the problems I had and solutions that I used to port 
     time: '1:30 - 2:00',
     day: 2,
     title:
-      'Introducing Undux: Dead simple, typesafe state management for React',
+      'Introducing Undux: Dead Simple, Typesafe State Management for React',
     speaker: 'Boris Cherny'
   },
   {
@@ -169,7 +169,7 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '3:00 - 3:30',
     day: 2,
-    title: 'Deterministic mocking with GraphQL and Apollo: Lunar Launch',
+    title: 'Deterministic Mocking with GraphQL and Apollo: Lunar Launch',
     speaker: 'Hillary Bauer and Mark Faga',
     isSavable: false,
     description: `Tests are an integral part of the development life cycle, but it isn’t always clear what the most efficient way to write them is. Learn some of the Dos & Don'ts when it comes to testing your React app with Apollo components. We’ll explore: When is a unit test appropriate? When should you lean on integration tests? And how the heck do you dynamically mock GraphQL responses with data specific to your tests? ezCater has solved these problems and is happy to announce its newest edition to the open source community: Lunar, a package to help you mock GraphQL data for your integration tests!`
@@ -183,7 +183,7 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '4:00 - 4:30',
     day: 2,
-    title: 'Large scale migrations: using Recast and jscodeshift to scale',
+    title: 'Large Scale Migrations: Using Recast and jscodeshift to Scale',
     speaker: 'Francois Ward',
     description: `Keeping a tech stack up to date is hard. Keeping it up to date when it has grown to millions of lines of code or thousands of packages and repositories  is harder. Leaning on automation helps, but how do you automate code changes?  In this talk, Francois goes over the various parsers and code transformation tools such as Babel, TypeScript, Recast and jscodeshift, where they fit in the ecosystem, and how to use them to automate code changes across hundreds of projects to keep your React (or any other) apps in sync with the rest of the world. Attendees will learn about the various ways to work with JavaScript ASTs (there's a lot!) as well as how to orchestrate migrations and pull requests when manual no longer works.`
   },
