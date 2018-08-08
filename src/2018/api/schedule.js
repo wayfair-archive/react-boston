@@ -123,8 +123,10 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '10:15 - 10:45',
     day: 2,
-    title: 'TBA',
+    title: 'The Lonely and Dark Road to Styling in React',
     speaker: 'Sara Vieira',
+    description:
+      "CSS is hard !I made a living out of it being hard but when React was introduced we had a whole new level of fighting over CSS. There are so many ways to approach it and so many tradeoffs one can do when choosing the better approach that a talk that will go over these options is more than necessary. Let's walk this road thogheter and I promise it will all be fine and you will leave with an ideia of type of styling is better for each project. Hint: There is no perfect way ….\n",
     isSavable: false
   },
   {
