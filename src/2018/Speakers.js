@@ -74,11 +74,6 @@ const Venue = ({ id }) => (
       <SectionTitle>Speakers</SectionTitle>
     </Container>
     <Container>
-      <div>
-        Additional Lightning Talk ⚡ speakers will will be announced in August!
-      </div>
-    </Container>
-    <Container>
       <Speakers>
         {speakers.map(speaker => <Speaker key={speaker.name} {...speaker} />)}
       </Speakers>
