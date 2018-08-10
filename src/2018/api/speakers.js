@@ -16,6 +16,13 @@ import comeau from '../images/comeau.jpeg';
 import toomey from '../images/chris_toomey.jpg';
 import cherny from '../images/boris_cherny.jpeg';
 import kulkarni from '../images/kulkarni.jpeg';
+import kaiser from '../images/andrew_kaiser.jpg';
+import crossan from '../images/autumn_crossan.jpg';
+import keelan from '../images/christina_keelan.jpg';
+import turner from '../images/cole_turner.jpg';
+import fox from '../images/erin_fox.jpg';
+import pollock from '../images/josh_pollock.jpg';
+import wang from '../images/shawn_swyx_wang.jpg';
 
 export const speakers = [
   {
@@ -61,6 +68,13 @@ export const speakers = [
     github: 'https://github.com/joshwcomeau'
   },
   {
+    name: 'Cole Turner',
+    src: turner,
+    company: 'Netflix',
+    twitter: 'https://twitter.com/coletirner',
+    github: 'https://github.com/coleturner'
+  },
+  {
     name: 'Matt Hamil',
     src: hamil,
     company: '20|20 Research',
@@ -73,6 +87,13 @@ export const speakers = [
     company: 'Formidable',
     twitter: 'https://twitter.com/knitcodemonkey',
     github: 'https://github.com/knitcodemonkey'
+  },
+  {
+    name: 'Josh Pollock',
+    src: pollock,
+    company: 'CalderaWP',
+    twitter: 'https://twitter.com/Josh412',
+    github: 'https://github.com/shelob9'
   },
   {
     name: 'Artem Sapegin',
@@ -109,6 +130,13 @@ export const speakers = [
     github: 'https://github.com/bauer-hillary-c'
   },
   {
+    name: 'Erin Fox',
+    src: fox,
+    company: 'MLS',
+    twitter: 'https://twitter.com/erinfoox',
+    github: 'https://github.com/erinfox'
+  },
+  {
     name: 'Florian Rival',
     src: rival,
     company: 'Facebook',
@@ -142,5 +170,32 @@ export const speakers = [
     company: 'Facebook',
     twitter: 'https://twitter.com/bcherny',
     github: 'https://github.com/bcherny'
+  },
+  {
+    name: 'Shawn Swyx Wang',
+    src: wang,
+    company: 'Netlify',
+    twitter: 'https://twitter.com/swyx',
+    github: 'https://github.com/sw-yx'
+  },
+  {
+    name: 'Andrew Kaiser',
+    src: kaiser,
+    company: 'Wayfair',
+    github: 'https://github.com/andykais'
+  },
+  {
+    name: 'Christina Keelan Cottrell ',
+    src: keelan,
+    company: 'fly.io',
+    twitter: 'https://twitter.com/christinakeelan',
+    github: 'https://github.com/KittyBot'
+  },
+  {
+    name: 'Autumn Crossan',
+    src: crossan,
+    company: 'Cloud City Development',
+    twitter: 'https://twitter.com/mxtetrachord',
+    github: 'https://github.com/mxtetrachord'
   }
 ];
