@@ -71,7 +71,7 @@ export const speakers = [
     name: 'Cole Turner',
     src: turner,
     company: 'Netflix',
-    twitter: 'https://twitter.com/coletirner',
+    twitter: 'https://twitter.com/coleturner',
     github: 'https://github.com/coleturner'
   },
   {
