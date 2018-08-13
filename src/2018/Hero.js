@@ -118,15 +118,6 @@ const Hero = () => (
           </Button>
         </HeroCTA>
       </HeroCTAWrap>
-      <HeroSubtitle>
-        <Link
-          style={{ color: 'white' }}
-          openInNewWindow
-          href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
-        >
-          Standard Price Ticket Sales End Friday 8/10!
-        </Link>
-      </HeroSubtitle>
     </HeroWrapper>
     <HeroIntro>
       <Card>
