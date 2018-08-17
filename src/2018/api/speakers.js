@@ -23,7 +23,7 @@ import turner from '../images/cole_turner.jpg';
 import fox from '../images/erin_fox.jpg';
 import pollock from '../images/josh_pollock.jpg';
 import wang from '../images/shawn_swyx_wang.jpg';
-
+import clark from '../images/jason_clark.jpg';
 export const speakers = [
   {
     name: 'Sara Vieira',
@@ -190,6 +190,13 @@ export const speakers = [
     company: 'fly.io',
     twitter: 'https://twitter.com/christinakeelan',
     github: 'https://github.com/KittyBot'
+  },
+  {
+    name: 'Jason Clark',
+    src: clark,
+    company: 'PatientPing',
+    twitter: 'https://twitter.com/riceboyler',
+    github: 'https://github.com/riceboyler'
   },
   {
     name: 'Autumn Crossan',
