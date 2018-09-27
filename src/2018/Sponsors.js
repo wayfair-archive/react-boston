@@ -59,7 +59,7 @@ const Sponsors = ({ id }) => (
     <hr style={{ marginTop: '2em', marginBottom: '2em' }} />
     <Container>
       <P>
-        Lunch and breakfast at React Boston 2018 is sponsored by{' '}
+        Breakfast and lunch at React Boston 2018 is sponsored by{' '}
         <Link openInNewWindow href="https://www.ezcater.com/">
           ezCater
         </Link>.
