@@ -107,15 +107,7 @@ const Hero = () => (
       <HeroCTAWrap>
         <HeroCTA>
           <Dates>September 29-30, 2018</Dates>
-          <Button
-            openInNewWindow
-            href="https://www.eventbrite.com/e/react-boston-2018-tickets-46422273269"
-          >
-            Buy Tickets{' '}
-            <span style={{ marginLeft: 10 }}>
-              <Arrow />
-            </span>
-          </Button>
+          <Button disabled>Tickets Sold Out </Button>
         </HeroCTA>
       </HeroCTAWrap>
     </HeroWrapper>

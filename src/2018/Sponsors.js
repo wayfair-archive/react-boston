@@ -56,10 +56,20 @@ const Sponsors = ({ id }) => (
         </Link>
       </LinkGroup>
     </Container>
-    <hr style={{ marginTop: '1em', marginBottom: '1em' }} />
+    <hr style={{ marginTop: '2em', marginBottom: '2em' }} />
     <Container>
       <P>
-        For information about sponsorship opportunities, please reach out to{' '}
+        Lunch and breakfast at React Boston 2018 is sponsored by{' '}
+        <Link openInNewWindow href="https://www.ezcater.com/">
+          ezCater
+        </Link>.
+      </P>
+    </Container>
+    <hr style={{ marginTop: '2em', marginBottom: '2em' }} />
+    <Container>
+      <P>
+        For information about future sponsorship opportunities, please reach out
+        to{' '}
         <Link href="mailto:reactboston2018@gmail.com">
           reactboston2018@gmail.com
         </Link>.
