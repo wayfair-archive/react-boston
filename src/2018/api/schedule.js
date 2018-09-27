@@ -14,8 +14,8 @@ export const schedule = [
   {
     time: '9:15 - 10:00',
     day: 1,
-    title: 'TBA',
-    speaker: 'Ken Wheeler',
+    title: 'Ken Wheeler',
+    speaker: '',
     isSavable: false
   },
   {
@@ -49,7 +49,7 @@ export const schedule = [
   {
     time: '12:15 - 1:30',
     day: 1,
-    title: 'Lunch 🥪',
+    title: 'Lunch',
     isSavable: false
   },
   {
@@ -65,6 +65,12 @@ This talk will explain all the problems I had and solutions that I used to port 
     time: '2:00 - 3:00',
     day: 1,
     title: 'Lightning Talks ⚡',
+    lightningTalks: [
+      'Autumn Crossan',
+      'Erin Fox',
+      'Shawn Swyx Wang',
+      'Cole Turner'
+    ],
     isSavable: false
   },
   {
@@ -110,7 +116,7 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '8:30 - 9:30',
     day: 2,
-    title: 'Breakfast 🥐',
+    title: 'Breakfast',
     isSavable: false
   },
   {
@@ -152,7 +158,7 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '12:15 - 1:30',
     day: 2,
-    title: 'Lunch 🥪',
+    title: 'Lunch',
     isSavable: false
   },
   {
@@ -166,6 +172,12 @@ This talk will explain all the problems I had and solutions that I used to port 
     time: '2:00 - 3:00',
     day: 2,
     title: 'Lightning Talks ⚡',
+    lightningTalks: [
+      'Christina Keelan Cottrell',
+      'Josh Pollock',
+      'Jason Clark',
+      'Andrew Kaiser'
+    ],
     isSavable: false
   },
   {

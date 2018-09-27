@@ -169,14 +169,27 @@ const Switch = styled.button`
     box-shadow: ${({ theme }) => theme.boxShadow};
   }
 `;
-
-const Talk = ({ time, title, speaker, description, isSavable = true }) => (
+const SpeakersList = ({ lightningTalks }) => (
+  <ul>{lightningTalks.map((item, i) => <li key={i}>{item}</li>)}</ul>
+);
+const Talk = ({
+  time,
+  title,
+  speaker,
+  lightningTalks,
+  description,
+  isSavable = true
+}) => (
   <StyledTalk>
     <Time>{time}</Time>
     <div>
       <Title>{title}</Title>
       {speaker && <SubTitle>{speaker}</SubTitle>}
       {description && <p>{description}</p>}
+      {lightningTalks &&
+        lightningTalks.length && (
+          <SpeakersList lightningTalks={lightningTalks} />
+        )}
       {false && isSavable && <SaveButton name={title} />}
     </div>
   </StyledTalk>
