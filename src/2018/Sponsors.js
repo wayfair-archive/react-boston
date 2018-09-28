@@ -2,6 +2,7 @@ import React from 'react';
 import Section, { Container } from './components/Layout';
 import Link from './components/Link';
 import wayfair from './images/wayfair-logo.png';
+import ezcater from './images/ezcater.png';
 import styled from 'styled-components';
 
 const P = styled.p`
@@ -32,7 +33,9 @@ const LinkGroup = styled.p`
 const Sponsors = ({ id }) => (
   <Section title="Sponsors" id={id}>
     <Container>
-      <P>React Boston 2018 is sponsored and hosted by:</P>
+      <P style={{ fontWeight: 'bold' }}>
+        React Boston 2018 is sponsored and hosted by:
+      </P>
       <a
         rel="noopener noreferrer"
         target="_blank"
@@ -63,6 +66,13 @@ const Sponsors = ({ id }) => (
         <Link openInNewWindow href="https://www.ezcater.com/">
           ezCater
         </Link>.
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.ezcater.com/"
+        >
+          <Img alt="ezCater" src={ezcater} style={{ maxWidth: '400px' }} />
+        </a>
       </P>
     </Container>
     <hr style={{ marginTop: '2em', marginBottom: '2em' }} />
