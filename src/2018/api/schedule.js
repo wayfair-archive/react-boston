@@ -53,13 +53,11 @@ export const schedule = [
     isSavable: false
   },
   {
-    time: '1:30 - 2:00',
+    time: '1:30 - 1:00',
     day: 1,
-    title:
-      'Beyond Web-Apps: React, Javascript and WebAssembly to Port Legacy Native Apps',
-    speaker: 'Florian Rival',
-    description: `Can we create or port an existing native desktop application to a complete "React powered" web-app matching (or even exceeding) the quality of the legacy desktop app? Sounds like a good challenge! 🤔And this is what I decided to do with my game making software. 
-This talk will explain all the problems I had and solutions that I used to port my native app written in C++, to a full React + WebAssembly app - while still keeping all existing features! Spoiler alert: At the end, it works.`
+    title: 'Explorable Explanations with React',
+    speaker: 'Joshua Comeau',
+    description: ``
   },
   {
     time: '2:00 - 3:00',
@@ -129,11 +127,11 @@ This talk will explain all the problems I had and solutions that I used to port 
   {
     time: '10:15 - 10:45',
     day: 2,
-    title: 'The Lonely and Dark Road to Styling in React',
-    speaker: 'Sara Vieira',
-    description:
-      "CSS is hard !I made a living out of it being hard but when React was introduced we had a whole new level of fighting over CSS. There are so many ways to approach it and so many tradeoffs one can do when choosing the better approach that a talk that will go over these options is more than necessary. Let's walk this road thogheter and I promise it will all be fine and you will leave with an ideia of type of styling is better for each project. Hint: There is no perfect way ….\n",
-    isSavable: false
+    title:
+      'Beyond Web-Apps: React, Javascript and WebAssembly to Port Legacy Native Apps',
+    speaker: 'Florian Rival',
+    description: `Can we create or port an existing native desktop application to a complete "React powered" web-app matching (or even exceeding) the quality of the legacy desktop app? Sounds like a good challenge! 🤔And this is what I decided to do with my game making software. 
+This talk will explain all the problems I had and solutions that I used to port my native app written in C++, to a full React + WebAssembly app - while still keeping all existing features! Spoiler alert: At the end, it works.`
   },
   {
     time: '10:45 - 11:15',
