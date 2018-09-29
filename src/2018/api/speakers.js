@@ -24,6 +24,7 @@ import fox from '../images/erin_fox.jpg';
 import pollock from '../images/josh_pollock.jpg';
 import wang from '../images/shawn_swyx_wang.jpg';
 import clark from '../images/jason_clark.jpg';
+import erikson from '../images/mark_erikson.jpg';
 export const speakers = [
   {
     name: 'Sara Vieira',
@@ -52,6 +53,13 @@ export const speakers = [
     company: 'Symantec',
     twitter: 'https://twitter.com/vincentriemer',
     github: 'https://github.com/vincentriemer'
+  },
+  {
+    name: 'Mark Erikson',
+    src: erikson,
+    company: '',
+    twitter: 'https://twitter.com/acemarke',
+    github: 'https://github.com/markerikson'
   },
   {
     name: 'Samantha Bretous',

@@ -53,10 +53,10 @@ export const schedule = [
     isSavable: false
   },
   {
-    time: '1:30 - 1:00',
+    time: '1:30 - 2:00',
     day: 1,
-    title: 'Explorable Explanations with React',
-    speaker: 'Joshua Comeau',
+    title: 'State of Redux',
+    speaker: 'Mark Erikson',
     description: ``
   },
   {
