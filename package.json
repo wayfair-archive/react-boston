@@ -38,7 +38,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://www.reactboston.com",
+  "homepage": "https://www.reactboston.com",
   "browserslist": [
     ">0.2%",
     "not dead",
