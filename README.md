@@ -1,4 +1,16 @@
+# React Boston
+
+React Boston conference website.
+
+### Development
+
+**Install gatsby-cli**
 ```
-yarn install
-yarn run start
+npm i -g gatsby-cli
+gatsby help
+```
+
+**Run dev server**
+```
+gatsby develop
 ```
