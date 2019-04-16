@@ -1,8 +1,9 @@
 #/bin/bash
+set -euo pipefail
 
-rm -r build/*
-rm -r 2017/build/ 2018/build/ 2019/public/
-mkdir build/2017 build/2018
+rm -rf build
+rm -rf 2017/build/ 2018/build/ 2019/public/
+mkdir -p build/2017 build/2018
 
 cd 2017
 npm install

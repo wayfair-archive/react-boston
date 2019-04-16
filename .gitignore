@@ -1,5 +1,6 @@
 **/node_modules
 
-# Ignore all built files
-**/build
-**/public
+# Ignore built files
+2017/build
+2018/build
+2019/public
