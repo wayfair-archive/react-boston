@@ -7,6 +7,7 @@ import {
   color,
   display,
   flex,
+  flexDirection,
   fontSize,
   fontWeight,
   gridColumn,
@@ -72,6 +73,7 @@ export const Box = styled(Text.withComponent("div"))`
   ${alignItems}
   ${boxShadow}
   ${display}
+  ${flexDirection}
   ${gridColumn}
   ${gridGap}
   ${gridRow}
@@ -87,6 +89,7 @@ Box.propTypes = {
   ...alignItems.propTypes,
   ...boxShadow.propTypes,
   ...display.propTypes,
+  ...flexDirection.propTypes,
   ...gridColumn.propTypes,
   ...gridGap.propTypes,
   ...gridRow.propTypes,

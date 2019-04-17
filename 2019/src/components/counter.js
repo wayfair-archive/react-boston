@@ -5,6 +5,9 @@ import styled from "@emotion/styled"
 
 const Wrap = styled(Box)`
   text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-gap: 16px;
 `
 
 const END_TIME = "September 21 2019 09:00:00 EST"
@@ -64,12 +67,7 @@ function Counter() {
     SECONDS_IN_ONE_MINUTE
   )
   return (
-    <Wrap
-      display="grid"
-      gridTemplateColumns="80px 80px 80px 80px"
-      gridGap="16px"
-      textAlign="center"
-    >
+    <Wrap textAlign="center">
       <Box fontWeight="semibold">
         <Card>{days}</Card>
         <Box mt="3" fontSize="0">
