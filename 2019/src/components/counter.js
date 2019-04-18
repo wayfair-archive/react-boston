@@ -8,6 +8,11 @@ const Wrap = styled(Box)`
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   grid-gap: 16px;
+  & > div {
+    display: inline-block;
+    padding: 0 16px;
+    width: 112px;
+  }
 `
 
 const END_TIME = "September 21 2019 09:00:00 EST"
