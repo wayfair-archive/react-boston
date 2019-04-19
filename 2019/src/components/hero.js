@@ -31,7 +31,14 @@ const Hero = () => (
       <ImageBanner />
     </Box>
     <Box display="flex" mt="-25px" flexDirection={["column", "", "row"]}>
-      <Box bg="white" maxWidth="550px" textAlign="center" mr={[0, 9]} px="10">
+      <Box
+        bg="white"
+        maxWidth="550px"
+        textAlign="center"
+        mr={[0, 9]}
+        px="10"
+        position="relative"
+      >
         <Text p="3" flex="1" borderRadius="3px 0 0 3px" fontSize="0">
           September 21 - 22, 2019
         </Text>
