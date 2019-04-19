@@ -17,21 +17,33 @@ import { theme } from "../global-styles/theme"
 import { ThemeProvider } from "emotion-theming"
 import { Box } from "./layout-components"
 
-const Wrap = Box.withComponent("main")
+const Wrap = styled(Box.withComponent("main"))`
+  min-height: 100vh;
+  @media screen and (min-width: 52em) {
+    overflow: hidden;
+  }
+  @supports (display: grid) {
+    min-height: 0;
+  }
+`
 
 const ImageWrap = styled(Box)`
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #2160ad;
-    opacity: 0.7;
-    @supports (mix-blend-mode: multiply) {
-      opacity: 1;
-      mix-blend-mode: multiply;
+  display: none;
+  @supports (display: grid) {
+    display: block;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background-color: #2160ad;
+      opacity: 0.7;
+      @supports (mix-blend-mode: multiply) {
+        opacity: 1;
+        mix-blend-mode: multiply;
+      }
     }
   }
 `
@@ -53,7 +65,6 @@ const LandingPage = ({ children }: React.Node) => (
           display="grid"
           gridTemplateColumns="1fr"
           maxHeight={["none", "none", "100vh"]}
-          overflow={["visible", "visible", "hidden"]}
         >
           <Box
             position="relative"
@@ -67,15 +78,13 @@ const LandingPage = ({ children }: React.Node) => (
             <CurvedBackgroundLayer />
             <Box
               position="absolute"
-              top={["200px", "100px", 0]}
+              top={["200px", "100px"]}
               left="5vw"
               bottom="0"
               maxWidth="1200px"
               maxHeight={["none", "100vh"]}
               height="100%"
               width={["auto", "100%"]}
-              display="flex"
-              alignItems="center"
             >
               <SEO title="Home" keywords={[`react`, `Boston`]} />
               <Hero />
