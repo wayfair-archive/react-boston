@@ -8,6 +8,7 @@ const Wrap = styled(Box)`
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   grid-gap: 16px;
+  justify-items: center;
   & > div {
     display: inline-block;
     padding: 0 16px;

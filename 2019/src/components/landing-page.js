@@ -19,9 +19,6 @@ import { Box } from "./layout-components"
 
 const Wrap = styled(Box.withComponent("main"))`
   min-height: 100vh;
-  @media screen and (min-width: 52em) {
-    overflow: hidden;
-  }
   @supports (display: grid) {
     min-height: 0;
   }
@@ -29,20 +26,22 @@ const Wrap = styled(Box.withComponent("main"))`
 
 const ImageWrap = styled(Box)`
   display: none;
-  @supports (display: grid) {
-    display: block;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background-color: #2160ad;
-      opacity: 0.7;
-      @supports (mix-blend-mode: multiply) {
-        opacity: 1;
-        mix-blend-mode: multiply;
+  @media screen and (min-width: 40em) {
+    @supports (display: grid) {
+      display: block;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #2160ad;
+        opacity: 0.7;
+        @supports (mix-blend-mode: multiply) {
+          opacity: 1;
+          mix-blend-mode: multiply;
+        }
       }
     }
   }
@@ -62,7 +61,7 @@ const LandingPage = ({ children }: React.Node) => (
     render={data => (
       <ThemeProvider theme={theme}>
         <Wrap
-          display="grid"
+          display={["block", "grid"]}
           gridTemplateColumns="1fr"
           maxHeight={["none", "none", "100vh"]}
         >
@@ -71,13 +70,17 @@ const LandingPage = ({ children }: React.Node) => (
             gridRow="1"
             zIndex="1"
             gridColumn="1"
-            my="-8px"
-            mx="-2px"
-            pl="50vw"
+            my={["0", "-8px"]}
+            mx={["0", "-2px"]}
+            pl={["0", "50vw"]}
           >
-            <CurvedBackgroundLayer />
             <Box
-              position="absolute"
+              display={["none", "block"]}
+            >
+              <CurvedBackgroundLayer />
+            </Box>
+            <Box
+              position={["static", "absolute"]}
               top={["200px", "100px"]}
               left="5vw"
               bottom="0"

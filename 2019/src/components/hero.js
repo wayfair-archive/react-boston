@@ -11,7 +11,7 @@ const Cta = styled(Text)`
 
 const Hero = () => (
   <Box width="100%">
-    <Box width="50%" mb="5">
+    <Box width={["auto", "50%"]} mx={["15%", "", ""]} mt={["50px","", ""]} mb="5">
       <Logo />
       <Title
         position="absolute"
@@ -27,16 +27,17 @@ const Hero = () => (
         React Boston
       </Title>
     </Box>
-    <Box height="100px" width="100%">
+    <Box height={["auto", "100px"]} width="100%">
       <ImageBanner />
     </Box>
-    <Box display="flex" mt="-25px" flexDirection={["column", "", "row"]}>
+    <Box display="flex" mt={["-50px", "-25px"]} flexDirection={["column", "", "row"]} alignItems={["center", "", ""]}>
       <Box
         bg="white"
         maxWidth="550px"
         textAlign="center"
         mr={[0, 9]}
         px="10"
+        mb={["32px", ""]}
         position="relative"
       >
         <Text p="3" flex="1" borderRadius="3px 0 0 3px" fontSize="0">
