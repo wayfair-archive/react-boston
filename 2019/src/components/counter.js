@@ -7,8 +7,11 @@ const Wrap = styled(Box)`
   text-transform: uppercase;
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
-  grid-gap: 16px;
+  grid-gap: 8px;
   justify-items: center;
+  @media screen and (min-width: 40em) {
+    grid-gap: 16px;
+  }
   & > div {
     display: inline-block;
     padding: 0 16px;

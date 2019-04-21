@@ -89,7 +89,7 @@ const LandingPage = ({ children }: React.Node) => (
               height="100%"
               width={["auto", "100%"]}
             >
-              <SEO title="Home" keywords={[`react`, `Boston`]} />
+              <SEO title="React Boston" keywords={[`react`, `Boston`]} />
               <Hero />
             </Box>
           </Box>

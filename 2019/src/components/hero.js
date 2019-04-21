@@ -11,7 +11,12 @@ const Cta = styled(Text)`
 
 const Hero = () => (
   <Box width="100%">
-    <Box width={["auto", "50%"]} mx={["15%", "", ""]} mt={["50px","", ""]} mb="5">
+    <Box
+      width={["auto", "50%"]}
+      mx={["10%", "", ""]}
+      mt={["50px", "", ""]}
+      mb="5"
+    >
       <Logo />
       <Title
         position="absolute"
@@ -30,7 +35,12 @@ const Hero = () => (
     <Box height={["auto", "100px"]} width="100%">
       <ImageBanner />
     </Box>
-    <Box display="flex" mt={["-50px", "-25px"]} flexDirection={["column", "", "row"]} alignItems={["center", "", ""]}>
+    <Box
+      display="flex"
+      mt={["", "-25px"]}
+      flexDirection={["column", "", "row"]}
+      alignItems={["center", "", ""]}
+    >
       <Box
         bg="white"
         maxWidth="550px"
@@ -40,13 +50,13 @@ const Hero = () => (
         mb={["32px", ""]}
         position="relative"
       >
-        <Text p="3" flex="1" borderRadius="3px 0 0 3px" fontSize="0">
+        <Text p="3" flex="1" borderRadius="3px 0 0 3px" fontSize="2">
           September 21 - 22, 2019
         </Text>
-        <Text pt="3" mb="5" fontWeight="semibold" fontSize="2">
+        <Text pt="3" mb="5" fontWeight="semibold" fontSize="3">
           New England's annual two-day React.js conference
         </Text>
-        <Cta p="3" bg="grey" flex="1" borderRadius="0 3px 3px 0" fontSize="0">
+        <Cta p="3" bg="grey" flex="1" borderRadius="0 3px 3px 0" fontSize="1">
           Tickets coming soon!
         </Cta>
       </Box>
