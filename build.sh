@@ -21,4 +21,4 @@ npm run build
 cp -rp public/* ../build
 cd ..
 
-echo "reactboston.com" > build/CNAME
+echo "www.reactboston.com" > build/CNAME
