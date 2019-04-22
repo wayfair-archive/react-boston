@@ -20,3 +20,5 @@ npm install
 npm run build
 cp -rp public/* ../build
 cd ..
+
+echo "reactboston.com" > build/CNAME
