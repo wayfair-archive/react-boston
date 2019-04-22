@@ -1,6 +1,6 @@
 # React Boston
 
-Repository for every year of the [React Boston site](https://react-boston.com/)
+Repository for every year of the [React Boston site](https://reactboston.com/)
 
 **Build**
 
