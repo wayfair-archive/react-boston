@@ -1,4 +1,3 @@
-// @flow
 /**
  * Landing Page component that queries for data
  * with Gatsby's StaticQuery component
@@ -8,7 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "./image"
+import Img from "gatsby-image"
 import SEO from "./seo"
 import Hero from "./hero"
 import styled from "@emotion/styled"
@@ -47,13 +46,20 @@ const ImageWrap = styled(Box)`
   }
 `
 
-const LandingPage = ({ children }: React.Node) => (
+const LandingPage = children => (
   <StaticQuery
     query={graphql`
-      query LandingPageTitleQuery {
+      query {
         site {
           siteMetadata {
             title
+          }
+        }
+        file(relativePath: { eq: "hero-background.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -74,9 +80,7 @@ const LandingPage = ({ children }: React.Node) => (
             mx={["0", "-2px"]}
             pl={["0", "50vw"]}
           >
-            <Box
-              display={["none", "block"]}
-            >
+            <Box display={["none", "block"]}>
               <CurvedBackgroundLayer />
             </Box>
             <Box
@@ -101,7 +105,7 @@ const LandingPage = ({ children }: React.Node) => (
             gridColumn="1"
             marginLeft="50vw"
           >
-            <Image />
+            <Img fluid={data.file.childImageSharp.fluid} />
           </ImageWrap>
         </Wrap>
       </ThemeProvider>

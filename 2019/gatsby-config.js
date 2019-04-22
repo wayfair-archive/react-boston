@@ -19,12 +19,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `React Boston`,
+        icon: `src/images/icon-logo.jpg`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#2160ad`,
+        theme_color: `#2160ad`,
+        display: `browser`,
       },
     },
     {
