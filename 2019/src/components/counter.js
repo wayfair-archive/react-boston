@@ -6,16 +6,15 @@ import styled from "@emotion/styled"
 const Wrap = styled(Box)`
   text-transform: uppercase;
   display: grid;
-  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 8px;
   justify-items: center;
+  margin: 0 12px;
   @media screen and (min-width: 40em) {
     grid-gap: 16px;
   }
   & > div {
-    display: inline-block;
-    padding: 0 16px;
-    width: 112px;
+    width: 100%;
   }
 `
 
