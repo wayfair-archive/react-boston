@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "https://www.reactboston.com/2017/precache-manifest.4ccf2917002d847905333c4ebbb24bd2.js"
+  "https://www.reactboston.com/2018/precache-manifest.e2eeac18cfeca6e4bce4b52f770fae54.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("https://www.reactboston.com/2017/index.html", {
+workbox.routing.registerNavigationRoute("https://www.reactboston.com/2018/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
