@@ -12,6 +12,7 @@ const Card = ({ children }: React.Node) => (
     justifyContent="center"
     display="flex"
     fontSize="9"
+    padding="8px"
     boxShadow="0 3px 6px rgba(34, 25, 36, .2)"
   >
     {children}

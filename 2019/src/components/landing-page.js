@@ -25,6 +25,9 @@ const Wrap = styled(Box.withComponent("main"))`
 
 const ImageWrap = styled(Box)`
   display: none;
+  & .gatsby-image-wrapper {
+    position: static !important;
+  }
   @media screen and (min-width: 40em) {
     @supports (display: grid) {
       display: block;
@@ -76,8 +79,6 @@ const LandingPage = children => (
             gridRow="1"
             zIndex="1"
             gridColumn="1"
-            my={["0", "-8px"]}
-            mx={["0", "-2px"]}
             pl={["0", "50vw"]}
           >
             <Box display={["none", "block"]}>
@@ -86,7 +87,8 @@ const LandingPage = children => (
             <Box
               position={["static", "absolute"]}
               top={["200px", "100px"]}
-              left="5vw"
+              left="0"
+              paddingLeft={["0", "5vw"]}
               bottom="0"
               maxWidth="1200px"
               maxHeight={["none", "100vh"]}
