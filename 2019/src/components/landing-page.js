@@ -81,7 +81,7 @@ const LandingPage = children => (
             gridColumn="1"
             pl={["0", "50vw"]}
           >
-            <Box display={["none", "block"]}>
+            <Box display={["none", "block"]} marginLeft="-2px">
               <CurvedBackgroundLayer />
             </Box>
             <Box
