@@ -1,8 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Box } from "./layout-components"
+import { Box, Text } from "./layout-components"
+import styled from "@emotion/styled"
 
 const StyledFooter = Box.withComponent("footer")
+
+const Link = styled(Text.withComponent("a"))`
+  color: #2160ad;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+`
 
 const Footer = () => (
   <StyledFooter

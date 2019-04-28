@@ -10,7 +10,12 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
+import { theme } from "../global-styles/theme"
+import { ThemeProvider } from "emotion-theming"
+import { Box } from "./layout-components"
 import "../global-styles/base-reset.css"
+
+const Main = Box.withComponent("main")
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,7 +29,7 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <ThemeProvider theme={theme}>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -34,10 +39,10 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <Main marginBottom="9">{children}</Main>
           <Footer />
         </div>
-      </>
+      </ThemeProvider>
     )}
   />
 )
