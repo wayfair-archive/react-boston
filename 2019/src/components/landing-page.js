@@ -18,7 +18,6 @@ import { Box } from "./layout-components"
 
 const Wrap = styled(Box.withComponent("main"))`
   min-height: 100vh;
-  overflow-x: hidden;
   @supports (display: grid) {
     min-height: 0;
   }
