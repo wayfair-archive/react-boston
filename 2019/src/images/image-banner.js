@@ -1,7 +1,11 @@
 import React from "react"
 
 const ImageBanner = () => (
-  <svg viewBox="0 0 1169 137" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    viewBox="0 0 1169 137"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
     <g fill="#f15959" fillRule="evenodd">
       <g transform="matrix(-1 0 0 1 930 0)">
         <ellipse cx="1.407" cy="1.408" rx="1.407" ry="1.408" />

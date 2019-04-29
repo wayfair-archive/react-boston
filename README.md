@@ -15,7 +15,7 @@ Each year subdirectory contains an `package.json` with commands for building tha
 We deploy the build directory by pushing it as a "subtree" to the `gh-pages` branch. Make sure to run the build process first and commit the changes.
 
 ```
-./deploy
+./deploy.sh
 ```
 
 **Develop**
