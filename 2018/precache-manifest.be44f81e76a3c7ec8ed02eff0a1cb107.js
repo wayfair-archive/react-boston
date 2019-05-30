@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "6a243b10cc206efacfd7fc04afd74832",
-    "url": "https://www.reactboston.com/2018/static/media/jen_luker.6a243b10.jpg"
+    "revision": "1edc4419ec450f2c298c",
+    "url": "https://www.reactboston.com/2018/static/js/main.1edc4419.chunk.js"
   },
   {
-    "revision": "47d79bdc55236d561d16",
-    "url": "https://www.reactboston.com/2018/static/js/main.47d79bdc.chunk.js"
+    "revision": "82183efcd88bd2d2a60e",
+    "url": "https://www.reactboston.com/2018/static/js/runtime~main.82183efc.js"
   },
   {
-    "revision": "8983c702f4375a4facc0e43ae3b42e5f",
-    "url": "https://www.reactboston.com/2018/static/media/mark_erikson.8983c702.jpg"
+    "revision": "7acd5c130aee5fa5289e",
+    "url": "https://www.reactboston.com/2018/static/js/2.7acd5c13.chunk.js"
   },
   {
     "revision": "ed3758be899b91445488a65b09115f4e",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "https://www.reactboston.com/2018/static/media/francois_ward.cd929586.jpg"
   },
   {
-    "revision": "82183efcd88bd2d2a60e",
-    "url": "https://www.reactboston.com/2018/static/js/runtime~main.82183efc.js"
+    "revision": "6a243b10cc206efacfd7fc04afd74832",
+    "url": "https://www.reactboston.com/2018/static/media/jen_luker.6a243b10.jpg"
   },
   {
     "revision": "b82c311979afdf105922aeb464063210",
@@ -140,11 +140,11 @@ self.__precacheManifest = [
     "url": "https://www.reactboston.com/2018/static/media/jason_clark.a387f08f.jpg"
   },
   {
-    "revision": "7acd5c130aee5fa5289e",
-    "url": "https://www.reactboston.com/2018/static/js/2.7acd5c13.chunk.js"
+    "revision": "8983c702f4375a4facc0e43ae3b42e5f",
+    "url": "https://www.reactboston.com/2018/static/media/mark_erikson.8983c702.jpg"
   },
   {
-    "revision": "90362e0c77bd3fb72b3f5ebc3a86b41b",
+    "revision": "3a21e85bb83d78027977d4951bbb510a",
     "url": "https://www.reactboston.com/2018/index.html"
   }
 ];
