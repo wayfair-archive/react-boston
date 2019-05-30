@@ -32,8 +32,8 @@ const StyledButton = styled.button`
     display: block;
     position: absolute;
     top: 0;
-    left: 5%;
-    right: 5%;
+    left: 6%;
+    right: 6%;
     bottom: 0;
     z-index: -1;
     box-shadow: 0 16px 6px -8px rgba(34, 25, 36, 0.2);
