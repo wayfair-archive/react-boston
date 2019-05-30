@@ -4,6 +4,7 @@ import ImageBanner from "../images/image-banner"
 import Counter from "./counter"
 import { Box, Title, Text } from "./layout-components"
 import styled from "@emotion/styled"
+import Button from "./Button"
 
 const Cta = styled(Text)`
   text-transform: uppercase;
@@ -56,9 +57,22 @@ const Hero = () => (
         <Text pt="3" mb="5" fontWeight="semibold" fontSize="3">
           New England's annual two-day React.js conference
         </Text>
-        <Cta p="3" bg="grey" flex="1" borderRadius="0 3px 3px 0" fontSize="1">
-          Tickets coming soon!
+        <Cta
+          p="3"
+          bg="grey"
+          flex="1"
+          borderRadius="0 3px 3px 0"
+          fontSize="1"
+          mb="4"
+        >
+          Tickets coming soon
         </Cta>
+        <Button
+          as="a"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdx4L2_iKZ7VEsWJHJmz0XpDGfYJzNHG4KB2Bhnpraov20fjw/viewform"
+        >
+          Call For Speakers!
+        </Button>
       </Box>
       <Counter />
     </Box>
