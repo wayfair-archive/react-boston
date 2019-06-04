@@ -10,6 +10,7 @@ const Wrap = styled(Box)`
   grid-gap: 8px;
   justify-items: center;
   margin: 0 12px;
+  padding: 24px 0;
   @media screen and (min-width: 40em) {
     grid-gap: 16px;
   }

@@ -4,8 +4,12 @@ import styled from "@emotion/styled"
 const StyledButton = styled.button`
   appearance: none;
   text-decoration: none;
-  background: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.white};
+  background: ${props => ({ theme }) =>
+    props.secondary ? theme.colors.white : theme.colors.secondary};
+  border: ${props => ({ theme }) =>
+    props.secondary ? `4px solid ${theme.colors.secondary}` : 0};
+  color: ${props => ({ theme }) =>
+    props.secondary ? theme.colors.secondaryDark : theme.colors.white};
   line-height: 1;
   cursor: pointer;
   position: relative;
@@ -14,7 +18,6 @@ const StyledButton = styled.button`
   white-space: nowrap;
   user-select: none;
   padding: 1em 1.5em;
-  border: 0;
   display: block;
   font-size: 1.5rem;
   vertical-align: middle;
@@ -42,7 +45,8 @@ const StyledButton = styled.button`
   }
   &:focus,
   &:hover {
-    background: ${({ theme }) => theme.colors.secondaryDark};
+    background: ${props => ({ theme }) =>
+      props.secondary ? theme.colors.grey : theme.colors.secondaryDark};
     &::after {
       opacity: 1;
       transform: translateY(0);
