@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "https://www.reactboston.com/2018/static/media/jen_luker.6a243b10.jpg"
   },
   {
-    "revision": "1edc4419ec450f2c298c",
-    "url": "https://www.reactboston.com/2018/static/js/main.1edc4419.chunk.js"
+    "revision": "47d79bdc55236d561d16",
+    "url": "https://www.reactboston.com/2018/static/js/main.47d79bdc.chunk.js"
   },
   {
     "revision": "8983c702f4375a4facc0e43ae3b42e5f",
@@ -144,7 +144,7 @@ self.__precacheManifest = [
     "url": "https://www.reactboston.com/2018/static/js/2.7acd5c13.chunk.js"
   },
   {
-    "revision": "3a21e85bb83d78027977d4951bbb510a",
+    "revision": "90362e0c77bd3fb72b3f5ebc3a86b41b",
     "url": "https://www.reactboston.com/2018/index.html"
   }
 ];
