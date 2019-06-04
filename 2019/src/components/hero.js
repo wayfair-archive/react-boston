@@ -36,7 +36,7 @@ const Hero = () => (
       display="flex"
       mt={["", "-25px"]}
       flexDirection={["column", "", "row"]}
-      alignItems={["center", "", ""]}
+      alignItems={["center", "", "flex-start"]}
     >
       <Box
         bg="white"
