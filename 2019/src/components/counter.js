@@ -12,6 +12,7 @@ const Wrap = styled(Box)`
   margin: 0 12px;
   @media screen and (min-width: 40em) {
     grid-gap: 16px;
+    padding: 28px 0;
   }
   & > div {
     width: 100%;
