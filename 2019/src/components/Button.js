@@ -7,7 +7,9 @@ const StyledButton = styled.button`
   background: ${props => ({ theme }) =>
     props.secondary ? theme.colors.white : theme.colors.secondary};
   border: ${props => ({ theme }) =>
-    props.secondary ? `4px solid ${theme.colors.secondary}` : 0};
+    props.secondary
+      ? `4px solid ${theme.colors.secondary}`
+      : "4px solid transparent"};
   color: ${props => ({ theme }) =>
     props.secondary ? theme.colors.secondaryDark : theme.colors.white};
   line-height: 1;
