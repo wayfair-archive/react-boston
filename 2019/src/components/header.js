@@ -38,6 +38,7 @@ const Header = () => (
       <Link to="venue">Venue & Travel</Link>
       <Link to="diversity">Diversity</Link>
       <a>Sponsors</a>
+      <Link to="conduct">Conduct</Link>
       <a>Buy Tickets</a>
     </nav>
   </header>
