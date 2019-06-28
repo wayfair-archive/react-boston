@@ -1,54 +1,46 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import LogoText from "../images/logo-text"
-import { Box, Title } from "./layout-components"
-import styled from "@emotion/styled"
-
-const StyledHeader = Box.withComponent("header")
-
-const StyledLink = styled(Link)`
-  display: block;
-  width: 200px;
-  text-decoration: none;
-  background-image: linear-gradient(transparent 92%, #2160ad 0);
-`
+import { Link } from "gatsby"
+import { css } from "@emotion/core"
 
 const Header = () => (
-  <StyledHeader marginBottom="4">
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+  <header
+    css={css`
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    `}
+  >
+    <Link
+      to="/"
+      css={css`
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      `}
     >
-      <Title
-        position="absolute"
-        top="auto"
-        left="-10000px"
-        width="1px"
-        height="1px"
-        overflow="hidden"
-        textStyle={{
-          transform: "translateZ(0)",
-        }}
-      >
-        React Boston
-      </Title>
-      <StyledLink to="/">
-        <LogoText />
-      </StyledLink>
-    </div>
-  </StyledHeader>
+      React Boston
+    </Link>
+    <nav
+      css={theme => css`
+        background-color: ${theme.colors.primaryDark};
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        color: white;
+        a {
+          color: white;
+        }
+      `}
+    >
+      <a>About</a>
+      <a>Speakers</a>
+      <a>Schedule</a>
+      <Link to="venue">Venue & Travel</Link>
+      <Link to="diversity">Diversity</Link>
+      <a>Sponsors</a>
+      <a>Buy Tickets</a>
+    </nav>
+  </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

@@ -1,7 +1,7 @@
 import React from "react"
 import Logo from "../images/logo"
 import ImageBanner from "../images/image-banner"
-import Counter from "./counter"
+import Counter from "./Counter"
 import { Box, Title, Text } from "./layout-components"
 import styled from "@emotion/styled"
 import Button from "./Button"
