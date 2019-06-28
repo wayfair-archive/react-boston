@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
-import Card from "./card"
+import Card from "./Card"
 import { Box } from "./layout-components"
 import styled from "@emotion/styled"
 
