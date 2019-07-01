@@ -7,6 +7,7 @@ export const theme = {
     secondaryDark: "#d63333",
     black: "#03050d",
     grey: "#f7f7f7",
+    mediumGrey: "#6f6f6f",
     white: "#fff",
   },
   fontSizes: [14, 16, 18, 20, 24, 32, 36, 40, 44, 48],
