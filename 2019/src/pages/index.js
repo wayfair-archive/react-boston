@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Speakers from "../components/speakers-section"
 import "../global-styles/base-reset.css"
 import { SectionTitle } from "../components/layout-components"
 
@@ -9,5 +10,6 @@ export default () => (
     <SectionTitle fontSize={6} fontStyle="italic">
       Speakers
     </SectionTitle>
+    <Speakers />
   </Layout>
 )
