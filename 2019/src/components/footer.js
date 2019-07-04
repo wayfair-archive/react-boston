@@ -1,16 +1,7 @@
 import React from "react"
 import { Box, Text } from "./layout-components"
 import { css } from "@emotion/core"
-import styled from "@emotion/styled"
-
-const Link = styled(Text.withComponent("a"))`
-  font-size: 1.25rem;
-  color: #f15959;
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-`
+import Link from "./Link"
 
 const Footer = () => (
   <Box
@@ -30,11 +21,13 @@ const Footer = () => (
       gridGap="4px"
       alignItems="center"
     >
-      <Link href="http://confcodeofconduct.com/">Code of Conduct</Link>
-      <Link href="https://twitter.com/ReactBoston">
+      <Link href="http://confcodeofconduct.com/" openInNewTab fontSize={3}>
+        Code of Conduct
+      </Link>
+      <Link href="https://twitter.com/ReactBoston" openInNewTab fontSize={3}>
         @ReactBoston on Twitter
       </Link>
-      <Link href="https://meetup.com/ReactJS-Boston/">
+      <Link href="https://meetup.com/ReactJS-Boston/" openInNewTab fontSize={3}>
         ReactJS Boston Meetup
       </Link>
     </Box>

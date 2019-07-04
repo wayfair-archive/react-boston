@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Text } from "../components/layout-components"
+import Link from "../components/Link"
 
 export default () => (
   <Layout>
@@ -27,12 +28,16 @@ export default () => (
       <Text mb={4}>
         Organizers will enforce this code throughout the event, and can be
         reached at{" "}
-        <a href="mailto:reactboston2019@gmail.com">reactboston2019@gmail.com</a>
+        <Link href="mailto:reactboston2019@gmail.com">
+          reactboston2019@gmail.com
+        </Link>
         , or through the conference Slack channel provided to participants.
       </Text>{" "}
       <Text mb={4}>
         Full Version:{" "}
-        <a href="http://confcodeofconduct.com/">Code of Conduct</a>
+        <Link href="http://confcodeofconduct.com/" openInNewTab>
+          Code of Conduct
+        </Link>
       </Text>
     </div>
   </Layout>

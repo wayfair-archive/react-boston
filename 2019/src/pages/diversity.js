@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Text } from "../components/layout-components"
+import Link from "../components/Link"
 
 export default () => (
   <Layout>
@@ -17,16 +18,22 @@ export default () => (
       </Text>
       <Text mb={4}>
         This year we partnered with the{" "}
-        <a href="https://foundation.travis-ci.org/">Travis Foundation</a> to
-        offer free tickets through their{" "}
-        <a href="https://diversitytickets.org/">diversitytickets.org</a>{" "}
+        <Link href="https://foundation.travis-ci.org/" openInNewTab>
+          Travis Foundation
+        </Link>{" "}
+        to offer free tickets through their{" "}
+        <Link href="https://diversitytickets.org/" openInNewTab>
+          diversitytickets.org
+        </Link>{" "}
         program. Applications for these diversity tickets are now closed.
       </Text>
       <Text mb={4}>
         We are committed to ensuring that React Boston is accessible for all
         attendees. For questions about accessibility or to request an
         accommodation, please react out to{" "}
-        <a href="mailto:reactboston2019@gmail.com">reactboston2019@gmail.com</a>{" "}
+        <Link href="mailto:reactboston2019@gmail.com" openInNewTab>
+          reactboston2019@gmail.com
+        </Link>{" "}
         prior to the conference.
       </Text>
     </div>
