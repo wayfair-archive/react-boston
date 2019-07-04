@@ -19,6 +19,7 @@ import {
   height,
   justifyContent,
   left,
+  lineHeight,
   maxHeight,
   maxWidth,
   overflow,
@@ -42,6 +43,7 @@ export const Text = styled.p`
   ${fontWeight}
   ${height}
   ${left}
+  ${lineHeight}
   ${overflow}
   ${position}
   ${right}
@@ -62,6 +64,7 @@ Text.propTypes = {
   ...fontWeight.propTypes,
   ...height.propTypes,
   ...left.propTypes,
+  ...lineHeight.propTypes,
   ...overflow.propTypes,
   ...position.propTypes,
   ...right.propTypes,

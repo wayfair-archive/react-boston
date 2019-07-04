@@ -8,8 +8,6 @@ const Grid = styled.div`
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 `
 
 const getAlternateRows = index => {
