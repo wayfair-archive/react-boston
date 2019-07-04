@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Text } from "../components/layout-components"
-import Link from "../components/Link"
+import { Box, Text } from "../components/layout-components"
+import Link from "../components/link"
 
 export default () => (
   <Layout>
-    <div>
-      <Text mb={4}>
+    <Box maxWidth={["94vw", "90vw", "", "", "1200px"]} my={11} mx="auto">
+      <Text mb={4} fontSize={3}>
         React Boston is dedicated to providing a harassment-free conference
         experience for everyone, regardless of gender, gender identity and
         expression, age, sexual orientation, disability, physical appearance,
@@ -18,14 +18,14 @@ export default () => (
         or expelled from the conference without a refund at the discretion of
         the conference organizers.
       </Text>
-      <Text mb={4}>
+      <Text mb={4} fontSize={3}>
         Participants will be provided with contact information to reach
         conference staff who will be happy help participants contact hotel/venue
         security or local law enforcement, provide escorts, or otherwise assist
         those experiencing harassment to feel safe for the duration of the
         conference.
       </Text>
-      <Text mb={4}>
+      <Text mb={4} fontSize={3}>
         Organizers will enforce this code throughout the event, and can be
         reached at{" "}
         <Link href="mailto:reactboston2019@gmail.com">
@@ -33,12 +33,12 @@ export default () => (
         </Link>
         , or through the conference Slack channel provided to participants.
       </Text>{" "}
-      <Text mb={4}>
+      <Text mb={4} fontSize={3}>
         Full Version:{" "}
         <Link href="http://confcodeofconduct.com/" openInNewTab>
           Code of Conduct
         </Link>
       </Text>
-    </div>
+    </Box>
   </Layout>
 )

@@ -1,7 +1,7 @@
 import React from "react"
 import { Box, Text } from "./layout-components"
 import { css } from "@emotion/core"
-import Link from "./Link"
+import Link from "./link"
 
 const Footer = () => (
   <Box
@@ -12,7 +12,7 @@ const Footer = () => (
       border-top: 2px solid ${theme.colors.primaryLight};
     `}
   >
-    <Text fontSize={6} mb={10} fontWeight="bold">
+    <Text fontSize={6} mb={10} fontWeight="bold" fontStyle="italic">
       See you in September!
     </Text>
     <Box
