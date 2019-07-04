@@ -32,12 +32,12 @@ const Header = () => (
         }
       `}
     >
-      <a>About</a>
-      <a>Speakers</a>
-      <a>Schedule</a>
+      <Link to="/">About</Link>
+      <Link to="speakers">Speakers</Link>
+      <Link to="schedule">Schedule</Link>
       <Link to="venue">Venue & Travel</Link>
       <Link to="diversity">Diversity</Link>
-      <a>Sponsors</a>
+      <Link to="sponsors">Sponsors</Link>
       <Link to="conduct">Conduct</Link>
       <a>Buy Tickets</a>
     </nav>

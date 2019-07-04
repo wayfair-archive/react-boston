@@ -9,6 +9,7 @@ import {
   flex,
   flexDirection,
   fontSize,
+  fontStyle,
   fontWeight,
   gridColumn,
   gridGap,
@@ -37,6 +38,7 @@ export const Text = styled.p`
   ${color}
   ${flex}
   ${fontSize}
+  ${fontStyle}
   ${fontWeight}
   ${height}
   ${left}
@@ -56,6 +58,7 @@ Text.propTypes = {
   ...color.propTypes,
   ...flex.propTypes,
   ...fontSize.propTypes,
+  ...fontStyle.propTypes,
   ...fontWeight.propTypes,
   ...height.propTypes,
   ...left.propTypes,
