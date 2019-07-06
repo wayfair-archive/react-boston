@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
-import Button from "./Button"
+import Button from "./button"
 
 const Header = () => (
   <header

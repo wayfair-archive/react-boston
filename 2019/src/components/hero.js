@@ -4,7 +4,7 @@ import ImageBanner from "../images/image-banner"
 import Counter from "./Counter"
 import { Box, Title, Text } from "./layout-components"
 import styled from "@emotion/styled"
-import Button from "./Button"
+import Button from "./button"
 
 const Hero = () => (
   <Box width="100%">
