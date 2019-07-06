@@ -35,7 +35,6 @@ const StyledButton = styled.button`
   }
   &::after {
     content: "";
-    border-radius: 50vw;
     display: block;
     position: absolute;
     top: 0;

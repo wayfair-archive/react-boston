@@ -3,11 +3,12 @@ import styled from "@emotion/styled"
 import SpeakerCard from "./speaker-card"
 import { SPEAKERS } from "../api/speakers"
 
-const Grid = styled.div`
+const Grid = styled.ul`
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 20px;
+  list-style: none;
 `
 
 const getAlternateRows = index => {
@@ -39,9 +40,8 @@ const getColumnAlignment = index => {
   }
 }
 
-const Column = styled.ul`
+const Column = styled.li`
   max-width: 350px;
-  list-style: none;
   @media screen and (min-width: 68em) {
     ${props => getColumnAlignment(props.index)}
     ${props => getAlternateRows(props.index)}
