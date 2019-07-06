@@ -3,7 +3,7 @@ import { Box, Text } from "./layout-components"
 import styled from "@emotion/styled"
 
 const StyledLink = styled(Text.withComponent("a"))`
-  color: #f15959;
+  color: ${({ theme }) => theme.colors.secondaryDark};
   &:hover,
   &:focus {
     text-decoration: none;

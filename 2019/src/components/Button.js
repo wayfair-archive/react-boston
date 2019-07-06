@@ -8,10 +8,9 @@ const StyledButton = styled.button`
     props.secondary ? theme.colors.white : theme.colors.secondary};
   border: ${props => ({ theme }) =>
     props.secondary
-      ? `4px solid ${theme.colors.secondary}`
-      : "4px solid transparent"};
-  color: ${props => ({ theme }) =>
-    props.secondary ? theme.colors.secondaryDark : theme.colors.white};
+      ? `2px solid ${theme.colors.secondary}`
+      : "2px solid transparent"};
+  color: ${({ theme }) => theme.colors.primaryDark};
   line-height: 1;
   cursor: pointer;
   position: relative;
@@ -19,7 +18,7 @@ const StyledButton = styled.button`
   outline: 0;
   white-space: nowrap;
   user-select: none;
-  padding: 1em 1.5em;
+  padding: 0.7em 1.5em;
   display: block;
   font-size: 1.5rem;
   vertical-align: middle;

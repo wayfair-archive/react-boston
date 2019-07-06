@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
+import Button from "./Button"
 
 const Header = () => (
   <header
@@ -39,7 +40,9 @@ const Header = () => (
       <Link to="diversity">Diversity</Link>
       <Link to="sponsors">Sponsors</Link>
       <Link to="conduct">Conduct</Link>
-      <a>Buy Tickets</a>
+      <Button href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777">
+        Buy Tickets
+      </Button>
     </nav>
   </header>
 )
