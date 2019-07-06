@@ -18,6 +18,7 @@ import {
   gridTemplateRows,
   height,
   justifyContent,
+  justifyItems,
   left,
   lineHeight,
   maxHeight,
@@ -86,6 +87,7 @@ export const Box = styled(Text.withComponent("div"))`
   ${gridTemplateColumns}
   ${gridTemplateRows}
   ${justifyContent}
+  ${justifyItems}
   ${maxHeight}
   ${maxWidth}
   ${zIndex}
@@ -102,6 +104,7 @@ Box.propTypes = {
   ...gridTemplateColumns.propTypes,
   ...gridTemplateRows.propTypes,
   ...justifyContent.propTypes,
+  ...justifyItems.propTypes,
   ...maxHeight.propTypes,
   ...maxWidth.propTypes,
   ...zIndex.propTypes,
