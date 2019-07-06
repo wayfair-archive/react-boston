@@ -10,7 +10,10 @@ const StyledButton = styled.button`
     props.secondary
       ? `2px solid ${theme.colors.secondary}`
       : "2px solid transparent"};
-  color: ${({ theme }) => theme.colors.primaryDark};
+  && {
+    // increased specificity to override link in header color
+    color: ${({ theme }) => theme.colors.primaryDark};
+  }
   line-height: 1;
   cursor: pointer;
   position: relative;
@@ -54,7 +57,9 @@ const StyledButton = styled.button`
     }
   }
 `
+const StyledLink = StyledButton.withComponent("a")
 
 export default function Button(props) {
-  return <StyledButton {...props} />
+  const RenderedElement = props.href ? StyledLink : StyledButton
+  return <RenderedElement {...props} />
 }
