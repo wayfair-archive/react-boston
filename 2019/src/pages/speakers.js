@@ -5,7 +5,7 @@ import { Box } from "../components/layout-components"
 
 export default () => (
   <Layout>
-    <Box maxWidth="1200px" m="164px auto 0">
+    <Box maxWidth="1200px" m="164px auto 64px">
       <Speakers />
     </Box>
   </Layout>

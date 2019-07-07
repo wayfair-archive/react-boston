@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 const StyledButton = styled.button`
@@ -58,7 +59,16 @@ const StyledButton = styled.button`
 `
 const StyledLink = StyledButton.withComponent("a")
 
+const StyledGatsbyLink = StyledButton.withComponent(Link)
+
 export default function Button(props) {
-  const RenderedElement = props.href ? StyledLink : StyledButton
+  let RenderedElement
+  if (props.href) {
+    RenderedElement = StyledLink
+  } else if (props.to) {
+    RenderedElement = StyledGatsbyLink
+  } else {
+    RenderedElement = StyledButton
+  }
   return <RenderedElement {...props} />
 }
