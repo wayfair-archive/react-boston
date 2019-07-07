@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { createPortal } from "react-dom"
 import Dismiss from "../images/icons/dismiss"
 import SquareButton from "./square-button"
+import { Box } from "./layout-components"
 import styled from "@emotion/styled"
 
 const ModalWrapper = styled.div`
@@ -19,13 +20,21 @@ const ModalWrapper = styled.div`
 
 const ModalCard = styled.div`
   position: relative;
-  min-width: 320px;
+  width: 100%;
+  height: 400px;
   z-index: 10;
   margin-bottom: 100px;
   background-color: ${({ theme }) => theme.colors.white};
-  border-radius: 5px;
-  padding: 1em;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 94vw;
+  @media screen and (min-width: 40em) {
+    max-width: 90vw;
+  }
+  @media screen and (min-width: 80em) {
+    max-width: 1200px;
+  }
 `
 
 const Veil = styled.div`
@@ -54,13 +63,15 @@ const Portal = ({ children }) => {
 
 // Reusable Modal Component
 const Modal = ({ children, onRequestClose, isOpen }) => (
-  <Portal>
+  <Portal isOpen={isOpen}>
     {isOpen && (
       <ModalWrapper>
         <ModalCard>
-          <SquareButton role="button" onClick={onRequestClose}>
-            <Dismiss width="44px" height="44px" title="Close" />
-          </SquareButton>
+          <Box position="absolute" top="0" left="0">
+            <SquareButton role="button" onClick={onRequestClose}>
+              <Dismiss width="44px" height="44px" title="Close" />
+            </SquareButton>
+          </Box>
           {children}
         </ModalCard>
         <Veil onClick={onRequestClose} />

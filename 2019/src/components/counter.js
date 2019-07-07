@@ -32,6 +32,7 @@ const HOURS_IN_ONE_DAY = 24
 
 const TimeRemaining = Date.parse(END_TIME) - Date.parse(new Date())
 
+// using useInterval from https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 function useInterval(callback, delay) {
   const savedCallback = useRef()
 
@@ -58,7 +59,6 @@ function getCountdownTimes(countDownTimeRemaining, timeUnit, time) {
 
 function Counter() {
   let [count, setCount] = useState(TimeRemaining)
-  // using useInterval from https://overreacted.io/making-setinterval-declarative-with-react-hooks/
   useInterval(() => {
     setCount(count - ONE_SECOND_IN_MS)
   }, ONE_SECOND_IN_MS)
