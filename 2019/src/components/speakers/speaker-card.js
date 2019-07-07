@@ -83,7 +83,7 @@ const useModal = initial => {
   return [isOpen, useCallback(() => setIsOpen(status => !status))]
 }
 
-export default function SpeakerCard({ src, name, company, twitter }) {
+export default function SpeakerCard({ src, name, company, twitter, github }) {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
@@ -116,6 +116,7 @@ export default function SpeakerCard({ src, name, company, twitter }) {
           src={src}
           company={company}
           twitter={twitter}
+          github={github}
         />
       )}
     </StyledWrap>
