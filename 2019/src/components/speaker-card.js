@@ -95,8 +95,8 @@ function SpeakerCard({ src, name, company }) {
         <CompanyName color="mediumGrey">{company}</CompanyName>
       </DescriptionList>
       <StyledButtonWrap>
-        <SquareButton>
-          <PlusIcon width="44px" height="44px" />
+        <SquareButton role="button">
+          <PlusIcon width="44px" height="44px" title="View more information" />
         </SquareButton>
       </StyledButtonWrap>
     </StyledWrap>

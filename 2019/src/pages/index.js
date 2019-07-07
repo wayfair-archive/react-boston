@@ -29,7 +29,9 @@ export default () => (
       </Box>
       <Speakers />
       <Box display="flex" justifyContent="center" mb="11">
-        <Button secondary>See All Speakers</Button>
+        <Button to="speakers" secondary>
+          See All Speakers
+        </Button>
       </Box>
     </Box>
   </Layout>
