@@ -34,12 +34,12 @@ const Header = () => (
       `}
     >
       <Link to="/">About</Link>
-      <Link to="speakers">Speakers</Link>
-      <Link to="schedule">Schedule</Link>
-      <Link to="venue">Venue & Travel</Link>
-      <Link to="diversity">Diversity</Link>
-      <Link to="sponsors">Sponsors</Link>
-      <Link to="conduct">Conduct</Link>
+      <Link to="/speakers">Speakers</Link>
+      <Link to="/schedule">Schedule</Link>
+      <Link to="/venue">Venue & Travel</Link>
+      <Link to="/diversity">Diversity</Link>
+      <Link to="/sponsors">Sponsors</Link>
+      <Link to="/conduct">Conduct</Link>
       <Button href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777">
         Buy Tickets
       </Button>

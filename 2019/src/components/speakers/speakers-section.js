@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import SpeakerCard from "./speaker-card"
-import { SPEAKERS } from "../api/speakers"
+import { SPEAKERS } from "../../api/speakers"
 
 const Grid = styled.ul`
   display: grid;

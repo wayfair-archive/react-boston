@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
-import IconLogo from "../images/icon-logo"
+import IconLogo from "../images/icons/logo"
 import { Box } from "../components/layout-components"
 
 const NotFoundPage = () => (

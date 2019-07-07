@@ -1,8 +1,27 @@
+// @flow
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
-const StyledButton = styled.button`
+type Props = {
+  href: string,
+  to: string,
+  secondary: boolean,
+}
+
+const BaseButton = ({ secondary, children, ...props }: Props) => (
+  <button {...props}>{children}</button>
+)
+
+const BaseLink = ({ secondary, children, ...props }: Props) => (
+  <a {...props}>{children}</a>
+)
+
+const BaseGatsbyLink = ({ secondary, children, ...props }: Props) => (
+  <Link {...props}>{children}</Link>
+)
+
+const StyledButton = styled(BaseButton)`
   appearance: none;
   text-decoration: none;
   background: ${props => ({ theme }) =>
@@ -57,11 +76,11 @@ const StyledButton = styled.button`
     }
   }
 `
-const StyledLink = StyledButton.withComponent("a")
+const StyledLink = StyledButton.withComponent(BaseLink)
 
-const StyledGatsbyLink = StyledButton.withComponent(Link)
+const StyledGatsbyLink = StyledButton.withComponent(BaseGatsbyLink)
 
-export default function Button(props) {
+export default function Button(props: Props) {
   let RenderedElement
   if (props.href) {
     RenderedElement = StyledLink

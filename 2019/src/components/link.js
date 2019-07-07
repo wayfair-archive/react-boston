@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Text } from "./layout-components"
+import { Text } from "./layout-components"
 import styled from "@emotion/styled"
 
 const StyledLink = styled(Text.withComponent("a"))`
