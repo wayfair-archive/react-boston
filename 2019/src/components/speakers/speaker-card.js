@@ -1,9 +1,9 @@
-import React, { Component } from "react"
-import PropTypes from "prop-types"
-import { Box, Text } from "./layout-components"
+import React, { useState, useCallback } from "react"
+import { Box, Text } from "../layout-components"
 import { useSpring, animated } from "react-spring"
-import SquareButton from "./square-button"
-import PlusIcon from "../images/plus-icon"
+import SquareButton from "../square-button"
+import Increase from "../../images/icons/increase"
+import Modal from "./speaker-modal"
 import styled from "@emotion/styled"
 
 const StyledButtonWrap = styled.div`
@@ -61,26 +61,35 @@ const StyledImage = styled.img`
   }
 `
 
-const calc = (x, y) => [
-  -(y - window.innerHeight / 2) / 20,
-  (x - window.innerWidth / 2) / 20,
-  1.1,
-]
-
-const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
-
 const DescriptionList = Box.withComponent("dl")
 
 const Name = Text.withComponent("dt")
 
 const CompanyName = Text.withComponent("dd")
 
-function SpeakerCard({ src, name, company }) {
+const calc = (x, y) => [
+  -(y - window.innerHeight / 2) / 20,
+  (x - window.innerWidth / 2) / 20,
+  1.1,
+]
+
+// From https://codesandbox.io/embed/rj998k4vmm
+const trans = (x, y, s) =>
+  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+
+const useModal = initial => {
+  const [isOpen, setIsOpen] = useState(initial)
+
+  return [isOpen, useCallback(() => setIsOpen(status => !status))]
+}
+
+export default function SpeakerCard({ src, name, company, twitter }) {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
   }))
+
+  const [isOpen, setIsOpen] = useModal(false)
   return (
     <StyledWrap>
       <StyledAnimatedBox
@@ -88,19 +97,27 @@ function SpeakerCard({ src, name, company }) {
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: props.xys.interpolate(trans) }}
       >
-        <StyledImage src={src} alt={name} />
+        <StyledImage src={src} alt={name} onClick={() => setIsOpen(true)} />
       </StyledAnimatedBox>
       <DescriptionList mt="4">
         <Name fontWeight="bold">{name}</Name>
         <CompanyName color="mediumGrey">{company}</CompanyName>
       </DescriptionList>
       <StyledButtonWrap>
-        <SquareButton role="button">
-          <PlusIcon width="44px" height="44px" title="View more information" />
+        <SquareButton role="button" onClick={() => setIsOpen(true)}>
+          <Increase width="44px" height="44px" title="View more information" />
         </SquareButton>
       </StyledButtonWrap>
+      {isOpen && (
+        <Modal
+          onRequestClose={setIsOpen}
+          isOpen={isOpen}
+          name={name}
+          src={src}
+          company={company}
+          twitter={twitter}
+        />
+      )}
     </StyledWrap>
   )
 }
-
-export default SpeakerCard

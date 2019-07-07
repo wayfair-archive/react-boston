@@ -12,7 +12,6 @@ import Header from "./Header"
 import Footer from "./Footer"
 import { theme } from "../global-styles/theme"
 import { ThemeProvider } from "emotion-theming"
-import { Box } from "./layout-components"
 import { css } from "@emotion/core"
 import "../global-styles/base-reset.css"
 

@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Speakers from "../components/speakers-section"
+import Speakers from "../components/speakers/speakers-section"
 import { Box } from "../components/layout-components"
 
 export default () => (
