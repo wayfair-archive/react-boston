@@ -77,25 +77,25 @@ function Counter() {
   )
   return (
     <Wrap textAlign="center">
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{days}</Card>
         <Box mt="3" fontSize="0">
           Days
         </Box>
       </Box>
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{hours}</Card>
         <Box mt="3" fontSize="0">
           Hours
         </Box>
       </Box>
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{minutes}</Card>
         <Box mt="3" fontSize="0">
           Minutes
         </Box>
       </Box>
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{seconds}</Card>
         <Box mt="3" fontSize="0">
           Seconds

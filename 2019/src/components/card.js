@@ -4,7 +4,7 @@ import { Box } from "./layout-components"
 
 const Card = ({ children }: React.Node) => (
   <Box
-    bg="primary"
+    bg="primaryDark"
     borderRadius="5px"
     color="white"
     height="120px"
@@ -12,6 +12,7 @@ const Card = ({ children }: React.Node) => (
     justifyContent="center"
     display="flex"
     fontSize="9"
+    fontStyle="italic"
     padding="8px"
     boxShadow="0 3px 6px rgba(34, 25, 36, .2)"
   >
