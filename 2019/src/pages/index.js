@@ -5,6 +5,7 @@ import "../global-styles/base-reset.css"
 import { Box, SectionTitle } from "../components/layout-components"
 import ImageBanner from "../images/image-banner"
 import Button from "../components/button"
+import Intro from "../components/intro"
 import styled from "@emotion/styled"
 
 const StyledSectionTitle = styled(SectionTitle)`
@@ -15,6 +16,9 @@ export default () => (
   <Layout>
     <div>hero / countdown / join us</div>
     <Box maxWidth="1200px" m="auto">
+      <Box mt="100px" mb="100px">
+        <Intro />
+      </Box>
       <Box
         display="grid"
         justifyItems="center"
