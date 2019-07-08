@@ -3,9 +3,9 @@ import "../global-styles/base-reset.css"
 import { Box, Text } from "../components/layout-components"
 import Counter from "../components/counter"
 import LogoText from "../images/logo-text"
-import ImageBanner from "../images/image-banner"
 import { StaticQuery, graphql } from "gatsby"
 import Stickers from "../images/stickers.png"
+import Dots from "../components/dots"
 import styled from "@emotion/styled"
 
 const StyledWrap = styled.div`
@@ -97,35 +97,13 @@ export default () => (
           <Box position="relative">
             <Timing />
             <StyledDotsWrapFirst>
-              <Box
-                width="1000px"
-                height="100%"
-              >
-                <ImageBanner />
-                <Box pt="2px">
-                    <ImageBanner />
-                </Box>
-                <Box pt="2px">
-                  <ImageBanner />
-                </Box>
-              </Box>
+              <Dots />
             </StyledDotsWrapFirst>
           </Box>
           <Box position="relative">
             <StyledImage src={Stickers} alt="React stickers" />
             <StyledDotsWrapSecond>
-              <Box
-                width="1000px"
-                height="100%"
-              >
-                <ImageBanner />
-                <Box pt="2px">
-                    <ImageBanner />
-                </Box>
-                <Box pt="2px">
-                  <ImageBanner />
-                </Box>
-              </Box>
+            <Dots />
             </StyledDotsWrapSecond>
           </Box>
           <Box pt="100px" pl="100px">
