@@ -20,35 +20,18 @@ const StyledButton = styled.button`
   justify-content: center;
   font-size: 1.5rem;
   vertical-align: middle;
+  box-shadow: 0 4px 6px 1px rgba(34, 25, 36, 0.4);
+  transition: 0.3s ease;
+  border-radius: 30%;
+  border-top-left-radius: 0;
+
   &:disabled {
     cursor: default;
   }
-  &,
-  &::after {
-    transition: 0.3s ease;
-    border-bottom-left-radius: 30%;
-    border-top-right-radius: 30%;
-  }
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 2%;
-    right: 2%;
-    bottom: 0;
-    z-index: -1;
-    box-shadow: 0 16px 6px 1px rgba(34, 25, 36, 0.2);
-    transform: translateY(-10px);
-    opacity: 0;
-  }
+
   &:focus,
   &:hover {
     background: ${({ theme }) => theme.colors.secondaryDark};
-    &::after {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 `
 

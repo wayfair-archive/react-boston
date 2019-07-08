@@ -8,9 +8,8 @@ import styled from "@emotion/styled"
 
 const ModalWrapper = styled.div`
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -62,23 +61,25 @@ const Portal = ({ children }) => {
 }
 
 // Reusable Modal Component
-const Modal = ({ children, onRequestClose, isOpen }) => (
-  <Portal isOpen={isOpen}>
-    {isOpen && (
-      <ModalWrapper>
-        <ModalCard>
-          <Box position="absolute" top="0" left="0">
-            <SquareButton role="button" onClick={onRequestClose}>
-              <Dismiss width="44px" height="44px" title="Close" />
-            </SquareButton>
-          </Box>
-          {children}
-        </ModalCard>
-        <Veil onClick={onRequestClose} />
-      </ModalWrapper>
-    )}
-  </Portal>
-)
+const Modal = ({ children, onRequestClose, isOpen }) => {
+  return (
+    <Portal isOpen={isOpen}>
+      {isOpen && (
+        <ModalWrapper>
+          <ModalCard>
+            <Box position="absolute" top="10px" left="10px">
+              <SquareButton role="button" onClick={onRequestClose}>
+                <Dismiss width="44px" height="44px" title="Close" />
+              </SquareButton>
+            </Box>
+            {children}
+          </ModalCard>
+          <Veil onClick={onRequestClose} />
+        </ModalWrapper>
+      )}
+    </Portal>
+  )
+}
 
 export default Modal
 

@@ -103,11 +103,7 @@ export default function SpeakerCard({ src, name, company, twitter, github }) {
         <Name fontWeight="bold">{name}</Name>
         <CompanyName color="mediumGrey">{company}</CompanyName>
       </DescriptionList>
-      <StyledButtonWrap>
-        <SquareButton role="button" onClick={() => setIsOpen(true)}>
-          <Increase width="44px" height="44px" title="View more information" />
-        </SquareButton>
-      </StyledButtonWrap>
+
       {isOpen && (
         <Modal
           onRequestClose={setIsOpen}
