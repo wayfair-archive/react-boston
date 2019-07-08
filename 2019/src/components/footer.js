@@ -17,8 +17,8 @@ const Footer = () => (
     </Text>
     <Box
       display="grid"
-      gridTemplateColumns="1fr 1fr 1fr"
-      gridGap="4px"
+      gridTemplateColumns={["1fr", "1fr 1fr 1fr"]}
+      gridGap="20px"
       alignItems="center"
     >
       <Link href="http://confcodeofconduct.com/" openInNewTab fontSize={3}>

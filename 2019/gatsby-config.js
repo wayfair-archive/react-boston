@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `React Boston 2019`,
     description: `New England's annual React conference!`,
+    about: `React Boston is a two-day, single-track conference on React hosted in Boston's Back Bay neighborhood and organized in collaboration with <a href="https://tech.wayfair.com/">Wayfair Tech</a> and the community <a href="https://meetup.com/ReactJS-Boston/">ReactJS Boston Meetup</a>. We're excited to welcome developers of all backgrounds, skill sets, and experience levels to join us for a weekend of high-quality content and great conversations with others in the developer community.`,
     author: `@wayfair`,
   },
   plugins: [

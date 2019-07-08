@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
+import { Text, Container } from "../components/layout-components"
 
 export default () => (
   <Layout>
-    <div>Venue + Travel</div>
+    <Container>Venue + Travel</Container>
   </Layout>
 )

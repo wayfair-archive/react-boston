@@ -4,6 +4,8 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   overflow-y: scroll;
+  font-size: 18px;
+  line-height: 1.4;
 }
 * {
   box-sizing: inherit;
