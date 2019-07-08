@@ -1,16 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Box, Text } from "../components/layout-components"
+import { Text, Container } from "../components/layout-components"
 import Link from "../components/link"
 
 export default () => (
   <Layout>
-    <Box
-      maxWidth={["94vw", "90vw", "", "1200px"]}
-      my={11}
-      mx="auto"
-      fontSize={3}
-    >
+    <Container>
       <Text mb={4}>
         React Boston is dedicated to providing a harassment-free conference
         experience for everyone, regardless of gender, gender identity and
@@ -44,6 +39,6 @@ export default () => (
           Code of Conduct
         </Link>
       </Text>
-    </Box>
+    </Container>
   </Layout>
 )

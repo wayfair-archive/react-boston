@@ -43,7 +43,7 @@ const StyledButton = styled(BaseButton)`
   user-select: none;
   padding: 0.7em 1.5em;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   vertical-align: middle;
   &:disabled {
     cursor: default;

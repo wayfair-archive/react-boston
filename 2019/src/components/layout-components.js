@@ -1,3 +1,4 @@
+import React from "react"
 import styled from "@emotion/styled"
 import {
   alignItems,
@@ -115,3 +116,12 @@ export const Title = Text.withComponent("h1")
 export const SectionTitle = Text.withComponent("h2")
 
 export const InlineText = Text.withComponent("span")
+
+export const Container = props => (
+  <Box
+    maxWidth={["94vw", "90vw", "", "1200px"]}
+    p={[1, 3, 11]}
+    mx="auto"
+    {...props}
+  />
+)

@@ -10,7 +10,7 @@ export const theme = {
     mediumGrey: "#6f6f6f",
     white: "#fff",
   },
-  fontSizes: [14, 16, 18, 20, 24, 32, 36, 40, 44, 48],
+  fontSizes: [16, 18, 20, 24, 32, 36, 40, 44, 48],
   fontWeights: {
     semibold: 600,
   },
