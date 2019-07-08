@@ -1,21 +1,19 @@
 import React from "react"
 import "../global-styles/base-reset.css"
-import { Box } from "../components/layout-components"
+import { Box, Text } from "../components/layout-components"
 import Counter from "../components/counter"
 import LogoText from "../images/logo-text"
 import ImageBanner from "../images/image-banner"
+import { StaticQuery, graphql } from "gatsby"
+import Stickers from "../images/stickers.png"
 import styled from "@emotion/styled"
 
 const StyledWrap = styled.div`
   background-color: ${({ theme }) => theme.colors.primaryLight};
-  padding: 80px 50px;
+  padding: 90px 50px;
   border-bottom-left-radius: 15%;
   border-top-right-radius: 15%;
-  box-shadow: 25px 25px 30px rgba(0,0,0,0.3);
-`
-const StyledLink = styled.a`
-  color: ${({ theme }) => theme.colors.secondary};
-  text-decoration: underline;
+  box-shadow: 16px 18px 20px -2px rgba(0,0,0,0.3);
 `
 
 const StyledTitle = styled.h1`
@@ -26,18 +24,38 @@ const StyledSectionTitle = styled.h2`
   padding-top: 20px;
 `
 
-const StyledText = styled.p`
-  line-height: 2rem;
-  padding-top: 20px;
-`
-
-const StyledDotsWrap = styled.div`
+const StyledDotsWrapFirst = styled.div`
   width: 150px;
   overflow: hidden;
   position: absolute;
   top: -35px;
   left: -36px;
   z-index: -1;
+`
+
+const StyledDotsWrapSecond = styled.div`
+  width: 150px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -37px;
+  right: -44px;
+  z-index: -1;
+`
+
+const StyledTextWrap = styled.div`
+  padding-top: 20px;
+  a {
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+`
+
+const StyledImage = styled.img`
+  border-bottom-left-radius: 15%;
+  border-top-right-radius: 15%;
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+  box-shadow: -11px 14px 20px -2px rgba(0,0,0,0.3);
 `
 
 const Timing = () => (
@@ -56,40 +74,72 @@ const Timing = () => (
 )
 
 export default () => (
-  <Box
-    display="grid"
-    gridTemplateColumns="repeat(2, 1fr)"
-  >
-    <Box>
-      <LogoText />
-      <StyledSectionTitle>New England's annual two-day React.js conference</StyledSectionTitle>
-    </Box>
-    <Box position="relative">
-      <Timing />
-      <StyledDotsWrap>
+  <StaticQuery
+    query={graphql`
+      query JoinUsQuery {
+        site {
+          siteMetadata {
+            about
+          }
+        }
+      }
+    `}
+    render={data => {
+      return (
         <Box
-          width="1000px"
-          height="100%"
+          display="grid"
+          gridTemplateColumns="repeat(2, 1fr)"
         >
-          <ImageBanner />
-          <Box pt="2px">
-              <ImageBanner />
+          <Box pr="24px">
+            <LogoText />
+            <StyledSectionTitle>New England's annual two-day React.js conference</StyledSectionTitle>
           </Box>
-          <Box pt="2px">
-            <ImageBanner />
+          <Box position="relative">
+            <Timing />
+            <StyledDotsWrapFirst>
+              <Box
+                width="1000px"
+                height="100%"
+              >
+                <ImageBanner />
+                <Box pt="2px">
+                    <ImageBanner />
+                </Box>
+                <Box pt="2px">
+                  <ImageBanner />
+                </Box>
+              </Box>
+            </StyledDotsWrapFirst>
+          </Box>
+          <Box position="relative">
+            <StyledImage src={Stickers} alt="React stickers" />
+            <StyledDotsWrapSecond>
+              <Box
+                width="1000px"
+                height="100%"
+              >
+                <ImageBanner />
+                <Box pt="2px">
+                    <ImageBanner />
+                </Box>
+                <Box pt="2px">
+                  <ImageBanner />
+                </Box>
+              </Box>
+            </StyledDotsWrapSecond>
+          </Box>
+          <Box pt="100px" pl="100px">
+            <StyledTitle>Join Us!</StyledTitle>
+            <StyledTextWrap>
+              <Text
+                mb={10}
+                dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.about }}
+                lineHeight="2rem"
+              />
+            </StyledTextWrap>
           </Box>
         </Box>
-      </StyledDotsWrap>
-    </Box>
-    <LogoText />
-    <Box pt="100px">
-      <StyledTitle>Join Us!</StyledTitle>
-      <StyledText>
-        React Boston is a two-day, single-track conference on React hosted in Boston's Back Bay neighborhood
-        and organized in collaboration with <StyledLink>Wayfair Engineering</StyledLink> and the <StyledLink>ReactJS Boston Meetup</StyledLink>.
-        We're excited to welcome developers of all backgrounds, skill sets, and expereince levels to join us for a weekend of
-        high-quality content and great conversations with others in the developer community.
-      </StyledText>
-    </Box>
-  </Box>
+      )
+    }}
+  />
 )

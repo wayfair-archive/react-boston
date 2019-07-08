@@ -16,7 +16,7 @@ export default () => (
   <Layout>
     <div>hero / countdown / join us</div>
     <Box maxWidth="1200px" m="auto">
-      <Box mt="100px" mb="100px">
+      <Box mt="100px" mb="120px">
         <Intro />
       </Box>
       <Box
