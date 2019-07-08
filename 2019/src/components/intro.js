@@ -3,6 +3,7 @@ import "../global-styles/base-reset.css"
 import { Box } from "../components/layout-components"
 import Counter from "../components/counter"
 import LogoText from "../images/logo-text"
+import ImageBanner from "../images/image-banner"
 import styled from "@emotion/styled"
 
 const StyledWrap = styled.div`
@@ -20,13 +21,25 @@ const StyledLink = styled.a`
 const StyledTitle = styled.h1`
   font-style: italic;
 `
+
 const StyledSectionTitle = styled.h2`
   padding-top: 20px;
 `
+
 const StyledText = styled.p`
   line-height: 2rem;
   padding-top: 20px;
 `
+
+const StyledDotsWrap = styled.div`
+  width: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -35px;
+  left: -36px;
+  z-index: -1;
+`
+
 const Timing = () => (
   <StyledWrap>
     <Box
@@ -51,7 +64,23 @@ export default () => (
       <LogoText />
       <StyledSectionTitle>New England's annual two-day React.js conference</StyledSectionTitle>
     </Box>
-    <Timing />
+    <Box position="relative">
+      <Timing />
+      <StyledDotsWrap>
+        <Box
+          width="1000px"
+          height="100%"
+        >
+          <ImageBanner />
+          <Box pt="2px">
+              <ImageBanner />
+          </Box>
+          <Box pt="2px">
+            <ImageBanner />
+          </Box>
+        </Box>
+      </StyledDotsWrap>
+    </Box>
     <LogoText />
     <Box pt="100px">
       <StyledTitle>Join Us!</StyledTitle>
