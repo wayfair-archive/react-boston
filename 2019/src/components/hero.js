@@ -53,20 +53,11 @@ const Hero = () => (
         <Text pt="3" mb="7" fontWeight="semibold" fontSize="3">
           New England's annual two-day React.js conference
         </Text>
-        <Box mb="7" zIndex="0" position="relative">
-          <Button
-            as="a"
-            href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777"
-          >
-            Buy Tickets
-          </Button>
-        </Box>
         <Button
           as="a"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdx4L2_iKZ7VEsWJHJmz0XpDGfYJzNHG4KB2Bhnpraov20fjw/viewform"
-          secondary
+          href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777"
         >
-          Call For Speakers!
+          Buy Tickets
         </Button>
       </Box>
       <Counter />
