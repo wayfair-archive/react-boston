@@ -65,7 +65,7 @@ const Modal = ({ children, onRequestClose, isOpen }) => {
   return (
     <Portal isOpen={isOpen}>
       {isOpen && (
-        <ModalWrapper>
+        <ModalWrapper role="dialog">
           <ModalCard>
             <Box position="absolute" top="10px" left="10px">
               <SquareButton role="button" onClick={onRequestClose}>

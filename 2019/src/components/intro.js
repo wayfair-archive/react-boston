@@ -73,6 +73,8 @@ const Timing = () => (
   </StyledWrap>
 )
 
+const Section = Box.withComponent("section")
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -87,25 +89,28 @@ export default () => (
     render={data => {
       return (
         <Box display="grid" gridTemplateColumns="repeat(2, 1fr)">
-          <Box pr="24px">
+          <Section pr="24px">
             <LogoText />
             <StyledSectionTitle>
               New England's annual two-day React.js conference
             </StyledSectionTitle>
-          </Box>
+          </Section>
           <Box position="relative">
             <Timing />
-            <StyledDotsWrapFirst>
-              <Dots />
-            </StyledDotsWrapFirst>
+            <Dots position="absolute" zIndex="-1" left="-50px" />
           </Box>
           <Box position="relative">
             <StyledImage src={Stickers} alt="React stickers" />
-            <StyledDotsWrapSecond>
-              <Dots />
-            </StyledDotsWrapSecond>
+            <Dots
+              position="absolute"
+              zIndex="-1"
+              right="-50px"
+              containerRightOffset="0"
+              top="100px"
+              height="400px"
+            />
           </Box>
-          <Box pt="100px" pl="100px">
+          <Section pt="100px" pl="100px">
             <StyledTitle>Join Us!</StyledTitle>
             <StyledTextWrap>
               <Text
@@ -116,7 +121,7 @@ export default () => (
                 lineHeight="2rem"
               />
             </StyledTextWrap>
-          </Box>
+          </Section>
         </Box>
       )
     }}

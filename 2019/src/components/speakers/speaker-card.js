@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react"
 import { Box, Text } from "../layout-components"
 import { useSpring, animated } from "react-spring"
-import Increase from "../../images/icons/increase"
 import Modal from "./speaker-modal"
 import styled from "@emotion/styled"
 
