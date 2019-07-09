@@ -1,104 +1,52 @@
 import styled from "@emotion/styled"
 import {
-  alignItems,
-  borderRadius,
-  bottom,
-  boxShadow,
+  background,
+  border,
   color,
-  display,
-  flex,
-  flexDirection,
-  fontSize,
-  fontWeight,
-  gridColumn,
-  gridGap,
-  gridRow,
-  gridTemplateColumns,
-  gridTemplateRows,
-  height,
-  justifyContent,
-  left,
-  maxHeight,
-  maxWidth,
-  overflow,
+  flexbox,
+  grid,
+  layout,
   position,
-  right,
+  shadow,
   space,
-  textAlign,
   textStyle,
-  top,
-  width,
-  zIndex,
+  typography,
 } from "styled-system"
+import propTypes from "@styled-system/prop-types"
 
-export const Text = styled.p`
-  ${borderRadius}
-  ${bottom}
-  ${color}
-  ${flex}
-  ${fontSize}
-  ${fontWeight}
-  ${height}
-  ${left}
-  ${overflow}
-  ${position}
-  ${right}
-  ${space}
-  ${textAlign}
-  ${textStyle}
-  ${top}
-  ${width}
-`
+export const Text = styled.p(
+  border,
+  color,
+  flexbox,
+  layout,
+  position,
+  space,
+  typography
+)
 
 Text.propTypes = {
-  ...borderRadius.propTypes,
-  ...bottom.propTypes,
-  ...color.propTypes,
-  ...flex.propTypes,
-  ...fontSize.propTypes,
-  ...fontWeight.propTypes,
-  ...height.propTypes,
-  ...left.propTypes,
-  ...overflow.propTypes,
-  ...position.propTypes,
-  ...right.propTypes,
-  ...space.propTypes,
-  ...textAlign.propTypes,
-  ...textStyle.propTypes,
-  ...top.propTypes,
-  ...width.propTypes,
+  ...propTypes.border,
+  ...propTypes.color,
+  ...propTypes.flexbox,
+  ...propTypes.layout,
+  ...propTypes.position,
+  ...propTypes.space,
+  ...propTypes.typography,
 }
 
-export const Box = styled(Text.withComponent("div"))`
-  ${alignItems}
-  ${boxShadow}
-  ${display}
-  ${flexDirection}
-  ${gridColumn}
-  ${gridGap}
-  ${gridRow}
-  ${gridTemplateColumns}
-  ${gridTemplateRows}
-  ${justifyContent}
-  ${maxHeight}
-  ${maxWidth}
-  ${zIndex}
-`
+export const Box = styled(Text.withComponent("div"))(background, grid, shadow)
 
 Box.propTypes = {
-  ...alignItems.propTypes,
-  ...boxShadow.propTypes,
-  ...display.propTypes,
-  ...flexDirection.propTypes,
-  ...gridColumn.propTypes,
-  ...gridGap.propTypes,
-  ...gridRow.propTypes,
-  ...gridTemplateColumns.propTypes,
-  ...gridTemplateRows.propTypes,
-  ...justifyContent.propTypes,
-  ...maxHeight.propTypes,
-  ...maxWidth.propTypes,
-  ...zIndex.propTypes,
+  ...propTypes.background,
+  ...propTypes.border,
+  ...propTypes.color,
+  ...propTypes.flexbox,
+  ...propTypes.grid,
+  ...propTypes.layout,
+  ...propTypes.position,
+  ...propTypes.shadow,
+  ...propTypes.space,
+  ...propTypes.typography,
 }
 
 export const Title = Text.withComponent("h1")
