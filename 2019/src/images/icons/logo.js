@@ -1,10 +1,11 @@
 import React from "react"
 
-const IconLogo = () => (
+const IconLogo = props => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 157 139.6"
     aria-hidden="true"
+    {...props}
   >
     <circle cx="78.5" cy="70.2" r="63.4" fill="#DAF1F9" />
     <path

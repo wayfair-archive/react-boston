@@ -5,7 +5,7 @@ import Link from "../components/link"
 
 export default () => (
   <Layout>
-    <Container>
+    <Container title="Conduct">
       <Text mb={4}>
         React Boston is dedicated to providing a harassment-free conference
         experience for everyone, regardless of gender, gender identity and

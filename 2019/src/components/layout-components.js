@@ -120,8 +120,16 @@ export const InlineText = Text.withComponent("span")
 export const Container = props => (
   <Box
     maxWidth={["94vw", "90vw", "", "1200px"]}
-    p={[1, 3, 11]}
+    px={[3, 11]}
+    py={11}
     mx="auto"
     {...props}
-  />
+  >
+    {props.title && (
+      <Title fontStyle="italic" mb={5}>
+        {props.title}
+      </Title>
+    )}
+    {props.children}
+  </Box>
 )

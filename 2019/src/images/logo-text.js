@@ -1,13 +1,14 @@
 import React from "react"
 import { css } from "@emotion/core"
 
-const LogoText = () => (
+const LogoText = props => (
   <svg
     css={css`
-      max-width: 100%;
+      width: 100%;
     `}
     viewBox="0 0 515 238"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <title>React Boston</title>
     <g fill="none">

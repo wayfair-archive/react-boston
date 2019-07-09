@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Speakers from "../components/speakers/speakers-section"
 import "../global-styles/base-reset.css"
-import { Box, SectionTitle } from "../components/layout-components"
+import { Box, SectionTitle, Text } from "../components/layout-components"
 import ImageBanner from "../images/image-banner"
 import Button from "../components/button"
 import Intro from "../components/intro"
@@ -33,10 +33,10 @@ export default () => (
           <Dots height="210px" left="60px" />
         </Box>
         <Speakers />
-        <Box display="flex" justifyContent="center" mb="11">
-          <Button to="/speakers" secondary>
-            See All Speakers
-          </Button>
+        <Box display="flex" justifyContent="center" p="11">
+          <Text textAlign="center" fontSize={3}>
+            More speakers to be announced soon
+          </Text>
         </Box>
       </section>
     </Box>
