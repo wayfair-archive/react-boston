@@ -1,28 +1,9 @@
 import React, { useState, useCallback } from "react"
 import { Box, Text } from "../layout-components"
 import { useSpring, animated } from "react-spring"
-import SquareButton from "../square-button"
 import Increase from "../../images/icons/increase"
 import Modal from "./speaker-modal"
 import styled from "@emotion/styled"
-
-const StyledButtonWrap = styled.div`
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  display: none;
-  &:hover,
-  &:focus {
-    display: block;
-    ~ ${StyledAnimatedBox} ${StyledImage} {
-      mix-blend-mode: normal;
-    }
-  }
-`
-
-const StyledWrap = styled.div`
-  position: relative;
-`
 
 const StyledAnimatedBox = styled(animated.div)`
   overflow: hidden;
@@ -42,9 +23,6 @@ const StyledAnimatedBox = styled(animated.div)`
   &:focus {
     outline: 0;
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-    ~ ${StyledButtonWrap} {
-      display: block;
-    }
   }
 `
 
@@ -54,6 +32,7 @@ const StyledImage = styled.img`
   mix-blend-mode: luminosity;
   height: 100%;
   width: 100%;
+  border-bottom-right-radius: 50%;
   &:hover,
   &:focus {
     mix-blend-mode: normal;
@@ -74,8 +53,17 @@ const calc = (x, y) => [
 ]
 
 // From https://codesandbox.io/embed/rj998k4vmm
-const trans = (x, y, s) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+const trans = (x, y, s) => {
+  if (
+    typeof window.matchMedia === "function" &&
+    window.matchMedia("(prefers-reduced-motion)").matches
+  ) {
+    // early exit if user enables Reduce Motion in System Preferences to disable animation
+    // currently supported in the latest versions of Chrome, Safari, Firefox, Edge
+    return
+  }
+  return `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+}
 
 const useModal = initial => {
   const [isOpen, setIsOpen] = useState(initial)
@@ -91,7 +79,7 @@ export default function SpeakerCard({ src, name, company, twitter, github }) {
 
   const [isOpen, setIsOpen] = useModal(false)
   return (
-    <StyledWrap>
+    <>
       <StyledAnimatedBox
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
@@ -115,6 +103,6 @@ export default function SpeakerCard({ src, name, company, twitter, github }) {
           github={github}
         />
       )}
-    </StyledWrap>
+    </>
   )
 }

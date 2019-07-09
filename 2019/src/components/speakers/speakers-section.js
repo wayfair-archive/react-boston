@@ -18,7 +18,8 @@ const getAlternateRows = index => {
     for (let i = num; i <= 100; i += 6) {
       if (index === i) {
         styles = `
-          div {
+          div,
+          img {
             border-bottom-right-radius: 0;
             border-top-left-radius: 50%;
           }
