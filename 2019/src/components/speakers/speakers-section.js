@@ -26,6 +26,9 @@ const getAlternateRows = index => {
           dl {
             text-align: right;
           }
+          div {
+            justify-content: flex-end;
+          }
         `
       }
     }

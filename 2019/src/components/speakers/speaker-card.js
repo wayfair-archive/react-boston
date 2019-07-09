@@ -2,6 +2,8 @@ import React, { useState, useCallback } from "react"
 import { Box, Text } from "../layout-components"
 import { useSpring, animated } from "react-spring"
 import Modal from "./speaker-modal"
+import Link from "../link"
+import { Twitter, Github } from "../../images/icons/social"
 import styled from "@emotion/styled"
 
 const StyledAnimatedBox = styled(animated.div)`
@@ -35,7 +37,7 @@ const StyledImage = styled.img`
   &:hover,
   &:focus {
     mix-blend-mode: normal;
-    cursor: pointer;
+    // cursor: pointer;
   }
 `
 
@@ -44,6 +46,8 @@ const DescriptionList = Box.withComponent("dl")
 const Name = Text.withComponent("dt")
 
 const CompanyName = Text.withComponent("dd")
+
+const DescriptionDefinition = Box.withComponent("dd")
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -84,14 +88,38 @@ export default function SpeakerCard({ src, name, company, twitter, github }) {
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: props.xys.interpolate(trans) }}
       >
-        <StyledImage src={src} alt={name} onClick={() => setIsOpen(true)} />
+        {/* commenting out everything related to the modal until the abstracts are available */}
+        {/* <StyledImage src={src} alt={name} onClick={() => setIsOpen(true)} /> */}
+        <StyledImage src={src} alt={name} />
       </StyledAnimatedBox>
       <DescriptionList mt="4">
         <Name fontWeight="bold">{name}</Name>
         <CompanyName color="mediumGrey">{company}</CompanyName>
+        <Box display="flex" alignItems="center">
+          <DescriptionDefinition mr="1">
+            <Link href={twitter}>
+              <Twitter
+                fill="#f15959"
+                width="28px"
+                height="28px"
+                title="Twitter"
+              />
+            </Link>
+          </DescriptionDefinition>
+          <dd>
+            <Link href={github}>
+              <Github
+                fill="#f15959"
+                width="20px"
+                height="20px"
+                title="Twitter"
+              />
+            </Link>
+          </dd>
+        </Box>
       </DescriptionList>
 
-      {isOpen && (
+      {/* {isOpen && (
         <Modal
           onRequestClose={setIsOpen}
           isOpen={isOpen}
@@ -101,7 +129,7 @@ export default function SpeakerCard({ src, name, company, twitter, github }) {
           twitter={twitter}
           github={github}
         />
-      )}
+      )} */}
     </>
   )
 }
