@@ -13,7 +13,7 @@ const StyledWrap = styled.div`
   padding: 90px 50px;
   border-bottom-left-radius: 15%;
   border-top-right-radius: 15%;
-  box-shadow: 16px 18px 20px -2px rgba(0,0,0,0.3);
+  box-shadow: 16px 18px 20px -2px rgba(0, 0, 0, 0.3);
 `
 
 const StyledTitle = styled.h1`
@@ -45,7 +45,7 @@ const StyledDotsWrapSecond = styled.div`
 const StyledTextWrap = styled.div`
   padding-top: 20px;
   a {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondaryDark};
   }
 `
 
@@ -55,7 +55,7 @@ const StyledImage = styled.img`
   object-fit: cover;
   height: 450px;
   width: 100%;
-  box-shadow: -11px 14px 20px -2px rgba(0,0,0,0.3);
+  box-shadow: -11px 14px 20px -2px rgba(0, 0, 0, 0.3);
 `
 
 const Timing = () => (
@@ -86,13 +86,12 @@ export default () => (
     `}
     render={data => {
       return (
-        <Box
-          display="grid"
-          gridTemplateColumns="repeat(2, 1fr)"
-        >
+        <Box display="grid" gridTemplateColumns="repeat(2, 1fr)">
           <Box pr="24px">
             <LogoText />
-            <StyledSectionTitle>New England's annual two-day React.js conference</StyledSectionTitle>
+            <StyledSectionTitle>
+              New England's annual two-day React.js conference
+            </StyledSectionTitle>
           </Box>
           <Box position="relative">
             <Timing />
@@ -103,7 +102,7 @@ export default () => (
           <Box position="relative">
             <StyledImage src={Stickers} alt="React stickers" />
             <StyledDotsWrapSecond>
-            <Dots />
+              <Dots />
             </StyledDotsWrapSecond>
           </Box>
           <Box pt="100px" pl="100px">
@@ -111,7 +110,9 @@ export default () => (
             <StyledTextWrap>
               <Text
                 mb={10}
-                dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.about }}
+                dangerouslySetInnerHTML={{
+                  __html: data.site.siteMetadata.about,
+                }}
                 lineHeight="2rem"
               />
             </StyledTextWrap>
