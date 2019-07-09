@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
+    "@styled-system/prop-types": "^5.0.12",
     "emotion": "^10.0.9",
     "emotion-theming": "^10.0.10",
     "gatsby": "^2.3.16",
@@ -24,7 +25,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-spring": "^8.0.19",
-    "styled-system": "^4.1.0"
+    "styled-system": "^5.0.12"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
