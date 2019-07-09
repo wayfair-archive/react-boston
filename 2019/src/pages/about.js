@@ -24,7 +24,7 @@ const About = () => (
     render={data => {
       return (
         <Layout>
-          <Container>
+          <Container title="About React Boston">
             <Text
               mb={10}
               dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.about }}

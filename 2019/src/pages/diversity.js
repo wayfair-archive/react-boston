@@ -5,7 +5,7 @@ import Link from "../components/link"
 
 export default () => (
   <Layout>
-    <Container>
+    <Container title="Diversity">
       <Text mb={4}>
         React Boston believes that diversity is an important part of creating a
         welcoming, inclusive, and innovative tech community.

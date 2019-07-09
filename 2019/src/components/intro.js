@@ -3,6 +3,7 @@ import "../global-styles/base-reset.css"
 import { Box, Text } from "../components/layout-components"
 import Counter from "../components/counter"
 import LogoText from "../images/logo-text"
+import FullLogo from "../images/icons/full-logo"
 import { StaticQuery, graphql } from "gatsby"
 import Stickers from "../images/stickers.png"
 import Dots from "../components/dots"
@@ -90,7 +91,7 @@ export default () => (
       return (
         <Box display="grid" gridTemplateColumns="repeat(2, 1fr)">
           <Section pr="24px">
-            <LogoText />
+            <FullLogo />
             <StyledSectionTitle>
               New England's annual two-day React.js conference
             </StyledSectionTitle>
