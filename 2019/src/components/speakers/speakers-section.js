@@ -53,7 +53,7 @@ export default function Speakers() {
   return (
     <Grid>
       {SPEAKERS.map((speaker, index) => (
-        <Column key={speaker.name} index={index}>
+        <Column tabIndex={0} key={speaker.name} index={index}>
           <SpeakerCard index={index} {...speaker} />
         </Column>
       ))}

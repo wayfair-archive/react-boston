@@ -34,11 +34,11 @@ const StyledButton = styled(BaseButton)`
     // increased specificity to override link in header color
     color: ${({ theme }) => theme.colors.primaryDark};
   }
+  font-weight: 600;
   line-height: 1;
   cursor: pointer;
   position: relative;
   text-align: center;
-  outline: 0;
   white-space: nowrap;
   user-select: none;
   padding: 0.7em 1.5em;
