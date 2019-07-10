@@ -54,7 +54,11 @@ export const Title = Text.withComponent("h1")
 
 export const SectionTitle = Text.withComponent("h2")
 
+export const ParagraphTitle = Text.withComponent("h3")
+
 export const InlineText = Text.withComponent("span")
+
+export const Section = Box.withComponent("section")
 
 export const Container = props => (
   <Box
