@@ -43,7 +43,7 @@ const LINKS = [
 ]
 
 const Container = props => (
-  <Box as="header" position="sticky" top={0} bg="white" {...props} />
+  <Box as="header" position="sticky" top={0} bg="white" zIndex="1" {...props} />
 )
 
 const Logo = ({ children, ...props }) => (

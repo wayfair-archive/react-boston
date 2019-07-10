@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
+import shouldForwardProp from "@styled-system/should-forward-prop"
 import {
   background,
   border,
@@ -15,7 +16,7 @@ import {
 } from "styled-system"
 import propTypes from "@styled-system/prop-types"
 
-export const Text = styled.p(
+export const Text = styled("p", { shouldForwardProp })(
   border,
   color,
   flexbox,
@@ -35,7 +36,11 @@ Text.propTypes = {
   ...propTypes.typography,
 }
 
-export const Box = styled(Text.withComponent("div"))(background, grid, shadow)
+export const Box = styled(Text.withComponent("div"), { shouldForwardProp })(
+  background,
+  grid,
+  shadow
+)
 
 Box.propTypes = {
   ...propTypes.background,

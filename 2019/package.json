@@ -7,6 +7,7 @@
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
     "@styled-system/prop-types": "^5.0.12",
+    "@styled-system/should-forward-prop": "^5.0.12",
     "emotion": "^10.0.9",
     "emotion-theming": "^10.0.10",
     "gatsby": "^2.3.16",
