@@ -62,13 +62,12 @@ const hotelData = [
 ];
 
 const Hotel = ({ url, name }) => (
-  <Box display="flex">
-    <div>
-      <Link openInNewWindow href={url}>
-        {name}
-      </Link>
-    </div>
-  </Box>
+  <div>
+    <h3>{name}</h3>
+    <Box mt="10px">
+      <Button secondary>Book Your Stay</Button>
+    </Box>
+  </div>
 );
 
 const Image = styled.img`
