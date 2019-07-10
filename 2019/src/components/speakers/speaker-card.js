@@ -112,7 +112,7 @@ export default function SpeakerCard({ src, name, company, twitter, github }) {
                 fill="#f15959"
                 width="20px"
                 height="20px"
-                title="Twitter"
+                title="Github"
               />
             </Link>
           </dd>
