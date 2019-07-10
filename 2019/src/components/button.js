@@ -35,13 +35,14 @@ const StyledButton = styled(BaseButton)`
     color: ${({ theme }) => theme.colors.primaryDark};
   }
   font-weight: 600;
+  font-style: italic;
   line-height: 1;
   cursor: pointer;
   position: relative;
   text-align: center;
   white-space: nowrap;
   user-select: none;
-  padding: 0.7em 1.5em;
+  padding: 0.5em 1em;
   display: block;
   font-size: 1.25rem;
   vertical-align: middle;
@@ -67,13 +68,19 @@ const StyledButton = styled(BaseButton)`
     opacity: 0;
   }
   &:focus,
-  &:hover {
+  &:hover,
+  &:active {
+    color: ${({ theme }) => theme.colors.black};
     background: ${props => ({ theme }) =>
       props.secondary ? theme.colors.grey : theme.colors.secondaryDark};
     &::after {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  ,
+  &:focus {
+    outline: 0;
   }
 `
 const StyledLink = StyledButton.withComponent(BaseLink)

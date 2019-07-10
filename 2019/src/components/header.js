@@ -1,19 +1,11 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { css } from "@emotion/core"
-import { Box, Title } from "./layout-components"
+import { Box } from "./layout-components"
 import Button from "./button"
-import LogoText from "../images/logo-text"
-import FullLogo from "../images/icons/full-logo"
 import LogoImage from "../images/logo"
 import Kebab from "../images/icons/kebab"
-
-// TODO: Show shadow on stick
-// TODO: Responsive
-// TODO: Use the right logo
-// TODO: Show logo only when stick
-// TODO: Use Button component from ./button
+import Hamburger from "./hamburger"
 
 const LINKS = [
   {
@@ -43,20 +35,29 @@ const LINKS = [
 ]
 
 const Container = props => (
-  <Box as="header" position="sticky" top={0} bg="white" zIndex="1" {...props} />
+  <Box
+    as="header"
+    position="sticky"
+    top={0}
+    bg="white"
+    zIndex="1"
+    {...props}
+    boxShadow="0 3px 6px rgba(1,46,111, .2)"
+  />
 )
 
 const Logo = ({ children, ...props }) => (
   <Box
     as="a"
-    display="block"
-    width={195}
+    display="flex"
+    alignItems="center"
+    width={200}
     px={8}
     py={4}
     aria-label={children}
     {...props}
   >
-    <LogoText />
+    <LogoImage width="200px" />
   </Box>
 )
 
@@ -102,28 +103,6 @@ const NavLink = props => (
   />
 )
 
-const BuyButton = styled.a`
-  display: block;
-  padding: ${p => p.theme.space[4]}px ${p => p.theme.space[9]}px;
-  background-color: ${p => p.theme.colors.secondary};
-  color: ${p => p.theme.colors.black};
-  font-size: ${p => p.theme.fontSizes[3]}px;
-  font-style: italic;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 2em;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: ${p => p.theme.colors.secondaryDark};
-  }
-
-  &:focus {
-    outline: 0;
-  }
-`
-
 const MenuButtonBase = styled(Box)`
   display: inline-block;
   background: none;
@@ -159,15 +138,17 @@ const Header = ({ siteTitle, ...props }) => {
             display={["flex", null, null, "none"]}
             alignItems="flex-end"
             flexDirection="column"
-            mb={4}
+            position="relative"
           >
-            <MenuButton onClick={toggleMenu} />
+            <Hamburger onClick={toggleMenu} isActive={isOpen} />
           </Box>
           <Box
             as="ul"
             display={[isOpen ? "flex" : "none", null, null, "flex"]}
             flexDirection={["column", null, null, "row"]}
             alignItems={["center", null, null, "baseline"]}
+            justifyContent="space-between"
+            flexGrow="1"
           >
             {LINKS.map(({ title, href }) => (
               <NavItem
@@ -180,9 +161,12 @@ const Header = ({ siteTitle, ...props }) => {
               </NavItem>
             ))}
             <Box ml={[0, null, null, 8]} mt={[6, null, null, 0]}>
-              <BuyButton href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777">
+              <Button
+                href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777"
+                openInNewTab
+              >
                 Buy Tickets
-              </BuyButton>
+              </Button>
             </Box>
           </Box>
         </Nav>
