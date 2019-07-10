@@ -45,7 +45,7 @@ const getColumnAlignment = index => {
 }
 
 const Column = styled.li`
-  max-width: 350px;
+  width: 100%;
   @media screen and (min-width: 68em) {
     ${props => getColumnAlignment(props.index)}
     ${props => getAlternateRows(props.index)}
@@ -56,7 +56,7 @@ export default function Speakers() {
   return (
     <Grid>
       {SPEAKERS.map((speaker, index) => (
-        <Column tabIndex={0} key={speaker.name} index={index}>
+        <Column key={speaker.name} index={index}>
           <SpeakerCard index={index} {...speaker} />
         </Column>
       ))}

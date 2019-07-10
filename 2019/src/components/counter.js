@@ -8,11 +8,9 @@ const Wrap = styled(Box)`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 8px;
-  justify-items: center;
-  margin: 0 12px;
+  width: 100%;
   @media screen and (min-width: 40em) {
     grid-gap: 16px;
-    padding: 28px 0;
   }
   & > div {
     width: 100%;

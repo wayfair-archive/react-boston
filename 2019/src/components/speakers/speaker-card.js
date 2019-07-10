@@ -8,8 +8,8 @@ import styled from "@emotion/styled"
 
 const StyledAnimatedBox = styled(animated.div)`
   overflow: hidden;
-  height: 325px;
-  width: 325px;
+  /* height: 325px; */
+  /* width: 325px; */
   background: linear-gradient(
     135deg,
     rgba(241, 89, 89, 1) 25%,
@@ -37,7 +37,6 @@ const StyledImage = styled.img`
   &:hover,
   &:focus {
     mix-blend-mode: normal;
-    // cursor: pointer;
   }
 `
 

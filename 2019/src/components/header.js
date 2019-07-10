@@ -35,14 +35,7 @@ const LINKS = [
 ]
 
 const Container = props => (
-  <Box
-    as="header"
-    top={0}
-    bg="white"
-    zIndex="1"
-    boxShadow="0 3px 6px rgba(1,46,111, .2)"
-    {...props}
-  />
+  <Box as="header" top={0} bg="white" zIndex="1" {...props} />
 )
 
 const Logo = ({ children, ...props }) => (
@@ -50,13 +43,13 @@ const Logo = ({ children, ...props }) => (
     as="a"
     display="flex"
     alignItems="center"
-    width={200}
+    width={250}
     px={8}
     py={4}
     aria-label={children}
     {...props}
   >
-    <LogoImage width="200px" />
+    <LogoImage width="100%" />
   </Box>
 )
 
@@ -108,7 +101,7 @@ const Header = ({ siteTitle, ...props }) => {
   return (
     <Container
       {...props}
-      position={isOpen ? "absolute" : "sticky"}
+      position={isOpen ? "absolute" : null}
       right="0"
       top="0"
       bg={isOpen ? null : "white"}

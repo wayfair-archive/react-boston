@@ -4,7 +4,9 @@ import styled from "@emotion/styled"
 
 const BUTTON_SIZE = 50
 
-const Wrap = styled.div`
+const Wrap = styled.button`
+  background: none;
+  border: 0;
   position: absolute;
   right: 20px;
   top: 15px;
@@ -15,7 +17,7 @@ const Wrap = styled.div`
     isActive ? theme.colors.white : "transparent"};
   transform: ${({ isActive }) => (isActive ? "rotate(45deg)" : null)};
 
-  @media (min-width: 768px) {
+  @media (min-width: 72rem) {
     display: none;
   }
 

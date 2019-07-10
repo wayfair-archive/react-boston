@@ -1,6 +1,6 @@
 import React from "react"
 import "../global-styles/base-reset.css"
-import { Box, Text } from "../components/layout-components"
+import { Box, Text, SectionTitle } from "../components/layout-components"
 import Counter from "../components/counter"
 import LogoText from "../images/logo-text"
 import FullLogo from "../images/icons/full-logo"
@@ -8,21 +8,13 @@ import { StaticQuery, graphql } from "gatsby"
 import Stickers from "../images/stickers.png"
 import Dots from "../components/dots"
 import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 
 const StyledWrap = styled.div`
   background-color: ${({ theme }) => theme.colors.primaryLight};
-  padding: 90px 50px;
-  border-bottom-left-radius: 15%;
-  border-top-right-radius: 15%;
+  border-bottom-left-radius: 65px;
+  border-top-right-radius: 65px;
   box-shadow: 16px 18px 20px -2px rgba(0, 0, 0, 0.3);
-`
-
-const StyledTitle = styled.h1`
-  font-style: italic;
-`
-
-const StyledSectionTitle = styled.h2`
-  padding-top: 20px;
 `
 
 const StyledDotsWrapFirst = styled.div`
@@ -51,8 +43,8 @@ const StyledTextWrap = styled.div`
 `
 
 const StyledImage = styled.img`
-  border-bottom-left-radius: 15%;
-  border-top-right-radius: 15%;
+  border-bottom-left-radius: 65px;
+  border-top-right-radius: 65px;
   object-fit: cover;
   height: 450px;
   width: 100%;
@@ -67,10 +59,11 @@ const Timing = () => (
       alignItems="center"
       fontSize="5"
       fontWeight="bold"
+      p={["40px", "25px", "25px", "50px"]}
     >
-      September 21-23, 2019
+      <Text mb="1em">September 21-23, 2019</Text>
+      <Counter />
     </Box>
-    <Counter />
   </StyledWrap>
 )
 
@@ -89,18 +82,36 @@ export default () => (
     `}
     render={data => {
       return (
-        <Box display="grid" gridTemplateColumns="repeat(2, 1fr)">
-          <Section pr="24px">
-            <FullLogo />
-            <StyledSectionTitle>
+        <Box
+          display="grid"
+          gridTemplateColumns={["1fr", null, "repeat(2, minmax(325px,1fr))"]}
+          gridGap="40px"
+        >
+          <Section>
+            <Box
+              display="flex"
+              alignItems="center"
+              justifyContent={["center", null, "flex-start"]}
+            >
+              <LogoText
+                css={css`
+                  max-width: 400px;
+                `}
+              />
+            </Box>
+            <SectionTitle
+              fontSize={[5]}
+              textAlign={["center", null, "left", null]}
+              mt="40px"
+            >
               New England's annual two-day React.js conference
-            </StyledSectionTitle>
+            </SectionTitle>
           </Section>
           <Box position="relative">
             <Timing />
             <Dots position="absolute" zIndex="-1" left="-50px" />
           </Box>
-          <Box position="relative">
+          <Box position="relative" display={["none", null, "block"]}>
             <StyledImage src={Stickers} alt="React stickers" />
             <Dots
               position="absolute"
@@ -111,8 +122,13 @@ export default () => (
               height="400px"
             />
           </Box>
-          <Section pt="100px" pl="100px">
-            <StyledTitle>Join Us!</StyledTitle>
+          <Section
+            pt={[null, null, null, "100px"]}
+            pl={[null, null, null, "100px"]}
+          >
+            <SectionTitle fontSize={6} fontStyle="italic">
+              Join Us!
+            </SectionTitle>
             <StyledTextWrap>
               <Text
                 mb={10}
