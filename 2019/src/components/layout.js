@@ -33,6 +33,7 @@ const Layout = ({ children }) => (
             display: grid;
             min-height: 100vh;
             grid-template-rows: min-content auto min-content;
+            position: relative;
           `}
         >
           <Header siteTitle={data.site.siteMetadata.title} />

@@ -8,7 +8,6 @@ const Wrap = styled.div`
   position: absolute;
   right: 20px;
   top: 15px;
-  margin-top: -20px;
   z-index: 99;
   cursor: pointer;
   transition: all 0.3s ease-in-out;

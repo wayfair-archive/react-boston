@@ -37,12 +37,11 @@ const LINKS = [
 const Container = props => (
   <Box
     as="header"
-    position="sticky"
     top={0}
     bg="white"
     zIndex="1"
-    {...props}
     boxShadow="0 3px 6px rgba(1,46,111, .2)"
+    {...props}
   />
 )
 
@@ -103,45 +102,27 @@ const NavLink = props => (
   />
 )
 
-const MenuButtonBase = styled(Box)`
-  display: inline-block;
-  background: none;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  color: ${p => p.theme.colors.white};
-
-  &:active,
-  &:hover,
-  &:focus {
-    outline-offset: 2px;
-    outline: 1px dotted;
-  }
-`
-
-const MenuButton = props => (
-  <MenuButtonBase as="button" aria-label="Menu" {...props}>
-    <Kebab />
-  </MenuButtonBase>
-)
-
 const Header = ({ siteTitle, ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen(isOpen => !isOpen)
   return (
-    <Container {...props}>
+    <Container
+      {...props}
+      position={isOpen ? "absolute" : "sticky"}
+      right="0"
+      top="0"
+      bg={isOpen ? null : "white"}
+      borderRadius={isOpen ? "0 0 0 65px" : null}
+    >
       <Box display="flex">
-        <Logo href="/">{siteTitle}</Logo>
-        <Nav display={[null, null, null, "flex"]} flexGrow="1" fontSize={2}>
-          <Box
-            display={["flex", null, null, "none"]}
-            alignItems="flex-end"
-            flexDirection="column"
-            position="relative"
-          >
-            <Hamburger onClick={toggleMenu} isActive={isOpen} />
-          </Box>
+        {!isOpen && <Logo href="/">{siteTitle}</Logo>}
+        <Nav
+          display={[null, null, null, "flex"]}
+          flexGrow="1"
+          fontSize={2}
+          position="relative"
+        >
+          <Hamburger onClick={toggleMenu} isActive={isOpen} />
           <Box
             as="ul"
             display={[isOpen ? "flex" : "none", null, null, "flex"]}
