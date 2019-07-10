@@ -12,7 +12,64 @@ import Button from "../components/button"
 import { css } from "@emotion/core"
 import Link from "../components/link"
 import office from "../images/venue.jpg"
+import Westin from "../images/hotels/westin.jpg"
+import Sheraton from "../images/hotels/sheraton.jpg"
+import Marriott from "../images/hotels/marriott.jpg"
+import Fairmont from "../images/hotels/fairmont.jpg"
+import Colonnade from "../images/hotels/colonnade.jpg"
+import Copley from "../images/hotels/copley.jpg"
+import Courtyard from "../images/hotels/courtyard.jpg"
 import styled from "@emotion/styled"
+
+const hotelData = [
+  {
+    name: 'Copley Square Hotel',
+    url: 'http://www.copleysquarehotel.com/',
+    src: Copley
+  },
+  {
+    name: 'Westin Copley Place',
+    url: 'http://www.westincopleyplaceboston.com/',
+    src: Westin
+  },
+  {
+    name: 'Boston Marriott Copley Place',
+    url:
+      'http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/',
+    src: Marriott
+  },
+  {
+    name: 'Courtyard Boston Copley Square',
+    url:
+      'http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/',
+    src: Courtyard
+  },
+  {
+    name: 'Fairmont Copley Plaza',
+    url: 'http://www.fairmont.com/copley-plaza-boston/',
+    src: Fairmont
+  },
+  {
+    name: 'Sheraton Boston',
+    url: 'http://www.sheratonbostonhotel.com/',
+    src: Sheraton
+  },
+  {
+    name: 'Colonnade Hotel',
+    url: 'http://www.colonnadehotel.com/',
+    src: Colonnade
+  }
+];
+
+const Hotel = ({ url, name }) => (
+  <Box display="flex">
+    <div>
+      <Link openInNewWindow href={url}>
+        {name}
+      </Link>
+    </div>
+  </Box>
+);
 
 const Image = styled.img`
   background: #f5f9fa;
@@ -94,6 +151,8 @@ export default () => (
             Station.
           </Text>
         </Section>
+      </Box>
+      <Box>
         <Section>
           <ParagraphTitle mb={4} fontSize={4} fontWeight="bold">
             Accomodations
@@ -108,6 +167,14 @@ export default () => (
             several hotels nearby, including:
           </Text>
         </Section>
+        <Box display="grid" gridTemplateColumns={"repeat(2, 1fr)"} gridGap="40px">
+          {hotelData.map(hotel => (
+            <>
+              <Hotel key={hotel.url} name={hotel.name} url={hotel.url} />
+              <Image src={hotel.src} />
+            </>
+          ))}
+        </Box>
       </Box>
     </Container>
   </Layout>
