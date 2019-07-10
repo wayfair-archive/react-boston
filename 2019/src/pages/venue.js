@@ -64,8 +64,8 @@ const hotelData = [
 const Hotel = ({ url, name }) => (
   <div>
     <h3>{name}</h3>
-    <Box mt="10px">
-      <Button secondary>Book Your Stay</Button>
+    <Box mt="10px" maxWidth="225px">
+      <Button secondary href={url}>Book Your Stay</Button>
     </Box>
   </div>
 );
