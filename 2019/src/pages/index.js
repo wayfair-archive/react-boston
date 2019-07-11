@@ -16,10 +16,10 @@ const StyledSectionTitle = styled(SectionTitle)`
 export default () => (
   <Layout>
     <Box maxWidth="1200px" m="auto">
-      <Box p={["50px 15px", null, "100px 10px"]}>
+      <Box py={["50px", null, "100px"]} px={["28px", null, null, "0"]}>
         <Intro />
       </Box>
-      <Box p={["50px 15px", null, "100px 10px 0"]}>
+      <Box py={["50px", null, "100px"]} px={["28px", null, null, "0"]}>
         <Box
           display="grid"
           justifyItems={[null, null, "center"]}

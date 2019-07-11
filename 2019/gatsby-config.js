@@ -29,12 +29,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-web-font-loader`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        custom: {
-          families: ["Avenir Next Condensed"],
-          urls: ["/src/fonts/fonts.css"],
-        },
+        fonts: [`Roboto+Condensed:400,500,700`, `Source+Sans+Pro:300,400`],
+        display: "swap",
       },
     },
     `gatsby-plugin-emotion`,

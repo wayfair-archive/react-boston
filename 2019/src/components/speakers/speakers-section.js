@@ -47,6 +47,7 @@ const getColumnAlignment = index => {
 
 const Column = styled.li`
   width: 100%;
+  max-width: 350px;
   @media screen and (min-width: 68em) {
     ${props => getColumnAlignment(props.index)}
     ${props => getAlternateRows(props.index)}

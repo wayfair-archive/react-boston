@@ -1,9 +1,8 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Speakers from "../components/speakers/speakers-section"
-import { Box, Container } from "../components/layout-components"
+import { Box, Container, Text } from "../components/layout-components"
 import Dots from "../components/dots"
-import styled from "@emotion/styled"
 
 export default () => (
   <Layout>
@@ -21,6 +20,11 @@ export default () => (
         </Box>
       </Box>
       <Speakers />
+      <Box display="flex" justifyContent="center" p="11">
+        <Text textAlign="center" fontSize={3}>
+          More speakers to be announced soon...
+        </Text>
+      </Box>
     </Container>
   </Layout>
 )
