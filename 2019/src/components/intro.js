@@ -2,6 +2,7 @@ import React from "react"
 import "../global-styles/base-reset.css"
 import { Box, Text, SectionTitle } from "../components/layout-components"
 import Counter from "../components/counter"
+import { linkStyles } from "../components/link"
 import LogoText from "../images/logo-text"
 import FullLogo from "../images/icons/full-logo"
 import { StaticQuery, graphql } from "gatsby"
@@ -38,7 +39,7 @@ const StyledDotsWrapSecond = styled.div`
 const StyledTextWrap = styled.div`
   padding-top: 20px;
   a {
-    color: ${({ theme }) => theme.colors.secondaryDark};
+    ${linkStyles};
   }
 `
 

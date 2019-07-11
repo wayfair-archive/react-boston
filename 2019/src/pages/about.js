@@ -6,9 +6,9 @@ import {
   SectionTitle,
   Text,
 } from "../components/layout-components"
-import Link from "../components/link"
-import PropTypes from "prop-types"
+import Link, { linkStyles } from "../components/link"
 import { StaticQuery, graphql } from "gatsby"
+import { css } from "@emotion/core"
 
 const About = () => (
   <StaticQuery
@@ -27,6 +27,11 @@ const About = () => (
           <Container title="About React Boston">
             <Text
               mb={10}
+              css={css`
+                a {
+                  ${linkStyles}
+                }
+              `}
               dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.about }}
             />
             <SectionTitle mb={2}>Past Years</SectionTitle>

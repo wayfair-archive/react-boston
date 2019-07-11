@@ -68,7 +68,7 @@ export const Section = Box.withComponent("section")
 export const Container = props => (
   <Box
     maxWidth={["94vw", "90vw", "", "1200px"]}
-    px={[3, 11]}
+    px={[4]}
     py={11}
     mx="auto"
     {...props}

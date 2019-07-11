@@ -1,9 +1,10 @@
 import React from "react"
 import { Text } from "./layout-components"
 import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 
-const StyledLink = styled(Text.withComponent("a"))`
-  color: ${({ theme }) => theme.colors.secondaryDark};
+export const linkStyles = css`
+  color: #d63333;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -11,14 +12,18 @@ const StyledLink = styled(Text.withComponent("a"))`
 `
 
 const Link = ({ href, openInNewTab, fontSize, children }) => (
-  <StyledLink
+  <Text
+    as="a"
     href={href}
     target={openInNewTab ? "_blank" : null}
     rel={openInNewTab ? "noopener noreferrer" : null}
     fontSize={fontSize}
+    css={css`
+      ${linkStyles}
+    `}
   >
     {children}
-  </StyledLink>
+  </Text>
 )
 
 export default Link

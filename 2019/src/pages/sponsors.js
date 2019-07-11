@@ -20,7 +20,12 @@ const LogoCard = styled.div`
 export default () => (
   <Layout>
     <Container title="React Boston 2019 is sponsored and hosted by:">
-      <Box display="grid" gridGap="40px" gridTemplateColumns="1fr 1fr">
+      <Box
+        display="grid"
+        gridGap="40px"
+        gridTemplateColumns="1fr 1fr"
+        gridTemplateRows="300px"
+      >
         <LogoCard>
           <WayfairLogo
             css={css`
@@ -33,12 +38,7 @@ export default () => (
           <Text mb={4} fontSize={4} fontWeight="bold">
             Wayfair
           </Text>
-          <Text
-            mb={4}
-            css={css`
-              max-width: 300px;
-            `}
-          >
+          <Text mb={4}>
             We're the creative builders solving complex business problems
             through the newest and most innovative software in e-commerce.
           </Text>

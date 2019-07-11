@@ -40,7 +40,7 @@ const Container = props => (
 
 const Logo = ({ children, ...props }) => (
   <Box
-    as="a"
+    as={Link}
     display="flex"
     alignItems="center"
     width={250}
@@ -108,7 +108,7 @@ const Header = ({ siteTitle, ...props }) => {
       borderRadius={isOpen ? "0 0 0 65px" : null}
     >
       <Box display="flex">
-        {!isOpen && <Logo href="/">{siteTitle}</Logo>}
+        {!isOpen && <Logo to="/">{siteTitle}</Logo>}
         <Nav
           display={[null, null, null, "flex"]}
           flexGrow="1"

@@ -23,56 +23,57 @@ import styled from "@emotion/styled"
 
 const hotelData = [
   {
-    name: 'Copley Square Hotel',
-    url: 'http://www.copleysquarehotel.com/',
-    src: Copley
+    name: "Copley Square Hotel",
+    url: "http://www.copleysquarehotel.com/",
+    src: Copley,
   },
   {
-    name: 'Westin Copley Place',
-    url: 'http://www.westincopleyplaceboston.com/',
-    src: Westin
+    name: "Westin Copley Place",
+    url: "http://www.westincopleyplaceboston.com/",
+    src: Westin,
   },
   {
-    name: 'Boston Marriott Copley Place',
+    name: "Boston Marriott Copley Place",
     url:
-      'http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/',
-    src: Marriott
+      "http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/",
+    src: Marriott,
   },
   {
-    name: 'Courtyard Boston Copley Square',
+    name: "Courtyard Boston Copley Square",
     url:
-      'http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/',
-    src: Courtyard
+      "http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/",
+    src: Courtyard,
   },
   {
-    name: 'Fairmont Copley Plaza',
-    url: 'http://www.fairmont.com/copley-plaza-boston/',
-    src: Fairmont
+    name: "Fairmont Copley Plaza",
+    url: "http://www.fairmont.com/copley-plaza-boston/",
+    src: Fairmont,
   },
   {
-    name: 'Sheraton Boston',
-    url: 'http://www.sheratonbostonhotel.com/',
-    src: Sheraton
+    name: "Sheraton Boston",
+    url: "http://www.sheratonbostonhotel.com/",
+    src: Sheraton,
   },
   {
-    name: 'Colonnade Hotel',
-    url: 'http://www.colonnadehotel.com/',
-    src: Colonnade
-  }
-];
+    name: "Colonnade Hotel",
+    url: "http://www.colonnadehotel.com/",
+    src: Colonnade,
+  },
+]
 
 const Hotel = ({ url, name }) => (
   <div>
     <h3>{name}</h3>
     <Box mt="10px" maxWidth="225px">
-      <Button secondary href={url}>Book Your Stay</Button>
+      <Button secondary href={url}>
+        Book Your Stay
+      </Button>
     </Box>
   </div>
-);
+)
 
 const Image = styled.img`
   background: #f5f9fa;
-  padding: 10px;
   border-radius: 0 65px 0 65px;
   display: flex;
   width: 100%;
@@ -84,18 +85,18 @@ const Image = styled.img`
 export default () => (
   <Layout>
     <Container title="Venue">
-      <Box display="grid" gridGap="40px" gridTemplateColumns="1fr 1fr">
+      <Box
+        display="grid"
+        gridGap={9}
+        gridTemplateColumns={["1fr", "1fr 1fr"]}
+        mb={11}
+      >
         <Image src={office} alt="Wayfair Office" />
         <Section pt={4}>
           <SectionTitle mb={4} fontSize={4} fontWeight="bold">
             Wayfair
           </SectionTitle>
-          <Text
-            mb={4}
-            css={css`
-              max-width: 300px;
-            `}
-          >
+          <Text mb={4}>
             React Boston 2019 will be hosted at{" "}
             <Link href="https://www.wayfair.com/about/" openInNewTab>
               Wayfair's
@@ -109,68 +110,57 @@ export default () => (
           </Text>
           <Button secondary>Directions to Wayfair</Button>
         </Section>
-        <Section>
-          <ParagraphTitle>Public Transportation</ParagraphTitle>
-          <Text
-            mb={4}
-            css={css`
-              max-width: 300px;
-            `}
-          >
+      </Box>
+      <Box
+        display="grid"
+        gridGap="10"
+        gridTemplateColumns={["1fr", null, "1fr 1fr 1fr", null]}
+        mb={11}
+      >
+        <div>
+          <ParagraphTitle mb={4}>Public Transportation</ParagraphTitle>
+          <Text mb={4}>
             The venue is easily accessible by local public transportation via
             the Orange Line to Back Bay or the Green Line to Copley Station.
             There are also several MBTA bus routes that stop at nearby St. James
             Avenue at Dartmouth Street or Back Bay Station.
           </Text>
-        </Section>
-        <Section>
-          <ParagraphTitle>Parking</ParagraphTitle>
-          <Text
-            mb={4}
-            css={css`
-              max-width: 300px;
-            `}
-          >
+        </div>
+        <div>
+          <ParagraphTitle mb={4}>Parking</ParagraphTitle>
+          <Text mb={4}>
             If you are driving, the venue is accessible by several major
             highways. There are also local parking options available.
           </Text>
-        </Section>
-        <Section>
-          <ParagraphTitle>By Plane or Rail</ParagraphTitle>
-          <Text
-            mb={4}
-            css={css`
-              max-width: 300px;
-            `}
-          >
+        </div>
+        <div>
+          <ParagraphTitle mb={4}>By Plane or Rail</ParagraphTitle>
+          <Text mb={4}>
             If you are arriving from outside the Boston area, there are both air
             and rail options. You can fly into Logan International Airport
             (BOS), a 30 minute drive or shuttle ride from the venue. If
             traveling by rail you can take Amtrak directly into Back Bay
             Station.
           </Text>
-        </Section>
+        </div>
       </Box>
       <Box>
-        <Section>
-          <ParagraphTitle mb={4} fontSize={4} fontWeight="bold">
-            Accomodations
-          </ParagraphTitle>
-          <Text
-            mb={4}
-            css={css`
-              max-width: 300px;
-            `}
-          >
-            There are no official conference accommodations, but there are
-            several hotels nearby, including:
-          </Text>
-        </Section>
-        <Box display="grid" gridTemplateColumns={"repeat(2, 1fr)"} gridGap="40px">
-          {hotelData.map(hotel => (
+        <SectionTitle fontStyle="italic" mb={4} fontSize={4}>
+          Accommodations
+        </SectionTitle>
+        <Text mb={10}>
+          There are no official conference accommodations, but there are several
+          hotels nearby, including:
+        </Text>
+        <Box
+          display="grid"
+          gridTemplateColumns={"repeat(2, 1fr)"}
+          gridGap="40px"
+        >
+          {hotelData.map(({ url, name, src }) => (
             <>
-              <Hotel key={hotel.url} name={hotel.name} url={hotel.url} />
-              <Image src={hotel.src} />
+              <Hotel key={url} name={name} url={url} />
+              <Image src={src} />
             </>
           ))}
         </Box>
