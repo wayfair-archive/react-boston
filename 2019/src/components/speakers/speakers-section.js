@@ -81,14 +81,18 @@ export default function Speakers() {
   const { edges } = allFile
   const getSpeaker = () => {
     return SPEAKERS.map(speaker => {
+      let speakerData
       const foundSpeaker = edges.find(({ node }) => {
+        let foundNode
         if (node.name === speaker.key) {
-          return node
+          foundNode = node
         }
+        return foundNode
       })
       if (foundSpeaker) {
-        return Object.assign(speaker, foundSpeaker)
+        speakerData = Object.assign(speaker, foundSpeaker)
       }
+      return speakerData
     })
   }
   return (
