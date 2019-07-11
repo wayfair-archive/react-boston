@@ -89,6 +89,7 @@ export default () => {
           fontSize={[5]}
           textAlign={["center", null, "left", null]}
           mt="40px"
+          mb="3"
         >
           New England's annual two-day React.js conference
         </SectionTitle>
@@ -122,11 +123,12 @@ export default () => {
         </SectionTitle>
         <StyledTextWrap>
           <Text
-            mb={10}
+            pb={4}
             dangerouslySetInnerHTML={{
               __html: data.site.siteMetadata.about,
             }}
             lineHeight="2rem"
+            backgroundColor="white"
           />
         </StyledTextWrap>
       </Section>

@@ -16,10 +16,10 @@ const StyledSectionTitle = styled(SectionTitle)`
 export default () => (
   <Layout>
     <Box maxWidth="1200px" m="auto">
-      <Box py={["50px", null, "100px"]} px={["28px", null, null, "0"]}>
+      <Box py={["50px", null, "100px"]} px={["28px", null, null, null, "0"]}>
         <Intro />
       </Box>
-      <Box py={["50px", null, "100px"]} px={["28px", null, null, "0"]}>
+      <Box py={["50px", null, "100px"]} px={["28px", null, null, null, "0"]}>
         <Box
           display="grid"
           justifyItems={[null, null, "center"]}
@@ -30,7 +30,9 @@ export default () => (
           <StyledSectionTitle fontSize={6} fontStyle="italic">
             Speakers
           </StyledSectionTitle>
-          <Dots height="210px" left="60px" />
+          <Box display={["none", null, null, "block"]}>
+            <Dots height="210px" left="60px" />
+          </Box>
         </Box>
         <Speakers />
         <Box display="flex" justifyContent="center" p="11">

@@ -9,8 +9,6 @@ import styled from "@emotion/styled"
 
 const StyledAnimatedBox = styled(animated.div)`
   overflow: hidden;
-  // height: 325px;
-  // width: 325px;
   background: linear-gradient(
     135deg,
     rgba(241, 89, 89, 1) 25%,
@@ -89,7 +87,12 @@ export default function SpeakerCard({ name, company, twitter, github, node }) {
         style={{ transform: props.xys.interpolate(trans) }}
       >
         {/* commenting out everything related to the modal until the abstracts are available */}
-        {/* <StyledImage src={src} alt={name} onClick={() => setIsOpen(true)} /> */}
+        {/* <StyledImage
+          fluid={node.childImageSharp.fluid}
+          key={node.id}
+          alt={name}
+          onClick={() => setIsOpen(true)}
+        /> */}
         <StyledImage
           fluid={node.childImageSharp.fluid}
           key={node.id}

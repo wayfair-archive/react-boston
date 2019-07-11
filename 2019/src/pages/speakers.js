@@ -15,7 +15,7 @@ export default () => (
         gridTemplateRows="100px"
         pt="50px"
       >
-        <Box gridColumn="2">
+        <Box gridColumn="2" display={["none", null, null, "block"]}>
           <Dots height="210px" left="60px" />
         </Box>
       </Box>
