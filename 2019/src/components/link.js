@@ -1,6 +1,5 @@
 import React from "react"
 import { Text } from "./layout-components"
-import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 
 export const linkStyles = css`

@@ -11,7 +11,6 @@ import {
   position,
   shadow,
   space,
-  textStyle,
   typography,
 } from "styled-system"
 import propTypes from "@styled-system/prop-types"

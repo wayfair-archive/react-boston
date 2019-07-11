@@ -16,6 +16,7 @@ const Image = styled(Img)`
   border-radius: 0 65px 0 65px;
   width: 100%;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
 `
 
 export default () => {
@@ -41,8 +42,9 @@ export default () => {
         <Box
           display="grid"
           gridGap={9}
-          gridTemplateColumns={["1fr", "1fr 1fr"]}
+          gridTemplateColumns={["1fr", null, null, "1fr 1fr"]}
           alignItems="center"
+          justifyItems="center"
         >
           <Image
             fluid={data.bostonImage.childImageSharp.fluid}
