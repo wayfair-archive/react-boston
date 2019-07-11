@@ -14,14 +14,17 @@ import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
-const Hotel = ({ url, name, src }) => (
+const Hotel = ({ url, name, src, directions }) => (
   <>
     <div>
       <h3>{name}</h3>
-      <Box mt="10px" maxWidth="225px">
+      <Box mt="6" maxWidth="225px">
         <Button secondary href={url}>
           Book Your Stay
         </Button>
+      </Box>
+      <Box mt="6" maxWidth="225px" fontSize="2" textAlign="center">
+        <Link href={directions}>Directions</Link>
       </Box>
     </div>
     <Image fluid={src.node.childImageSharp.fluid} />
@@ -33,44 +36,53 @@ const Image = styled(Img)`
   border-radius: 0 65px 0 65px;
   width: 100%;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.15);
+  max-width: 550px;
+  max-height: 380px;
 `
 
 const HOTELS = [
   {
     name: "Copley Square Hotel",
     url: "http://www.copleysquarehotel.com/",
+    directions: "https://goo.gl/maps/pE5jFdc1H578JwUcA",
     key: "copley",
   },
   {
     name: "Westin Copley Place",
     url: "http://www.westincopleyplaceboston.com/",
+    directions: "https://goo.gl/maps/KTxSrJk189RRquPr8",
     key: "westin",
   },
   {
     name: "Boston Marriott Copley Place",
     url:
       "http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/",
+    directions: "https://goo.gl/maps/Bru4C1cPWidFtVuw8",
     key: "marriott",
   },
   {
     name: "Courtyard Boston Copley Square",
     url:
       "http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/",
+    directions: "https://goo.gl/maps/KepMW6gBgfJruVpj9",
     key: "courtyard",
   },
   {
     name: "Fairmont Copley Plaza",
     url: "http://www.fairmont.com/copley-plaza-boston/",
+    directions: "https://goo.gl/maps/tQznzmaCCriNhqxq9",
     key: "fairmont",
   },
   {
     name: "Sheraton Boston",
     url: "http://www.sheratonbostonhotel.com/",
+    directions: "https://goo.gl/maps/BXV9CWw8RSrUk3rS8",
     key: "sheraton",
   },
   {
     name: "Colonnade Hotel",
     url: "http://www.colonnadehotel.com/",
+    directions: "https://goo.gl/maps/j5TujjvKnRRQLUKPA",
     key: "colonnade",
   },
 ]
@@ -124,7 +136,8 @@ export default () => {
           display="grid"
           gridGap={9}
           gridTemplateColumns={["1fr", "1fr 1fr"]}
-          mb={11}
+          mb={12}
+          alignItems="center"
         >
           <Image
             fluid={data.wayfair.childImageSharp.fluid}
@@ -154,10 +167,13 @@ export default () => {
           display="grid"
           gridGap="10"
           gridTemplateColumns={["1fr", null, "1fr 1fr 1fr", null]}
-          mb={11}
+          mb={6}
+          justifyItems="center"
         >
           <div>
-            <ParagraphTitle mb={4}>Public Transportation</ParagraphTitle>
+            <ParagraphTitle textAlign="center" mb={4}>
+              Public Transportation
+            </ParagraphTitle>
             <Text mb={4}>
               The venue is easily accessible by local public transportation via
               the Orange Line to Back Bay or the Green Line to Copley Station.
@@ -170,14 +186,18 @@ export default () => {
             </Text>
           </div>
           <div>
-            <ParagraphTitle mb={4}>Parking</ParagraphTitle>
+            <ParagraphTitle textAlign="center" mb={4}>
+              Parking
+            </ParagraphTitle>
             <Text mb={4}>
               If you are driving, the venue is accessible by several major
               highways. There are also local parking options available.
             </Text>
           </div>
           <div>
-            <ParagraphTitle mb={4}>By Plane or Rail</ParagraphTitle>
+            <ParagraphTitle textAlign="center" mb={4}>
+              By Plane or Rail
+            </ParagraphTitle>
             <Text mb={4}>
               If you are arriving from outside the Boston area, there are both
               air and rail options. You can fly into Logan International Airport
@@ -188,17 +208,24 @@ export default () => {
           </div>
         </Box>
         <Box>
-          <SectionTitle fontStyle="italic" mb={4} fontSize={4}>
+          <SectionTitle
+            fontStyle="italic"
+            mb={4}
+            fontSize={4}
+            textAlign="center"
+          >
             Accommodations
           </SectionTitle>
-          <Text mb={10}>
+          <Text mb={10} textAlign="center">
             There are no official conference accommodations, but there are
             several hotels nearby, including:
           </Text>
           <Box
             display="grid"
             gridTemplateColumns={"repeat(2, 1fr)"}
-            gridGap="40px"
+            gridGap="40px 0"
+            alignItems="center"
+            justifyItems="center"
           >
             {hotelData.map(hotel => (
               <Hotel key={hotel.url} {...hotel} />

@@ -15,6 +15,6 @@ export const theme = {
     semibold: 600,
   },
   // margin and padding
-  space: [0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 64],
+  space: [0, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 64, 72],
   breakpoints: [40, 52, 72].map(n => n + "rem"),
 }

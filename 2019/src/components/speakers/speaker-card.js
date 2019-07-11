@@ -72,7 +72,14 @@ const useModal = initial => {
   return [isOpen, useCallback(() => setIsOpen(status => !status))]
 }
 
-export default function SpeakerCard({ name, company, twitter, github, node }) {
+export default function SpeakerCard({
+  src,
+  name,
+  company,
+  twitter,
+  github,
+  node,
+}) {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
@@ -88,14 +95,14 @@ export default function SpeakerCard({ name, company, twitter, github, node }) {
       >
         {/* commenting out everything related to the modal until the abstracts are available */}
         {/* <StyledImage
-          fluid={node.childImageSharp.fluid}
-          key={node.id}
+          fluid={src.node.childImageSharp.fluid}
+          key={src.node.id}
           alt={name}
           onClick={() => setIsOpen(true)}
         /> */}
         <StyledImage
-          fluid={node.childImageSharp.fluid}
-          key={node.id}
+          fluid={src.node.childImageSharp.fluid}
+          key={src.node.id}
           alt={name}
         />
       </StyledAnimatedBox>

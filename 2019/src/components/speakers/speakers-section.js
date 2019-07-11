@@ -79,25 +79,19 @@ export default function Speakers() {
   )
 
   const { edges } = allFile
-  const getSpeaker = () => {
-    return SPEAKERS.map(speaker => {
-      let speakerData
-      const foundSpeaker = edges.find(({ node }) => {
-        let foundNode
-        if (node.name === speaker.key) {
-          foundNode = node
-        }
-        return foundNode
-      })
-      if (foundSpeaker) {
-        speakerData = Object.assign(speaker, foundSpeaker)
-      }
-      return speakerData
-    })
-  }
+  const speakerData = SPEAKERS.map(speaker => {
+    return {
+      ...speaker,
+      src: edges.find(({ node }) => {
+        return node.name === speaker.key ? node : null
+      }),
+    }
+  })
+
+  console.error(speakerData)
   return (
     <Grid>
-      {getSpeaker().map((speaker, index) => (
+      {speakerData.map((speaker, index) => (
         <Column key={speaker.name} index={index}>
           <SpeakerCard index={index} {...speaker} />
         </Column>
