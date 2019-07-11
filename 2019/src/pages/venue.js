@@ -161,8 +161,12 @@ export default () => {
             <Text mb={4}>
               The venue is easily accessible by local public transportation via
               the Orange Line to Back Bay or the Green Line to Copley Station.
-              There are also several MBTA bus routes that stop at nearby St.
-              James Avenue at Dartmouth Street or Back Bay Station.
+              There are also several{" "}
+              <Link href="https://www.mbta.com/" openInNewTab>
+                MBTA
+              </Link>{" "}
+              bus routes that stop at nearby St. James Avenue at Dartmouth
+              Street or Back Bay Station.
             </Text>
           </div>
           <div>
