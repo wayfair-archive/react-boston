@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import SpeakerCard from "./speaker-card"
 import { SPEAKERS } from "../../api/speakers"
+import { useStaticQuery, graphql } from "gatsby"
 
 const Grid = styled.ul`
   display: grid;
@@ -53,9 +54,46 @@ const Column = styled.li`
 `
 
 export default function Speakers() {
+  const { allFile } = useStaticQuery(
+    graphql`
+      query {
+        allFile(
+          sort: { fields: name, order: DESC }
+          filter: { relativeDirectory: { eq: "speakers" } }
+        ) {
+          edges {
+            node {
+              id
+              name
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const { edges } = allFile
+  const getSpeaker = () => {
+    return SPEAKERS.map(speaker => {
+      const foundSpeaker = edges.find(({ node }) => {
+        if (node.name === speaker.key) {
+          return node
+        }
+      })
+      if (foundSpeaker) {
+        return Object.assign(speaker, foundSpeaker)
+      }
+    })
+  }
+  console.error(getSpeaker().map(speaker => speaker.name), "map")
   return (
     <Grid>
-      {SPEAKERS.map((speaker, index) => (
+      {getSpeaker().map((speaker, index) => (
         <Column key={speaker.name} index={index}>
           <SpeakerCard index={index} {...speaker} />
         </Column>

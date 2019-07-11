@@ -13,8 +13,14 @@ const BaseButton = ({ secondary, children, ...props }: Props) => (
   <button {...props}>{children}</button>
 )
 
-const BaseLink = ({ secondary, children, ...props }: Props) => (
-  <a {...props}>{children}</a>
+const BaseLink = ({ secondary, children, openInNewTab, ...props }: Props) => (
+  <a
+    target={openInNewTab ? "_blank" : null}
+    rel={openInNewTab ? "noopener noreferrer" : null}
+    {...props}
+  >
+    {children}
+  </a>
 )
 
 const BaseGatsbyLink = ({ secondary, children, ...props }: Props) => (

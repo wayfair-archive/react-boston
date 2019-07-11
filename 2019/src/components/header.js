@@ -4,7 +4,6 @@ import styled from "@emotion/styled"
 import { Box } from "./layout-components"
 import Button from "./button"
 import LogoImage from "../images/logo"
-import Kebab from "../images/icons/kebab"
 import Hamburger from "./hamburger"
 
 const LINKS = [

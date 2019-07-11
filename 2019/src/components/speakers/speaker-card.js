@@ -1,9 +1,10 @@
 import React, { useState, useCallback } from "react"
 import { Box, Text } from "../layout-components"
 import { useSpring, animated } from "react-spring"
-import Modal from "./speaker-modal"
+// import Modal from "./speaker-modal"
 import Link from "../link"
 import { Twitter, Github } from "../../images/icons/social"
+import Img from "gatsby-image"
 import styled from "@emotion/styled"
 
 const StyledAnimatedBox = styled(animated.div)`
@@ -27,7 +28,7 @@ const StyledAnimatedBox = styled(animated.div)`
   }
 `
 
-const StyledImage = styled.img`
+const StyledImage = styled(Img)`
   object-fit: cover;
   display: block;
   mix-blend-mode: luminosity;
@@ -73,7 +74,7 @@ const useModal = initial => {
   return [isOpen, useCallback(() => setIsOpen(status => !status))]
 }
 
-export default function SpeakerCard({ src, name, company, twitter, github }) {
+export default function SpeakerCard({ name, company, twitter, github, node }) {
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 350, friction: 40 },
@@ -89,7 +90,11 @@ export default function SpeakerCard({ src, name, company, twitter, github }) {
       >
         {/* commenting out everything related to the modal until the abstracts are available */}
         {/* <StyledImage src={src} alt={name} onClick={() => setIsOpen(true)} /> */}
-        <StyledImage src={src} alt={name} />
+        <StyledImage
+          fluid={node.childImageSharp.fluid}
+          key={node.id}
+          alt={name}
+        />
       </StyledAnimatedBox>
       <DescriptionList mt="4">
         <Name fontWeight="bold">{name}</Name>
