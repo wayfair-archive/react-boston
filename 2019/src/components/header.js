@@ -34,7 +34,7 @@ const LINKS = [
 ]
 
 const Container = props => (
-  <Box as="header" top={0} bg="white" zIndex="1" {...props} />
+  <Box as="header" top="0" bg="white" zIndex="1" {...props} />
 )
 
 const Logo = ({ children, ...props }) => (
@@ -53,15 +53,7 @@ const Logo = ({ children, ...props }) => (
 )
 
 const Nav = props => (
-  <Box
-    as="nav"
-    py={10}
-    px={11}
-    color="white"
-    bg="primaryDark"
-    borderRadius="0 0 0 65px"
-    {...props}
-  />
+  <Box as="nav" py={10} px={11} color="white" bg="primaryDark" {...props} />
 )
 
 const NavItem = styled(Box)`
@@ -98,21 +90,15 @@ const Header = ({ siteTitle, ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen(isOpen => !isOpen)
   return (
-    <Container
-      {...props}
-      position={isOpen ? "absolute" : null}
-      right="0"
-      top="0"
-      bg={isOpen ? null : "white"}
-      borderRadius={isOpen ? "0 0 0 65px" : null}
-    >
+    <Container {...props}>
       <Box display="flex">
-        {!isOpen && <Logo to="/">{siteTitle}</Logo>}
+        <Logo to="/">{siteTitle}</Logo>
         <Nav
           display={[null, null, null, "flex"]}
           flexGrow="1"
           fontSize={2}
           position="relative"
+          borderRadius={isOpen ? null : "0 0 0 65px"}
         >
           <Hamburger onClick={toggleMenu} isActive={isOpen} />
           <Box
@@ -122,6 +108,13 @@ const Header = ({ siteTitle, ...props }) => {
             alignItems={["center", null, null, "baseline"]}
             justifyContent="space-between"
             flexGrow="1"
+            borderRadius={isOpen ? "0 0 0 65px" : null}
+            px={isOpen ? "11" : 0}
+            pb={isOpen ? "10" : 0}
+            left={0}
+            bg="primaryDark"
+            width="100%"
+            position={isOpen ? "absolute" : "relative"}
           >
             {LINKS.map(({ title, href }) => (
               <NavItem
