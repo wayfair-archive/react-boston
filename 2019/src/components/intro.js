@@ -6,8 +6,8 @@ import { linkStyles } from "../components/link"
 import LogoText from "../images/logo-text"
 import FullLogo from "../images/icons/full-logo"
 import { StaticQuery, graphql } from "gatsby"
-import Stickers from "../images/stickers.png"
 import Dots from "../components/dots"
+import Img from "gatsby-image"
 import styled from "@emotion/styled"
 import { css } from "@emotion/core"
 
@@ -43,7 +43,7 @@ const StyledTextWrap = styled.div`
   }
 `
 
-const StyledImage = styled.img`
+const StyledImage = styled(Img)`
   border-bottom-left-radius: 65px;
   border-top-right-radius: 65px;
   object-fit: cover;
@@ -77,6 +77,13 @@ export default () => (
         site {
           siteMetadata {
             about
+          }
+        }
+        placeholderImage: file(relativePath: { eq: "stickers.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -113,7 +120,10 @@ export default () => (
             <Dots position="absolute" zIndex="-1" left="-50px" />
           </Box>
           <Box position="relative" display={["none", null, "block"]}>
-            <StyledImage src={Stickers} alt="React stickers" />
+            <StyledImage
+              fluid={data.placeholderImage.childImageSharp.fluid}
+              alt="React stickers"
+            />
             <Dots
               position="absolute"
               zIndex="-1"

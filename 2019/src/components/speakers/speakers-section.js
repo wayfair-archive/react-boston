@@ -90,7 +90,6 @@ export default function Speakers() {
       }
     })
   }
-  console.error(getSpeaker().map(speaker => speaker.name), "map")
   return (
     <Grid>
       {getSpeaker().map((speaker, index) => (
