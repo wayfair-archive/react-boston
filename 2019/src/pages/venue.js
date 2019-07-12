@@ -14,7 +14,7 @@ import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
-const Hotel = ({ url, name, src, directions }) => (
+const Hotel = ({ url, name, img, directions }) => (
   <>
     <div>
       <h3>{name}</h3>
@@ -27,7 +27,7 @@ const Hotel = ({ url, name, src, directions }) => (
         <Link href={directions}>Directions</Link>
       </Box>
     </div>
-    <Image fluid={src.node.childImageSharp.fluid} />
+    <Image fluid={img.src.childImageSharp.fluid} />
   </>
 )
 
@@ -39,54 +39,6 @@ const Image = styled(Img)`
   max-width: 550px;
   max-height: 380px;
 `
-
-const HOTELS = [
-  {
-    name: "Copley Square Hotel",
-    url: "http://www.copleysquarehotel.com/",
-    directions: "https://goo.gl/maps/pE5jFdc1H578JwUcA",
-    key: "copley",
-  },
-  {
-    name: "Westin Copley Place",
-    url: "http://www.westincopleyplaceboston.com/",
-    directions: "https://goo.gl/maps/KTxSrJk189RRquPr8",
-    key: "westin",
-  },
-  {
-    name: "Boston Marriott Copley Place",
-    url:
-      "http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/",
-    directions: "https://goo.gl/maps/Bru4C1cPWidFtVuw8",
-    key: "marriott",
-  },
-  {
-    name: "Courtyard Boston Copley Square",
-    url:
-      "http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/",
-    directions: "https://goo.gl/maps/KepMW6gBgfJruVpj9",
-    key: "courtyard",
-  },
-  {
-    name: "Fairmont Copley Plaza",
-    url: "http://www.fairmont.com/copley-plaza-boston/",
-    directions: "https://goo.gl/maps/tQznzmaCCriNhqxq9",
-    key: "fairmont",
-  },
-  {
-    name: "Sheraton Boston",
-    url: "http://www.sheratonbostonhotel.com/",
-    directions: "https://goo.gl/maps/BXV9CWw8RSrUk3rS8",
-    key: "sheraton",
-  },
-  {
-    name: "Colonnade Hotel",
-    url: "http://www.colonnadehotel.com/",
-    directions: "https://goo.gl/maps/j5TujjvKnRRQLUKPA",
-    key: "colonnade",
-  },
-]
-
 export default () => {
   const data = useStaticQuery(graphql`
     query {
@@ -97,17 +49,20 @@ export default () => {
           }
         }
       }
-      allFile(
-        sort: { fields: name, order: DESC }
-        filter: { relativeDirectory: { eq: "hotels" } }
-      ) {
+      allHotelsJson {
         edges {
           node {
-            id
             name
-            childImageSharp {
-              fluid(maxWidth: 400) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            url
+            directions
+            key
+            img {
+              src {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
               }
             }
           }
@@ -117,17 +72,9 @@ export default () => {
   `)
 
   const {
-    allFile: { edges },
+    allHotelsJson: { edges },
+    wayfair,
   } = data
-
-  const hotelData = HOTELS.map(hotel => {
-    return {
-      ...hotel,
-      src: edges.find(({ node }) => {
-        return node.name === hotel.key ? node : null
-      }),
-    }
-  })
 
   return (
     <Layout>
@@ -139,10 +86,7 @@ export default () => {
           mb={12}
           alignItems="center"
         >
-          <Image
-            fluid={data.wayfair.childImageSharp.fluid}
-            alt="Wayfair Office"
-          />
+          <Image fluid={wayfair.childImageSharp.fluid} alt="Wayfair Office" />
           <Section pt={4}>
             <SectionTitle mb={4} fontSize={4} fontWeight="bold">
               Wayfair
@@ -227,8 +171,8 @@ export default () => {
             alignItems="center"
             justifyItems="center"
           >
-            {hotelData.map(hotel => (
-              <Hotel key={hotel.url} {...hotel} />
+            {edges.map(({ node }) => (
+              <Hotel key={node.url} {...node} />
             ))}
           </Box>
         </Box>
