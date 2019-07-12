@@ -13,6 +13,7 @@ import Footer from "./Footer"
 import { theme } from "../global-styles/theme"
 import { ThemeProvider } from "emotion-theming"
 import { css } from "@emotion/core"
+import SEO from "../components/Seo"
 import "../global-styles/base-reset.css"
 
 const Layout = ({ children }) => (
@@ -28,6 +29,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
+        <SEO />
         <div
           css={css`
             display: grid;

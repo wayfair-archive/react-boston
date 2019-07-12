@@ -13,7 +13,6 @@ import Link from "../components/link"
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import SEO from "../components/Seo"
 
 const HotelWrap = styled(Box)`
   flex-direction: column;
@@ -93,7 +92,6 @@ export default () => {
 
   return (
     <Layout>
-      <SEO />
       <Container title="Venue">
         <Box
           display="grid"

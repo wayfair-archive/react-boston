@@ -2,11 +2,9 @@ import React from "react"
 import Layout from "../components/Layout"
 import { Text, Container } from "../components/layout-components"
 import Link from "../components/link"
-import SEO from "../components/Seo"
 
 export default () => (
   <Layout>
-    <SEO />
     <Container title="Diversity">
       <Text mb={4}>
         React Boston believes that diversity is an important part of creating a
