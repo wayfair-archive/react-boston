@@ -8,10 +8,6 @@ import Hamburger from "./hamburger"
 
 const LINKS = [
   {
-    title: "About",
-    href: "/about",
-  },
-  {
     title: "Speakers",
     href: "/speakers",
   },
@@ -30,6 +26,10 @@ const LINKS = [
   {
     title: "Sponsors",
     href: "/sponsors",
+  },
+  {
+    title: "About",
+    href: "/about",
   },
 ]
 
@@ -63,11 +63,13 @@ const NavItem = styled(Box)`
 const NavLinkBase = styled(Link)`
   color: ${p => p.theme.colors.white};
   text-decoration: none;
+  transition: 0.3s ease;
+  border-bottom: 2px solid transparent;
 
   &:hover,
   &:focus,
   &:active {
-    border-bottom: 2px solid;
+    border-bottom-color: ${({ theme }) => theme.colors.white};
   }
 
   &:focus {
@@ -80,8 +82,7 @@ const NavLink = props => (
   <NavLinkBase
     {...props}
     activeStyle={{
-      borderBottom: "2px solid",
-      fontWeight: "bold",
+      borderBottomColor: "#fff",
     }}
   />
 )
@@ -109,6 +110,7 @@ const Header = ({ siteTitle, ...props }) => {
             justifyContent="space-between"
             flexGrow="1"
             borderRadius={isOpen ? "0 0 0 65px" : null}
+            boxShadow={isOpen ? "0 10px 20px rgba(0,0,0,.4)" : null}
             px={isOpen ? ["4", null, "11"] : 0}
             pb={isOpen ? "10" : 0}
             left={0}
