@@ -57,11 +57,22 @@ const Bar = styled.span`
   `};
 `
 
+const SrText = styled.span`
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+`
+
 const Hamburger = ({ isActive, onClick }) => (
   <Wrap isActive={isActive} onClick={onClick}>
-    <Bar isActive={isActive} />
-    <Bar isActive={isActive} />
-    <Bar isActive={isActive} />
+    <Bar isActive={isActive} aria-hidden="true" />
+    <Bar isActive={isActive} aria-hidden="true" />
+    <Bar isActive={isActive} aria-hidden="true" />
+    <SrText>Menu</SrText>
   </Wrap>
 )
 

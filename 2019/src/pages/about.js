@@ -66,10 +66,14 @@ export default () => {
             <Text mb={2}>Have a look at our previous conferences:</Text>
             <Box as="ul" pl={8}>
               <li>
-                <Link href="https://www.reactboston.com/2017/">2017</Link>
+                <Link href="https://www.reactboston.com/2017/">
+                  React Boston 2017
+                </Link>
               </li>
               <li>
-                <Link href="https://www.reactboston.com/2018/">2018</Link>
+                <Link href="https://www.reactboston.com/2018/">
+                  React Boston 2018
+                </Link>
               </li>
             </Box>
           </Box>
