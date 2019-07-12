@@ -73,9 +73,7 @@ export default function SpeakerCard({ name, company, twitter, github, img }) {
 
   const [isOpen, setIsOpen] = useModal(false)
 
-  const shouldDisableAnimation =
-    typeof window !== "undefined" &&
-    useMedia({ query: "(prefers-reduced-motion)" })
+  const shouldDisableAnimation = useMedia({ query: "(prefers-reduced-motion)" })
 
   return (
     <>

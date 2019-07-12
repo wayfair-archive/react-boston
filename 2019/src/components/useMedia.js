@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 export default function useMedia({
   query,
   defaultMatches = false,
-  matchMedia = window.matchMedia,
+  matchMedia = typeof window !== "undefined" && window.matchMedia,
 }) {
   let [matches, setMatches] = useState(defaultMatches)
 
