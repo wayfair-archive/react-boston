@@ -4,6 +4,7 @@ import { Text, Container, Box } from "../components/layout-components"
 import Link from "../components/link"
 import WayfairLogo from "../images/icons/wf-logo"
 import { css } from "@emotion/core"
+import SEO from "../components/Seo"
 import styled from "@emotion/styled"
 
 const LogoCard = styled.div`
@@ -19,6 +20,7 @@ const LogoCard = styled.div`
 
 export default () => (
   <Layout>
+    <SEO />
     <Container title="React Boston 2019 is sponsored and hosted by:">
       <Box
         display="grid"

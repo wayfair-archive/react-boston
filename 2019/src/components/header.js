@@ -87,6 +87,10 @@ const NavLink = props => (
   />
 )
 
+const ButtonWrap = styled(Box)`
+  list-style: none;
+`
+
 const Header = ({ siteTitle, ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen(isOpen => !isOpen)
@@ -128,14 +132,19 @@ const Header = ({ siteTitle, ...props }) => {
                 <NavLink to={href}>{title}</NavLink>
               </NavItem>
             ))}
-            <Box ml={[0, null, null, 8]} mt={[6, null, null, 0]}>
+            <ButtonWrap
+              as="li"
+              listStyle="none"
+              ml={[0, null, null, 8]}
+              mt={[6, null, null, 0]}
+            >
               <Button
                 href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777"
                 openInNewTab
               >
                 Buy Tickets
               </Button>
-            </Box>
+            </ButtonWrap>
           </Box>
         </Nav>
       </Box>

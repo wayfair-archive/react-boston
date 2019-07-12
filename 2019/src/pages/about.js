@@ -9,6 +9,7 @@ import {
 import Link, { linkStyles } from "../components/link"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/Seo"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 
@@ -38,6 +39,7 @@ export default () => {
   `)
   return (
     <Layout>
+      <SEO />
       <Container title="About React Boston">
         <Box
           display="grid"

@@ -3,9 +3,11 @@ import Layout from "../components/Layout"
 import Speakers from "../components/speakers/speakers-section"
 import { Box, Container, Text } from "../components/layout-components"
 import Dots from "../components/dots"
+import SEO from "../components/Seo"
 
 export default () => (
   <Layout>
+    <SEO />
     <Container title="Speakers">
       <Box
         display={["none", null, null, "grid"]}

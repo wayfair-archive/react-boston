@@ -1,6 +1,6 @@
 import React from "react"
 import "../global-styles/base-reset.css"
-import { Box, Text, SectionTitle } from "../components/layout-components"
+import { Box, Text, SectionTitle, Title } from "../components/layout-components"
 import Counter from "../components/counter"
 import { linkStyles } from "../components/link"
 import LogoText from "../images/logo-text"
@@ -85,14 +85,14 @@ export default () => {
             `}
           />
         </Box>
-        <SectionTitle
+        <Title
           fontSize={[5]}
           textAlign={["center", null, "left", null]}
           mt="40px"
           mb="3"
         >
           New England's annual two-day React.js conference
-        </SectionTitle>
+        </Title>
       </Section>
       <Box position="relative">
         <Timing />
