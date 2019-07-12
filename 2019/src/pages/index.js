@@ -5,6 +5,7 @@ import "../global-styles/base-reset.css"
 import { Box, SectionTitle, Text } from "../components/layout-components"
 import Intro from "../components/intro"
 import Dots from "../components/dots"
+import SEO from "../components/Seo"
 import styled from "@emotion/styled"
 
 const StyledSectionTitle = styled(SectionTitle)`
@@ -13,6 +14,7 @@ const StyledSectionTitle = styled(SectionTitle)`
 
 export default () => (
   <Layout>
+    <SEO />
     <Box maxWidth="1200px" m="auto">
       <Box py={["50px", null, "100px"]} px={["28px", null, null, null, "0"]}>
         <Intro />

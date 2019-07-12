@@ -33,8 +33,8 @@ function SEO({ description, lang, meta, keywords, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={site.siteMetadata.title}
+      titleTemplate={site.siteMetadata.title}
       link={[
         { rel: "shortcut icon", type: "image/x-icon", href: `${favicon}` },
       ]}
