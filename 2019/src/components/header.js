@@ -112,7 +112,7 @@ const Header = ({ siteTitle, ...props }) => {
             borderRadius={isOpen ? "0 0 0 65px" : null}
             boxShadow={isOpen ? "0 10px 20px rgba(0,0,0,.4)" : null}
             px={isOpen ? ["4", null, "11"] : 0}
-            pb={isOpen ? "10" : 0}
+            py={isOpen ? "10" : 0}
             left={0}
             bg="primaryDark"
             width="100%"

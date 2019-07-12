@@ -84,19 +84,19 @@ function Counter() {
       <Box fontWeight="bold">
         <Card>{hours}</Card>
         <Box mt="3" fontSize="0">
-          Hours
+          Hrs
         </Box>
       </Box>
       <Box fontWeight="bold">
         <Card>{minutes}</Card>
         <Box mt="3" fontSize="0">
-          Minutes
+          Mins
         </Box>
       </Box>
       <Box fontWeight="bold">
         <Card>{seconds}</Card>
         <Box mt="3" fontSize="0">
-          Seconds
+          Secs
         </Box>
       </Box>
     </Wrap>

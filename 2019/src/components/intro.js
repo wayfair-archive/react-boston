@@ -38,9 +38,9 @@ const Timing = () => (
       display="flex"
       flexDirection="column"
       alignItems="center"
-      fontSize="5"
+      fontSize={["4", "5"]}
       fontWeight="bold"
-      p={["40px", "25px", "25px", "50px"]}
+      p={["25px", null, "50px"]}
     >
       <Text mb="1em">September 21-23, 2019</Text>
       <Counter />

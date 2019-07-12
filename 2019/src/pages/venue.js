@@ -14,9 +14,18 @@ import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
+const HotelWrap = styled(Box)`
+  flex-direction: column;
+  @media screen and (min-width: 40em) {
+    flex-direction: row;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+`
 const Hotel = ({ url, name, img, directions }) => (
   <>
-    <div>
+    <Box p={["5", "11"]}>
       <h3>{name}</h3>
       <Box mt="6" maxWidth="225px">
         <Button secondary href={url}>
@@ -26,7 +35,7 @@ const Hotel = ({ url, name, img, directions }) => (
       <Box mt="6" maxWidth="225px" fontSize="2" textAlign="center">
         <Link href={directions}>Directions</Link>
       </Box>
-    </div>
+    </Box>
     <Image fluid={img.src.childImageSharp.fluid} />
   </>
 )
@@ -164,17 +173,17 @@ export default () => {
             There are no official conference accommodations, but there are
             several hotels nearby, including:
           </Text>
-          <Box
-            display="grid"
-            gridTemplateColumns={"repeat(2, 1fr)"}
-            gridGap="40px 0"
-            alignItems="center"
-            justifyItems="center"
-          >
-            {edges.map(({ node }) => (
+          {edges.map(({ node }) => (
+            <HotelWrap
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+              key={node.url}
+              mb="11"
+            >
               <Hotel key={node.url} {...node} />
-            ))}
-          </Box>
+            </HotelWrap>
+          ))}
         </Box>
       </Container>
     </Layout>

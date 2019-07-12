@@ -15,7 +15,7 @@ const StyledSectionTitle = styled(SectionTitle)`
 export default () => (
   <Layout>
     <SEO />
-    <Box maxWidth="1200px" m="auto">
+    <Box maxWidth={["94vw", "90vw", "", "1200px"]} m="auto">
       <Box py={["50px", null, "100px"]} px={["28px", null, null, null, "0"]}>
         <Intro />
       </Box>
