@@ -28,10 +28,8 @@ export default () => (
       <Text mb={4}>
         Organizers will enforce this code throughout the event, and can be
         reached at{" "}
-        <Link href="mailto:reactboston2019@gmail.com">
-          reactboston2019@gmail.com
-        </Link>
-        , or through the conference Slack channel provided to participants.
+        <Link href="mailto:nvlatko@wayfair.com">nvlatko@wayfair.com</Link>, or
+        through the conference Slack channel provided to participants.
       </Text>{" "}
       <Text mb={4}>
         Full Version:{" "}
