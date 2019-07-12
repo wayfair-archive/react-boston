@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <ThemeProvider theme={theme}>
-        <SEO />
+        <SEO title={data.site.siteMetadata.title} />
         <div
           css={css`
             display: grid;
