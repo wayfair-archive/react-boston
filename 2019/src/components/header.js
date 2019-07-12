@@ -42,7 +42,7 @@ const Logo = ({ children, ...props }) => (
     as={Link}
     display="flex"
     alignItems="center"
-    width={250}
+    width={["200px", "250px"]}
     px={8}
     py={4}
     aria-label={children}
@@ -109,7 +109,7 @@ const Header = ({ siteTitle, ...props }) => {
             justifyContent="space-between"
             flexGrow="1"
             borderRadius={isOpen ? "0 0 0 65px" : null}
-            px={isOpen ? "11" : 0}
+            px={isOpen ? ["4", null, "11"] : 0}
             pb={isOpen ? "10" : 0}
             left={0}
             bg="primaryDark"

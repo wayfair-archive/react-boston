@@ -43,15 +43,8 @@ export const Box = styled(Text.withComponent("div"), { shouldForwardProp })(
 
 Box.propTypes = {
   ...propTypes.background,
-  ...propTypes.border,
-  ...propTypes.color,
-  ...propTypes.flexbox,
   ...propTypes.grid,
-  ...propTypes.layout,
-  ...propTypes.position,
   ...propTypes.shadow,
-  ...propTypes.space,
-  ...propTypes.typography,
 }
 
 export const Title = Text.withComponent("h1")

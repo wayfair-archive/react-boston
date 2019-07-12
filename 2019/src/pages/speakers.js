@@ -8,7 +8,7 @@ export default () => (
   <Layout>
     <Container title="Speakers">
       <Box
-        display="grid"
+        display={["none", null, null, "grid"]}
         justifyItems="center"
         gridGap="20px"
         gridTemplateColumns="repeat(auto-fill, minmax(325px, 1fr))"

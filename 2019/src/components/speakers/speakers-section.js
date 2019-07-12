@@ -16,7 +16,7 @@ const getAlternateRows = index => {
   const numbers = [3, 4, 5]
   return numbers.map(num => {
     let styles
-    for (let i = num; i <= 100; i += 6) {
+    for (let i = num; i <= SPEAKERS.length; i += 6) {
       if (index === i) {
         styles = `
           div,
@@ -38,7 +38,7 @@ const getAlternateRows = index => {
 }
 
 const getColumnAlignment = index => {
-  for (let i = 1; i <= 100; i += 3) {
+  for (let i = 1; i <= SPEAKERS.length; i += 3) {
     if (index % 3 === 1) {
       return `margin-top: -100px;`
     }
@@ -88,7 +88,6 @@ export default function Speakers() {
     }
   })
 
-  console.error(speakerData)
   return (
     <Grid>
       {speakerData.map((speaker, index) => (
