@@ -5,6 +5,7 @@ import { useSpring, animated } from "react-spring"
 import Link from "../link"
 import { Twitter, Github } from "../../images/icons/social"
 import Img from "gatsby-image"
+import useMedia from "../useMedia"
 import styled from "@emotion/styled"
 
 const StyledAnimatedBox = styled(animated.div)`
@@ -55,14 +56,6 @@ const calc = (x, y) => [
 
 // From https://codesandbox.io/embed/rj998k4vmm
 const trans = (x, y, s) => {
-  if (
-    typeof window.matchMedia === "function" &&
-    window.matchMedia("(prefers-reduced-motion)").matches
-  ) {
-    // early exit if user enables Reduce Motion in System Preferences to disable animation
-    // currently supported in the latest versions of Chrome, Safari, Firefox, Edge
-    return
-  }
   return `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 }
 
@@ -79,12 +72,21 @@ export default function SpeakerCard({ name, company, twitter, github, img }) {
   }))
 
   const [isOpen, setIsOpen] = useModal(false)
+
+  const shouldDisableAnimation =
+    typeof window !== "undefined" &&
+    useMedia({ query: "(prefers-reduced-motion)" })
+
   return (
     <>
       <StyledAnimatedBox
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        style={{ transform: props.xys.interpolate(trans) }}
+        style={
+          shouldDisableAnimation
+            ? { animation: "none" }
+            : { transform: props.xys.interpolate(trans) }
+        }
       >
         <StyledImage fluid={img.src.childImageSharp.fluid} alt={name} />
       </StyledAnimatedBox>
