@@ -25,7 +25,12 @@ const HotelWrap = styled(Box)`
 `
 const Hotel = ({ url, name, img, directions }) => (
   <>
-    <Box p={["5", "11"]}>
+    <Box
+      p={["5", "11"]}
+      display="flex"
+      alignItems="center"
+      flexDirection="column"
+    >
       <h3>{name}</h3>
       <Box mt="6" maxWidth="225px">
         <Button secondary href={url}>
