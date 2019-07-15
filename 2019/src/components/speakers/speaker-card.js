@@ -30,13 +30,16 @@ const StyledAnimatedBox = styled(animated.div)`
 const StyledImage = styled(Img)`
   object-fit: cover;
   display: block;
-  mix-blend-mode: luminosity;
   height: 100%;
   width: 100%;
   border-bottom-right-radius: 50%;
-  &:hover,
-  &:focus {
-    mix-blend-mode: normal;
+  @media screen and (min-width: 52em) {
+    mix-blend-mode: luminosity;
+    isolation: isolate;
+    &:hover,
+    &:focus {
+      mix-blend-mode: normal;
+    }
   }
 `
 
