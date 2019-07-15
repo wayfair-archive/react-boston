@@ -11,7 +11,7 @@ export default () => (
         display={["none", null, null, "grid"]}
         justifyItems="center"
         gridGap="20px"
-        gridTemplateColumns="repeat(auto-fill, minmax(325px, 1fr))"
+        gridTemplateColumns="repeat(auto-fill, minmax(300px, 1fr))"
         gridTemplateRows="100px"
         pt="50px"
       >

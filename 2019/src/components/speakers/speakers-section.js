@@ -6,7 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 const Grid = styled.ul`
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   list-style: none;
 `

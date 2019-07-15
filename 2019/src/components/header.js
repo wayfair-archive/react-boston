@@ -60,7 +60,7 @@ const Nav = props => (
   <Box
     as="nav"
     py={10}
-    px={[9, null, 11, null, 12]}
+    px={[9, null, null, null, 11, 12]}
     color="white"
     bg="primaryDark"
     {...props}
