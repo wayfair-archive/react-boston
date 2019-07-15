@@ -60,7 +60,7 @@ const Nav = props => (
   <Box
     as="nav"
     py={10}
-    px={[9, null, null, null, 11, 12]}
+    px={[9, null, null, 11, 12]}
     color="white"
     bg="primaryDark"
     {...props}
@@ -134,21 +134,11 @@ const Header = ({ siteTitle, ...props }) => {
             position={isOpen ? "absolute" : "relative"}
           >
             {LINKS.map(({ title, href }) => (
-              <NavItem
-                as="li"
-                key={href}
-                p={[3, null, null, 0]}
-                mr={[0, null, null, 6]}
-              >
+              <NavItem as="li" key={href} p={[3, null, null, 0]}>
                 <NavLink to={href}>{title}</NavLink>
               </NavItem>
             ))}
-            <ButtonWrap
-              as="li"
-              listStyle="none"
-              ml={[0, null, null, 8]}
-              mt={[6, null, null, 0]}
-            >
+            <ButtonWrap as="li" listStyle="none" mt={[6, null, null, 0]}>
               <Button
                 href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777"
                 openInNewTab
