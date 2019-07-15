@@ -23,7 +23,7 @@ export default () => (
       <Box
         display="grid"
         gridGap="40px"
-        gridTemplateColumns="1fr 1fr"
+        gridTemplateColumns={["1fr", "1fr 1fr"]}
         gridTemplateRows="300px"
       >
         <LogoCard>
