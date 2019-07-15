@@ -24,6 +24,10 @@ const LINKS = [
     href: "/diversity",
   },
   {
+    title: "Conduct",
+    href: "/conduct",
+  },
+  {
     title: "Sponsors",
     href: "/sponsors",
   },
@@ -53,7 +57,14 @@ const Logo = ({ children, ...props }) => (
 )
 
 const Nav = props => (
-  <Box as="nav" py={10} px={11} color="white" bg="primaryDark" {...props} />
+  <Box
+    as="nav"
+    py={10}
+    px={[9, null, 11, null, 12]}
+    color="white"
+    bg="primaryDark"
+    {...props}
+  />
 )
 
 const NavItem = styled(Box)`
