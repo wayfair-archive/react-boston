@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
-import Card from "./card"
+import Card from "./Card"
 import { Box } from "./layout-components"
 import styled from "@emotion/styled"
 
@@ -8,11 +8,9 @@ const Wrap = styled(Box)`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 8px;
-  justify-items: center;
-  margin: 0 12px;
+  width: 100%;
   @media screen and (min-width: 40em) {
     grid-gap: 16px;
-    padding: 28px 0;
   }
   & > div {
     width: 100%;
@@ -32,6 +30,7 @@ const HOURS_IN_ONE_DAY = 24
 
 const TimeRemaining = Date.parse(END_TIME) - Date.parse(new Date())
 
+// using useInterval from https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 function useInterval(callback, delay) {
   const savedCallback = useRef()
 
@@ -58,7 +57,6 @@ function getCountdownTimes(countDownTimeRemaining, timeUnit, time) {
 
 function Counter() {
   let [count, setCount] = useState(TimeRemaining)
-  // using useInterval from https://overreacted.io/making-setinterval-declarative-with-react-hooks/
   useInterval(() => {
     setCount(count - ONE_SECOND_IN_MS)
   }, ONE_SECOND_IN_MS)
@@ -77,28 +75,28 @@ function Counter() {
   )
   return (
     <Wrap textAlign="center">
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{days}</Card>
         <Box mt="3" fontSize="0">
           Days
         </Box>
       </Box>
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{hours}</Card>
         <Box mt="3" fontSize="0">
-          Hours
+          Hrs
         </Box>
       </Box>
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{minutes}</Card>
         <Box mt="3" fontSize="0">
-          Minutes
+          Mins
         </Box>
       </Box>
-      <Box fontWeight="semibold">
+      <Box fontWeight="bold">
         <Card>{seconds}</Card>
         <Box mt="3" fontSize="0">
-          Seconds
+          Secs
         </Box>
       </Box>
     </Wrap>

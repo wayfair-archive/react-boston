@@ -1,19 +1,20 @@
-// @flow
 import React from "react"
 import { Box } from "./layout-components"
 
-const Card = ({ children }: React.Node) => (
+const Card = ({ children }) => (
   <Box
-    bg="primary"
+    bg="primaryDark"
     borderRadius="5px"
     color="white"
-    height="120px"
     alignItems="center"
     justifyContent="center"
     display="flex"
-    fontSize="9"
-    padding="8px"
+    fontSize={["4", "8"]}
+    fontStyle="italic"
+    px="3"
+    py="5"
     boxShadow="0 3px 6px rgba(34, 25, 36, .2)"
+    fontFamily="monospace"
   >
     {children}
   </Box>
