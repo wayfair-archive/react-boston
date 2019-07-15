@@ -128,11 +128,11 @@ self.__precacheManifest = [
     "url": "https://www.reactboston.com/2017/static/media/vincent_riemer.cdeb1f9c.jpg"
   },
   {
-    "revision": "3eeff419ea696a338616",
-    "url": "https://www.reactboston.com/2017/static/js/2.3eeff419.chunk.js"
+    "revision": "3837bf951b690a7d9652",
+    "url": "https://www.reactboston.com/2017/static/js/2.3837bf95.chunk.js"
   },
   {
-    "revision": "39bb0284ee404a47ccfb21e5e79bac35",
+    "revision": "bb16984f88aaf7116a7d4d9a1c9b8539",
     "url": "https://www.reactboston.com/2017/index.html"
   }
 ];
