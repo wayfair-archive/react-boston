@@ -11,7 +11,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
 import { Box } from "../components/layout-components"
-import Transition from "./transition"
 import { theme } from "../global-styles/theme"
 import { ThemeProvider } from "emotion-theming"
 import SEO from "../components/Seo"
@@ -38,9 +37,7 @@ const Layout = props => {
         position="relative"
       >
         <Header />
-        <main>
-          <Transition {...props}>{props.children}</Transition>
-        </main>
+        <main>{props.children}</main>
         <Footer />
       </Box>
     </ThemeProvider>
