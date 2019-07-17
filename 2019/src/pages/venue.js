@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout"
 import {
   Box,
   Text,
@@ -18,7 +17,7 @@ const HotelWrap = styled(Box)`
   flex-direction: column;
   @media screen and (min-width: 40em) {
     flex-direction: row;
-    &:nth-child(even) {
+    &:nth-of-type(even) {
       flex-direction: row-reverse;
     }
   }
@@ -91,106 +90,98 @@ export default () => {
   } = data
 
   return (
-    <Layout>
-      <Container title="Venue">
-        <Box
-          display="grid"
-          gridGap={9}
-          gridTemplateColumns={["1fr", "1fr 1fr"]}
-          mb={12}
-          alignItems="center"
-        >
-          <Image fluid={wayfair.childImageSharp.fluid} alt="Wayfair Office" />
-          <Section pt={4}>
-            <SectionTitle mb={4} fontSize={4} fontWeight="bold">
-              Wayfair
-            </SectionTitle>
-            <Text mb={4}>
-              React Boston 2019 will be hosted at{" "}
-              <Link href="https://www.wayfair.com/about/" openInNewTab>
-                Wayfair's
-              </Link>{" "}
-              headquarters,{" "}
-              <Link href="https://goo.gl/maps/qPNfQbpMpDw" openInNewTab>
-                4 Copley Place
-              </Link>
-              , in Boston's beautiful Back Bay neighborhood, walking distance
-              from Copley Square, the Charles River, and the Boston Public
-              Gardens.
-            </Text>
-            <Button secondary>Directions to Wayfair</Button>
-          </Section>
-        </Box>
-        <Box
-          display="grid"
-          gridGap="10"
-          gridTemplateColumns={["1fr", null, "1fr 1fr 1fr", null]}
-          mb={6}
-          justifyItems="center"
-        >
-          <div>
-            <ParagraphTitle textAlign="center" mb={4}>
-              Public Transportation
-            </ParagraphTitle>
-            <Text mb={4}>
-              The venue is easily accessible by local public transportation via
-              the Orange Line to Back Bay or the Green Line to Copley Station.
-              There are also several{" "}
-              <Link href="https://www.mbta.com/" openInNewTab>
-                MBTA
-              </Link>{" "}
-              bus routes that stop at nearby St. James Avenue at Dartmouth
-              Street or Back Bay Station.
-            </Text>
-          </div>
-          <div>
-            <ParagraphTitle textAlign="center" mb={4}>
-              Parking
-            </ParagraphTitle>
-            <Text mb={4}>
-              If you are driving, the venue is accessible by several major
-              highways. There are also local parking options available.
-            </Text>
-          </div>
-          <div>
-            <ParagraphTitle textAlign="center" mb={4}>
-              By Plane or Rail
-            </ParagraphTitle>
-            <Text mb={4}>
-              If you are arriving from outside the Boston area, there are both
-              air and rail options. You can fly into Logan International Airport
-              (BOS), a 30 minute drive or shuttle ride from the venue. If
-              traveling by rail you can take Amtrak directly into Back Bay
-              Station.
-            </Text>
-          </div>
-        </Box>
-        <Box>
-          <SectionTitle
-            fontStyle="italic"
-            mb={4}
-            fontSize={4}
-            textAlign="center"
-          >
-            Accommodations
+    <Container title="Venue">
+      <Box
+        display="grid"
+        gridGap={9}
+        gridTemplateColumns={["1fr", "1fr 1fr"]}
+        mb={12}
+        alignItems="center"
+      >
+        <Image fluid={wayfair.childImageSharp.fluid} alt="Wayfair Office" />
+        <Section pt={4}>
+          <SectionTitle mb={4} fontSize={4} fontWeight="bold">
+            Wayfair
           </SectionTitle>
-          <Text mb={10} textAlign="center">
-            There are no official conference accommodations, but there are
-            several hotels nearby, including:
+          <Text mb={4}>
+            React Boston 2019 will be hosted at{" "}
+            <Link href="https://www.wayfair.com/about/" openInNewTab>
+              Wayfair's
+            </Link>{" "}
+            headquarters,{" "}
+            <Link href="https://goo.gl/maps/qPNfQbpMpDw" openInNewTab>
+              4 Copley Place
+            </Link>
+            , in Boston's beautiful Back Bay neighborhood, walking distance from
+            Copley Square, the Charles River, and the Boston Public Gardens.
           </Text>
-          {edges.map(({ node }) => (
-            <HotelWrap
-              display="flex"
-              alignItems="center"
-              justifyContent="center"
-              key={node.url}
-              mb="11"
-            >
-              <Hotel key={node.url} {...node} />
-            </HotelWrap>
-          ))}
-        </Box>
-      </Container>
-    </Layout>
+          <Button secondary>Directions to Wayfair</Button>
+        </Section>
+      </Box>
+      <Box
+        display="grid"
+        gridGap="10"
+        gridTemplateColumns={["1fr", null, "1fr 1fr 1fr", null]}
+        mb={6}
+        justifyItems="center"
+      >
+        <div>
+          <ParagraphTitle textAlign="center" mb={4}>
+            Public Transportation
+          </ParagraphTitle>
+          <Text mb={4}>
+            The venue is easily accessible by local public transportation via
+            the Orange Line to Back Bay or the Green Line to Copley Station.
+            There are also several{" "}
+            <Link href="https://www.mbta.com/" openInNewTab>
+              MBTA
+            </Link>{" "}
+            bus routes that stop at nearby St. James Avenue at Dartmouth Street
+            or Back Bay Station.
+          </Text>
+        </div>
+        <div>
+          <ParagraphTitle textAlign="center" mb={4}>
+            Parking
+          </ParagraphTitle>
+          <Text mb={4}>
+            If you are driving, the venue is accessible by several major
+            highways. There are also local parking options available.
+          </Text>
+        </div>
+        <div>
+          <ParagraphTitle textAlign="center" mb={4}>
+            By Plane or Rail
+          </ParagraphTitle>
+          <Text mb={4}>
+            If you are arriving from outside the Boston area, there are both air
+            and rail options. You can fly into Logan International Airport
+            (BOS), a 30 minute drive or shuttle ride from the venue. If
+            traveling by rail you can take Amtrak directly into Back Bay
+            Station.
+          </Text>
+        </div>
+      </Box>
+      <Box>
+        <SectionTitle fontStyle="italic" mb={4} fontSize={4} textAlign="center">
+          Accommodations
+        </SectionTitle>
+        <Text mb={10} textAlign="center">
+          There are no official conference accommodations, but there are several
+          hotels nearby, including:
+        </Text>
+        {edges.map(({ node }) => (
+          <HotelWrap
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            key={node.url}
+            mb="11"
+          >
+            <Hotel key={node.url} {...node} />
+          </HotelWrap>
+        ))}
+      </Box>
+    </Container>
   )
 }

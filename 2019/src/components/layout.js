@@ -7,46 +7,45 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Header from "./Header"
 import Footer from "./Footer"
+import { Box } from "../components/layout-components"
+import Transition from "./transition"
 import { theme } from "../global-styles/theme"
 import { ThemeProvider } from "emotion-theming"
-import { css } from "@emotion/core"
 import SEO from "../components/Seo"
 import "../global-styles/base-reset.css"
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = props => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={data => (
-      <ThemeProvider theme={theme}>
-        <SEO title={data.site.siteMetadata.title} />
-        <div
-          css={css`
-            display: grid;
-            min-height: 100vh;
-            grid-template-rows: min-content auto min-content;
-            position: relative;
-          `}
-        >
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <main>{children}</main>
-          <Footer />
-        </div>
-      </ThemeProvider>
-    )}
-  />
-)
+    }
+  `)
 
+  return (
+    <ThemeProvider theme={theme}>
+      <SEO title={data.site.siteMetadata.title} />
+      <Box
+        display="grid"
+        minHeight="100vh"
+        gridTemplateRows="min-content auto min-content"
+        position="relative"
+      >
+        <Header />
+        <main>
+          <Transition {...props}>{props.children}</Transition>
+        </main>
+        <Footer />
+      </Box>
+    </ThemeProvider>
+  )
+}
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }

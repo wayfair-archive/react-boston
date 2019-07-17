@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout"
 import { Text, Container, Box } from "../components/layout-components"
 import Link from "../components/link"
 import WayfairLogo from "../images/icons/wf-logo"
@@ -18,45 +17,43 @@ const LogoCard = styled.div`
 `
 
 export default () => (
-  <Layout>
-    <Container title="React Boston 2019 is sponsored and hosted by:">
-      <Box
-        display="grid"
-        gridGap="40px"
-        gridTemplateColumns={["1fr", "1fr 1fr"]}
-        gridTemplateRows="300px"
-      >
-        <LogoCard>
-          <WayfairLogo
-            css={css`
-              width: 250px;
-              max-width: 100%;
-            `}
-          />
-        </LogoCard>
-        <Box pt={4}>
-          <Text mb={4} fontSize={4} fontWeight="bold">
-            Wayfair
-          </Text>
-          <Text mb={4}>
-            We're the creative builders solving complex business problems
-            through the newest and most innovative software in e-commerce.
-          </Text>
-          <Text mb={4}>
-            <Link href="https://tech.wayfair.com/" openInNewTab>
-              tech.wayfair.com
-            </Link>
-          </Text>
-          <Text>
-            <Link
-              href="https://www.wayfair.com/careers/jobs/?teamIds=1"
-              openInNewTab
-            >
-              wayfair.com/careers
-            </Link>
-          </Text>
-        </Box>
+  <Container title="React Boston 2019 is sponsored and hosted by:">
+    <Box
+      display="grid"
+      gridGap="40px"
+      gridTemplateColumns={["1fr", "1fr 1fr"]}
+      gridTemplateRows="300px"
+    >
+      <LogoCard>
+        <WayfairLogo
+          css={css`
+            width: 250px;
+            max-width: 100%;
+          `}
+        />
+      </LogoCard>
+      <Box pt={4}>
+        <Text mb={4} fontSize={4} fontWeight="bold">
+          Wayfair
+        </Text>
+        <Text mb={4}>
+          We're the creative builders solving complex business problems through
+          the newest and most innovative software in e-commerce.
+        </Text>
+        <Text mb={4}>
+          <Link href="https://tech.wayfair.com/" openInNewTab>
+            tech.wayfair.com
+          </Link>
+        </Text>
+        <Text>
+          <Link
+            href="https://www.wayfair.com/careers/jobs/?teamIds=1"
+            openInNewTab
+          >
+            wayfair.com/careers
+          </Link>
+        </Text>
       </Box>
-    </Container>
-  </Layout>
+    </Box>
+  </Container>
 )

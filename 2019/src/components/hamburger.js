@@ -45,13 +45,13 @@ const Bar = styled.span`
   ${({ isActive }) =>
     isActive &&
     `
-    &:nth-child(2) {
+    &:nth-of-type(2) {
       opacity: 0;
     }
-    &:nth-child(1) {
+    &:nth-of-type(1) {
       transform: translateY(12px);
     }
-    &:nth-child(3) {
+    &:nth-of-type(3) {
       transform: translateY(-10px) rotate(90deg);
     }
   `};

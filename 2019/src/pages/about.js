@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/Layout"
 import {
   Box,
   Container,
@@ -37,48 +36,46 @@ export default () => {
     }
   `)
   return (
-    <Layout>
-      <Container title="About React Boston">
-        <Box
-          display="grid"
-          gridGap={9}
-          gridTemplateColumns={["1fr", null, null, "1fr 1fr"]}
-          alignItems="center"
-          justifyItems="center"
-        >
-          <Image
-            fluid={data.bostonImage.childImageSharp.fluid}
-            alt="Boston, MA"
+    <Container title="About React Boston">
+      <Box
+        display="grid"
+        gridGap={9}
+        gridTemplateColumns={["1fr", null, null, "1fr 1fr"]}
+        alignItems="center"
+        justifyItems="center"
+      >
+        <Image
+          fluid={data.bostonImage.childImageSharp.fluid}
+          alt="Boston, MA"
+        />
+        <Box>
+          <Text
+            mb={10}
+            css={css`
+              a {
+                ${linkStyles}
+              }
+            `}
+            dangerouslySetInnerHTML={{
+              __html: data.site.siteMetadata.about,
+            }}
           />
-          <Box>
-            <Text
-              mb={10}
-              css={css`
-                a {
-                  ${linkStyles}
-                }
-              `}
-              dangerouslySetInnerHTML={{
-                __html: data.site.siteMetadata.about,
-              }}
-            />
-            <SectionTitle mb={2}>Past Years</SectionTitle>
-            <Text mb={2}>Have a look at our previous conferences:</Text>
-            <Box as="ul" pl={8}>
-              <li>
-                <Link href="https://www.reactboston.com/2017/">
-                  React Boston 2017
-                </Link>
-              </li>
-              <li>
-                <Link href="https://www.reactboston.com/2018/">
-                  React Boston 2018
-                </Link>
-              </li>
-            </Box>
+          <SectionTitle mb={2}>Past Years</SectionTitle>
+          <Text mb={2}>Have a look at our previous conferences:</Text>
+          <Box as="ul" pl={8}>
+            <li>
+              <Link href="https://www.reactboston.com/2017/">
+                React Boston 2017
+              </Link>
+            </li>
+            <li>
+              <Link href="https://www.reactboston.com/2018/">
+                React Boston 2018
+              </Link>
+            </li>
           </Box>
         </Box>
-      </Container>
-    </Layout>
+      </Box>
+    </Container>
   )
 }
