@@ -42,7 +42,7 @@ const Timing = () => (
       fontWeight="bold"
       p={["25px", null, "50px"]}
     >
-      <Text mb="1em">September 21-23, 2019</Text>
+      <Text mb="1em">September 21-22, 2019</Text>
       <Counter />
     </Box>
   </StyledWrap>
