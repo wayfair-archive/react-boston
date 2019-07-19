@@ -2,37 +2,41 @@
 set -euo pipefail
 
 build2019() {
+  echo "building 2019 site..."
   cd 2019
-  # npm install
   npm run clean
   npm run build
   cp -rp public/* ../build
   rm -rf public
   cd ..
+  echo "done building 2019 site!"
 }
 
 build2018() {
+  mkdir -p build/2018
+  echo "building 2018 site..."
   cd 2018
-  # npm install
   npm run build
   cp -rp build/* ../build/2018
   rm -rf build
   cd ..
+  echo "done building 2018 site!"
 }
 
 build2017() {
+  mkdir -p build/2017
+  echo "building 2017 site..."
   cd 2017
-  # npm install
   npm run build
   cp -rp build/* ../build/2017
   rm -rf build
   cd ..
+  echo "done building 2017 site!"
 }
 
 fullBuild() {
   echo "building all sites..."
   rm -rf build
-  mkdir -p build/2017 build/2018
   build2017
   build2018
   build2019
@@ -48,22 +52,16 @@ parse_args() {
 			return 0
 		elif [[ $ARG = "-all" || $ARG = "--all" || $ARG = "-full" || $ARG = "--full" ]]; then
       fullBuild
-			shift
+      break
 		elif [[ $ARG = "-2019" || $ARG = "--2019" ]]; then
-			echo "building 2019 site..."
       build2019
-      echo "done building 2019 site!"
-			shift
+      break
     elif [[ $ARG = "-2018" || $ARG = "--2018" ]]; then
-      echo "building 2018 site..."
       build2018
-      echo "done building 2018 site!"
-      shift
+      break
     elif [[ $ARG = "-2017" || $ARG = "--2017" ]]; then
-      echo "building 2017 site..."
       build2017
-      echo "done building 2017 site!"
-      shift
+      break
 		else
 			break
 		fi
