@@ -6,7 +6,7 @@ build2019() {
   # npm install
   npm run clean
   npm run build
-  cp -rp public/* ../testbuild
+  cp -rp public/* ../build
   rm -rf public
   cd ..
 }
@@ -15,7 +15,7 @@ build2018() {
   cd 2018
   # npm install
   npm run build
-  cp -rp build/* ../testbuild/2018
+  cp -rp build/* ../build/2018
   rm -rf build
   cd ..
 }
@@ -24,7 +24,7 @@ build2017() {
   cd 2017
   # npm install
   npm run build
-  cp -rp build/* ../testbuild/2017
+  cp -rp build/* ../build/2017
   rm -rf build
   cd ..
 }
