@@ -31,8 +31,8 @@ build2017() {
 
 fullBuild() {
   echo "building all sites..."
-  rm -rf testbuild
-  mkdir -p testbuild/2017 testbuild/2018
+  rm -rf build
+  mkdir -p build/2017 build/2018
   build2017
   build2018
   build2019
