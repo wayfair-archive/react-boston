@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
+    "revision": "067a42f7baf54fda29dff67fce8fe33a",
+    "url": "https://www.reactboston.com/2017/static/media/marcel_cutts.067a42f7.jpg"
+  },
+  {
     "revision": "bdeddf436d555a207987",
     "url": "https://www.reactboston.com/2017/static/js/main.bdeddf43.chunk.js"
   },
   {
-    "revision": "1eb0424679fddac967c2",
-    "url": "https://www.reactboston.com/2017/static/js/runtime~main.1eb04246.js"
-  },
-  {
-    "revision": "3837bf951b690a7d9652",
-    "url": "https://www.reactboston.com/2017/static/js/2.3837bf95.chunk.js"
+    "revision": "1b5bf8dbd41ab7a29ffe5f1c826812a1",
+    "url": "https://www.reactboston.com/2017/static/media/matt_degennaro.1b5bf8db.jpg"
   },
   {
     "revision": "21de8e702a76c9e506abd9c24b8bbc12",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "https://www.reactboston.com/2017/static/media/christina_holland.4e37d11b.jpg"
   },
   {
-    "revision": "067a42f7baf54fda29dff67fce8fe33a",
-    "url": "https://www.reactboston.com/2017/static/media/marcel_cutts.067a42f7.jpg"
+    "revision": "1eb0424679fddac967c2",
+    "url": "https://www.reactboston.com/2017/static/js/runtime~main.1eb04246.js"
   },
   {
     "revision": "2ca232a95d7a0b087cea8eed434da112",
@@ -128,8 +128,8 @@ self.__precacheManifest = [
     "url": "https://www.reactboston.com/2017/static/media/vincent_riemer.cdeb1f9c.jpg"
   },
   {
-    "revision": "1b5bf8dbd41ab7a29ffe5f1c826812a1",
-    "url": "https://www.reactboston.com/2017/static/media/matt_degennaro.1b5bf8db.jpg"
+    "revision": "3837bf951b690a7d9652",
+    "url": "https://www.reactboston.com/2017/static/js/2.3837bf95.chunk.js"
   },
   {
     "revision": "bb16984f88aaf7116a7d4d9a1c9b8539",
