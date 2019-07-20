@@ -9,7 +9,7 @@ const Wrap = styled(Box)`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 8px;
   width: 100%;
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 60em) {
     grid-gap: 16px;
   }
   & > div {
