@@ -9,7 +9,7 @@ const Card = ({ children }) => (
     alignItems="center"
     justifyContent="center"
     display="flex"
-    fontSize={["4", "8"]}
+    fontSize={["4", "6", null, "8"]}
     fontStyle="italic"
     px="3"
     py="5"
