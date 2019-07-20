@@ -1,0 +1,44 @@
+[
+  {
+    "time": "8:00-9:00AM",
+    "speaker": "",
+    "title": "Registration and Breakfast",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "9:00-10:00AM",
+    "speaker": "emmawedekind",
+    "title": "Test",
+    "abstract": "Cotton candy donut lemon drops marzipan. Caramels oat cake cupcake sesame snaps marzipan cheesecake pie carrot cake. Caramels danish candy canes chocolate jelly beans gummies. Soufflé tart brownie ice cream pudding sugar plum chupa chups cotton candy sweet roll. Jelly tootsie roll gummi bears bear claw sweet roll. Macaroon oat cake sweet chocolate cake danish cupcake marshmallow tiramisu cupcake. Ice cream candy sweet roll tootsie roll marzipan topping dessert caramels chocolate. Jujubes jelly beans icing. Carrot cake sugar plum wafer cake soufflé.",
+    "day": 1
+  },
+  {
+    "time": "10:00-11:00AM",
+    "speaker": "amalhussein",
+    "title": "Test 2",
+    "abstract": "Jujubes soufflé jujubes candy cake sesame snaps sweet roll gummies lollipop. Gingerbread gummies caramels oat cake ice cream danish. Gummi bears chocolate halvah pie donut toffee chocolate cake carrot cake. Sweet sesame snaps tart pudding jelly beans bonbon pastry tootsie roll. Gingerbread chupa chups pie pie pudding dragée. Fruitcake jelly toffee biscuit. Cake caramels chocolate bar danish tart sesame snaps.",
+    "day": 1
+  },
+  {
+    "time": "11:00-12:00PM",
+    "speaker": "joshuacomeau",
+    "title": "Test 3",
+    "abstract": "Sweet roll tiramisu jujubes tart gingerbread halvah muffin. Pudding danish dragée lollipop sweet sweet roll soufflé. Gingerbread cake halvah gummies dessert. Lollipop lollipop gummies oat cake jelly-o gingerbread. Macaroon cookie cake toffee lollipop bear claw bonbon. Tart chupa chups marshmallow.",
+    "day": 2
+  },
+  {
+    "time": "12:00-1:00PM",
+    "speaker": "",
+    "title": "Lunch",
+    "abstract": "",
+    "day": 2
+  },
+  {
+    "time": "1:00-2:00PM",
+    "speaker": "amalhussein",
+    "title": "Test 4",
+    "abstract": "Gingerbread ice cream cupcake muffin tart jelly wafer. Gingerbread oat cake lemon drops. Oat cake chupa chups chocolate. Apple pie oat cake tootsie roll pastry icing halvah carrot cake powder liquorice. Topping cake sweet. Chupa chups chocolate cake topping gingerbread wafer. Pudding jelly-o icing. Sweet dessert soufflé. Chocolate bar chupa chups muffin brownie tootsie roll tart powder.",
+    "day": 2
+  }
+]
