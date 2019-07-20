@@ -70,8 +70,8 @@ a:hover {
 }
 abbr[title] {
   border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
+  text-decoration: none;
+  display: block;
 }
 img {
   border-style: none;
@@ -257,18 +257,9 @@ p *:last-child {
 li > p {
   margin-bottom: calc(1.45rem / 2);
 }
-abbr {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-}
 acronym {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
-}
-abbr[title] {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
-  cursor: help;
-  text-decoration: none;
 }
 thead {
   text-align: left;
