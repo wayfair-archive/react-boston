@@ -41,7 +41,7 @@ const Container = props => (
   <Box as="header" top="0" bg="white" zIndex="1" {...props} />
 )
 
-const Logo = ({ children, ...props }) => (
+const Logo = ({ ...props }) => (
   <Box
     as={Link}
     display="flex"
@@ -49,7 +49,7 @@ const Logo = ({ children, ...props }) => (
     width={["200px", "250px"]}
     px={8}
     py={4}
-    aria-label={children}
+    aria-label="React Boston 2019"
     {...props}
   >
     <LogoImage width="100%" />
@@ -108,7 +108,7 @@ const Header = ({ siteTitle, ...props }) => {
   return (
     <Container {...props}>
       <Box display="flex">
-        <Logo to="/">{siteTitle}</Logo>
+        <Logo to="/" />
         <Nav
           display={[null, null, null, "flex"]}
           flexGrow="1"

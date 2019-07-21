@@ -57,7 +57,7 @@ export const InlineText = Text.withComponent("span")
 
 export const Section = Box.withComponent("section")
 
-export const Container = props => (
+export const Container = ({ children, title, ...props }) => (
   <Box
     maxWidth={["94vw", "90vw", "", "1200px"]}
     px={[4]}
@@ -65,11 +65,11 @@ export const Container = props => (
     mx="auto"
     {...props}
   >
-    {props.title && (
+    {title && (
       <Title fontStyle="italic" mb={5}>
-        {props.title}
+        {title}
       </Title>
     )}
-    {props.children}
+    {children}
   </Box>
 )
