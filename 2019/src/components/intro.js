@@ -8,6 +8,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Dots from "../components/dots"
 import Img from "gatsby-image"
 import styled from "@emotion/styled"
+import Button from "./button"
 import { css } from "@emotion/core"
 
 const StyledWrap = styled.div`
@@ -114,13 +115,19 @@ export default () => {
           height="400px"
         />
       </Box>
-      <Section
-        pt={[null, null, null, "100px"]}
-        pl={[null, null, null, "100px"]}
-      >
+      <Section pt={[null, null, null, "50px"]} pl={[null, null, null, "100px"]}>
         <SectionTitle fontSize={6} fontStyle="italic">
           Join Us!
         </SectionTitle>
+        <Box mt="6" backgroundColor="white">
+          <Button
+            secondary
+            href="https://forms.gle/ytNS5NmXR4WguLfq8"
+            openInNewTab
+          >
+            Lightning Talk CFP ⚡
+          </Button>
+        </Box>
         <StyledTextWrap>
           <Text
             pb={4}
