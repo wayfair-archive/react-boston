@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "../global-styles/base-reset.css"
 import { Box, Text, SectionTitle, Title } from "../components/layout-components"
 import Counter from "../components/counter"
@@ -33,21 +33,26 @@ const StyledImage = styled(Img)`
   box-shadow: -11px 14px 20px -2px rgba(0, 0, 0, 0.3);
 `
 
-const Timing = () => (
-  <StyledWrap>
-    <Box
-      display="flex"
-      flexDirection="column"
-      alignItems="center"
-      fontSize={["4", null, null, "5"]}
-      fontWeight="bold"
-      p={["25px", null, null, "50px"]}
-    >
-      <Text mb="1em">September 21-22, 2019</Text>
-      <Counter />
-    </Box>
-  </StyledWrap>
-)
+const Timing = () => {
+  let [showCounter, setShowCounter] = useState(false)
+  useEffect(() => setShowCounter(true), [])
+
+  return (
+    <StyledWrap>
+      <Box
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        fontSize={["4", null, null, "5"]}
+        fontWeight="bold"
+        p={["25px", null, null, "50px"]}
+      >
+        <Text mb="1em">September 21-22, 2019</Text>
+        {showCounter && <Counter />}
+      </Box>
+    </StyledWrap>
+  )
+}
 
 const Section = Box.withComponent("section")
 
