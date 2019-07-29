@@ -15,6 +15,21 @@ export default () => (
       of an underrepresented group in tech.
     </Text>
     <Text mb={4}>
+      This year we partnered with the{" "}
+      <Link openInNewTab href="http://foundation.travis-ci.org/">
+        Travis Foundation
+      </Link>{" "}
+      to{" "}
+      <Link openInNewTab href="https://diversitytickets.org/en/events/496">
+        offer free tickets
+      </Link>{" "}
+      through their{" "}
+      <Link openInNewTab href="https://diversitytickets.org/">
+        diversitytickets.org
+      </Link>{" "}
+      program.
+    </Text>
+    <Text mb={4}>
       We are committed to ensuring that React Boston is accessible for all
       attendees. For questions about accessibility or to request an
       accommodation, please react out to{" "}

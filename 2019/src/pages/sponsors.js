@@ -3,6 +3,7 @@ import { Text, Container, Box } from "../components/layout-components"
 import Link from "../components/link"
 import WayfairLogo from "../images/icons/wf-logo"
 import { css } from "@emotion/core"
+import Button from "../components/button"
 import styled from "@emotion/styled"
 
 const LogoCard = styled.div`
@@ -54,6 +55,14 @@ export default () => (
           </Link>
         </Text>
       </Box>
+    </Box>
+    <Box mt="13" mx="auto" width="300px">
+      <Button
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfnoReme6hkXwSWDB6QGKKrCOu2GEFJbknxxiKV6vjL_dd4HQ/viewform"
+        secondary
+      >
+        Interested in sponsoring?
+      </Button>
     </Box>
   </Container>
 )
