@@ -23,13 +23,6 @@ const ScheduleWrap = styled.section`
   }
 `
 
-const DescriptionListWrap = styled.div`
-  display: grid;
-  grid-template-columns: 30% 70%;
-  grid-gap: 40px;
-  margin: 40px 0;
-`
-
 const DescriptionTerm = styled.dt`
   justify-self: end;
   font-size: ${({ theme }) => theme.fontSizes[2]}px;
@@ -41,24 +34,12 @@ const DescriptionDefinition = styled.dd`
   text-align: left;
 `
 
-const Title = styled(Text)`
-  @media screen and (min-width: 60em) {
-    white-space: nowrap;
-  }
-`
-
 export default function ScheduleSection() {
   const { allScheduleJson, allSpeakersJson } = useStaticQuery(graphql`
     query {
       allScheduleJson {
         edges {
-          node {
-            time
-            speaker
-            title
-            abstract
-            day
-          }
+          ...ScheduleData
         }
       }
       allSpeakersJson {
@@ -87,28 +68,28 @@ export default function ScheduleSection() {
 
   return (
     <ScheduleWrap>
-      <SectionTitle fontSize={6} fontStyle="italic" p="12">
+      <SectionTitle fontSize={6} fontStyle="italic" p={12}>
         Schedule
       </SectionTitle>
-      <dl>
+      <Box as="dl" display="grid" gridTemplateColumns="30% 70%" gridGap={10}>
         {schedule.map(({ time, title, abstract, talk }) => {
           return (
-            <DescriptionListWrap key={time}>
+            <React.Fragment key={time}>
               <DescriptionTerm>{time}</DescriptionTerm>
               <DescriptionDefinition>
-                <Title lineHeight="50px" fontSize="5">
+                <Text lineHeight="50px" fontSize="5">
                   {title}
-                </Title>
+                </Text>
                 {talk && (
                   <p>
                     {talk.node.name} - {talk.node.company}
                   </p>
                 )}
               </DescriptionDefinition>
-            </DescriptionListWrap>
+            </React.Fragment>
           )
         })}
-      </dl>
+      </Box>
       <Box p="12">
         <Button to="/schedule">Full Schedule</Button>
       </Box>

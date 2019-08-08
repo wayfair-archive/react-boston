@@ -18,21 +18,24 @@ function Tabs(props) {
 
 const BaseTab = styled.button`
   padding: ${({ theme }) => `${theme.space[7]}px`};
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.colors.grey};
+  transition: 0.2s ease-out;
   border: 0;
   flex: 1;
   cursor: pointer;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  font-weight: bold;
   &.is-active,
   &:hover,
   &:focus {
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
     background-color: ${({ theme }) => theme.colors.secondary};
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+    color: ${({ theme }) => theme.colors.white};
+    outline: 0;
   }
+  &:hover,
   &:focus {
-    outline: 1px dashed ${({ theme }) => theme.colors.primary};
-    outline-offset: 2px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
   }
 `
 

@@ -3,7 +3,6 @@
     "name": "Copley Square Hotel",
     "url": "http://www.copleysquarehotel.com/",
     "directions": "https://goo.gl/maps/pE5jFdc1H578JwUcA",
-    "key": "copley",
     "img": {
       "src": "../images/hotels/copley.jpg"
     }
@@ -12,7 +11,6 @@
     "name": "Westin Copley Place",
     "url": "http://www.westincopleyplaceboston.com/",
     "directions": "https://goo.gl/maps/KTxSrJk189RRquPr8",
-    "key": "westin",
     "img": {
       "src": "../images/hotels/westin.jpg"
     }
@@ -21,7 +19,6 @@
     "name": "Boston Marriott Copley Place",
     "url": "http://www.marriott.com/hotels/travel/bosco-boston-marriott-copley-place/",
     "directions": "https://goo.gl/maps/Bru4C1cPWidFtVuw8",
-    "key": "marriott",
     "img": {
       "src": "../images/hotels/marriott.jpg"
     }
@@ -30,7 +27,6 @@
     "name": "Courtyard Boston Copley Square",
     "url": "http://www.marriott.com/hotels/maps/travel/bosdt-courtyard-boston-copley-square/",
     "directions": "https://goo.gl/maps/KepMW6gBgfJruVpj9",
-    "key": "courtyard",
     "img": {
       "src": "../images/hotels/courtyard.jpg"
     }
@@ -39,7 +35,6 @@
     "name": "Fairmont Copley Plaza",
     "url": "http://www.fairmont.com/copley-plaza-boston/",
     "directions": "https://goo.gl/maps/tQznzmaCCriNhqxq9",
-    "key": "fairmont",
     "img": {
       "src": "../images/hotels/fairmont.jpg"
     }
@@ -48,7 +43,6 @@
     "name": "Sheraton Boston",
     "url": "http://www.sheratonbostonhotel.com/",
     "directions": "https://goo.gl/maps/BXV9CWw8RSrUk3rS8",
-    "key": "sheraton",
     "img": {
       "src": "../images/hotels/sheraton.jpg"
     }
@@ -57,7 +51,6 @@
     "name": "Colonnade Hotel",
     "url": "http://www.colonnadehotel.com/",
     "directions": "https://goo.gl/maps/j5TujjvKnRRQLUKPA",
-    "key": "colonnade",
     "img": {
       "src": "../images/hotels/colonnade.jpg"
     }

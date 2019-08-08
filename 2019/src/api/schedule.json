@@ -7,38 +7,115 @@
     "day": 1
   },
   {
-    "time": "9:00-10:00AM",
+    "time": "9:00-9:15AM",
+    "speaker": "",
+    "title": "Introduction",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "9:15-9:45AM",
     "speaker": "emmawedekind",
     "title": "Test",
     "abstract": "Cotton candy donut lemon drops marzipan. Caramels oat cake cupcake sesame snaps marzipan cheesecake pie carrot cake. Caramels danish candy canes chocolate jelly beans gummies. Soufflé tart brownie ice cream pudding sugar plum chupa chups cotton candy sweet roll. Jelly tootsie roll gummi bears bear claw sweet roll. Macaroon oat cake sweet chocolate cake danish cupcake marshmallow tiramisu cupcake. Ice cream candy sweet roll tootsie roll marzipan topping dessert caramels chocolate. Jujubes jelly beans icing. Carrot cake sugar plum wafer cake soufflé.",
     "day": 1
   },
   {
-    "time": "10:00-11:00AM",
-    "speaker": "amalhussein",
-    "title": "Test 2",
+    "time": "9:45-10:30AM",
+    "speaker": "daveceddia",
+    "title": "A Guided Tour of React Hooks",
     "abstract": "Jujubes soufflé jujubes candy cake sesame snaps sweet roll gummies lollipop. Gingerbread gummies caramels oat cake ice cream danish. Gummi bears chocolate halvah pie donut toffee chocolate cake carrot cake. Sweet sesame snaps tart pudding jelly beans bonbon pastry tootsie roll. Gingerbread chupa chups pie pie pudding dragée. Fruitcake jelly toffee biscuit. Cake caramels chocolate bar danish tart sesame snaps.",
     "day": 1
   },
   {
-    "time": "11:00-12:00PM",
-    "speaker": "joshuacomeau",
-    "title": "Test 3",
+    "time": "10:30-11:00AM",
+    "speaker": "ayeshamazumdar",
+    "title": "Accessibility in the Age of Components",
     "abstract": "Sweet roll tiramisu jujubes tart gingerbread halvah muffin. Pudding danish dragée lollipop sweet sweet roll soufflé. Gingerbread cake halvah gummies dessert. Lollipop lollipop gummies oat cake jelly-o gingerbread. Macaroon cookie cake toffee lollipop bear claw bonbon. Tart chupa chups marshmallow.",
-    "day": 2
+    "day": 1
   },
   {
-    "time": "12:00-1:00PM",
+    "time": "11:00-11:45AM",
+    "speaker": "",
+    "title": "Break",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "11:45-12:15PM",
+    "speaker": "mattcrowder",
+    "title": "Using react-testing-library to Write Stronger Tests",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "12:15-1:30PM",
     "speaker": "",
     "title": "Lunch",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "1:30-2:00PM",
+    "speaker": "jchiatt",
+    "title": "Chaos Engineering in React",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "2:00-3:00PM",
+    "speaker": "",
+    "title": "Lightning Talks",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "3:00-4:00PM",
+    "speaker": "katewardin",
+    "title": "Developer First: A New Leadership Mindset",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "4:00-4:30PM",
+    "speaker": "",
+    "title": "Break",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "4:30-5:00PM",
+    "speaker": "mileciamcgregor",
+    "title": "Why You Should Make All of Your React Apps PWAs",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "5:00-5:30PM",
+    "speaker": "cameronyick",
+    "title": "I've Fallen Into a Large Codebase, and I Can't Get Up!",
+    "abstract": "",
+    "day": 1
+  },
+  {
+    "time": "8:30-9:30AM",
+    "speaker": "",
+    "title": "Breakfast",
     "abstract": "",
     "day": 2
   },
   {
-    "time": "1:00-2:00PM",
+    "time": "9:30-10:15AM",
     "speaker": "amalhussein",
-    "title": "Test 4",
-    "abstract": "Gingerbread ice cream cupcake muffin tart jelly wafer. Gingerbread oat cake lemon drops. Oat cake chupa chups chocolate. Apple pie oat cake tootsie roll pastry icing halvah carrot cake powder liquorice. Topping cake sweet. Chupa chups chocolate cake topping gingerbread wafer. Pudding jelly-o icing. Sweet dessert soufflé. Chocolate bar chupa chups muffin brownie tootsie roll tart powder.",
+    "title": "TBD",
+    "abstract": "",
+    "day": 2
+  },
+  {
+    "time": "10:15-10:45AM",
+    "speaker": "nehasharma",
+    "title": "Your Guide to Making Scalable Design Systems",
+    "abstract": "",
     "day": 2
   }
 ]

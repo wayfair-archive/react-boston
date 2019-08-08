@@ -5,13 +5,22 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "@emotion/styled"
 
+export const query = graphql`
+  fragment ScheduleData on ScheduleJsonEdge {
+    node {
+      speaker
+      time
+      title
+      abstract
+      day
+    }
+  }
+`
+
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  background-color: ${({ theme }) => theme.colors.grey};
-  font-size: ${({ theme }) => `${theme.fontSizes[2]}px`};
-  border-bottom-right-radius: 40px;
-  border-top-left-radius: 40px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
 `
 
 const ListItem = styled.li`
@@ -79,20 +88,27 @@ const ScheduleItem = styled.div`
   }
 `
 
-const ExpandButton = styled.button`
-  background: 0;
-  border: 0;
-  color: ${({ theme }) => theme.colors.secondaryDark};
-  cursor: pointer;
-  text-decoration: underline;
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-  &:focus {
-    outline: 1px dashed ${({ theme }) => theme.colors.secondaryDark};
-  }
-`
+const Talk = ({ time, title, abstract, talk }) => (
+  <ListItem key={time}>
+    <Text textAlign={["center", null, null, "left"]} fontSize="2">
+      <TextDecoration>{time}</TextDecoration>
+    </Text>
+    {talk && (
+      <ImageWrap>
+        <Image fluid={talk.node.img.src.childImageSharp.fluid} />
+      </ImageWrap>
+    )}
+    <ScheduleItem>
+      <Title>{title}</Title>
+      {talk && (
+        <Text fontSize="2" my="3">
+          {talk.node.name} - {talk.node.company}
+        </Text>
+      )}
+      {abstract && <p>{abstract}</p>}
+    </ScheduleItem>
+  </ListItem>
+)
 
 export default function Schedule() {
   const { allScheduleJson, allSpeakersJson } = useStaticQuery(
@@ -100,31 +116,12 @@ export default function Schedule() {
       query {
         allScheduleJson {
           edges {
-            node {
-              speaker
-              time
-              title
-              abstract
-              day
-            }
+            ...ScheduleData
           }
         }
         allSpeakersJson {
           edges {
-            node {
-              key
-              name
-              company
-              img {
-                src {
-                  childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
-            }
+            ...SpeakerData
           }
         }
       }
@@ -164,64 +161,14 @@ export default function Schedule() {
           </Tab>
         </Wrapper>
         <TabPanel activeTab={1} is="ul">
-          {firstDaySchedule.map(({ time, title, abstract, talk }) => {
-            return (
-              <ListItem key={time}>
-                <Text textAlign={["center", null, null, "left"]} fontSize="2">
-                  <TextDecoration>{time}</TextDecoration>
-                </Text>
-                {talk && (
-                  <ImageWrap>
-                    <Image fluid={talk.node.img.src.childImageSharp.fluid} />
-                  </ImageWrap>
-                )}
-                <ScheduleItem>
-                  <Title>{title}</Title>
-                  {talk && (
-                    <Text fontSize="2" my="3">
-                      {talk.node.name} - {talk.node.company}
-                    </Text>
-                  )}
-                  {abstract && (
-                    <p>
-                      {abstract}
-                      <ExpandButton>See more</ExpandButton>
-                    </p>
-                  )}
-                </ScheduleItem>
-              </ListItem>
-            )
-          })}
+          {firstDaySchedule.map(data => (
+            <Talk {...data} />
+          ))}
         </TabPanel>
         <TabPanel activeTab={2} is="ul">
-          {secondDaySchedule.map(({ time, title, abstract, talk }) => {
-            return (
-              <ListItem key={time}>
-                <Text textAlign={["center", null, null, "left"]} fontSize="2">
-                  <TextDecoration>{time}</TextDecoration>
-                </Text>
-                {talk && (
-                  <ImageWrap>
-                    <Image fluid={talk.node.img.src.childImageSharp.fluid} />
-                  </ImageWrap>
-                )}
-                <ScheduleItem>
-                  <Title>{title}</Title>
-                  {talk && (
-                    <Text fontSize="2" my="3">
-                      {talk.node.name} - {talk.node.company}
-                    </Text>
-                  )}
-                  {abstract && (
-                    <p>
-                      {abstract}
-                      <ExpandButton>See more</ExpandButton>
-                    </p>
-                  )}
-                </ScheduleItem>
-              </ListItem>
-            )
-          })}
+          {secondDaySchedule.map(data => (
+            <Talk {...data} />
+          ))}
         </TabPanel>
       </Tabs>
     </Container>

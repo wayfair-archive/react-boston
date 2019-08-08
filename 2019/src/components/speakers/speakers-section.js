@@ -3,12 +3,23 @@ import styled from "@emotion/styled"
 import SpeakerCard from "./speaker-card"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Grid = styled.ul`
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-  list-style: none;
+export const query = graphql`
+  fragment SpeakerData on SpeakersJsonEdge {
+    node {
+      name
+      key
+      company
+      img {
+        src {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
 `
 
 export default function Speakers() {
@@ -17,22 +28,11 @@ export default function Speakers() {
       query {
         allSpeakersJson {
           edges {
+            ...SpeakerData
             node {
-              name
-              key
-              company
               github
               twitter
               description
-              img {
-                src {
-                  childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
             }
           }
         }
@@ -74,6 +74,14 @@ export default function Speakers() {
       }
     }
   }
+
+  const Grid = styled.ul`
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    list-style: none;
+  `
 
   const Column = styled.li`
     width: 100%;

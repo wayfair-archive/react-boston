@@ -1,10 +1,9 @@
 [
   {
     "name": "Amal Hussein",
-    "key": "amalhussein",
     "company": "Bocoup",
-    "github": "https://github.com/nomadtechie",
-    "twitter": "https://twitter.com/nomadtechie",
+    "github": "nomadtechie",
+    "twitter": "nomadtechie",
     "description": "",
     "img": {
       "src": "../images/speakers/amalhussein.jpg"
@@ -12,10 +11,9 @@
   },
   {
     "name": "Emma Wedekind",
-    "key": "emmawedekind",
     "company": "LogMeIn",
-    "github": "https://github.com/emmawedekind",
-    "twitter": "https://twitter.com/EmmaWedekind",
+    "github": "emmawedekind",
+    "twitter": "EmmaWedekind",
     "description": "",
     "img": {
       "src": "../images/speakers/emmawedekind.png"
@@ -23,10 +21,29 @@
   },
   {
     "name": "Joshua Comeau",
-    "key": "joshuacomeau",
     "company": "DigitalOcean",
-    "github": "https://github.com/joshwcomeau",
-    "twitter": "https://twitter.com/JoshWComeau",
+    "github": "joshwcomeau",
+    "twitter": "JoshWComeau",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/joshuacomeau.png"
+    }
+  },
+  {
+    "name": "Dave Ceddia",
+    "company": "",
+    "github": "",
+    "twitter": "",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/joshuacomeau.png"
+    }
+  },
+  {
+    "name": "Ayesha Mazumdar",
+    "company": "",
+    "github": "",
+    "twitter": "",
     "description": "",
     "img": {
       "src": "../images/speakers/joshuacomeau.png"

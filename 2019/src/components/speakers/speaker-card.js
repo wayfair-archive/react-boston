@@ -96,7 +96,7 @@ export default function SpeakerCard({ name, company, twitter, github, img }) {
         <CompanyName color="mediumGrey">{company}</CompanyName>
         <Box display="flex" alignItems="center">
           <DescriptionDefinition mr="1">
-            <Link href={twitter}>
+            <Link href={`https://twitter.com/${twitter}`}>
               <Twitter
                 fill="#f15959"
                 width="28px"
@@ -106,7 +106,7 @@ export default function SpeakerCard({ name, company, twitter, github, img }) {
             </Link>
           </DescriptionDefinition>
           <dd>
-            <Link href={github}>
+            <Link href={`https://github.com/${github}`}>
               <Github
                 fill="#f15959"
                 width="20px"
