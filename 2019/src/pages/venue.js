@@ -68,7 +68,6 @@ export default () => {
             name
             url
             directions
-            key
             img {
               src {
                 childImageSharp {

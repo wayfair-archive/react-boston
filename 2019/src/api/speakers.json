@@ -46,7 +46,7 @@
     "twitter": "AyeshaKMaz",
     "description": "",
     "img": {
-      "src": "../images/speakers/ayeshamazumdar.png"
+      "src": "../images/speakers/ayeshamazumdar.jpeg"
     }
   },
   {
@@ -56,7 +56,7 @@
     "twitter": "hellonehha",
     "description": "",
     "img": {
-      "src": "../images/speakers/nehasharma.png"
+      "src": "../images/speakers/nehasharma.jpg"
     }
   },
   {
@@ -86,7 +86,7 @@
     "twitter": "jchiatt",
     "description": "",
     "img": {
-      "src": "../images/speakers/jchiatt.png"
+      "src": "../images/speakers/jchiatt.jpeg"
     }
   },
   {
@@ -106,7 +106,7 @@
     "twitter": "",
     "description": "",
     "img": {
-      "src": "../images/speakers/katewardin.png"
+      "src": "../images/speakers/katewardin.jpg"
     }
   },
   {
@@ -116,7 +116,7 @@
     "twitter": "craigcav",
     "description": "",
     "img": {
-      "src": "../images/speakers/craigcavalier.png"
+      "src": "../images/speakers/craigcavalier.jpg"
     }
   },
   {
@@ -146,7 +146,7 @@
     "twitter": "iamsapegin",
     "description": "",
     "img": {
-      "src": "../images/speakers/artemsapegin.png"
+      "src": "../images/speakers/artemsapegin.jpeg"
     }
   },
   {
@@ -156,7 +156,7 @@
     "twitter": "FlippedCoding",
     "description": "",
     "img": {
-      "src": "../images/speakers/mileciamcgregor.png"
+      "src": "../images/speakers/mileciamcgregor.jpg"
     }
   },
   {
@@ -176,7 +176,7 @@
     "twitter": "hydrosquall",
     "description": "",
     "img": {
-      "src": "../images/speakers/cameronyick.png"
+      "src": "../images/speakers/cameronyick.jpeg"
     }
   }
 ]

@@ -38,7 +38,8 @@ const StyledButton = styled(BaseButton)`
       : "2px solid transparent"};
   && {
     // increased specificity to override link in header color
-    color: ${({ theme }) => theme.colors.primaryDark};
+    color: ${props => ({ theme }) =>
+      props.secondary ? theme.colors.primaryDark : theme.colors.white};
   }
   font-weight: 600;
   font-style: italic;
