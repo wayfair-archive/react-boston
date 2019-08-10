@@ -31,7 +31,37 @@
   },
   {
     "name": "Dave Ceddia",
-    "company": "",
+    "company": "Tiny Wins",
+    "github": "",
+    "twitter": "dceddia",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/joshuacomeau.png"
+    }
+  },
+  {
+    "name": "Ayesha Mazumdar",
+    "company": "Optimizely",
+    "github": "",
+    "twitter": "AyeshaKMaz",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/ayeshamazumdar.png"
+    }
+  },
+  {
+    "name": "Neha Sharma",
+    "company": "HCL Software",
+    "github": "neha",
+    "twitter": "hellonehha",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/nehasharma.png"
+    }
+  },
+  {
+    "name": "Disha Sule",
+    "company": "Optimus Ride",
     "github": "",
     "twitter": "",
     "description": "",
@@ -40,13 +70,113 @@
     }
   },
   {
-    "name": "Ayesha Mazumdar",
-    "company": "",
+    "name": "Matt Crowder",
+    "company": "Appian",
+    "github": "mcrowder65",
+    "twitter": "mcrowder65",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/matthewjcrowder.png"
+    }
+  },
+  {
+    "name": "J.C. Hiatt",
+    "company": "Echobind",
+    "github": "jchiatt",
+    "twitter": "jchiatt",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/jchiatt.png"
+    }
+  },
+  {
+    "name": "Alistair MacDonald",
+    "company": "Appian",
+    "github": "",
+    "twitter": "F1LT3R_",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/joshuacomeau.png"
+    }
+  },
+  {
+    "name": "Kate Wardin",
+    "company": "Target",
     "github": "",
     "twitter": "",
     "description": "",
     "img": {
+      "src": "../images/speakers/katewardin.png"
+    }
+  },
+  {
+    "name": "Craig Cavalier",
+    "company": "ezCater",
+    "github": "craigcav",
+    "twitter": "craigcav",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/craigcavalier.png"
+    }
+  },
+  {
+    "name": "Laura González",
+    "company": "The Guardian",
+    "github": "walaura",
+    "twitter": "freezydorito",
+    "description": "",
+    "img": {
       "src": "../images/speakers/joshuacomeau.png"
+    }
+  },
+  {
+    "name": "Robin Dykema",
+    "company": "Taulia",
+    "github": "",
+    "twitter": "robindykema",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/joshuacomeau.png"
+    }
+  },
+  {
+    "name": "Artem Sapegin",
+    "company": "Wayfair",
+    "github": "sapegin",
+    "twitter": "iamsapegin",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/artemsapegin.png"
+    }
+  },
+  {
+    "name": "Milecia McGregor",
+    "company": "Flipped Coding",
+    "github": "flippedcoder",
+    "twitter": "FlippedCoding",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/mileciamcgregor.png"
+    }
+  },
+  {
+    "name": "Ryan Struhl",
+    "company": "Robin",
+    "github": "keisans",
+    "twitter": "keisans",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/ryanstruhl.png"
+    }
+  },
+  {
+    "name": "Careron Yick",
+    "company": "Datadog",
+    "github": "hydrosquall",
+    "twitter": "hydrosquall",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/cameronyick.png"
     }
   }
 ]
