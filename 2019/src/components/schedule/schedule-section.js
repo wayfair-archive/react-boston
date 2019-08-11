@@ -30,7 +30,7 @@ const ScheduleWrap = styled.section`
 const DescriptionTerm = styled.dt`
   font-size: ${({ theme }) => theme.fontSizes[2]}px;
   line-height: 50px;
-  padding: 20px 0;
+  padding: 40px 0 0;
   @media screen and (min-width: 72em) {
     justify-self: end;
     padding: 0;
