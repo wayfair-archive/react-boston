@@ -55,6 +55,7 @@ const ImageWrap = styled.div`
 `
 const Image = styled(Img)`
   width: 150px;
+  height: 150px;
   mix-blend-mode: luminosity;
 `
 

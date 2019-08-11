@@ -28,14 +28,36 @@ const ScheduleWrap = styled.section`
 `
 
 const DescriptionTerm = styled.dt`
-  justify-self: end;
   font-size: ${({ theme }) => theme.fontSizes[2]}px;
   line-height: 50px;
+  padding: 20px 0;
+  @media screen and (min-width: 72em) {
+    justify-self: end;
+    padding: 0;
+  }
 `
 
 const DescriptionDefinition = styled.dd`
-  justify-self: start;
-  text-align: left;
+  max-width: 600px;
+  @media screen and (min-width: 72em) {
+    justify-self: start;
+    text-align: left;
+  }
+  @media screen and (min-width: 80em) {
+    max-width: 100%;
+    white-space: nowrap;
+  }
+`
+
+const TextDecoration = styled.span`
+  background-image: linear-gradient(120deg, #f15959 0%, #d63333 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  padding: 0.5em;
+  @media screen and (min-width: 72em) {
+    background: 0;
+  }
 `
 
 export default function ScheduleSection() {
@@ -77,16 +99,29 @@ export default function ScheduleSection() {
 
   return (
     <ScheduleWrap>
-      <SectionTitle fontSize={6} fontStyle="italic" p={12}>
+      <SectionTitle
+        fontSize={6}
+        fontStyle="italic"
+        pt={12}
+        pb={[8, null, null, 12]}
+      >
         Schedule
       </SectionTitle>
-      <Box as="dl" display="grid" gridTemplateColumns="30% 70%" gridGap={10}>
+      <Box
+        as="dl"
+        display={[null, null, null, "grid"]}
+        gridTemplateColumns="30% 70%"
+        gridGap={10}
+        px={8}
+      >
         {scheduleToDisplay().map(({ time, title, abstract, talk }) => {
           return (
             <React.Fragment key={time}>
-              <DescriptionTerm>{time}</DescriptionTerm>
+              <DescriptionTerm>
+                <TextDecoration>{time}</TextDecoration>
+              </DescriptionTerm>
               <DescriptionDefinition>
-                <Text lineHeight="50px" fontSize="5">
+                <Text lineHeight="50px" fontSize={[4, null, null, 5]}>
                   {title}
                 </Text>
                 {talk && (
