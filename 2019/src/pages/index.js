@@ -1,6 +1,6 @@
 import React, { Suspense } from "react"
 import "../global-styles/base-reset.css"
-import { Box, SectionTitle, Text } from "../components/layout-components"
+import { Box, SectionTitle } from "../components/layout-components"
 import Intro from "../components/intro"
 import Dots from "../components/dots"
 import styled from "@emotion/styled"
@@ -22,7 +22,11 @@ export default () => (
       <Box py={["50px", null, "100px"]} px={["28px", null, null, null, "0"]}>
         <Intro />
       </Box>
-      <Box pt={["50px", null, "100px"]} px={["28px", null, null, null, "0"]}>
+      <Box
+        pt={["50px", null, "100px"]}
+        px={["28px", null, null, null, "0"]}
+        pb="12"
+      >
         <Box
           display="grid"
           justifyItems={[null, null, "center"]}
@@ -40,11 +44,6 @@ export default () => (
         <Suspense fallback={<div>loading</div>}>
           <Speakers />
         </Suspense>
-        <Box display="flex" justifyContent="center" pt="11" pb="12">
-          <Text textAlign="center" fontSize={3}>
-            More speakers to be announced soon...
-          </Text>
-        </Box>
       </Box>
     </Box>
     <Box pb={["0", null, null, "100px"]} position="relative">

@@ -30,7 +30,7 @@ const StyledAnimatedBox = styled(animated.div)`
 const StyledImage = styled(Img)`
   object-fit: cover;
   display: block;
-  height: 100%;
+  height: 350px;
   width: 100%;
   border-bottom-right-radius: 50%;
   @media screen and (min-width: 52em) {
@@ -95,26 +95,30 @@ export default function SpeakerCard({ name, company, twitter, github, img }) {
         <Name fontWeight="bold">{name}</Name>
         <CompanyName color="mediumGrey">{company}</CompanyName>
         <Box display="flex" alignItems="center">
-          <DescriptionDefinition mr="1">
-            <Link href={`https://twitter.com/${twitter}`}>
-              <Twitter
-                fill="#f15959"
-                width="28px"
-                height="28px"
-                title="Twitter"
-              />
-            </Link>
-          </DescriptionDefinition>
-          <dd>
-            <Link href={`https://github.com/${github}`}>
-              <Github
-                fill="#f15959"
-                width="20px"
-                height="20px"
-                title="Github"
-              />
-            </Link>
-          </dd>
+          {twitter && (
+            <DescriptionDefinition mr="1">
+              <Link href={`https://twitter.com/${twitter}`}>
+                <Twitter
+                  fill="#f15959"
+                  width="28px"
+                  height="28px"
+                  title="Twitter"
+                />
+              </Link>
+            </DescriptionDefinition>
+          )}
+          {github && (
+            <dd>
+              <Link href={`https://github.com/${github}`}>
+                <Github
+                  fill="#f15959"
+                  width="20px"
+                  height="20px"
+                  title="Github"
+                />
+              </Link>
+            </dd>
+          )}
         </Box>
       </DescriptionList>
 
