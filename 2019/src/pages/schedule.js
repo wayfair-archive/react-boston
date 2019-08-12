@@ -89,27 +89,30 @@ const ScheduleItem = styled.div`
   }
 `
 
-const Talk = ({ time, title, abstract, talk }) => (
-  <ListItem key={time}>
-    <Text textAlign={["center", null, null, "left"]} fontSize="2">
-      <TextDecoration>{time}</TextDecoration>
-    </Text>
-    {talk && (
-      <ImageWrap>
-        <Image fluid={talk.node.img.src.childImageSharp.fluid} />
-      </ImageWrap>
-    )}
-    <ScheduleItem>
-      <Title>{title}</Title>
-      {talk && (
-        <Text fontSize="2" my="3">
-          {talk.node.name} - {talk.node.company}
-        </Text>
+const Talk = ({ time, title, abstract, talk }) => {
+  const showImage = talk && talk.node.img.src !== null
+  return (
+    <ListItem key={time}>
+      <Text textAlign={["center", null, null, "left"]} fontSize="2">
+        <TextDecoration>{time}</TextDecoration>
+      </Text>
+      {showImage && (
+        <ImageWrap>
+          <Image fluid={talk.node.img.src.childImageSharp.fluid} />
+        </ImageWrap>
       )}
-      {abstract && <p>{abstract}</p>}
-    </ScheduleItem>
-  </ListItem>
-)
+      <ScheduleItem>
+        <Title>{title}</Title>
+        {talk && (
+          <Text fontSize="2" my="3">
+            {talk.node.name} - {talk.node.company}
+          </Text>
+        )}
+        {abstract && <p>{abstract}</p>}
+      </ScheduleItem>
+    </ListItem>
+  )
+}
 
 export default function Schedule() {
   const { allScheduleJson, allSpeakersJson } = useStaticQuery(
