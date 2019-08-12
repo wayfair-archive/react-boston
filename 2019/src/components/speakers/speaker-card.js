@@ -97,7 +97,7 @@ export default function SpeakerCard({ name, company, twitter, github, img }) {
         <Box display="flex" alignItems="center">
           {twitter && (
             <DescriptionDefinition mr="1">
-              <Link href={`https://twitter.com/${twitter}`}>
+              <Link href={`https://twitter.com/${twitter}`} openInNewTab>
                 <Twitter
                   fill="#f15959"
                   width="28px"
@@ -109,7 +109,7 @@ export default function SpeakerCard({ name, company, twitter, github, img }) {
           )}
           {github && (
             <dd>
-              <Link href={`https://github.com/${github}`}>
+              <Link href={`https://github.com/${github}`} openInNewTab>
                 <Github
                   fill="#f15959"
                   width="20px"

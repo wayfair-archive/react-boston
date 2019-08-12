@@ -92,9 +92,13 @@ export default function Speakers() {
     }
   `
 
+  // filter out speakers without images
+  const filteredCards = () =>
+    edges.filter(({ node }) => (node.img.src !== null ? node : null))
+
   return (
     <Grid>
-      {edges.map(({ node }, index) => (
+      {filteredCards().map(({ node }, index) => (
         <Column key={node.key} index={index}>
           <SpeakerCard index={index} {...node} />
         </Column>

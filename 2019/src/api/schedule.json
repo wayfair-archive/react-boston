@@ -16,22 +16,22 @@
   {
     "time": "9:15-9:45AM",
     "speaker": "emmawedekind",
-    "title": "Test",
-    "abstract": "Cotton candy donut lemon drops marzipan. Caramels oat cake cupcake sesame snaps marzipan cheesecake pie carrot cake. Caramels danish candy canes chocolate jelly beans gummies. Soufflé tart brownie ice cream pudding sugar plum chupa chups cotton candy sweet roll. Jelly tootsie roll gummi bears bear claw sweet roll. Macaroon oat cake sweet chocolate cake danish cupcake marshmallow tiramisu cupcake. Ice cream candy sweet roll tootsie roll marzipan topping dessert caramels chocolate. Jujubes jelly beans icing. Carrot cake sugar plum wafer cake soufflé.",
+    "title": "TBD",
+    "abstract": "",
     "day": 1
   },
   {
     "time": "9:45-10:30AM",
     "speaker": "daveceddia",
     "title": "A Guided Tour of React Hooks",
-    "abstract": "Jujubes soufflé jujubes candy cake sesame snaps sweet roll gummies lollipop. Gingerbread gummies caramels oat cake ice cream danish. Gummi bears chocolate halvah pie donut toffee chocolate cake carrot cake. Sweet sesame snaps tart pudding jelly beans bonbon pastry tootsie roll. Gingerbread chupa chups pie pie pudding dragée. Fruitcake jelly toffee biscuit. Cake caramels chocolate bar danish tart sesame snaps.",
+    "abstract": "",
     "day": 1
   },
   {
     "time": "10:30-11:00AM",
     "speaker": "ayeshamazumdar",
     "title": "Accessibility in the Age of Components",
-    "abstract": "Sweet roll tiramisu jujubes tart gingerbread halvah muffin. Pudding danish dragée lollipop sweet sweet roll soufflé. Gingerbread cake halvah gummies dessert. Lollipop lollipop gummies oat cake jelly-o gingerbread. Macaroon cookie cake toffee lollipop bear claw bonbon. Tart chupa chups marshmallow.",
+    "abstract": "We often build component libraries to improve consistency, collaboration, and customization for a given product. But what if a component library could also scale accessibility across the entire organization? Building accessible components can help distribute responsibility across all of design and engineering, without needing everyone to be an expert on the nitty-gritty details. In this session, we'll go through specific component examples and use cases to help you and your team contribute to a better, more inclusive web.",
     "day": 1
   },
   {
@@ -45,7 +45,7 @@
     "time": "11:45-12:15PM",
     "speaker": "mattcrowder",
     "title": "Using react-testing-library to Write Stronger Tests",
-    "abstract": "",
+    "abstract": "If you had to rewrite your tests when writing a hook in your React application, then you’re writing tests wrong. react-testing-library is what it sounds like, but more importantly, it encourages writing tests in the way that your end users will be using your components. In this talk, I will first introduce react-testing-library, what it is, what it encourages, and what it does best. I’ll then dive into how to effectively test a react component, first a smaller component, then a “larger” component with redux, i18n dependencies, etc., then I will show all of the different APIs that react-testing-library provides, and how to effectively use them. Then, I’ll show how to write effective tests across an entire application (writing reusable, effective tests that are not brittle).",
     "day": 1
   },
   {
@@ -59,7 +59,7 @@
     "time": "1:30-2:00PM",
     "speaker": "j.c.hiatt",
     "title": "Chaos Engineering in React",
-    "abstract": "",
+    "abstract": "Chaos Engineering has historically been a topic for the DevOps community, but the frontend is one of the most chaotic environments in existence. Learn about chaos in the frontend and how we can make our React applications more fault-tolerant. By introducing entropy into our frontend, we can make our application have greater fault tolerance and ultimately provide superior experiences to our users. This talk will introduce the concept of fault tolerance and chaos engineering in the frontend (and specifically, in React applications). In addition to covering the concept of chaos in the frontend, I will cover how we specifically deal with it in React using React Error Boundaries. No prior knowledge of React will be required to understand the main concepts, although those familiar with React may get even more out of the talk. I will also be demoing my soon-to-be-released library I’ve been working on called React Chaos, which will help introduce entropy into your React applications with less configuration. Attendees should walk away with",
     "day": 1
   },
   {
@@ -73,7 +73,7 @@
     "time": "3:00-3:30PM",
     "speaker": "katewardin",
     "title": "Developer First: A New Leadership Mindset",
-    "abstract": "",
+    "abstract": "People don’t leave companies, the saying goes, – they leave managers. As a technology leader passionate about the people side of software development, I have always been captivated by the impacts of great and horrible bosses; on the individual, team, and organization. Organizations will continue to face an increasingly difficult uphill battle as we try to recruit top technical talent.  The unfortunate reality is that there simply are not enough qualified candidates for the increasing demand. Therefore, there is a dire need to significantly change our approach to leadership if we want to continue building and retaining strong, empowered, motivated, and loyal teams. Enter Developer First leadership. Developer First leadership is the drive to focus on the growth and advancement of your team members before yourself. This approach is centered around the idea that developers should not work for their leaders.  Instead, their leaders must work for them! Kate will demonstrate how developer-first leadership can translate directly to the daily lives of technical leaders. Participants will leave with tactical methods to truly embrace the human side of software development and serve your teams as intentional, respectable, and inspiring leaders.",
     "day": 1
   },
   {
@@ -94,7 +94,7 @@
     "time": "4:30-5:00PM",
     "speaker": "mileciamcgregor",
     "title": "Why You Should Make All of Your React Apps PWAs and how",
-    "abstract": "",
+    "abstract": "Developers are usually familiar with the phrase, progressive web app (PWA), but aren't 100% sure of what it is. Most would be surprised to know that they are about 50% of the way there with most of their applications just through best practices. Once you have a checklist for creating PWAs, you'll be able to take any web application and apply it regardless of the framework you use. React in particular makes it incredibly easy to create PWAs or to update your current React apps and make them PWAs. In this talk, we'll cover the 8 necessary attributes of a PWA, some of the advanced PWA attributes, and how to create/update React apps to make them PWAs. By the end of this talk, attendees should have a concrete understanding of what a PWA is and how to make one with React.",
     "day": 1
   },
   {
@@ -170,7 +170,7 @@
   {
     "time": "3:30-4:00PM",
     "speaker": "robindykema",
-    "title": "Sacre Bleu! The Trials and Tribulacions in Localizing a React App",
+    "title": "Sacré Bleu! The Trials and Tribulaciónes in Localizing a React App",
     "abstract": "",
     "day": 2
   },
