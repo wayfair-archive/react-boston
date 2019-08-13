@@ -45,7 +45,7 @@
     "time": "11:45-12:15PM",
     "speaker": "mattcrowder",
     "title": "Using react-testing-library to Write Stronger Tests",
-    "abstract": "If you had to rewrite your tests when writing a hook in your React application, then you’re writing tests wrong. react-testing-library is what it sounds like, but more importantly, it encourages writing tests in the way that your end users will be using your components. In this talk, I will first introduce react-testing-library, what it is, what it encourages, and what it does best. I’ll then dive into how to effectively test a react component, first a smaller component, then a “larger” component with redux, i18n dependencies, etc., then I will show all of the different APIs that react-testing-library provides, and how to effectively use them. Then, I’ll show how to write effective tests across an entire application (writing reusable, effective tests that are not brittle).",
+    "abstract": "If you had to rewrite your tests when writing a hook in your React application, then you’re writing tests wrong.\nreact-testing-library is what it sounds like, but more importantly, it encourages writing tests in the way that your end users will be using your components.\nIn this talk, I will first introduce react-testing-library, what it is, what it encourages, and what it does best. I’ll then dive into how to effectively test a react component, first a smaller component, then a \"larger\" component with redux, i18n dependencies, etc., then I will show all of the different APIs that react-testing-library provides, and how to effectively use them. Then, I’ll show how to write effective tests across an entire application (writing reusable, effective tests that are not brittle).",
     "day": 1
   },
   {
@@ -59,7 +59,7 @@
     "time": "1:30-2:00PM",
     "speaker": "j.c.hiatt",
     "title": "Chaos Engineering in React",
-    "abstract": "Chaos Engineering has historically been a topic for the DevOps community, but the frontend is one of the most chaotic environments in existence. Learn about chaos in the frontend and how we can make our React applications more fault-tolerant. By introducing entropy into our frontend, we can make our application have greater fault tolerance and ultimately provide superior experiences to our users. This talk will introduce the concept of fault tolerance and chaos engineering in the frontend (and specifically, in React applications). In addition to covering the concept of chaos in the frontend, I will cover how we specifically deal with it in React using React Error Boundaries. No prior knowledge of React will be required to understand the main concepts, although those familiar with React may get even more out of the talk. I will also be demoing my soon-to-be-released library I’ve been working on called React Chaos, which will help introduce entropy into your React applications with less configuration. Attendees should walk away with",
+    "abstract": "Chaos Engineering has historically been a topic for the DevOps community, but the frontend is one of the most chaotic environments in existence. Learn about chaos in the frontend and how we can make our React applications more fault-tolerant.\n\nBy introducing entropy into our frontend, we can make our application have greater fault tolerance and ultimately provide superior experiences to our users. This talk will introduce the concept of fault tolerance and chaos engineering in the frontend (and specifically, in React applications).\n\nIn addition to covering the concept of chaos in the frontend, I will cover how we specifically deal with it in React using React Error Boundaries. No prior knowledge of React will be required to understand the main concepts, although those familiar with React may get even more out of the talk.\n\nI will also be demoing my soon-to-be-released library I’ve been working on called React Chaos, which will help introduce entropy into your React applications with less configuration.\n\nAttendees should walk away with:\n* High-level examples of how chaos engineering can benefit the frontend\n* How Error Boundaries help make React applications more fault-tolerant\n* How they can immediately start introducing entropy into their React apps using React Chaos",
     "day": 1
   },
   {
@@ -73,7 +73,7 @@
     "time": "3:00-3:30PM",
     "speaker": "katewardin",
     "title": "Developer First: A New Leadership Mindset",
-    "abstract": "People don’t leave companies, the saying goes, – they leave managers. As a technology leader passionate about the people side of software development, I have always been captivated by the impacts of great and horrible bosses; on the individual, team, and organization. Organizations will continue to face an increasingly difficult uphill battle as we try to recruit top technical talent.  The unfortunate reality is that there simply are not enough qualified candidates for the increasing demand. Therefore, there is a dire need to significantly change our approach to leadership if we want to continue building and retaining strong, empowered, motivated, and loyal teams. Enter Developer First leadership. Developer First leadership is the drive to focus on the growth and advancement of your team members before yourself. This approach is centered around the idea that developers should not work for their leaders.  Instead, their leaders must work for them! Kate will demonstrate how developer-first leadership can translate directly to the daily lives of technical leaders. Participants will leave with tactical methods to truly embrace the human side of software development and serve your teams as intentional, respectable, and inspiring leaders.",
+    "abstract": "People don’t leave companies, the saying goes, – they leave managers.\nAs a technology leader passionate about the people side of software development, I have always been captivated by the impacts of great and horrible bosses; on the individual, team, and organization.\nOrganizations will continue to face an increasingly difficult uphill battle as we try to recruit top technical talent. The unfortunate reality is that there simply are not enough qualified candidates for the increasing demand.\nTherefore, there is a dire need to significantly change our approach to leadership if we want to continue building and retaining strong, empowered, motivated, and loyal teams.\nEnter Developer First leadership.\nDeveloper First leadership is the drive to focus on the growth and advancement of your team members before yourself.\nThis approach is centered around the idea that developers should not work for their leaders.  Instead, their leaders must work for them!\nKate will demonstrate how developer-first leadership can translate directly to the daily lives of technical leaders.\nParticipants will leave with tactical methods to truly embrace the human side of software development and serve your teams as intentional, respectable, and inspiring leaders.",
     "day": 1
   },
   {
@@ -94,14 +94,14 @@
     "time": "4:30-5:00PM",
     "speaker": "mileciamcgregor",
     "title": "Why You Should Make All of Your React Apps PWAs and how",
-    "abstract": "Developers are usually familiar with the phrase, progressive web app (PWA), but aren't 100% sure of what it is. Most would be surprised to know that they are about 50% of the way there with most of their applications just through best practices. Once you have a checklist for creating PWAs, you'll be able to take any web application and apply it regardless of the framework you use. React in particular makes it incredibly easy to create PWAs or to update your current React apps and make them PWAs. In this talk, we'll cover the 8 necessary attributes of a PWA, some of the advanced PWA attributes, and how to create/update React apps to make them PWAs. By the end of this talk, attendees should have a concrete understanding of what a PWA is and how to make one with React.",
+    "abstract": "Developers are usually familiar with the phrase, progressive web app (PWA), but aren't 100% sure of what it is. Most would be surprised to know that they are about 50% of the way there with most of their applications just through best practices. Once you have a checklist for creating PWAs, you'll be able to take any web application and apply it regardless of the framework you use.\nReact in particular makes it incredibly easy to create PWAs or to update your current React apps and make them PWAs. In this talk, we'll cover the 8 necessary attributes of a PWA, some of the advanced PWA attributes, and how to create/update React apps to make them PWAs. By the end of this talk, attendees should have a concrete understanding of what a PWA is and how to make one with React.",
     "day": 1
   },
   {
     "time": "5:00-5:30PM",
     "speaker": "cameronyick",
     "title": "I've Fallen Into a Large Codebase, and I Can't Get Up!",
-    "abstract": "",
+    "abstract": "Developers spend more time reading existing code than writing new code. Navigating codebases is especially important when joining new projects, or when investigating external libraries. Unfortunately, getting a full understanding of a system can be a slow process, especially in large codebases. Incomplete or inaccurate mental models contribute to bugs and slow development. Handmade architecture diagrams can help, but it is easy for these to drift out of sync from the code they originally described.\nAutomatically generated visualizations can help to untangle this complexity, but they aren't mainstream (yet). This talk will share a few existing tools and techniques for visualizing relationships in source code developed for other languages, such as Smalltalk and Java. We’ll examine how these \"old\" techniques could benefit modern Javascript/Typescript codebases. Next, we'll explore techniques currently available to React developers beyond the standard devtools, including automatic code annotation, state charts, annotated code maps, and network analysis tools to make sense of a file’s dependency tree. I'll close by sharing ideas for visual analysis from other fields that can be applied to understanding concepts in frontend code.",
     "day": 1
   },
   {
@@ -122,14 +122,14 @@
     "time": "10:15-10:45AM",
     "speaker": "nehasharma",
     "title": "Your Guide to Making Scalable Design Systems",
-    "abstract": "",
+    "abstract": "Every product is building their design system. However, the challenge comes when you have to build a scalable Design system. Recently at my work we have developed design system in react for 30+ enterprise products. In this talk , I will address:\n- Why we decided to have DS\n- How we brought all 30+ products requirements on one page\n- How we developed the DS in react to make it scalable\n- What was our biggest challenges and learnings\n- and how we kept 'reusability' of code, 'scaling' of code as well as 'adaption' of new technologies in mind while developing.\n\nThis talk is suitable for every developer, product manager, Engineering manager who wants to start with DS or have their own DS too.",
     "day": 2
   },
   {
     "time": "10:45-11:15AM",
     "speaker": "dishasule",
     "title": "React with gRPC",
-    "abstract": "",
+    "abstract": "The subject explored in this talk is using gRPC-Web with React. gRPC was released by Google a few years back and since then there has been a lot of effort towards getting the industry to consider this as the glue for micro-services communication. It is built on HTTP/2, which provides us with a high-speed communication protocol. The data transferred is in a binary format and, hence, is lighter than JSON/XML payloads. This can make a big difference when latency is an issue. gRPC-Web provides a Javascript library that lets browser clients access a gRPC service. gRPC-Web clients connect to gRPC services via a special gateway proxy: the current version of the library uses Envoy by default, in which gRPC-Web support is built-in. React does not offer official support for gRPC-web yet but it is possible to integrate the two. The presentation talks about gRPC and its integration with React for utilizing the benefits that gRPC offers and circumventing the flaws of HTTP and REST.",
     "day": 2
   },
   {
@@ -150,7 +150,7 @@
     "time": "1:30-2:00PM",
     "speaker": "alistairmacdonald",
     "title": "Case Study: React Monorepos at Scale",
-    "abstract": "",
+    "abstract": "Join us for an in depth case-study on how Houghton Mifflin Harcourt adopted a Monorepo architecture to serve multiple React projects in one Git repository. We currently serve 7 Create React Apps, 9 component libraries and 4 storybooks among 15 developers. Learn about the acceleration we achieved and where we discovered pitfalls. Learn how to get started with your own CRA Monorepo as we share our React Monorepo infrastructure with you: https://github.com/react-workspaces/react-workspaces-playground.",
     "day": 2
   },
   {
@@ -164,28 +164,28 @@
     "time": "3:00-3:30PM",
     "speaker": "craigcavalier",
     "title": "Visual UI Testing: Testing the Last Mile",
-    "abstract": "",
+    "abstract": "Some things can't be easily tested with unit tests and integration tests, and so far too frequently we rely on manual QA to verify visual changes to our applications. With a proliferation of device sizes and browser versions, spot checking changes in the browser is not possible at scale. In this talk, Craig Cavalier explores how visual ui testing can close the testing gap and restore confidence in our ability to make UI changes that work cross-browser.",
     "day": 2
   },
   {
     "time": "3:30-4:00PM",
     "speaker": "robindykema",
     "title": "Sacré Bleu! The Trials and Tribulaciónes in Localizing a React App",
-    "abstract": "",
+    "abstract": "When I started working at my company, all our translations sat in static JSON files. Manually adding new translations was tedious and error-prone, every language loaded on every page, and new translations rarely made it in the same release as their accompanying feature work. This talk will discuss how we transitioned to using react-i18next to localize our app, the problems we had along the way and how we solved them, and tips for designing applications to minimize future localization problems.",
     "day": 2
   },
   {
     "time": "4:00-4:30PM",
     "speaker": "artemsapegin",
     "title": "Say Hello to Box, Flex and Stack: Layouts in the Component Era",
-    "abstract": "",
+    "abstract": "CSS is a great language and has improved a lot in the past decade but it still has the same global nature as in its early days. CSS was designed to style documents, and that often causes issues in large scale applications. Naming conventions, like BEM, CSS Modules and later CSS in JS significantly improved the maintainability of styles, but we can go one step further. Using components to create responsive Flexbox and Grid layouts can simplify code, improve developer experience and it feels natural in React.\nIn this talk we’ll explore how to create any kind of page layout with just three generic components: Box, Flex and Stack.",
     "day": 2
   },
   {
     "time": "4:30-5:00PM",
     "speaker": "ryanstruhl",
     "title": "Building the Dark Mode of Your Dreams with Color Science",
-    "abstract": "",
+    "abstract": "With iOS 13 and Chrome 76, a majority of people on the web will have the option to switch their browsers to 'dark mode' for the benefit of both the visually impaired and code vampires like me. While transitioning applications to have alternate color modes won't be easy, there are a couple of techniques that developers and designers can use to make it as simple as possible.\nIn this session, we will introduce some concepts from color science like luminance, contrast, and chromaticity to help build better, more accessible patterns for color in our applications. We will then look at how to use these patterns in React to build out a sweet looking dark mode for an application.\nThis talk is for developers and designers of all skill levels who are thinking about how to build a dark mode for their application or just want to level-up their understanding of color. You will come away with practical patterns to help improve the design consistency and developer experience across light, dark, and every color mode in-between.",
     "day": 2
   }
 ]
