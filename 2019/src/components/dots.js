@@ -17,6 +17,7 @@ const Dots = styled.div`
     top: ${props => props.top || "-50px"};
     left: ${props => props.left || "auto"};
     right: ${props => props.right || "auto"};
+    bottom: ${props => props.bottom || "auto"};
     position: absolute;
     background: radial-gradient(red 15%, transparent 16%) 1px 1px / 16px 16px,
       radial-gradient(rgba(255, 255, 255, 0) 15%, transparent 20%) 8px 9px;

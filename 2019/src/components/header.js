@@ -116,7 +116,9 @@ const Header = ({ siteTitle, ...props }) => {
   return (
     <Container {...props}>
       <Box display="flex">
-        <Logo to="/" />
+        <Logo title="Home" to="/">
+          {siteTitle}
+        </Logo>
         <Nav
           display={[null, null, null, "flex"]}
           flexGrow="1"

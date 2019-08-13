@@ -68,7 +68,6 @@ export default () => {
             name
             url
             directions
-            key
             img {
               src {
                 childImageSharp {
@@ -178,7 +177,7 @@ export default () => {
             key={node.url}
             mb="11"
           >
-            <Hotel key={node.url} {...node} />
+            <Hotel {...node} />
           </HotelWrap>
         ))}
       </Box>
