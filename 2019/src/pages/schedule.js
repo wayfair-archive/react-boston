@@ -91,6 +91,11 @@ const ScheduleItem = styled.div`
 
 const Talk = ({ time, title, abstract, talk }) => {
   const showImage = talk && talk.node.img.src !== null
+
+  const formattedAbstract = abstract
+    .split("\n")
+    .map(item => <Text mt={4}>{item}</Text>)
+
   return (
     <ListItem key={time}>
       <Text textAlign={["center", null, null, "left"]} fontSize="2">
@@ -108,7 +113,7 @@ const Talk = ({ time, title, abstract, talk }) => {
             {talk.node.name} - {talk.node.company}
           </Text>
         )}
-        {abstract && <p>{abstract}</p>}
+        {abstract && <div>{formattedAbstract}</div>}
       </ScheduleItem>
     </ListItem>
   )
