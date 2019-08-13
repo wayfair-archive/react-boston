@@ -3,14 +3,9 @@ import "../global-styles/base-reset.css"
 import { Box, SectionTitle } from "../components/layout-components"
 import Intro from "../components/intro"
 import Dots from "../components/dots"
+import Speakers from "../components/speakers/speakers-section"
+import ScheduleSection from "../components/schedule/schedule-section"
 import styled from "@emotion/styled"
-
-const Speakers = React.lazy(() =>
-  import("../components/speakers/speakers-section")
-)
-const ScheduleSection = React.lazy(() =>
-  import("../components/schedule/schedule-section")
-)
 
 const StyledSectionTitle = styled(SectionTitle)`
   width: 350px;
@@ -41,18 +36,14 @@ export default () => (
             <Dots height="210px" left="60px" />
           </Box>
         </Box>
-        <Suspense fallback={<div>loading</div>}>
-          <Speakers />
-        </Suspense>
+        <Speakers />
       </Box>
     </Box>
     <Box pb={["0", null, null, "100px"]} position="relative">
       <Box display={["none", null, null, "block"]}>
         <Dots position="absolute" left="40px" top="-80px" height="400px" />
       </Box>
-      <Suspense fallback={<div>loading</div>}>
-        <ScheduleSection />
-      </Suspense>
+      <ScheduleSection />
       <Box display={["none", null, null, "block"]}>
         <Dots
           position="absolute"
