@@ -32,7 +32,7 @@
   {
     "name": "Dave Ceddia",
     "company": "Tiny Wins",
-    "github": "",
+    "github": "dceddia",
     "twitter": "dceddia",
     "description": "",
     "img": {
@@ -42,9 +42,9 @@
   {
     "name": "Ayesha Mazumdar",
     "company": "Optimizely",
-    "github": "",
+    "github": "ayeshakmaz",
     "twitter": "AyeshaKMaz",
-    "description": "",
+    "description": "Ayesha Mazumdar currently works across multiple teams at Optimizely as a UX Engineer, where she collaborates with engineers and designers on Optimizely’s Design System, component library, and application frontend. Previously, she worked on the Lightning Design System at Salesforce where she focused on building accessible components for the engineering organization. Outside of work, she mentors students at the Holberton School to help empower people from all backgrounds to succeed in the tech industry.",
     "img": {
       "src": "../images/speakers/ayeshamazumdar.jpeg"
     }
@@ -64,7 +64,7 @@
     "company": "Optimus Ride",
     "github": "",
     "twitter": "",
-    "description": "",
+    "description": "Disha is a Software Engineer at Optimus Ride with about 3 years of experience in full stack development. She holds a master’s in computer science from Northeastern University. Passionate about technology and learning, Disha likes to keep up with emerging technology and share the knowledge.",
     "img": {
       "src": ""
     }
@@ -74,7 +74,7 @@
     "company": "Appian",
     "github": "mcrowder65",
     "twitter": "mcrowder65",
-    "description": "",
+    "description": "Matt is a software engineer at Appian in Northern Virginia. He is a passionate javascript developer who enjoys blogging at dev.to/mcrowder65, and is also a co-organizer of Northern Virginia's javascript meetup - NoVa.JS.  In his spare time he enjoys running with his dog, lifting weights, and playing video games with his wife.",
     "img": {
       "src": "../images/speakers/matthewjcrowder.png"
     }
@@ -84,7 +84,7 @@
     "company": "Echobind",
     "github": "jchiatt",
     "twitter": "jchiatt",
-    "description": "",
+    "description": "J.C. Hiatt is Software Engineer & Growth Manager at Echobind, where he helps build awesome applications with JavaScript, React, React Native, and GraphQL and grow the community through education and training. He is also the founder of DevLifts, a developer-centric fitness company focused on helping developers live healthier lives. He’s an Egghead instructor, an organizer of multiple meetups, and the organizer of the annual MagnoliaJS conference held in Jackson, Mississippi. In his spare time, you’ll find him with his wife and dog. He is also a Reformed member of the Christian faith and is active in his local church.",
     "img": {
       "src": "../images/speakers/jchiatt.jpeg"
     }
@@ -94,7 +94,7 @@
     "company": "Appian",
     "github": "",
     "twitter": "F1LT3R_",
-    "description": "",
+    "description": "Alistair eats, sleeps and dreams in code. During the 19 years that he has worked as a software developer, he has experienced bumbling failures and spectacular successes. He makes Web & Mobile apps when the sun is shining and tinkers with Parallelism, Quantum Computing, and Open Source software when everyone has gone to sleep. He is a passionate advocate for Behavior Driven Development, DevOps, and Zero Technical Debt Development.\n\nIn his early career Alistair focused on pushing the bleeding-edge of web technology a a Technical Lead for Mozilla, while chaired the Audio Working Group at The W3C. Alistair has worked on data visualization for Newsweek, developed a Node.js platform for RedBull Studios and written for the .NET magazine about JavaScript animation. In recent years Alistair has  focused on using technology to help solve social problems in the Healthcare and Education industries.",
     "img": {
       "src": "../images/speakers/alistairmacdonald.png"
     }
@@ -104,7 +104,7 @@
     "company": "Target",
     "github": "",
     "twitter": "",
-    "description": "",
+    "description": "Kate Wardin is a currently a Senior Engineering Manager at Target Corporation in Minneapolis, MN.  She leads a team of amazing engineers who build front end React applications for Supply Chain HQ and Field users.\n\nOutside of her day job, she enjoys organizing events that enable young women to develop a passion and build confidence for future careers in technology.\n\nShe also enjoys disrupting the norms of traditional leadership by spending time researching, testing out, and advocating for various techniques to tenaciously put developers first.",
     "img": {
       "src": "../images/speakers/katewardin.jpg"
     }
@@ -114,7 +114,7 @@
     "company": "ezCater",
     "github": "craigcav",
     "twitter": "craigcav",
-    "description": "",
+    "description": "Craig Cavalier is a front-end engineer / web developer at ezCater, where he can be found slinging JavaScript, polishing css or wandering the office in search of free food.",
     "img": {
       "src": "../images/speakers/craigcavalier.jpg"
     }
@@ -124,7 +124,7 @@
     "company": "The Guardian",
     "github": "walaura",
     "twitter": "freezydorito",
-    "description": "",
+    "description": "Laura is a client side developer at The Guardian. She enjoys messing with javascript and tweeting about it.",
     "img": {
       "src": ""
     }
@@ -134,7 +134,7 @@
     "company": "Taulia",
     "github": "",
     "twitter": "robindykema",
-    "description": "",
+    "description": "Robin is a UI engineer at Taulia, where she focuses on front end development in React. She is passionate about building stunning user interfaces and intuitive user experiences. She successfully transitioned from teaching ESL to kindergarteners in Shanghai to wrangling code and hasn't looked back since.",
     "img": {
       "src": ""
     }
@@ -144,7 +144,7 @@
     "company": "Wayfair",
     "github": "sapegin",
     "twitter": "iamsapegin",
-    "description": "",
+    "description": "Frontend developer living in Berlin, award-losing photographer, bouldering enthusiast, coffee consumer and dog friend. Creator of React Styleguidist.",
     "img": {
       "src": "../images/speakers/artemsapegin.jpeg"
     }
@@ -154,7 +154,7 @@
     "company": "Flipped Coding",
     "github": "flippedcoder",
     "twitter": "FlippedCoding",
-    "description": "",
+    "description": "Milecia McGregor is a senior software engineer lost somewhere in the Midwest. She has mostly worked with .NET, Angular, and Azure to build web apps, but she also has a master's degree in mechanical and aerospace engineering and has published research in machine learning and robotics. In her free time, she spends time with her husband and dogs while learning to play the ukulele and learning Japanese.",
     "img": {
       "src": "../images/speakers/mileciamcgregor.jpg"
     }
@@ -164,7 +164,7 @@
     "company": "Robin",
     "github": "keisans",
     "twitter": "keisans",
-    "description": "",
+    "description": "Ryan Struhl is a software engineer with Robin, working on the next generation of workplace management applications. With over a decade of experience working with the web, Ryan has worked with applications of all shapes and sizes across a number of different roles. Prior to joining Robin, Ryan worked as a lead engineer with companies including Brightcove, MITRE, Akamai, Humana, Hologic, and Johnson & Johnson.",
     "img": {
       "src": "../images/speakers/ryanstruhl.png"
     }
@@ -174,7 +174,7 @@
     "company": "Datadog",
     "github": "hydrosquall",
     "twitter": "hydrosquall",
-    "description": "",
+    "description": "Cameron is a frontend engineer on the Datadog data visualization team. Prior to entering the React world, he worked on interactive visual tools for monitoring data pipelines and wrangling public datasets as a Python data engineer. Beyond exploring the ways visualizations can help solve technical problems, he enjoys experimenting with creative code and explorable explanations.",
     "img": {
       "src": "../images/speakers/cameronyick.jpeg"
     }
