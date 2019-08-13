@@ -1,4 +1,4 @@
-import React, { Suspense } from "react"
+import React from "react"
 import "../global-styles/base-reset.css"
 import { Box, SectionTitle } from "../components/layout-components"
 import Intro from "../components/intro"

@@ -27,7 +27,7 @@ const ListItem = styled.li`
   list-style-type: none;
   border-radius: 30px;
   border-bottom-right-radius: 0;
-  padding: 50px 20px;
+  padding: 50px 10px;
   &:nth-of-type(even) {
     background-color: ${({ theme }) => theme.colors.grey};
   }

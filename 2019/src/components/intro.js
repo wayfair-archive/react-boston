@@ -16,6 +16,10 @@ const StyledWrap = styled.div`
   border-bottom-left-radius: 65px;
   border-top-right-radius: 65px;
   box-shadow: 16px 18px 20px -2px rgba(0, 0, 0, 0.3);
+  min-height: 218px;
+  @media screen and (min-width: 72em) {
+    height: 300px;
+  }
 `
 
 const StyledTextWrap = styled.div`
