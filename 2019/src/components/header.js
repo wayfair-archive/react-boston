@@ -102,14 +102,6 @@ const ButtonWrap = styled(Box)`
   list-style: none;
 `
 
-const CFPButtonWrap = styled(ButtonWrap)`
-  display: none;
-  // rendering button in header on large screens, header is too crowded on smaller screens
-  @media screen and (min-width: 94em) {
-    display: block;
-  }
-`
-
 const Header = ({ siteTitle, ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => setIsOpen(isOpen => !isOpen)
@@ -156,15 +148,6 @@ const Header = ({ siteTitle, ...props }) => {
                 Buy Tickets
               </Button>
             </ButtonWrap>
-            <CFPButtonWrap as="li" listStyle="none" mt={[6, null, null, 0]}>
-              <Button
-                secondary
-                href="https://forms.gle/ytNS5NmXR4WguLfq8"
-                openInNewTab
-              >
-                Lightning Talk CFP ⚡
-              </Button>
-            </CFPButtonWrap>
           </Box>
         </Nav>
       </Box>
