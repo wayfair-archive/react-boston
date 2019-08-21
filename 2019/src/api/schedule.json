@@ -24,7 +24,7 @@
     "time": "9:45-10:30AM",
     "speaker": "daveceddia",
     "title": "A Guided Tour of React Hooks",
-    "abstract": "",
+    "abstract": "Hooks offer a simple, concise way to write stateful React components without classes.\n In this talk you'll learn about the \"magic\" behind how Hooks work and get to see a few examples of them in action. We'll cover the big four: useState, useEffect, useReducer, and useContext, plus how to write your very own custom hooks.\n You may never want to write a class again.",
     "day": 1
   },
   {
