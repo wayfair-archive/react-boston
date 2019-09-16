@@ -178,5 +178,75 @@
     "img": {
       "src": "../images/speakers/cameronyick.jpeg"
     }
+  },
+  {
+    "name": "Varsha Thirumakil",
+    "company": "Vistaprint",
+    "github": "junevarsha",
+    "twitter": "var_sha612",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/varshathirumakil.jpg"
+    }
+  },
+  {
+    "name": "Arthur Buldauskas",
+    "company": "Wayfair",
+    "github": "ballercat",
+    "twitter": "ballercat",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/arthurbuldauskas.jpg"
+    }
+  },
+  {
+    "name": "Mark Erikson",
+    "company": "Northrop Grumman",
+    "github": "markerikson",
+    "twitter": "acemarke",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/markerikson.jpg"
+    }
+  },
+  {
+    "name": "Rafael Mendiola",
+    "company": "Ramen Software LLC",
+    "github": "dslounge",
+    "twitter": "groundcontrol",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/rafaelmendiola.jpg"
+    }
+  },
+  {
+    "name": "Vincent Abruzzo",
+    "company": "First Look Media",
+    "github": "thoughtbyte",
+    "twitter": "thoughtbyte",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/vincentabruzzo.jpg"
+    }
+  },
+  {
+    "name": "Kiley Dorton",
+    "company": "DentalPost",
+    "github": "kiley0",
+    "twitter": "kiley0",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/kileydorton.jpg"
+    }
+  },
+  {
+    "name": "Jade Dickinson",
+    "company": "Simply Business",
+    "github": "",
+    "twitter": "_jadedickinson",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/jadedickinson.jpg"
+    }
   }
 ]
