@@ -80,16 +80,6 @@
     }
   },
   {
-    "name": "J.C. Hiatt",
-    "company": "Echobind",
-    "github": "jchiatt",
-    "twitter": "jchiatt",
-    "description": "J.C. Hiatt is Software Engineer & Growth Manager at Echobind, where he helps build awesome applications with JavaScript, React, React Native, and GraphQL and grow the community through education and training. He is also the founder of DevLifts, a developer-centric fitness company focused on helping developers live healthier lives. He’s an Egghead instructor, an organizer of multiple meetups, and the organizer of the annual MagnoliaJS conference held in Jackson, Mississippi. In his spare time, you’ll find him with his wife and dog. He is also a Reformed member of the Christian faith and is active in his local church.",
-    "img": {
-      "src": "../images/speakers/jchiatt.jpeg"
-    }
-  },
-  {
     "name": "Alistair MacDonald",
     "company": "Houghton Mifflin Harcourt",
     "github": "",
@@ -247,6 +237,16 @@
     "description": "",
     "img": {
       "src": "../images/speakers/jadedickinson.jpg"
+    }
+  },
+  {
+    "name": "Robert Zhu",
+    "company": "AWS",
+    "github": "robzhu",
+    "twitter": "rbzhu",
+    "description": "",
+    "img": {
+      "src": "../images/speakers/robertzhu.jpg"
     }
   }
 ]

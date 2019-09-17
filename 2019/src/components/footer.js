@@ -13,9 +13,6 @@ const Footer = () => (
     `}
   >
     <Container>
-      <Text fontSize={6} mb={10} fontWeight="bold" fontStyle="italic">
-        See you in September!
-      </Text>
       <Box
         display="grid"
         gridTemplateColumns={["1fr", "1fr 1fr 1fr"]}
