@@ -57,9 +57,9 @@
   },
   {
     "time": "1:30-2:00PM",
-    "speaker": "j.c.hiatt",
-    "title": "Chaos Engineering in React",
-    "abstract": "Chaos Engineering has historically been a topic for the DevOps community, but the frontend is one of the most chaotic environments in existence. Learn about chaos in the frontend and how we can make our React applications more fault-tolerant.\nBy introducing entropy into our frontend, we can make our application have greater fault tolerance and ultimately provide superior experiences to our users. This talk will introduce the concept of fault tolerance and chaos engineering in the frontend (and specifically, in React applications).\nIn addition to covering the concept of chaos in the frontend, I will cover how we specifically deal with it in React using React Error Boundaries. No prior knowledge of React will be required to understand the main concepts, although those familiar with React may get even more out of the talk.\nI will also be demoing my soon-to-be-released library I’ve been working on called React Chaos, which will help introduce entropy into your React applications with less configuration.\nAttendees should walk away with:\n* High-level examples of how chaos engineering can benefit the frontend\n* How Error Boundaries help make React applications more fault-tolerant\n* How they can immediately start introducing entropy into their React apps using React Chaos",
+    "speaker": "alistairmacdonald",
+    "title": "Case Study: React Monorepos at Scale",
+    "abstract": "Join us for an in depth case-study on how Houghton Mifflin Harcourt adopted a Monorepo architecture to serve multiple React projects in one Git repository. We currently serve 7 Create React Apps, 9 component libraries and 4 storybooks among 15 developers. Learn about the acceleration we achieved and where we discovered pitfalls. Learn how to get started with your own CRA Monorepo as we share our React Monorepo infrastructure with you: https://github.com/react-workspaces/react-workspaces-playground.",
     "day": 1
   },
   {
@@ -102,6 +102,13 @@
     "speaker": "cameronyick",
     "title": "I've Fallen Into a Large Codebase, and I Can't Get Up!",
     "abstract": "Developers spend more time reading existing code than writing new code. Navigating codebases is especially important when joining new projects, or when investigating external libraries. Unfortunately, getting a full understanding of a system can be a slow process, especially in large codebases. Incomplete or inaccurate mental models contribute to bugs and slow development. Handmade architecture diagrams can help, but it is easy for these to drift out of sync from the code they originally described.\nAutomatically generated visualizations can help to untangle this complexity, but they aren't mainstream (yet). This talk will share a few existing tools and techniques for visualizing relationships in source code developed for other languages, such as Smalltalk and Java. We’ll examine how these \"old\" techniques could benefit modern Javascript/Typescript codebases. Next, we'll explore techniques currently available to React developers beyond the standard devtools, including automatic code annotation, state charts, annotated code maps, and network analysis tools to make sense of a file’s dependency tree. I'll close by sharing ideas for visual analysis from other fields that can be applied to understanding concepts in frontend code.",
+    "day": 1
+  },
+  {
+    "time": "6:00PM",
+    "speaker": "",
+    "title": "Party 🎉",
+    "abstract": "",
     "day": 1
   },
   {
@@ -155,13 +162,13 @@
   },
   {
     "time": "1:30-2:00PM",
-    "speaker": "alistairmacdonald",
-    "title": "Case Study: React Monorepos at Scale",
-    "abstract": "Join us for an in depth case-study on how Houghton Mifflin Harcourt adopted a Monorepo architecture to serve multiple React projects in one Git repository. We currently serve 7 Create React Apps, 9 component libraries and 4 storybooks among 15 developers. Learn about the acceleration we achieved and where we discovered pitfalls. Learn how to get started with your own CRA Monorepo as we share our React Monorepo infrastructure with you: https://github.com/react-workspaces/react-workspaces-playground.",
+    "speaker": "robertzhu",
+    "title": "Full-stack Type Safety with React, GraphQL, and TypeScript",
+    "abstract": "",
     "day": 2
   },
   {
-    "time": "2:00-3:00PM",
+    "time": "2:15-3:00PM",
     "speaker": "",
     "title": "⚡ Lighting Talks ⚡",
     "abstract": "",

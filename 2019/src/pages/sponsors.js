@@ -117,14 +117,6 @@ export default () => {
           </Text>
         </Box>
       </Box>
-      <Box mt="13" mx="auto" width="300px">
-        <Button
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfnoReme6hkXwSWDB6QGKKrCOu2GEFJbknxxiKV6vjL_dd4HQ/viewform"
-          secondary
-        >
-          Interested in sponsoring?
-        </Button>
-      </Box>
     </Container>
   )
 }
