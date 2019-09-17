@@ -3,7 +3,6 @@ import { Text, Container, Box } from "../components/layout-components"
 import Link from "../components/link"
 import WayfairLogo from "../images/icons/wf-logo"
 import { css } from "@emotion/core"
-import Button from "../components/button"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import styled from "@emotion/styled"
@@ -82,7 +81,7 @@ export default () => {
         gridGap="40px"
         gridTemplateColumns={["1fr", "1fr 1fr"]}
         gridTemplateRows="300px"
-        mt={[10, null, null, 13]}
+        my={[10, null, null, 13]}
         alignItems="center"
       >
         <LogoCard>
