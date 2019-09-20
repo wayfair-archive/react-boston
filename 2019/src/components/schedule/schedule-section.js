@@ -13,8 +13,10 @@ const Wrapper = styled.div`
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 28px;
+  padding: 0 10px;
   @media screen and (min-width: 72em) {
     margin-bottom: 64px;
+    padding: 0;
   }
 `
 
@@ -126,10 +128,10 @@ export default function ScheduleSection() {
       <Tabs initialValue={initialTab}>
         <Wrapper role="tablist">
           <Tab activeTab={1} onTabClick={() => setSelectedTab(isSelectedTab)}>
-            Saturday, September 21
+            Saturday
           </Tab>
           <Tab activeTab={2} onTabClick={() => setSelectedTab(isSelectedTab)}>
-            Sunday, September 22
+            Sunday
           </Tab>
         </Wrapper>
         <TabPanel activeTab={1} is="div">
