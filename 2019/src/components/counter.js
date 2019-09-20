@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect, useRef, Fragment } from "react"
 import Card from "./Card"
 import { Box } from "./layout-components"
 import styled from "@emotion/styled"
@@ -17,7 +17,7 @@ const Wrap = styled(Box)`
   }
 `
 
-const END_TIME = "September 21 2019 09:00:00 EST"
+const END_TIME = "September 21 2019 09:00:00 GMT-0400"
 
 const ONE_SECOND_IN_MS = 1000
 const ONE_MINUTE_IN_MS = 60000
@@ -73,33 +73,42 @@ function Counter() {
     ONE_SECOND_IN_MS,
     SECONDS_IN_ONE_MINUTE
   )
+
   return (
-    <Wrap textAlign="center">
-      <Box fontWeight="bold">
-        <Card>{days}</Card>
-        <Box mt="3" fontSize="0">
-          Days
+    <Fragment>
+      {TimeRemaining <= 0 ? (
+        <Box textAlign="center" as="p" fontSize={[5, null, null, 7]}>
+          React Boston is currently underway!
         </Box>
-      </Box>
-      <Box fontWeight="bold">
-        <Card>{hours}</Card>
-        <Box as="abbr" title="hours" mt="3" fontSize="0">
-          Hrs
-        </Box>
-      </Box>
-      <Box fontWeight="bold">
-        <Card>{minutes}</Card>
-        <Box as="abbr" title="minutes" mt="3" fontSize="0">
-          Mins
-        </Box>
-      </Box>
-      <Box fontWeight="bold">
-        <Card>{seconds}</Card>
-        <Box as="abbr" title="seconds" mt="3" fontSize="0">
-          Secs
-        </Box>
-      </Box>
-    </Wrap>
+      ) : (
+        <Wrap textAlign="center">
+          <Box fontWeight="bold">
+            <Card>{days}</Card>
+            <Box mt="3" fontSize="0">
+              Days
+            </Box>
+          </Box>
+          <Box fontWeight="bold">
+            <Card>{hours}</Card>
+            <Box as="abbr" title="hours" mt="3" fontSize="0">
+              Hrs
+            </Box>
+          </Box>
+          <Box fontWeight="bold">
+            <Card>{minutes}</Card>
+            <Box as="abbr" title="minutes" mt="3" fontSize="0">
+              Mins
+            </Box>
+          </Box>
+          <Box fontWeight="bold">
+            <Card>{seconds}</Card>
+            <Box as="abbr" title="seconds" mt="3" fontSize="0">
+              Secs
+            </Box>
+          </Box>
+        </Wrap>
+      )}
+    </Fragment>
   )
 }
 export default Counter
