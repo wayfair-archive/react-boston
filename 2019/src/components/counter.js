@@ -16,8 +16,8 @@ const Wrap = styled(Box)`
     width: 100%;
   }
 `
-const END_TIME = "September 20 2019 09:00:00 GMT-0400"
-//const END_TIME = "September 21 2019 09:00:00 GMT-0400"
+
+const END_TIME = "September 21 2019 09:00:00 GMT-0400"
 
 const ONE_SECOND_IN_MS = 1000
 const ONE_MINUTE_IN_MS = 60000
