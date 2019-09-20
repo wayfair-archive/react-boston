@@ -109,6 +109,8 @@ export default function ScheduleSection() {
     program.day === 2 ? program : null
   )
 
+  const initialTab = CURRENT_DATE >= SECOND_DAY ? 2 : 1
+
   const [isSelectedTab, setSelectedTab] = useState(false)
 
   return (
@@ -121,7 +123,7 @@ export default function ScheduleSection() {
       >
         Schedule
       </SectionTitle>
-      <Tabs initialValue={1}>
+      <Tabs initialValue={initialTab}>
         <Wrapper role="tablist">
           <Tab activeTab={1} onTabClick={() => setSelectedTab(isSelectedTab)}>
             Saturday, September 21
