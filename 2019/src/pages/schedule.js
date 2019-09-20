@@ -5,6 +5,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "@emotion/styled"
 
+const SECOND_DAY = "September 22 2019 00:00:00 EST"
+
+const CURRENT_DATE = new Date()
+
 export const query = graphql`
   fragment ScheduleData on ScheduleJsonEdge {
     node {
@@ -157,10 +161,12 @@ export default function Schedule() {
     program.day === 2 ? program : null
   )
 
+  const initialTab = CURRENT_DATE >= SECOND_DAY ? 2 : 1
+
   const [isSelectedTab, setSelectedTab] = useState(false)
   return (
     <Container title="Schedule">
-      <Tabs initialValue={1}>
+      <Tabs initialValue={initialTab}>
         <Wrapper role="tablist">
           <Tab activeTab={1} onTabClick={() => setSelectedTab(isSelectedTab)}>
             Saturday, September 21
