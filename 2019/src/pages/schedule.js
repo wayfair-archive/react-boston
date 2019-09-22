@@ -177,12 +177,18 @@ export default function Schedule() {
         </Wrapper>
         <TabPanel activeTab={1} is="ul">
           {firstDaySchedule.map(data => (
-            <Talk key={`${data.speaker}${data.time}${data.day}`} {...data} />
+            <Talk
+              key={`${data.speaker.day}${data.time}${data.day}`}
+              {...data}
+            />
           ))}
         </TabPanel>
         <TabPanel activeTab={2} is="ul">
           {secondDaySchedule.map(data => (
-            <Talk key={`${data.speaker}${data.time}${data.day}`} {...data} />
+            <Talk
+              key={`${data.speaker.day}${data.time}${data.day}`}
+              {...data}
+            />
           ))}
         </TabPanel>
       </Tabs>
