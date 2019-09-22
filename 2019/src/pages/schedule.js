@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "@emotion/styled"
 
-const SECOND_DAY = "September 22 2019 00:00:00 EST"
+const SECOND_DAY = "September 22 2019 00:00:00 GMT-0400"
 
 const CURRENT_DATE = new Date()
 
@@ -161,7 +161,7 @@ export default function Schedule() {
     program.day === 2 ? program : null
   )
 
-  const initialTab = CURRENT_DATE >= SECOND_DAY ? 2 : 1
+  const initialTab = Date.parse(CURRENT_DATE) >= Date.parse(SECOND_DAY) ? 2 : 1
 
   const [isSelectedTab, setSelectedTab] = useState(false)
   return (
