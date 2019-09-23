@@ -78,7 +78,7 @@ function Counter() {
     <Fragment>
       {TimeRemaining <= 0 ? (
         <Box textAlign="center" as="p" fontSize={[5, null, null, 7]}>
-          React Boston is currently underway!
+          See you next year!
         </Box>
       ) : (
         <Wrap textAlign="center">
