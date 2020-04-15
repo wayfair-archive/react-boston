@@ -142,10 +142,10 @@ const Header = ({ siteTitle, ...props }) => {
             ))}
             <ButtonWrap as="li" listStyle="none" mt={[6, null, null, 0]}>
               <Button
-                href="https://www.eventbrite.com/e/react-boston-2019-tickets-61701810777"
+                href="https://www.youtube.com/playlist?list=PLhBlV3WSUrT3jCmqmYWcUEvmon_6K6WUy"
                 openInNewTab
               >
-                Buy Tickets
+                YouTube
               </Button>
             </ButtonWrap>
           </Box>

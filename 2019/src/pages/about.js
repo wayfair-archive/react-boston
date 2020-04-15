@@ -73,6 +73,9 @@ export default () => {
                 React Boston 2018
               </Link>
             </li>
+            <li>
+              <Link href="/">React Boston 2019</Link>
+            </li>
           </Box>
         </Box>
       </Box>

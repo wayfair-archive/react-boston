@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import "../global-styles/base-reset.css"
 import { Box, Text, SectionTitle, Title } from "../components/layout-components"
 import Counter from "../components/counter"
-import { linkStyles } from "../components/link"
+import Link, { linkStyles } from "../components/link"
 import LogoText from "../images/logo-text"
 import { graphql, useStaticQuery } from "gatsby"
 import Dots from "../components/dots"
@@ -16,6 +16,8 @@ const StyledWrap = styled.div`
   border-top-right-radius: 65px;
   box-shadow: 16px 18px 20px -2px rgba(0, 0, 0, 0.3);
   min-height: 218px;
+  display: flex;
+  align-items: center;
   @media screen and (min-width: 72em) {
     height: 300px;
   }
@@ -37,21 +39,16 @@ const StyledImage = styled(Img)`
 `
 
 const Timing = () => {
-  let [showCounter, setShowCounter] = useState(false)
-  useEffect(() => setShowCounter(true), [])
-
   return (
     <StyledWrap>
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        fontSize={["4", null, null, "5"]}
-        fontWeight="bold"
-        p={["25px", null, null, "50px"]}
-      >
-        <Text mb="1em">September 21-22, 2019</Text>
-        {showCounter && <Counter />}
+      <Box p={6}>
+        <Text mb="1em" fontWeight="bold" fontSize={5} textAlign="center">
+          React Boston 2020 has been postponed due to COVID-19.
+        </Text>
+        <Text fontSize={1} textAlign="center">
+          For more information, please follow us on{" "}
+          <Link href="https://twitter.com/ReactBoston">Twitter</Link>.
+        </Text>
       </Box>
     </StyledWrap>
   )
