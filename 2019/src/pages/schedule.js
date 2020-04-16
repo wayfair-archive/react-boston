@@ -165,14 +165,14 @@ export default function Schedule() {
 
   const [isSelectedTab, setSelectedTab] = useState(false)
   return (
-    <Container title="Schedule">
+    <Container title="Schedule (2019)">
       <Tabs initialValue={initialTab}>
         <Wrapper role="tablist">
           <Tab activeTab={1} onTabClick={() => setSelectedTab(isSelectedTab)}>
-            Saturday, September 21
+            Saturday, September 21 2019
           </Tab>
           <Tab activeTab={2} onTabClick={() => setSelectedTab(isSelectedTab)}>
-            Sunday, September 22
+            Sunday, September 22 2019
           </Tab>
         </Wrapper>
         <TabPanel activeTab={1} is="ul">
