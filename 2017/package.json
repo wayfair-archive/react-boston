@@ -23,7 +23,7 @@
   "devDependencies": {
     "serialize-javascript": "^3.1.0",
     "mixin-deep": "^2.0.1",
-    "set-value": "^2.0.1"
+    "set-value": "^4.0.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
